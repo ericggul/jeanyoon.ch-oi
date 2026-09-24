@@ -1,0 +1,4 @@
+id,title,year,kind,summary,url,status,order
+sample-1,Project title,2026,Web artwork,A short description will appear here.,,sample,1
+sample-2,Another project,2025,Installation,Project information can come from a Google Sheet.,,sample,2
+sample-3,A third entry,2024,Research,This structure can change with the portfolio ontology.,,sample,3
