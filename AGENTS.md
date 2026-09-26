@@ -8,10 +8,9 @@ The eventual public address is `https://jeanyoon.ch/oi`. The domain has been pur
 
 ## Current prototype
 
-- `/` selects between design studies.
-- `/v1` uses browser-default HTML with no stylesheet.
-- `/v2` is a literal terminal-text study: output begins at the upper-left, without page chrome, navigation, columns, or oversized headings.
-- Both read the same small `Project` data adapter in `lib/projects.ts`.
+- `/` redirects to `/oi`, which renders the current terminal page.
+- `/oi` is a literal terminal-text study: output begins at the upper-left, without page chrome, navigation, columns, or oversized headings.
+- The page reads the small `Project` data adapter in `lib/projects.ts`.
 - Until `GOOGLE_SHEET_CSV_URL` is configured, entries are explicitly marked samples.
 - The content ontology, route tree, and chosen public design remain open decisions.
 

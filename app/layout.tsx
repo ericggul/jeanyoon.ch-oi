@@ -1,4 +1,12 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  themeColor: "#000000",
+  colorScheme: "dark",
+};
 
 const siteUrl = process.env.SITE_URL || "http://localhost:3000";
 const launched = process.env.SITE_LAUNCHED === "true";
@@ -18,5 +26,9 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body>{children}</body></html>;
+  return (
+    <html lang="en" style={{ background: "#000", colorScheme: "dark" }}>
+      <body style={{ margin: 0, background: "#000" }}>{children}</body>
+    </html>
+  );
 }

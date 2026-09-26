@@ -1,8 +1,11 @@
 .terminal {
   box-sizing: border-box;
   min-height: 100vh;
-  margin: -8px;
-  padding: 8px;
+  min-height: 100dvh;
+  padding: max(8px, env(safe-area-inset-top))
+    max(8px, env(safe-area-inset-right))
+    max(8px, env(safe-area-inset-bottom))
+    max(8px, env(safe-area-inset-left));
   background: #000;
   color: #ddd;
 }
