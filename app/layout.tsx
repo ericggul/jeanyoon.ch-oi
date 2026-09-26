@@ -8,11 +8,8 @@ export const viewport: Viewport = {
   colorScheme: "dark",
 };
 
-const siteUrl = process.env.SITE_URL || "http://localhost:3000";
-const launched = process.env.SITE_LAUNCHED === "true";
-
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL("https://jeanyoon.ch"),
   title: { default: "Jeanyoon Choi", template: "%s | Jeanyoon Choi" },
   description: "Artworks, projects, and research by Jeanyoon Choi.",
   applicationName: "Jeanyoon Choi",
@@ -22,7 +19,6 @@ export const metadata: Metadata = {
     title: "Jeanyoon Choi",
     description: "Artworks, projects, and research by Jeanyoon Choi.",
   },
-  robots: { index: launched, follow: launched },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

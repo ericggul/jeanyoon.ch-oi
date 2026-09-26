@@ -21,7 +21,7 @@ const artworkChoices: Choice[] = artworks.map((artwork) => ({
   href: `/oi/artworks/${artwork.slug}`,
   windowSize: { width: artwork.width, height: artwork.height },
 }));
-const researchChoices: Choice[] = research.map((publication) => ({
+const researchChoices: Choice[] = research.filter((entry) => entry.kind !== "manuscript").map((publication) => ({
   label: `${publication.title} (${publication.year}) — ${publication.publisher ?? publication.repository ?? publication.venue}${publication.kind === "preprint" ? " [preprint]" : ""}`,
   href: publication.url,
 }));
@@ -115,7 +115,8 @@ export default function TerminalSession({ projects }: { projects: Project[] }) {
     } else {
       const section = choice.section ?? "oi";
       const lines: Line[] = section === "oi" ? []
-        : section === "artworks" || section === "research" ? []
+        : section === "artworks" ? []
+        : section === "research" ? research.filter((entry) => entry.kind === "manuscript").map((entry) => ({ text: `${entry.title} | ${entry.status}` }))
         : section === "about" ? [{ text: copy.name, heading: true }, ...copy.about.map((text, index) => ({ text, ...(index === 1 ? { tone: "muted" as const } : {}) }))]
         : section === "projects" ? [{ text: projects.length ? copy.projects.select : copy.projects.empty, tone: "muted" }]
         : [{ text: copy[section], tone: "muted" }];

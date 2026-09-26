@@ -15,3 +15,13 @@ export type ResearchPublication = {
   url: string;
   scholarUrl: string;
 };
+
+export type ResearchManuscript = {
+  id: string;
+  title: string;
+  kind: "manuscript";
+  status: "Under Review";
+  submittedTo: string;
+};
+
+export type ResearchEntry = ResearchPublication | ResearchManuscript;

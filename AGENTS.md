@@ -22,7 +22,7 @@ Do not put private sheet data or service credentials into a public CSV. If priva
 
 ## Migration and SEO
 
-The v4 preview is blocked from indexing. `SITE_LAUNCHED=true` is a launch switch, **not** a complete launch procedure. Before using it, choose a final design, implement `/oi` and the decided content routes, replace sample data, add actual public URLs to `app/sitemap.ts`, set canonical URLs, and verify metadata. The design-study routes should remain `noindex`.
+The site URL is fixed to `https://jeanyoon.ch`, with no launch environment switch or preview indexing block. Before public cutover, replace sample data, add actual public URLs to `app/sitemap.ts`, set canonical URLs, and verify metadata.
 
 At cutover, connect `jeanyoon.ch` to the new Vercel project and route `/` permanently to `/oi`. Keep `portfolio-jyc.org` registered and its existing project serving until the new site is ready. Then map important v3 URLs individually to relevant v4 destinations with permanent redirects, including `www` and apex variants. Do not send every old deep link to `/oi`. Keep redirects for at least one year after cutover. Verify with Search Console, including old and new URL variants.
 

@@ -26,4 +26,4 @@ Run only one dev server for this checkout. If Next.js reports an existing server
 
 ## Search and migration status
 
-The prototype is `noindex` and `robots.txt` disallows crawlers by default. `SITE_URL` is prepared for the future canonical host. Do not set `SITE_LAUNCHED=true` until the public `/oi` page, real content, sitemap, canonical URLs, redirects, and domain connection are finished. See [AGENTS.md](AGENTS.md) for the v3-to-v4 migration boundaries and cutover checklist.
+The site URL is fixed to `https://jeanyoon.ch`; there is no launch environment switch. Crawling is allowed. See [AGENTS.md](AGENTS.md) for the v3-to-v4 migration boundaries and cutover checklist.

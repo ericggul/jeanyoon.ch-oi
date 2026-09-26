@@ -1,0 +1,9 @@
+import type { ResearchManuscript } from "./types";
+
+export const banpoXism = {
+  id: "banpo-xism",
+  title: "Banpo-Xism: Reprojecting South Korea’s Apartment Republic through Higher-Dimensional Geometry",
+  kind: "manuscript",
+  status: "Under Review",
+  submittedTo: "Leonardo",
+} satisfies ResearchManuscript;
