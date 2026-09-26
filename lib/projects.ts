@@ -13,7 +13,7 @@ export type Project = {
 const samples: Project[] = [
   { id: "sample-1", title: "Project title", year: "2026", kind: "Web artwork", summary: "A short description will appear here.", url: "", status: "sample", order: 1 },
   { id: "sample-2", title: "Another project", year: "2025", kind: "Installation", summary: "Project information can come from a Google Sheet.", url: "", status: "sample", order: 2 },
-  { id: "sample-3", title: "A third entry", year: "2024", kind: "Research", summary: "This structure can change with the portfolio ontology.", url: "", status: "sample", order: 3 },
+  { id: "sample-3", title: "A third entry", year: "2024", kind: "Research", summary: "A short project description will appear here.", url: "", status: "sample", order: 3 },
 ];
 
 function parseCsv(input: string): string[][] {

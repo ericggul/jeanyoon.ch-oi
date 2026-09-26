@@ -5,7 +5,7 @@ import styles from "./terminal.module.css";
 
 export const metadata: Metadata = {
   title: "Terminal study",
-  description: "A terminal-format study for Jeanyoon Choi's portfolio.",
+  description: "A terminal-format study by Jeanyoon Choi.",
   robots: { index: false, follow: true },
 };
 
@@ -14,10 +14,10 @@ export default async function Terminal() {
   return (
     <main className={styles.terminal}>
       <pre className={styles.output}>
-        {"jeanyoon@portfolio ~ % cat profile.txt\n"}
+        {"jeanyoon.ch@oi ~ % cat profile.txt\n"}
         <span role="heading" aria-level={1}>Jeanyoon Choi</span>
         {"\nArtist working with the web, interaction, and computational media.\n\n"}
-        {"jeanyoon@portfolio ~ % ls works\n"}
+        {"jeanyoon.ch@oi ~ % ls works\n"}
         {projects.map((project) => (
           <Fragment key={project.id}>
             {project.year || "----"}{"  "}
@@ -26,9 +26,9 @@ export default async function Terminal() {
             {project.summary}{project.status === "sample" ? " [placeholder]" : ""}{"\n\n"}
           </Fragment>
         ))}
-        {"jeanyoon@portfolio ~ % cat contact.txt\n"}
+        {"jeanyoon.ch@oi ~ % cat contact.txt\n"}
         {"Contact details to be added.\n\n"}
-        {"jeanyoon@portfolio ~ % "}<span aria-hidden="true">█</span>
+        {"jeanyoon.ch@oi ~ % "}<span aria-hidden="true">█</span>
       </pre>
     </main>
   );

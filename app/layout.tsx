@@ -14,7 +14,7 @@ const launched = process.env.SITE_LAUNCHED === "true";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: { default: "Jeanyoon Choi", template: "%s | Jeanyoon Choi" },
-  description: "The portfolio of Jeanyoon Choi. Artworks, projects, and research.",
+  description: "Artworks, projects, and research by Jeanyoon Choi.",
   applicationName: "Jeanyoon Choi",
   openGraph: {
     type: "website",
