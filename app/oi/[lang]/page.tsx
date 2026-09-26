@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { practice } from "@/content/practice";
 import { profile } from "@/content/profile";
 import { research } from "@/content/research";
 import { locales } from "@/lib/seo/site";
@@ -23,6 +24,10 @@ export default async function ProfilePage({ params }: Props) {
     </nav>
     <h1>{copy.title}</h1>
     {copy.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+    {practice.map((section) => <section key={section.id} id={section.id}>
+      <h2>{section[lang].heading}</h2>
+      {section[lang].paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+    </section>)}
     {works.length > 0 && <section>
       <h2>{lang === "ko" ? "작품" : "Artworks"}</h2>
       <ul>{works.map((work) => <li key={work.slug}>

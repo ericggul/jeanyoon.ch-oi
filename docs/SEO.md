@@ -10,7 +10,7 @@
 - `/sitemap.xml` includes the public profiles and only artwork translations with a title, summary and nonempty body. Revision dates are actual record dates, never the current build time.
 - `/robots.txt` permits crawling. The existing `/oi-v1` study and unfinished artwork previews remain `noindex` and are absent from the sitemap and LLM artwork lists.
 - `/llms.txt` follows the community proposal; `/llm.txt` is the requested compatibility spelling; `/llms-full.txt` exposes the same public profile and completed artwork text, with source URLs. All are generated from content modules. No separately maintained AI copy, unpublished manuscripts, or sample Sheet projects are promoted as completed works.
-- GA4 measurement ID `G-EEL6QFJKB8`, stream ID `15848583095` (stream name: Jeanyoon Choi). Tag loads only on the exact public hostname `jeanyoon.ch`, excluding localhost, `.local` and Vercel preview hosts.
+- GA4 measurement ID `G-EEL6QFJKB8`, stream ID `15848583095` (stream name: Jeanyoon Choi). Tag loads only on the public hostnames `jeanyoon.ch` and `www.jeanyoon.ch`, excluding localhost, `.local` and Vercel preview hosts.
 
 ## Where to edit
 
@@ -18,6 +18,7 @@
 | --- | --- |
 | Identity, exact Korean name, bilingual profile | `content/profile.ts` |
 | Existing terminal wording | `content/site.ts` |
+| Practice topics and bilingual topic sections | `content/practice.ts` |
 | Independent publication records | `content/research/*.ts` |
 | Artwork type and localized text fields | `content/artworks/types.ts` |
 | Current artwork registry | `lib/artworks.ts` |
@@ -119,3 +120,13 @@ Google recognizes tabs, accordions and other user-accessible disclosure UI as le
 - JavaScript rendering and crawlable anchors: https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics
 - Hidden text and legitimate disclosure UI: https://developers.google.com/search/docs/essentials/spam-policies
 - Headings and search basics: https://developers.google.com/search/docs/fundamentals/seo-starter-guide
+
+## Requested keyword coverage
+
+| Korean search intent | English search intent | Actual content destination |
+| --- | --- | --- |
+| 미디어 아트 · 인터랙티브 아트 | media art · interactive art | Artist title/description and Media art and interactive art section |
+| 웹 아트 · 컨템포러리 웹 아트 · 넷 아트 | web art · contemporary web art · net art | Contemporary web art and net art section |
+| 미디어 아트 연구 · 웹 아트 연구자 | media art research · web art researcher | Research section and credited publication list |
+
+These sections come from `content/practice.ts` and appear in the actual About menu, language profiles and full LLM document. No additional visible link index, no keyword-specific doorway pages, no meta-keywords ranking claim. The research wording points to the existing co-authored SoTA and Passage of Water records without assigning that work solely to this artist. Complete individual artwork descriptions are still required for artwork-specific queries; external citations/links and post-deployment Search Console observations remain necessary to evaluate outcomes. Neither topic metadata nor JSON-LD can force first place.

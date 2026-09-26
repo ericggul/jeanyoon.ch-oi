@@ -6,7 +6,8 @@ import { artworkPath, artworkText } from "./artworks";
 export function person() {
   return { "@type": "Person", "@id": absoluteUrl("/oi#person"), name: profile.name,
     alternateName: [...profile.alternateNames, ...(profile.koreanName ? [profile.koreanName] : [])],
-    url: absoluteUrl("/oi"), jobTitle: "Computational Artist", description: profile.en.description };
+    url: absoluteUrl("/oi"), jobTitle: ["Computational Artist", "Web Art Researcher"],
+    knowsAbout: [...profile.en.topics, ...profile.ko.topics], description: profile.en.description };
 }
 export function profileSchema(locale?: Locale) {
   const path = locale ? `/oi/${locale}` : "/oi";

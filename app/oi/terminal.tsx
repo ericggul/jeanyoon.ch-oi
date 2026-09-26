@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, type MouseEvent } from "react";
 import { siteContent as copy, type SiteSection } from "@/content/site";
+import { practice } from "@/content/practice";
 import { profile } from "@/content/profile";
 import { research } from "@/content/research";
 import { artworks } from "@/lib/artworks";
@@ -41,7 +42,7 @@ function sectionTurn(section: Section, from: string, projects: Project[]): Turn 
   const lines: Line[] = section === "oi" ? []
     : section === "artworks" ? []
     : section === "research" ? []
-    : section === "about" ? [{ text: copy.name, heading: true }, ...profile.en.paragraphs.map((text) => ({ text, lang: "en" as const })), ...profile.ko.paragraphs.map((text) => ({ text, lang: "ko" as const }))]
+    : section === "about" ? [{ text: copy.name, heading: true }, ...profile.en.paragraphs.map((text) => ({ text, lang: "en" as const })), ...profile.ko.paragraphs.map((text) => ({ text, lang: "ko" as const })), ...practice.flatMap((entry) => (["en", "ko"] as const).flatMap((lang) => [{ text: entry[lang].heading, heading: true, lang }, ...entry[lang].paragraphs.map((text) => ({ text, lang }))]))]
     : section === "projects" ? [{ text: projects.length ? copy.projects.select : copy.projects.empty, tone: "muted" }]
     : [{ text: copy[section], tone: "muted" }];
   return {

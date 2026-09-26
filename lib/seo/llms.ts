@@ -1,3 +1,4 @@
+import { practice } from "@/content/practice";
 import { profile } from "@/content/profile";
 import { research } from "@/content/research";
 import { artworks } from "@/lib/artworks";
@@ -30,6 +31,7 @@ export function llmsFull() {
   return [llmsIndex(), ...locales.flatMap((locale) => [
     `## ${locale === "ko" ? "작가 소개" : "Artist profile"} (${locale})`,
     `Source: ${absoluteUrl(`/oi/${locale}`)}`, "", ...profile[locale].paragraphs, "",
+    ...practice.flatMap((section) => [`### ${section[locale].heading}`, "", ...section[locale].paragraphs, ""]),
   ]), ...artworks.flatMap((artwork) => artworkLocales(artwork).flatMap((locale) => {
     const text = artworkText(artwork, locale)!;
     return [`## ${text.title} (${locale})`, `Source: ${absoluteUrl(artworkPath(artwork, locale))}`,

@@ -79,6 +79,10 @@ async function main() {
   assert(terminalHtml.includes('id="panel-about" hidden=""'));
   assert(terminalHtml.includes('id="panel-artworks" hidden=""'));
   assert(terminalHtml.includes('href="/oi/artworks/banpo-xism"'));
+  for (const term of ['미디어 아트', '인터랙티브 아트', '미디어 아트 연구', '웹 아트', '컨템포러리 웹 아트', '넷 아트', '웹 아트 연구자', 'media art', 'interactive art', 'media art research', 'web art', 'contemporary web art', 'net art', 'web art researcher']) {
+    assert(terminalHtml.includes(term), `Missing actual About content: ${term}`);
+    assert(llmsFull().includes(term), `Missing LLM text: ${term}`);
+  }
   assert(!terminalHtml.includes('Text index'));
   assert(!terminalHtml.includes('텍스트 목록'));
   assert(!terminalHtml.includes('href="/oi/en"'));

@@ -5,7 +5,7 @@ import { GA_ID } from "@/lib/seo/site";
 
 export default function GoogleAnalytics() {
   const [enabled, setEnabled] = useState(false);
-  useEffect(() => { setEnabled(window.location.hostname === "jeanyoon.ch"); }, []);
+  useEffect(() => { setEnabled(["jeanyoon.ch", "www.jeanyoon.ch"].includes(window.location.hostname)); }, []);
   if (!enabled) return null;
   return <>
     <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
