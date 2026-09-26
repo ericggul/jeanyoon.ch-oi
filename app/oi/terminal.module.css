@@ -43,9 +43,6 @@
 .cursor { display: inline-block; margin-top: .35em; animation: blink 1s steps(1) infinite; }
 .srOnly { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 @keyframes blink { 50% { opacity: 0; } }
-@media (pointer: coarse) {
-  .choice, .previousChoice { padding-top: 12px; padding-bottom: 12px; min-height: 44px; }
-}
 @media (prefers-reduced-motion: reduce) { .cursor { animation: none; } }
 
 .terminal > div { white-space: pre-wrap; }

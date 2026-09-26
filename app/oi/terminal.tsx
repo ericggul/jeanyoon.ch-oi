@@ -1,31 +1,35 @@
 "use client";
 
 import { useEffect, useRef, useState, type MouseEvent } from "react";
+import { siteContent as copy, type SiteSection } from "@/content/site";
+import { research } from "@/content/research";
 import { artworks } from "@/lib/artworks";
 import type { Project } from "@/lib/projects";
 import styles from "./terminal.module.css";
 
-type Section = "oi" | "artworks" | "projects" | "experiments" | "about" | "texts" | "contact";
+type Section = SiteSection;
 type Choice = { label: string; section?: Section; project?: Project; href?: string; windowSize?: { width: number; height: number } };
 type Line = { text: string; tone?: "identity" | "path" | "muted"; heading?: boolean };
 type Turn = { promptPath?: string; path: string; command: string; lines: Line[]; choices: Choice[] };
 
-// Replace these lines with the final script; timing and navigation are independent.
 const introduction: Line[] = [
-  { text: "Jeanyoon Choi", heading: true },
-  { text: "Computational Artist" },
+  { text: copy.name, heading: true },
+  ...copy.introduction.map((text) => ({ text })),
 ];
-const sections: Section[] = ["artworks", "projects", "experiments", "about", "texts", "contact"];
 const artworkChoices: Choice[] = artworks.map((artwork) => ({
   label: `${artwork.title} (${artwork.year})`,
   href: `/oi/artworks/${artwork.slug}`,
   windowSize: { width: artwork.width, height: artwork.height },
 }));
-const homeChoices = sections.map((section) => ({ label: section, section }));
-const back: Choice = { label: "../  back to oi", section: "oi" };
-const hint = "↑ ↓ select · enter open · or click / tap";
+const researchChoices: Choice[] = research.map((publication) => ({
+  label: `${publication.title} (${publication.year}) — ${publication.publisher ?? publication.repository ?? publication.venue}${publication.kind === "preprint" ? " [preprint]" : ""}`,
+  href: publication.url,
+}));
+const homeChoices = copy.menu.map((section) => ({ label: section, section }));
+const back: Choice = { label: copy.backToOi, section: "oi" };
+const hint = copy.hint;
 const initial: Turn = { path: "~", command: "cd /oi", lines: introduction, choices: homeChoices };
-const prompt = (turn: Turn) => `jeanyoon.ch@oi ${turn.promptPath ?? turn.path} % `;
+const prompt = (turn: Turn) => `${copy.identity} ${turn.promptPath ?? turn.path} % `;
 const length = (turn: Turn) => prompt(turn).length + turn.command.length + 1
   + turn.lines.reduce((n, line) => n + line.text.length + 1, 0)
   + hint.length + 1 + turn.choices.reduce((n, choice) => n + choice.label.length + 1, 0);
@@ -101,27 +105,27 @@ export default function TerminalSession({ projects }: { projects: Project[] }) {
           { text: project.title, heading: true },
           { text: [project.year, project.kind].filter(Boolean).join("  "), tone: "muted" },
           { text: project.summary },
-          ...(project.status === "sample" ? [{ text: "[sample entry]", tone: "muted" as const }] : []),
+          ...(project.status === "sample" ? [{ text: copy.sampleEntry, tone: "muted" as const }] : []),
         ],
         choices: [
-          ...(project.url ? [{ label: "open website ↗", href: project.url }] : []),
-          { label: "../  back to projects", section: "projects" }, back,
+          ...(project.url ? [{ label: copy.openWebsite, href: project.url }] : []),
+          { label: copy.backToProjects, section: "projects" }, back,
         ],
       };
     } else {
       const section = choice.section ?? "oi";
       const lines: Line[] = section === "oi" ? []
-        : section === "artworks" ? []
-        : section === "about" ? [...introduction, { text: "[Full introduction to come.]", tone: "muted" }]
-        : section === "projects" ? [{ text: projects.length ? "Select a project." : "[Projects to come.]", tone: "muted" }]
-        : [{ text: `[${section === "texts" ? "Texts" : section === "contact" ? "Contact details" : "Experiments"} to come.]`, tone: "muted" }];
+        : section === "artworks" || section === "research" ? []
+        : section === "about" ? [{ text: copy.name, heading: true }, ...copy.about.map((text, index) => ({ text, ...(index === 1 ? { tone: "muted" as const } : {}) }))]
+        : section === "projects" ? [{ text: projects.length ? copy.projects.select : copy.projects.empty, tone: "muted" }]
+        : [{ text: copy[section], tone: "muted" }];
       next = {
         promptPath: from,
         path: section === "oi" ? "/oi" : `/oi/${section}`,
         command: section === "oi" ? "cd /oi" : from === "/oi" ? `cd ${section}` : `cd /oi/${section}`,
         lines,
-        choices: section === "oi" ? homeChoices : section === "artworks" ? [...artworkChoices, back] : section === "projects"
-          ? [...projects.map((project) => ({ label: `${project.title}${project.status === "sample" ? " [sample]" : ""}`, project })), back]
+        choices: section === "oi" ? homeChoices : section === "artworks" ? [...artworkChoices, back] : section === "research" ? [...researchChoices, back] : section === "projects"
+          ? [...projects.map((project) => ({ label: `${project.title}${project.status === "sample" ? ` ${copy.sampleLabel}` : ""}`, project })), back]
           : [back],
       };
     }
@@ -155,7 +159,7 @@ export default function TerminalSession({ projects }: { projects: Project[] }) {
   }, [ready, selected, current, total]);
 
   return (
-    <main className={styles.terminal} aria-label="Jeanyoon Choi — oi">
+    <main className={styles.terminal} aria-label={`${copy.name} — oi`}>
       <div className={styles.srOnly} role="status" aria-live="polite">{announcement}</div>
       {turns.map((turn, turnIndex) => {
         const active = turnIndex === turns.length - 1;
@@ -165,7 +169,7 @@ export default function TerminalSession({ projects }: { projects: Project[] }) {
           remaining -= text.length;
           return visible;
         }
-        const identity = slice("jeanyoon.ch@oi ");
+        const identity = slice(`${copy.identity} `);
         const path = slice(`${turn.promptPath ?? turn.path} `);
         const command = slice(`% ${turn.command}\n`);
         return (
@@ -201,7 +205,7 @@ export default function TerminalSession({ projects }: { projects: Project[] }) {
         );
       })}
       <div ref={end} />
-      <noscript>This interactive page requires JavaScript. Jeanyoon Choi — Computational Artist.</noscript>
+      <noscript>{copy.noScript} {copy.name} — {copy.introduction[0]}</noscript>
     </main>
   );
 }

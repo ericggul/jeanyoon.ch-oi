@@ -4,7 +4,7 @@ import TerminalSession from "./terminal";
 
 export const metadata: Metadata = {
   title: "oi",
-  description: "Jeanyoon Choi — Computational Artist. Artworks, projects, experiments, about, texts, and contact.",
+  description: "Jeanyoon Choi — Computational Artist. Artworks, projects, experiments, research, about, texts, and contact.",
   robots: { index: false, follow: true },
 };
 
