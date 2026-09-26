@@ -4,6 +4,8 @@ export const sota = {
   id: "sota",
   title: "SoTA: An Interactive Art Exhibition for Public AI Engagement",
   authors: ["Jeanyoon Choi", "Intae Hwang", "SeJoon Park", "Hyungjun Cho", "Heejae Bae", "Yiyun Kang"],
+  venueLabel: "DIS",
+  distinction: "Honourable Mention",
   publisher: "ACM",
   year: 2026,
   kind: "conference-paper",

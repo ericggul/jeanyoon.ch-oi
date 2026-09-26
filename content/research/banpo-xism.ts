@@ -5,5 +5,6 @@ export const banpoXism = {
   title: "Banpo-Xism: Reprojecting South Korea’s Apartment Republic through Higher-Dimensional Geometry",
   kind: "manuscript",
   status: "Under Review",
+  url: "/oi/research/banpo-xism",
   submittedTo: "Leonardo",
 } satisfies ResearchManuscript;

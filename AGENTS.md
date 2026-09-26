@@ -22,7 +22,7 @@ Do not put private sheet data or service credentials into a public CSV. If priva
 
 ## Migration and SEO
 
-The site URL is fixed to `https://jeanyoon.ch`, with no launch environment switch or preview indexing block. Before public cutover, replace sample data, add actual public URLs to `app/sitemap.ts`, set canonical URLs, and verify metadata.
+The site URL is fixed to `https://jeanyoon.ch`, with no launch environment switch or preview indexing block. SEO modules generate canonicals, language alternates, structured data, sitemap and LLM text from real content. See `docs/SEO.md`. Keep unfinished artwork previews and design studies out of the index. Before public cutover, replace sample data and verify public metadata.
 
 At cutover, connect `jeanyoon.ch` to the new Vercel project and route `/` permanently to `/oi`. Keep `portfolio-jyc.org` registered and its existing project serving until the new site is ready. Then map important v3 URLs individually to relevant v4 destinations with permanent redirects, including `www` and apex variants. Do not send every old deep link to `/oi`. Keep redirects for at least one year after cutover. Verify with Search Console, including old and new URL variants.
 
@@ -37,3 +37,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
 <!-- END:nextjs-agent-rules -->
+
+## Server operation
+
+Never start a dev or production server unless the user explicitly requests it. Use in-process checks for validation. Do not stop or restart other projects.

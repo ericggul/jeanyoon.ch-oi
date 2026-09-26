@@ -6,6 +6,8 @@ export type ResearchPublication = {
   year: number;
   kind: "conference-paper" | "journal-article" | "preprint";
   venue: string;
+  venueLabel?: string;
+  distinction?: string;
   publisher?: string;
   repository?: string;
   volume?: string;
@@ -22,6 +24,7 @@ export type ResearchManuscript = {
   kind: "manuscript";
   status: "Under Review";
   submittedTo: string;
+  url: string;
 };
 
 export type ResearchEntry = ResearchPublication | ResearchManuscript;

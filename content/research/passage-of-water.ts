@@ -4,6 +4,8 @@ export const passageOfWater = {
   id: "passage-of-water",
   title: "Passage of Water: Artistic Exploration of Earth’s Freshwater with Google and NASA",
   authors: ["Yiyun Kang", "Jeanyoon Choi"],
+  venueLabel: "Leonardo Journal",
+  distinction: "Cover Article",
   publisher: "MIT Press",
   year: 2025,
   kind: "journal-article",

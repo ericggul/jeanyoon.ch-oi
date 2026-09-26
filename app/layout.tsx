@@ -1,4 +1,6 @@
 import type { Metadata, Viewport } from "next";
+import GoogleAnalytics from "@/components/seo/google-analytics";
+import { SITE_URL } from "@/lib/seo/site";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -9,7 +11,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://jeanyoon.ch"),
+  metadataBase: new URL(SITE_URL),
   title: { default: "Jeanyoon Choi", template: "%s | Jeanyoon Choi" },
   description: "Artworks, projects, and research by Jeanyoon Choi.",
   applicationName: "Jeanyoon Choi",
@@ -24,7 +26,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" style={{ background: "#000", colorScheme: "dark" }}>
-      <body style={{ margin: 0, background: "#000" }}>{children}</body>
+      <body style={{ margin: 0, background: "#000" }}>{children}<GoogleAnalytics /></body>
     </html>
   );
 }

@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, type MouseEvent } from "react";
 import { siteContent as copy, type SiteSection } from "@/content/site";
+import { profile } from "@/content/profile";
 import { research } from "@/content/research";
 import { artworks } from "@/lib/artworks";
 import type { Project } from "@/lib/projects";
@@ -9,7 +10,7 @@ import styles from "./terminal.module.css";
 
 type Section = SiteSection;
 type Choice = { label: string; section?: Section; project?: Project; href?: string; windowSize?: { width: number; height: number } };
-type Line = { text: string; tone?: "identity" | "path" | "muted"; heading?: boolean };
+type Line = { text: string; tone?: "identity" | "path" | "muted"; heading?: boolean; lang?: "en" | "ko" };
 type Turn = { promptPath?: string; path: string; command: string; lines: Line[]; choices: Choice[] };
 
 const introduction: Line[] = [
@@ -21,8 +22,10 @@ const artworkChoices: Choice[] = artworks.map((artwork) => ({
   href: `/oi/artworks/${artwork.slug}`,
   windowSize: { width: artwork.width, height: artwork.height },
 }));
-const researchChoices: Choice[] = research.filter((entry) => entry.kind !== "manuscript").map((publication) => ({
-  label: `${publication.title} (${publication.year}) — ${publication.publisher ?? publication.repository ?? publication.venue}${publication.kind === "preprint" ? " [preprint]" : ""}`,
+const researchChoices: Choice[] = research.map((publication) => ({
+  label: publication.kind === "manuscript"
+    ? `${publication.title} | ${publication.status}`
+    : `${publication.title} (${publication.year}) | ${publication.venueLabel ?? publication.repository ?? publication.venue}${publication.distinction ? ` | ${publication.distinction}` : ""}${publication.kind === "preprint" ? " [preprint]" : ""}`,
   href: publication.url,
 }));
 const homeChoices = copy.menu.map((section) => ({ label: section, section }));
@@ -33,6 +36,24 @@ const prompt = (turn: Turn) => `${copy.identity} ${turn.promptPath ?? turn.path}
 const length = (turn: Turn) => prompt(turn).length + turn.command.length + 1
   + turn.lines.reduce((n, line) => n + line.text.length + 1, 0)
   + hint.length + 1 + turn.choices.reduce((n, choice) => n + choice.label.length + 1, 0);
+
+function sectionTurn(section: Section, from: string, projects: Project[]): Turn {
+  const lines: Line[] = section === "oi" ? []
+    : section === "artworks" ? []
+    : section === "research" ? []
+    : section === "about" ? [{ text: copy.name, heading: true }, ...profile.en.paragraphs.map((text) => ({ text, lang: "en" as const })), ...profile.ko.paragraphs.map((text) => ({ text, lang: "ko" as const }))]
+    : section === "projects" ? [{ text: projects.length ? copy.projects.select : copy.projects.empty, tone: "muted" }]
+    : [{ text: copy[section], tone: "muted" }];
+  return {
+    promptPath: from,
+    path: section === "oi" ? "/oi" : `/oi/${section}`,
+    command: section === "oi" ? "cd /oi" : from === "/oi" ? `cd ${section}` : `cd /oi/${section}`,
+    lines,
+    choices: section === "oi" ? homeChoices : section === "artworks" ? [...artworkChoices, back] : section === "research" ? [...researchChoices, back] : section === "projects"
+      ? [...projects.map((project) => ({ label: `${project.title}${project.status === "sample" ? ` ${copy.sampleLabel}` : ""}`, project })), back]
+      : [back],
+  };
+}
 
 export default function TerminalSession({ projects }: { projects: Project[] }) {
   const [turns, setTurns] = useState<Turn[]>([initial]);
@@ -113,22 +134,7 @@ export default function TerminalSession({ projects }: { projects: Project[] }) {
         ],
       };
     } else {
-      const section = choice.section ?? "oi";
-      const lines: Line[] = section === "oi" ? []
-        : section === "artworks" ? []
-        : section === "research" ? research.filter((entry) => entry.kind === "manuscript").map((entry) => ({ text: `${entry.title} | ${entry.status}` }))
-        : section === "about" ? [{ text: copy.name, heading: true }, ...copy.about.map((text, index) => ({ text, ...(index === 1 ? { tone: "muted" as const } : {}) }))]
-        : section === "projects" ? [{ text: projects.length ? copy.projects.select : copy.projects.empty, tone: "muted" }]
-        : [{ text: copy[section], tone: "muted" }];
-      next = {
-        promptPath: from,
-        path: section === "oi" ? "/oi" : `/oi/${section}`,
-        command: section === "oi" ? "cd /oi" : from === "/oi" ? `cd ${section}` : `cd /oi/${section}`,
-        lines,
-        choices: section === "oi" ? homeChoices : section === "artworks" ? [...artworkChoices, back] : section === "research" ? [...researchChoices, back] : section === "projects"
-          ? [...projects.map((project) => ({ label: `${project.title}${project.status === "sample" ? ` ${copy.sampleLabel}` : ""}`, project })), back]
-          : [back],
-      };
+      next = sectionTurn(choice.section ?? "oi", from, projects);
     }
     setTurns((previous) => [...previous, next]);
     setCharacters(0);
@@ -159,43 +165,58 @@ export default function TerminalSession({ projects }: { projects: Project[] }) {
     return () => window.removeEventListener("keydown", onKey);
   }, [ready, selected, current, total]);
 
+  // Unopened sections are real menu panels, not a search-only duplicate document.
+  // They are already in the response HTML; selecting the menu moves the same
+  // content into the transcript and removes its dormant instance.
+  const dormant = copy.menu.filter((section) => !turns.some((turn) => turn.path === `/oi/${section}`));
+  const rendered = [
+    ...turns.map((turn, index) => ({ turn, key: `turn-${index}`, dormant: false })),
+    ...dormant.map((section) => ({ turn: sectionTurn(section, "/oi", projects), key: `panel-${section}`, dormant: true })),
+  ];
+
   return (
     <main className={styles.terminal} aria-label={`${copy.name} — oi`}>
       <div className={styles.srOnly} role="status" aria-live="polite">{announcement}</div>
-      {turns.map((turn, turnIndex) => {
-        const active = turnIndex === turns.length - 1;
+      {rendered.map(({ turn, key, dormant }, turnIndex) => {
+        const active = !dormant && turnIndex === turns.length - 1;
         let remaining = active ? characters : length(turn);
         function slice(text: string) {
           const visible = text.slice(0, Math.max(0, remaining));
           remaining -= text.length;
-          return visible;
+          return { visible, content: <>{visible}<span hidden>{text.slice(visible.length)}</span></> };
         }
         const identity = slice(`${copy.identity} `);
         const path = slice(`${turn.promptPath ?? turn.path} `);
         const command = slice(`% ${turn.command}\n`);
         return (
-          <section key={turnIndex} className={styles.turn} aria-label={turn.command}>
-            <div className={styles.command} aria-hidden={active && !ready}>
-              <span className={styles.identity}>{identity}</span><span className={styles.path}>{path}</span>{command}
-            </div>
+          <section key={key} id={dormant ? `panel-${turn.path.split("/").pop()}` : undefined} hidden={dormant} className={styles.turn} aria-label={turn.command}>
+            {turnIndex === 0 ? <div className={styles.command} aria-hidden={active && !ready}>
+              <span className={styles.identity}>{identity.content}</span><span className={styles.path}>{path.content}</span>{command.content}
+            </div> : <h2 className={styles.command} aria-hidden={active && !ready}>
+              <span className={styles.identity}>{identity.content}</span><span className={styles.path}>{path.content}</span>{command.content}
+            </h2>}
             {turn.lines.map((line, index) => {
               const text = slice(`${line.text}\n`);
-              return text ? <div key={index} className={line.tone ? styles[line.tone] : undefined} role={line.heading ? "heading" : undefined} aria-level={line.heading ? 1 : undefined} aria-hidden={active && !ready}>{text}</div> : null;
+              const Tag = line.heading ? (turnIndex === 0 ? "h1" : "h3") : "p";
+              return <Tag key={index} lang={line.lang} hidden={!text.visible} className={line.tone ? styles[line.tone] : undefined} aria-hidden={active && !ready}>{text.content}</Tag>;
             })}
             {(() => {
               const text = slice(`${hint}\n`);
-              return text ? <div className={styles.hint} aria-hidden={active && !ready}>{text}</div> : null;
+              return <div hidden={!text.visible} className={styles.hint} aria-hidden={active && !ready}>{text.content}</div>;
             })()}
             <div ref={active ? menu : undefined} className={styles.choices} aria-label="Choose a destination">
               {turn.choices.map((choice, index) => {
-                const label = slice(`${choice.label}\n`).trimEnd();
-                if (!label) return null;
-                if (!active || !ready) return <div key={index} className={styles.previousChoice} aria-hidden={!ready && active}>{`  ${label}`}</div>;
+                const revealed = slice(`${choice.label}\n`);
+                const label = revealed.visible.trimEnd();
+                const fullLabel = <>{label}<span hidden>{choice.label.slice(label.length)}</span></>;
+                if ((!active || !ready) && !dormant) return choice.href
+                  ? <a key={index} hidden={!label} className={styles.previousChoice} href={choice.href} tabIndex={-1} aria-hidden={!ready && active} onClick={(event) => event.preventDefault()}>{"  "}{fullLabel}</a>
+                  : <span key={index} hidden={!label} className={styles.previousChoice} aria-hidden={!ready && active}>{"  "}{fullLabel}</span>;
                 const props = {
-                  className: `${styles.choice} ${selected === index ? styles.selected : ""}`,
+                  className: `${styles.choice} ${!dormant && selected === index ? styles.selected : ""}`,
                   onPointerEnter: () => setSelected(index), onFocus: () => setSelected(index),
                 };
-                const content = <><span aria-hidden="true">{selected === index ? "> " : "  "}</span>{label}</>;
+                const content = <><span aria-hidden="true">{!dormant && selected === index ? "> " : "  "}</span>{label}</>;
                 return choice.href
                   ? <a key={index} {...props} href={choice.href} target="_blank" rel="noreferrer" onClick={(event) => openArtwork(event, choice)} aria-label={choice.windowSize ? `${label} — opens in a new window or tab` : undefined}>{content}</a>
                   : <button key={index} {...props} type="button" onClick={() => choose(choice)}>{content}</button>;
@@ -206,7 +227,10 @@ export default function TerminalSession({ projects }: { projects: Project[] }) {
         );
       })}
       <div ref={end} />
-      <noscript>{copy.noScript} {copy.name} — {copy.introduction[0]}</noscript>
+      <noscript>
+        <style>{`.${styles.terminal} .${styles.turn}[hidden] { display: block !important; } .${styles.terminal} .${styles.turn} [hidden] { display: revert !important; }`}</style>
+        {copy.name} — {copy.introduction[0]}
+      </noscript>
     </main>
   );
 }

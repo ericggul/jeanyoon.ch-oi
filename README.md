@@ -27,3 +27,7 @@ Run only one dev server for this checkout. If Next.js reports an existing server
 ## Search and migration status
 
 The site URL is fixed to `https://jeanyoon.ch`; there is no launch environment switch. Crawling is allowed. See [AGENTS.md](AGENTS.md) for the v3-to-v4 migration boundaries and cutover checklist.
+
+## Search and analytics
+
+See [docs/SEO.md](docs/SEO.md) for the bilingual content modules, per-artwork publishing, generated sitemap and LLM text, GA4 setup, and Search Console/Bing/Naver owner steps. No local server is needed for `node scripts/check-seo.cjs`.

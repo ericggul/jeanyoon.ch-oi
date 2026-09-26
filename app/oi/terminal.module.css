@@ -13,7 +13,7 @@
 }
 
 .turn { margin-bottom: 1.35em; }
-.command, .turn > div { white-space: pre-wrap; }
+.command, .turn > div, .turn > h1, .turn > h3, .turn > p { white-space: pre-wrap; }
 .identity { color: #87d787; }
 .path { color: #87d7ff; }
 .muted, .hint { color: #999; }
@@ -46,3 +46,7 @@
 @media (prefers-reduced-motion: reduce) { .cursor { animation: none; } }
 
 .terminal > div { white-space: pre-wrap; }
+
+/* Semantic tags retain the literal terminal typography and spacing. */
+.turn h1, .turn h2, .turn h3, .turn p { margin: 0; font: inherit; }
+.turn [hidden] { display: none !important; }
