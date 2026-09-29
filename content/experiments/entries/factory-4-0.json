@@ -1,0 +1,47 @@
+{
+  "slug": "factory-4-0",
+  "title": "Factory 4.0",
+  "year": "2024",
+  "context": "HTML, MDWA, 2 Screens and 1 or more Mobiles",
+  "medium": "HTML, MDWA, 2 Screens and 1 or more Mobiles",
+  "summary": "Factory 4.0 is a Multi-Device Web Artwork that employs the Dadaism-inspired Cut-up technique to explore the significance of semantics in the era of mass text generation. This project deconstructs GPT-4o-generated texts and repeatedly feeds them back into the GPT, creating an endless factory-like cycle. ",
+  "paragraphs": [
+    "Actively inviting the audience to participate using their own mobile devices, Factory 4.0 consists of three Javascript WebApp-based interactive channels.",
+    "1. Channel 1 (Mobile): Users input/speak text via a chat-app-like UI, prompting GPT-4o's responses. They are also invited to leave their phone within the installation, becoming an integral part of the artwork. 2. Channel 2 (Screen): The responses from Channel 1 are randomly cut into 2-6 word phrases and displayed on the screen (Cut-up Technique). These phrases are styled with arithmetic operations, with specific layouts and colours chosen by GPT-4o in real-time, creating a visually stimulating experience. 3. Channel 3 (Screen): The collaged words from Channel 2 are fed back into the user input (Channel 1) and six other chat-UIs, creating an endless cycle of text generation. This recursive loop intensifies the experience, creating a chaotic cacophony of fragmented meanings.",
+    "As the pace of text cut-up accelerates, audiences become increasingly immersed in an automatic cycle of generative fragmented meanings. As conversation topics across seven channels become increasingly homogenous, although algorithmically independent, they paradoxically present a mass generation of meaningless meanings and non-semantical semantics. In this dadaistic context, Factory 4.0 aims to present the factory of our era - the factory of mass-generated texts and data, within the age of Industry 4.0.",
+    "Jeanyoon Choi | Intae Hwang, Experience Design Lab, 2024"
+  ],
+  "images": [
+    {
+      "src": "/experiments/factory-4-0/1.webp",
+      "alt": "Factory 4.0 (2024), documentation image 1.",
+      "width": 3840,
+      "height": 2160
+    },
+    {
+      "src": "/experiments/factory-4-0/2.webp",
+      "alt": "Factory 4.0 (2024), documentation image 2.",
+      "width": 3840,
+      "height": 2160
+    },
+    {
+      "src": "/experiments/factory-4-0/3.webp",
+      "alt": "Factory 4.0 (2024), documentation image 3.",
+      "width": 3840,
+      "height": 2160
+    },
+    {
+      "src": "/experiments/factory-4-0/4.webp",
+      "alt": "Factory 4.0 (2024), documentation image 4.",
+      "width": 4032,
+      "height": 3024
+    }
+  ],
+  "links": [
+    {
+      "label": "Watch video ↗",
+      "href": "https://www.youtube.com/embed/Z5gT6v0-7hk"
+    }
+  ],
+  "source": "https://portfolio-jyc.org/works/clyorw1wv0000aqyc596en808"
+}

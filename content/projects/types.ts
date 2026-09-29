@@ -1,10 +1,13 @@
+// A contribution to a commission, exhibition or collaboration, not an artwork schema.
 export type Project = {
-  id: string;
+  slug: string;
   title: string;
-  year: string;
-  kind: string;
-  summary: string;
-  url: string;
-  status: string;
-  order: number;
+  period: string;
+  roles: string[];
+  context: string;
+  location: string;
+  paragraphs: string[];
+  links: { label: string; href: string }[];
+  relatedExperiments: string[];
+  sources: string[];
 };

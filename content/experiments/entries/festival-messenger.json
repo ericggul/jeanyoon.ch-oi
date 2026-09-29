@@ -1,0 +1,39 @@
+{
+  "slug": "festival-messenger",
+  "title": "Festival Messenger",
+  "year": "2022",
+  "context": "HTML",
+  "medium": "HTML",
+  "summary": "GPS based messenger with spatial restrictions.",
+  "paragraphs": [
+    "Spatial-restricted messenger. The receiver can open a message only at the point where the sender had designated it to do so. Consists of an experimental UI Design, including 100 different interfaces for the loading screen."
+  ],
+  "images": [
+    {
+      "src": "/experiments/festival-messenger/1.webp",
+      "alt": "Festival Messenger (2022), documentation image 1.",
+      "width": 2000,
+      "height": 1399
+    },
+    {
+      "src": "/experiments/festival-messenger/2.webp",
+      "alt": "Festival Messenger (2022), documentation image 2.",
+      "width": 2000,
+      "height": 1399
+    },
+    {
+      "src": "/experiments/festival-messenger/3.webp",
+      "alt": "Festival Messenger (2022), documentation image 3.",
+      "width": 2000,
+      "height": 1399
+    },
+    {
+      "src": "/experiments/festival-messenger/4.webp",
+      "alt": "Festival Messenger (2022), documentation image 4.",
+      "width": 2000,
+      "height": 1399
+    }
+  ],
+  "links": [],
+  "source": "https://portfolio-jyc.org/works/clrm9boxg0003wxp9oo2e7ynw"
+}

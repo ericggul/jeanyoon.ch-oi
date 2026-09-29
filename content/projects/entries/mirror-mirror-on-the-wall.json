@@ -1,0 +1,27 @@
+{
+  "slug": "mirror-mirror-on-the-wall",
+  "title": "Mirror Mirror on the Wall",
+  "period": "2022–2023",
+  "roles": [
+    "Team Lead",
+    "Unity Developer"
+  ],
+  "context": "ARKO (Arts Council Korea), Ministry of Culture",
+  "location": "London, United Kingdom",
+  "paragraphs": [
+    "An ARKO-funded metaverse project investigating how media and virtual space shape our sense of self.",
+    "Jeanyoon Choi led the team and worked as a Unity developer from October 2022 to November 2023. The project was showcased at Feelium Gallery, London, in November 2023."
+  ],
+  "links": [
+    {
+      "label": "Visit project ↗",
+      "href": "https://monaverse.com/spaces/mirror-mirror-on-the-wall-7c21"
+    }
+  ],
+  "relatedExperiments": [
+    "mirror-mirror-on-the-wall"
+  ],
+  "sources": [
+    "/cv/JeanyoonChoi_CV.pdf"
+  ]
+}

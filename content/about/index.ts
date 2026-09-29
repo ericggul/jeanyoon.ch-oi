@@ -5,6 +5,12 @@ export const explore = {
   sections: ["artworks", "research", "experiments", "projects", "texts"],
 } as const;
 
+export const cvPage = {
+  label: "CV",
+  description: "Education, teaching, publications, exhibitions, talks, and performances.",
+  href: "/oi/cv",
+} as const;
+
 export const cvDownload = {
   label: "Download CV ↓",
   description: "Download CV as a PDF.",

@@ -1,0 +1,14 @@
+{
+  "slug": "fractal-clock",
+  "title": "Fractal Clock",
+  "year": "2026",
+  "context": "Recursive analogue-clock study.",
+  "medium": "Interactive web experiment",
+  "summary": "A deterministic tree of analogue clocks, recursively attached to each hour, minute and second hand.",
+  "paragraphs": [
+    "Each clock hand carries further clocks. Their repeated movements form a nested structure of time and motion."
+  ],
+  "images": [],
+  "links": [],
+  "source": "experiments-jyc/apps/scc/app/(complex-systems)/clock/[experiment]/page.tsx"
+}

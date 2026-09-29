@@ -9,9 +9,9 @@ export function llmsIndex() {
   return [
     `# ${SITE_NAME}`,
     "", `> ${profile.en.description}`, "", profile.ko.description, "",
-    "This is the artist's own portfolio. Artwork pages describe the artist's work; linked publications retain their listed authors and publication status.",
+    "This is Jeanyoon Choi’s official artist website. Artwork pages describe the artist's work; linked publications retain their listed authors and publication status.",
     "", "## Artist", "",
-    `- [Interactive portfolio](${absoluteUrl("/oi")})`,
+    `- [Artworks, practice and contact](${absoluteUrl("/oi")})`,
     `- [Artist profile — English](${absoluteUrl("/oi/en")})`,
     `- [작가 소개 — 한국어](${absoluteUrl("/oi/ko")})`,
     "", "## Artworks", "",
@@ -35,8 +35,12 @@ export function llmsFull() {
   ]), ...artworks.flatMap((artwork) => artworkLocales(artwork).flatMap((locale) => {
     const text = artworkText(artwork, locale)!;
     return [`## ${text.title} (${locale})`, `Source: ${absoluteUrl(artworkPath(artwork, locale))}`,
-      `Artist: ${profile.name}`, `Year: ${artwork.year}`, ...(text.medium ? [`Medium: ${text.medium}`] : []),
+      `Artists: ${(artwork.creators ?? [profile.name]).join(", ")}`, `Year: ${artwork.year}`, ...(text.medium ? [`Medium: ${text.medium}`] : []),
       "", text.summary, "", ...text.paragraphs, "",
+      ...(artwork.site ? [`Artwork website: ${artwork.site}`] : []),
+      ...(artwork.video ? [`Video: ${artwork.video.url}`] : []),
+      ...(artwork.exhibitions ?? []).map((entry) => `Exhibition: ${[entry.name, entry.venue, entry.dates, entry.url].filter(Boolean).join(" — ")}`),
+      ...(artwork.images ?? []).map((image) => `Image: ${absoluteUrl(image.src)} — ${image.caption}`),
       ...(artwork.references ?? []).map((ref) => `${ref.label}: ${ref.url}`), ""];
   }))].join("\n");
 }

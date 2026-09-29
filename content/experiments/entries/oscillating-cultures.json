@@ -1,0 +1,36 @@
+{
+  "slug": "oscillating-cultures",
+  "title": "Oscillating Cultures",
+  "year": "2023",
+  "context": "Snap AR × Royal College of Art",
+  "medium": "Snap AR",
+  "summary": "RCA X Snapchat collaboration project reflecting on Cultural Comparisons.",
+  "paragraphs": [
+    "“Oscillating Cultures” is a multi-device AR artwork that critiques our cultural consumption, perception, and AI's role in generating simulated images. Three phones interact, with one's interface influencing the others. Tapping actions generate face filters based on cultural choices, initially taking on the appearance as a commercial advertisement. As choices narrow, corresponding face filters are reflected on other phones, reflecting stereotyped or classified depictions. The intentional use of discomfort to parallel modern internet recommendation algorithms, presenting them in a whimsical and dadaistic manner.",
+    "The entire interaction highlights our tendency to classify cultures and the issues inherent in button-driven interfaces of contemporary internet culture. Linked to AI training, user interactions, stereotypes, and biases, “Oscillating Cultures” underscores how both humans and AI often fail to perceive individuals from different cultures as unique entities, opting instead to impose stereotypical imagery onto them.",
+    "Throughout the rhythmic oscillation of the collage, underrepresented cultures are blended and juxtaposed, offering a reflection on the blending of cultures and inducing the estrangement effect (vefremdungseffekt). The artwork ultimately prompts contemplation on the endless cycle of classification and sub-classification in machine learning, culminating in the realization that persistent categorization leads to a mere presence of signifiers, devoid of true depth or understanding.",
+    "Team",
+    "Jeanyoon Choi, Sabrina Tian, Nora"
+  ],
+  "images": [
+    {
+      "src": "/experiments/oscillating-cultures/1.webp",
+      "alt": "Oscillating Cultures (2023), documentation image 1.",
+      "width": 3024,
+      "height": 4032
+    },
+    {
+      "src": "/experiments/oscillating-cultures/2.webp",
+      "alt": "Oscillating Cultures (2023), documentation image 2.",
+      "width": 3024,
+      "height": 4032
+    }
+  ],
+  "links": [
+    {
+      "label": "Watch video ↗",
+      "href": "https://www.youtube.com/embed/MbI2SSxFQWU"
+    }
+  ],
+  "source": "https://portfolio-jyc.org/works/clrm3irql0000wxp9l50j6117"
+}

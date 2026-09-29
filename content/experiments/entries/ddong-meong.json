@@ -1,0 +1,19 @@
+{
+  "slug": "ddong-meong",
+  "title": "ddong-meong",
+  "year": "2026",
+  "context": "A humorous interactive wellness app and connected exhibition screen.",
+  "medium": "Interactive web experiment",
+  "summary": "A 4-minute-33-second meditation experience for time spent on the toilet.",
+  "paragraphs": [
+    "The mobile app borrows the exceptionally calm and courteous language of wellness services. Its exhibition screen turns private sessions into a shared field of nicknames, times and activity. The relationship between those two experiences exposes the contradiction of using another platform to escape platform-shaped attention."
+  ],
+  "images": [],
+  "links": [
+    {
+      "label": "Visit experiment ↗",
+      "href": "https://ddong-meong.vercel.app"
+    }
+  ],
+  "source": "experiments-jyc/apps/ddong-meong/docs/README.md"
+}

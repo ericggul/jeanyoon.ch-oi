@@ -1,0 +1,41 @@
+{
+  "slug": "das-gerede",
+  "title": "Das Gerede",
+  "year": "2023",
+  "context": "HTML",
+  "medium": "HTML",
+  "summary": "This artwork explores \"Das Gerede,\" Heidegger's concept of idle and superficial social conversation. The artist replicates these interactions using the ChatGPT API, portraying fictional characters engaged in trivial discussions. Critiquing the simulation of contemporary society, the artwork suggests a blurred line between human and AI interactions, symbolised against a train station-like backdrop. Audience participation is invited through a mobile site parodying a booking platform, highlighting the routine and predictable nature of societal exchanges.",
+  "paragraphs": [
+    "The concept of \"Das Gerede,\" a term from Heideggerian philosophy referring to idle, meaningless social conversation, is central to this work. The artist during a stay in London, observed a prevalence of such superficial interactions in Anglo-Saxon culture. He noted that these conversations, often revolving around trivial topics like movies, the weather, asset management, fashion, and politics, seemed insincere and replaceable, to the extent that they could be simulated by AI.",
+    "In this artwork, the artist replicates these social interactions using ChatGPT API in real time. The conversation involves three fictional characters: Tom, Mary, and Smith, names commonly found in Anglo-American contexts. They engage in typical, superficial dialogue, embodying the concept of \"Das Gerede\" in their discussions about the latest movies, weather, asset management, fashion, luxuries, and politics – topics that epitomise the hollow signs of a neoliberal society.",
+    "The artist critiques the “Simulation” of contemporary society, drawing on Heidegger's philosophy. He suggests that by engaging in \"Das Gerede\" and conforming to the \"Das Man\" – the average existence – people become indistinguishable from one another, living as social machines and losing their authenticity. This artwork proposes that if we continue to engage in such superficial interactions, we might already have been replaced by AI in an existential term.",
+    "The artwork's backdrop is designed to mimic the appearance of a train station interface, echoing the look of London's Terminal Station Departure Board. This particular setting is laden with symbolism, reflecting the modern, systematic aspects of our society that frequently diminish individuals to mere cogs in a vast machine. Much like how train schedules are consistent and foreseeable, so too are our mundane conversations, the \"geredes.\" It is for this reason that the artist has chosen to employ a yellow neon aesthetic reminiscent of train timetables, underscoring the predictability and routine nature of these exchanges.",
+    "This interactive, multi-device web artwork invites audiences to participate. Within the installation space, a QR code leads to a customized mobile site, \"Booking.conv,\" a parody of a hotel booking platform. Here, participants can 'book' their conversation, choosing the time, topics, and participants, akin to booking a hotel or train. Once a conversation is 'reserved', it appears on the train timetable-like display.",
+    "Despite its interactivity, the artwork presents a dystopian view where even these new conversations are reduced to mere AI-generated exchanges. This aspect of the artwork offers a critical reflection on contemporary society, questioning the authenticity and depth of our daily interactions."
+  ],
+  "images": [
+    {
+      "src": "/experiments/das-gerede/1.webp",
+      "alt": "Das Gerede (2023), documentation image 1.",
+      "width": 2996,
+      "height": 1330
+    },
+    {
+      "src": "/experiments/das-gerede/2.webp",
+      "alt": "Das Gerede (2023), documentation image 2.",
+      "width": 5760,
+      "height": 3240
+    }
+  ],
+  "links": [
+    {
+      "label": "Visit experiment ↗",
+      "href": "https://internetinental.herokuapp.com/term3/das-gerede"
+    },
+    {
+      "label": "Watch video ↗",
+      "href": "https://www.youtube.com/embed/YjK1itrI_h4"
+    }
+  ],
+  "source": "https://portfolio-jyc.org/works/clrgzhjlp000013x6fhe54z1b"
+}

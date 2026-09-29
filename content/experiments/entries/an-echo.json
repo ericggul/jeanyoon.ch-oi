@@ -1,0 +1,34 @@
+{
+  "slug": "an-echo",
+  "title": "An Echo",
+  "year": "2022",
+  "context": "HTML",
+  "medium": "HTML",
+  "summary": "Web Collage expressing the nonlinearlity of future",
+  "paragraphs": [
+    "We are anxious about the future. We’d like to keep the upcoming future under our control, so we attend conferences or subscribe to magazines that present a predictable future marketed under a name of ‘future insight’, when paradoxically, the anxiousness towards the future should have been triggered by its unpredictable nature.",
+    "Influenced by Marcel Duchamp(Tu m’), Henri Bergson(Inverted Cone), Friedrich Nietzsche(The camel and the baby), Lee Kun-Hee(Change everything except Spouse and Children), Jeff Bezos(Smile) and Elon Musk(Non-linear Tesla Stock), this interactive web artwork collages numerous signs and icons to contrast the character of short-term future(situated in the left of the screen) from the long-term future(situated in the right), criticising the former and valuing the latter.",
+    "According to Greek Mythology, a nymph called Echo could only repeat the last words spoken to her due to the curse of Hera. The artwork An Echo(Not to be confused with ‘Adecco’) criticises our tendency to act like an Echo when dealing with the future, not trying to affirm the randomness and thus overcome the uncertainty in a Nietzschestic manner, but instead, trying to predict the unpredictable by repeatedly projecting what happened in the near past into a near future."
+  ],
+  "images": [
+    {
+      "src": "/experiments/an-echo/1.webp",
+      "alt": "An Echo (2022), documentation image 1.",
+      "width": 1628,
+      "height": 1140
+    },
+    {
+      "src": "/experiments/an-echo/2.webp",
+      "alt": "An Echo (2022), documentation image 2.",
+      "width": 1522,
+      "height": 1065
+    }
+  ],
+  "links": [
+    {
+      "label": "Watch video ↗",
+      "href": "https://www.youtube.com/embed/ENd5tpDO2T4"
+    }
+  ],
+  "source": "https://portfolio-jyc.org/works/clrhplw7y0004t7flqxh3ymfr"
+}

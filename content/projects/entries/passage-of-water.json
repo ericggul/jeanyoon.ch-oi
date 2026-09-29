@@ -1,0 +1,32 @@
+{
+  "slug": "passage-of-water",
+  "title": "Passage of Water",
+  "period": "2023",
+  "roles": [
+    "Web Developer",
+    "Data Visualisation"
+  ],
+  "context": "Yiyun Kang, Google Arts & Culture, NASA JPL",
+  "location": "Dubai, United Arab Emirates / online",
+  "paragraphs": [
+    "An artwork by Yiyun Kang, developed in collaboration with Google Arts & Culture and NASA Jet Propulsion Laboratory, examining Earth’s freshwater through GRACE and SWOT satellite data.",
+    "Jeanyoon Choi contributed web development, data analysis and visualisation from July to December 2023. The work was presented online and at UNFCCC COP28 in Dubai."
+  ],
+  "links": [
+    {
+      "label": "Visit project ↗",
+      "href": "https://goo.gle/passageofwater"
+    },
+    {
+      "label": "Project documentation ↗",
+      "href": "https://www.xdlab.net/projects/passage-of-water"
+    }
+  ],
+  "relatedExperiments": [
+    "passage-of-water"
+  ],
+  "sources": [
+    "/cv/JeanyoonChoi_CV.pdf",
+    "https://www.xdlab.net/projects/passage-of-water"
+  ]
+}

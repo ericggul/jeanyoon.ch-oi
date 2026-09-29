@@ -10,21 +10,24 @@ The eventual public address is `https://jeanyoon.ch/oi`. The domain has been pur
 
 - `/` redirects to `/oi`, which renders the current terminal page.
 - `/oi` is a literal terminal-text study: output begins at the upper-left, without page chrome, navigation, columns, or oversized headings.
-- The page reads the small `Project` data adapter in `lib/projects.ts`.
-- Until `GOOGLE_SHEET_CSV_URL` is configured, entries are explicitly marked samples.
-- The content ontology, route tree, and chosen public design remain open decisions.
-
-## Google Sheet
-
-Use a publicly readable, published CSV URL in `GOOGLE_SHEET_CSV_URL` (server-side only). Header names are `id,title,year,kind,summary,url,status,order`. `id` and `title` are required. `status=hidden` omits a row. The URL field accepts only HTTP(S) links. The server refreshes successful sheet fetches every five minutes. If the sheet is unavailable or malformed, sample entries appear and an error is logged. Revisit this fallback before launch so an outage cannot silently replace real work with samples.
-
-Do not put private sheet data or service credentials into a public CSV. If private access becomes necessary, design a server-side Google API integration then.
+- Content lives in independent `content/artworks`, `content/projects`, `content/experiments`, and `content/texts` collections. See `content/README.md`.
+- Projects describe contributions and commissions; experiments describe individual studies. Related entries are linked by ID.
+- Projects, experiments and texts open inside the terminal. Long text bodies are loaded on selection.
+- The former Google Sheet/sample adapter was removed during the September 2026 local-content migration.
 
 ## Fixed site name — explicit user requirement
 
 The exact site name and every page's browser/SEO title are **`jeanyoon.ch/oi`**, in every language and route. Use `SITE_NAME` from `lib/seo/site.ts` for metadata titles, Open Graph/Twitter titles, `applicationName`, `WebSite` names, and other site-branding labels. Do not add prefixes, suffixes, artist names, artwork names, translated names, keywords, or title templates to these titles.
 
 AI agents must preserve this naming rule during all future SEO, search-engine, LLM discovery, content, and refactoring work. Only a new explicit user instruction to change the site name/title may override it; a general request to improve SEO is not permission. Keep the artist's actual identity and artwork/publication titles in their respective content and entity data. Run `node scripts/check-seo.cjs` after SEO changes.
+
+## CV — single source of truth
+
+`content/cv/cv.tex` is the only CV source. `/oi/cv` (with `/cv` redirecting to it) parses it at render time via `content/cv/index.ts`, and `pnpm cv` (tectonic) compiles it to `public/cv/JeanyoonChoi_CV.pdf`. To update the CV, replace/edit the `.tex` file, then run `pnpm cv`. Never duplicate CV data into TS/JSON. If a new LaTeX command appears in the source, extend the parser rather than hand-editing output.
+
+## Favicon
+
+The favicon is the pure-black v3 mark (explicit user requirement). Do not redesign or regenerate it without an explicit user instruction.
 
 ## Migration and SEO
 

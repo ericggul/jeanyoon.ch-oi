@@ -1,0 +1,54 @@
+{
+  "slug": "registration",
+  "title": "Registration",
+  "year": "2024",
+  "context": "HTML, MDWA, 1 Screen and 1 Mobile",
+  "medium": "HTML, MDWA, 1 Screen and 1 Mobile",
+  "summary": "\"Registration\" is a multi-device web artwork that transforms routine online registration processes into an interactive, Dadaist critique of the mechanized, consumerist underpinnings of our digital interactions, emphasizing the collective nature of our supposedly individual actions.",
+  "paragraphs": [
+    "\"Registration\" offers a Dadaistic reflection on the online landscape we inhabit, particularly critiquing the repetitive nature of the website registration process and its mechanicality. This multi-device web artwork invites interaction via mobile devices, where users simulate signing up for a new website by entering details like names, home addresses, phone numbers, and consenting to privacy policies. This process generates corresponding audio-visual outputs on a screen in real-time: inputting a name on mobile displays the text on the screen, entering a phone number triggers a ringing tone, and agreeing to consents spawns promotional pop-ups and alerts.",
+    "This artwork serves as a modern reflection on the consumerist society within our mobile devices but also goes beyond. It acknowledges that every action we take on our mobile is never truly individual—it’s a collective act, the data goes somewhere and affects... The notion of 'my' device, 'my' internet does not actually exist; we are all interconnected. Moreover, by employing this Dadaistic process, it hacks the monotonous everyday simulacrum of registering new websites, providing an opportunity for us to reflect on our everyday use of the internet—a sort of Verfremdungseffekt. This reflection is needed to disrupt the routine, acting as a pointed objection to the mundane everyday interaction and the time wasted in the world of the internet. Often, we're just 'killing time', scrolling through random information, inputting the same names and addresses. The uniformity of UI and UX has made these processes identical from one website to another.",
+    "Personally, this comes from my experience of applying to countless jobs, repeatedly entering the same application information. Can't this process be more interesting? Although these details might be necessary, sometimes it feels like a waste of time, a waste of our lives. The internet boom and the online registration process seem to have made our lives more efficient and easier, but have they really? Maybe in the short term, or from the perspective of a single task, yes. However, because tasks have become easier for everyone, there's been a boom in the quantity of applications, making it equally challenging to secure a job. Thus, even though individual registration processes have become simpler, the overall procedure has become more complicated and competitive.",
+    "Generally, even though technology appears to simplify our lives in the short term, it ultimately makes our lives more complicated, busier. Consider, for instance, meetings: platforms like Zoom and Google Meet have revolutionised our ability to meet without physical limitations. Yet, this benefit has led to even more meetings, many of which are unnecessary. Think about work optimisation tools, online collaboration tools, messengers—they make our tasks more efficient but also make our lives more stressful. We're never free from these tools, 24/7.",
+    "In terms of medium, this multi-device web artwork induces a new type of immersiveness from our everyday actions on the website. Each text input on mobile triggers a real-time change on the screen side, presenting a novel form of interactive immersiveness distinct from traditional methods like motion capture. This embodies a new realm of possibilities within immersive new media art design, showing how a simple text input can generate an amplified output, allowing audiences to immerse themselves in the experience."
+  ],
+  "images": [
+    {
+      "src": "/experiments/registration/1.webp",
+      "alt": "Registration (2024), documentation image 1.",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "src": "/experiments/registration/2.webp",
+      "alt": "Registration (2024), documentation image 2.",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "src": "/experiments/registration/3.webp",
+      "alt": "Registration (2024), documentation image 3.",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "src": "/experiments/registration/4.webp",
+      "alt": "Registration (2024), documentation image 4.",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "src": "/experiments/registration/5.webp",
+      "alt": "Registration (2024), documentation image 5.",
+      "width": 1440,
+      "height": 900
+    }
+  ],
+  "links": [
+    {
+      "label": "Visit experiment ↗",
+      "href": "https://internetinental.herokuapp.com/term4/registration"
+    }
+  ],
+  "source": "https://portfolio-jyc.org/works/clv4l9wsp000010snfvky4mut"
+}

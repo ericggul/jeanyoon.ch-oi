@@ -1,0 +1,27 @@
+{
+  "slug": "living-geometry",
+  "title": "Living Geometry",
+  "period": "2026",
+  "roles": [
+    "Artist",
+    "Project Manager"
+  ],
+  "context": "XD Lab Media Art Exhibition",
+  "location": "Yeongdeungpo Art Square, Seoul",
+  "paragraphs": [
+    "An XD Lab media art exhibition exploring the city through ecology, technology, data and everyday experience.",
+    "Jeanyoon Choi participated as an artist and project manager. The exhibition ran from 1 May to 28 June 2026 and included Banpo-Xism, alongside talks and workshops."
+  ],
+  "links": [
+    {
+      "label": "Exhibition archive ↗",
+      "href": "https://www.xdlab.net/living-geometry-archive"
+    }
+  ],
+  "relatedExperiments": [],
+  "sources": [
+    "/cv/JeanyoonChoi_CV.pdf",
+    "User-specified role: Artist, Project Manager",
+    "https://www.xdlab.net/living-geometry-archive"
+  ]
+}

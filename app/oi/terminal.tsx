@@ -2,21 +2,22 @@
 
 import { useEffect, useRef, useState, type MouseEvent } from "react";
 import { siteContent as copy, type SiteSection } from "@/content/site";
-import { cvDownload, profile, explore } from "@/content/about";
+import { cvPage, profile, explore } from "@/content/about";
 import { research } from "@/content/research";
 import { artworks, introduction as artworksIntroduction } from "@/content/artworks";
 import { displayArtworkTitle } from "@/content/artworks/title";
-import { selectMessage as projectSelectMessage, emptyMessage as projectEmptyMessage } from "@/content/projects";
-import { emptyMessage as experimentsEmptyMessage } from "@/content/experiments";
-import { emptyMessage as textsEmptyMessage } from "@/content/texts";
+import { projects } from "@/content/projects";
+import { experiments } from "@/content/experiments";
+import { texts } from "@/content/texts";
 import { contactLinks, introduction as contactIntroduction } from "@/content/contact";
-import type { Project } from "@/lib/projects";
+import type { Collection, Detail } from "@/lib/content/types";
+import InlineGallery from "./inline-gallery";
 import styles from "./terminal.module.css";
 
 type Section = SiteSection;
-type Choice = { label: string; description?: string; section?: Section; project?: Project; href?: string; download?: string; windowSize?: { width: number; height: number } };
+type Choice = { label: string; description?: string; section?: Section; entry?: { collection: Collection; slug: string }; original?: Detail; href?: string; download?: string; windowSize?: { width: number; height: number } };
 type Line = { text: string; tone?: "identity" | "path" | "muted"; heading?: boolean; lang?: "en" | "ko" };
-type Turn = { promptPath?: string; path: string; command: string; lines: Line[]; choices: Choice[] };
+type Turn = { promptPath?: string; path: string; command: string; lines: Line[]; choices: Choice[]; detail?: Detail };
 
 const introduction: Line[] = [
   { text: copy.heading, heading: true },
@@ -40,7 +41,7 @@ const homeChoices: Choice[] = copy.menu.map(({ id, description }) => ({ label: i
 const back: Choice = { label: copy.backToOi, description: copy.backToOiDescription, section: "oi" };
 const aboutChoices: Choice[] = [
   ...explore.sections.flatMap((section) => homeChoices.filter((choice) => choice.section === section)),
-  cvDownload, ...homeChoices.filter(({ section }) => section === "contact"), back,
+  cvPage, ...homeChoices.filter(({ section }) => section === "contact"), back,
 ];
 const hint = copy.hint;
 const initial: Turn = { path: "~", command: "cd /oi", lines: introduction, choices: homeChoices };
@@ -49,29 +50,32 @@ const length = (turn: Turn) => prompt(turn).length + turn.command.length + 1
   + turn.lines.reduce((n, line) => n + line.text.length + 1, 0)
   + hint.length + 1 + turn.choices.reduce((n, choice) => n + choice.label.length + 1, 0);
 
-function sectionTurn(section: Section, from: string, projects: Project[]): Turn {
+function sectionTurn(section: Section, from: string): Turn {
   const lines: Line[] = section === "oi" ? []
     : section === "artworks" ? [{ text: artworksIntroduction }]
     : section === "research" ? []
     : section === "about" ? [{ text: profile.name, heading: true }, ...profile.en.paragraphs.map((text) => ({ text, lang: "en" as const })), { text: `\n${explore.introduction}` }]
-    : section === "projects" ? [{ text: projects.length ? projectSelectMessage : projectEmptyMessage, tone: "muted" }]
+    : section === "projects" ? []
     : section === "contact" ? [{ text: contactIntroduction }]
-    : [{ text: section === "experiments" ? experimentsEmptyMessage : textsEmptyMessage, tone: "muted" }];
+    : [];
   return {
     promptPath: from,
     path: section === "oi" ? "/oi" : `/oi/${section}`,
     command: section === "oi" ? "cd /oi" : from === "/oi" ? `cd ${section}` : `cd /oi/${section}`,
     lines,
     choices: section === "oi" ? homeChoices : section === "artworks" ? [...artworkChoices, back] : section === "research" ? [...researchChoices, back] : section === "about" ? aboutChoices : section === "contact" ? [...contactChoices, back] : section === "projects"
-      ? [...projects.map((project) => ({ label: `${project.title}${project.status === "sample" ? ` ${copy.sampleLabel}` : ""}`, description: project.summary, project })), back]
-      : [back],
+      ? [...projects.map((entry) => ({ label: `${entry.title} (${entry.period}) | ${entry.roles.join(", ")}`, description: entry.context, entry: { collection: "projects" as const, slug: entry.slug } })), back]
+      : section === "experiments" ? [...experiments.map((entry) => ({ label: `${entry.title} (${entry.year})`, description: entry.context || entry.summary, entry: { collection: "experiments" as const, slug: entry.slug } })), back]
+      : section === "texts" ? [...texts.map((entry) => ({ label: `${entry.title} (${entry.date.slice(0, 4)})`, description: entry.description, entry: { collection: "texts" as const, slug: entry.slug } })), back] : [back],
   };
 }
 
-export default function TerminalSession({ projects, initialSection }: { projects: Project[]; initialSection?: "artworks" }) {
-  const [turns, setTurns] = useState<Turn[]>(() => initialSection ? [initial, sectionTurn(initialSection, "/oi", projects)] : [initial]);
+export default function TerminalSession({ initialSection }: { initialSection?: "artworks" }) {
+  const [turns, setTurns] = useState<Turn[]>(() => initialSection ? [initial, sectionTurn(initialSection, "/oi")] : [initial]);
   const [characters, setCharacters] = useState(0);
   const [selected, setSelected] = useState(0);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
   const [announcement, setAnnouncement] = useState("");
   const menu = useRef<HTMLDivElement>(null);
   const end = useRef<HTMLDivElement>(null);
@@ -86,7 +90,7 @@ export default function TerminalSession({ projects, initialSection }: { projects
     const finish = () => { if (media.matches) setCharacters(total); };
     finish();
     media.addEventListener("change", finish);
-    const timer = window.setInterval(() => setCharacters((count) => Math.min(total, count + 2)), 22);
+    const timer = window.setInterval(() => setCharacters((count) => Math.min(total, count + Math.max(2, Math.ceil(total / 160)))), 22);
     return () => { window.clearInterval(timer); media.removeEventListener("change", finish); };
   }, [total, turns.length]);
 
@@ -126,28 +130,36 @@ export default function TerminalSession({ projects, initialSection }: { projects
     event.preventDefault();
   }
 
-  function choose(choice: Choice) {
+  async function choose(choice: Choice) {
     if (!ready || locked.current || choice.href) return;
     locked.current = true;
+    setError("");
     const from = current.path === "~" ? "/oi" : current.path;
     let next: Turn;
-    if (choice.project) {
-      const project = choice.project;
-      next = {
-        path: from, command: `cat ${project.id}.txt`,
-        lines: [
-          { text: project.title, heading: true },
-          { text: [project.year, project.kind].filter(Boolean).join("  "), tone: "muted" },
-          { text: project.summary },
-          ...(project.status === "sample" ? [{ text: copy.sampleEntry, tone: "muted" as const }] : []),
-        ],
-        choices: [
-          ...(project.url ? [{ label: copy.openWebsite, description: copy.openWebsiteDescription, href: project.url }] : []),
-          { label: copy.backToProjects, description: copy.backToProjectsDescription, section: "projects" }, back,
-        ],
-      };
+    if (choice.entry) {
+      const { collection, slug } = choice.entry;
+      setLoading(true);
+      try {
+        const response = await fetch(`/api/content/${collection}/${slug}`);
+        if (!response.ok) throw new Error("Unable to load this entry.");
+        const detail: Detail = await response.json();
+        next = {
+          promptPath: from, path: `/oi/${collection}/${slug}`, command: `cat ${slug}`,
+          lines: [{ text: detail.title, heading: true }, { text: detail.meta.filter(Boolean).join(" | "), tone: "muted" }, ...detail.paragraphs.map((text) => ({ text: `\n${text}` }))],
+          detail,
+          choices: [...detail.links.map((link) => ({ ...link })), ...(detail.related ?? []).map(({ collection, slug, label }) => ({ label, entry: { collection, slug } })),
+            ...(detail.original ? [{ label: "Read original notes", description: "Unedited source notes and collected references.", original: detail }] : []),
+            { label: `back to ../${collection}`, description: `Return to ${collection}.`, section: collection }, back],
+        };
+      } catch {
+        setError("Could not load this entry. Please select it again to retry.");
+        locked.current = false;
+        return;
+      } finally { setLoading(false); }
+    } else if (choice.original) {
+      next = { promptPath: from, path: from, command: "cat original", lines: [{ text: choice.original.title, heading: true }, { text: choice.original.original! }], choices: [{ label: "Read English version", entry: { collection: "texts", slug: choice.original.slug } }, { label: "back to ../texts", section: "texts" }, back] };
     } else {
-      next = sectionTurn(choice.section ?? "oi", from, projects);
+      next = sectionTurn(choice.section ?? "oi", from);
     }
     setTurns((previous) => [...previous, next]);
     setCharacters(0);
@@ -184,7 +196,7 @@ export default function TerminalSession({ projects, initialSection }: { projects
   const dormant = copy.menu.map(({ id }) => id).filter((section) => !turns.some((turn) => turn.path === `/oi/${section}`));
   const rendered = [
     ...turns.map((turn, index) => ({ turn, key: `turn-${index}`, dormant: false })),
-    ...dormant.map((section) => ({ turn: sectionTurn(section, "/oi", projects), key: `panel-${section}`, dormant: true })),
+    ...dormant.map((section) => ({ turn: sectionTurn(section, "/oi"), key: `panel-${section}`, dormant: true })),
   ];
 
   return (
@@ -213,6 +225,7 @@ export default function TerminalSession({ projects, initialSection }: { projects
               const Tag = line.heading ? (turnIndex === 0 ? "h1" : "h3") : "p";
               return <Tag key={index} lang={line.lang} hidden={!text.visible} className={line.tone ? styles[line.tone] : undefined} aria-hidden={active && !ready}>{text.content}</Tag>;
             })}
+            {turn.detail?.images?.length && (!active || ready) ? <InlineGallery images={turn.detail.images} /> : null}
             {(() => {
               const text = slice(`${hint}\n`);
               return <div hidden={!text.visible} className={styles.hint} aria-hidden={active && !ready}>{text.content}</div>;
@@ -232,8 +245,9 @@ export default function TerminalSession({ projects, initialSection }: { projects
                 const isSelected = !dormant && selected === index;
                 const content = <><span aria-hidden="true">{isSelected ? "> " : "  "}</span>{label}{isSelected && choice.description && <span className={styles.choiceDescription}>{` | ${choice.description}`}</span>}</>;
                 const external = choice.href?.startsWith("http");
+                const newWindow = Boolean(choice.windowSize) || (external && !turn.detail);
                 return choice.href
-                  ? <a key={index} {...props} href={choice.href} target={external ? "_blank" : undefined} rel={external ? "noopener noreferrer" : undefined} download={choice.download} onClick={(event) => openArtwork(event, choice)} aria-label={choice.windowSize ? `${label}${isSelected && choice.description ? ` | ${choice.description}` : ""} — opens in a new window or tab` : undefined}>{content}</a>
+                  ? <a key={index} {...props} href={choice.href} target={newWindow ? "_blank" : undefined} rel={newWindow ? "noopener noreferrer" : undefined} download={choice.download} onClick={(event) => openArtwork(event, choice)} aria-label={choice.windowSize ? `${label}${isSelected && choice.description ? ` | ${choice.description}` : ""} — opens in a new window or tab` : undefined}>{content}</a>
                   : <button key={index} {...props} type="button" onClick={() => choose(choice)}>{content}</button>;
               })}
             </div>
@@ -241,6 +255,8 @@ export default function TerminalSession({ projects, initialSection }: { projects
           </section>
         );
       })}
+      {loading && <p className={styles.muted} role="status">loading…</p>}
+      {error && <p role="alert">{error}</p>}
       <div ref={end} />
       <noscript>
         <style>{`.${styles.terminal} .${styles.turn}[hidden] { display: block !important; } .${styles.terminal} .${styles.turn} [hidden] { display: revert !important; }`}</style>

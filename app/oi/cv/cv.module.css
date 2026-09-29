@@ -1,0 +1,17 @@
+/* CV transcript: \hfill becomes a right-aligned column that wraps under on narrow screens. */
+.cv { max-width: 120ch; margin: 1.35em 0; }
+.page h1, .page h2, .page p { margin: 0; font: inherit; }
+.header { margin-bottom: 1.35em; }
+.name { color: #87d7ff; }
+.section { margin-top: 1.35em; }
+.cv .title { color: #87d7ff; margin-bottom: .7em; }
+.entry + .entry { margin-top: .7em; }
+.line { display: flex; flex-wrap: wrap; justify-content: space-between; column-gap: 3ch; }
+.right { margin-left: auto; color: #999; text-align: right; }
+.bold { color: #fff; font-weight: bold; }
+.italic { color: #999; }
+.link { color: #87d7ff; text-decoration: none; }
+.link:hover, .link:focus-visible { color: #000; background: #87d7ff; outline: none; }
+@media (max-width: 600px) { .right { margin-left: 0; text-align: left; flex-basis: 100%; } }
+/* Unrevealed text keeps its markup but takes no space until typed (overrides .line flex). */
+.page [hidden] { display: none !important; }

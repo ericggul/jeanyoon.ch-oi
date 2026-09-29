@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import type { Artwork } from "@/content/artworks/types";
+import { profile } from "@/content/about";
 import { displayArtworkTitle } from "@/content/artworks/title";
 import styles from "../../terminal.module.css";
 import gallery from "./gallery.module.css";
@@ -81,17 +82,17 @@ export default function ArtworkView({ artwork, otherArtworks, paper }: { artwork
   const image = images[activeImage];
   let footerRemaining = Math.max(0, count - footerStart);
 
-  return <main className={`${styles.terminal} ${gallery.artwork}`}>
+  return <main lang="en" className={`${styles.terminal} ${gallery.artwork}`}>
     <h1 className={styles.srOnly}>{displayArtworkTitle(artwork.title)} ({artwork.year})</h1>
     <div aria-hidden="true" className={styles.identity}>{prompt.slice(0, count)}</div>
     <div aria-hidden="true" className={gallery.heading}>{heading.slice(0, Math.max(0, count - promptEnd))}</div>
     <div aria-hidden="true" className={gallery.summary}>{summary.slice(0, Math.max(0, count - headingEnd))}</div>
-    {count >= summaryEnd && image && <div className={gallery.viewer}>
+    {image && <div hidden={count < summaryEnd} className={gallery.viewer}>
       <figure className={gallery.figure}>
         <div className={gallery.imageStage}>
-          <img key={image.src} src={image.src} alt={image.alt} width={image.width} height={image.height} decoding="async" />
+          {images.map((entry, index) => <img key={entry.src} hidden={index !== activeImage} src={entry.src} alt={`${entry.alt} Artwork by ${(artwork.creators ?? [profile.name]).join(", ")}.`} width={entry.width} height={entry.height} loading={index === 0 ? "eager" : "lazy"} decoding="async" />)}
         </div>
-        <TypedCaption key={image.src} text={image.caption} />
+        {count >= summaryEnd && <TypedCaption key={image.src} text={image.caption} />}
       </figure>
       <div className={gallery.browseLabel}>browse images</div>
       <nav className={gallery.imageIndex} aria-label="Artwork images">
@@ -104,15 +105,15 @@ export default function ArtworkView({ artwork, otherArtworks, paper }: { artwork
       </nav>
     </div>}
     {count > summaryEnd && <div aria-hidden="true" className={gallery.body}>{tail.slice(0, Math.min(tail.length, count - summaryEnd))}</div>}
-    {count > footerStart && <div className={gallery.footer}>
+    {<div hidden={count <= footerStart} className={gallery.footer}>
       {footerLines.map((line, index) => {
         const visible = line.text.slice(0, Math.max(0, footerRemaining));
         footerRemaining -= line.text.length;
-        if (!visible) return null;
+
         const className = `${gallery.footerLine} ${line.href ? gallery.footerLink : ""} ${line.space ? gallery.space : ""}`;
-        return line.href && visible.length === line.text.length
-          ? <a key={index} className={className} href={line.href} {...(line.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}>{visible}</a>
-          : <span key={index} className={className}>{visible}</span>;
+        return line.href && (!visible || visible.length === line.text.length)
+          ? <a key={index} hidden={!visible} className={className} href={line.href} {...(line.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}>{visible || line.text}</a>
+          : <span key={index} hidden={!visible} className={className}>{visible || line.text}</span>;
       })}
     </div>}
     {count < total && <span className={styles.cursor} aria-hidden="true">█</span>}

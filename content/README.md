@@ -1,19 +1,34 @@
 # Content layout
 
-Each menu destination owns its content in `content/<destination>/`. The `index.ts` file exports that destination's menu description and ordered entries; a separate file holds each substantial entry. The entries do **not** share one artwork/project/experiment schema.
+Each destination owns its schema and records. Shared terminal rendering does not impose a shared artwork ontology.
 
-| Destination | Edit here |
-| --- | --- |
-| About, artist identity, and shared CV download | `about/index.ts` |
-| Artworks and per-work preview text | `artworks/index.ts`, then the work's own `.ts` file |
-| Projects | `projects/index.ts`; `projects/example.csv` is a Sheet-format example |
-| Experiments | `experiments/index.ts` |
-| Research | `research/index.ts`, then each paper's own `.ts` file |
-| Texts | `texts/index.ts` |
-| Contact | `contact/index.ts` for ordered links, email addresses, and hover text; CV file at `public/cv/JeanyoonChoi_CV.pdf` |
+| Destination | Edit records | List order |
+| --- | --- | --- |
+| About | `about/index.ts` | Same file |
+| Artworks | `artworks/<slug>.ts` | `artworks/index.ts` |
+| Projects | `projects/entries/<slug>.json` | `projects/index.ts` |
+| Experiments | `experiments/entries/<slug>.json` | `experiments/index.ts` |
+| Research | `research/<paper>.ts` | `research/index.ts` |
+| Texts | `texts/entries/<slug>.json` | `texts/catalog.json` |
+| Contact | `contact/index.ts` | Same file |
 
-`site.ts` holds the opening script and menu order. `app/oi/terminal.tsx` renders the interaction; `lib/projects.ts` is the existing optional CSV adapter. Search/LLM-specific practice notes live in `lib/seo/practice.ts`, outside user-facing content.
+## Separate meanings
 
-Edit `menuDescription` inside a destination's own index for its main-menu preview. Edit an artwork or research entry's `menuDescription` inside that entry's file for its list preview. Project list previews use the existing `summary` field. Artwork text, gallery order, video links, and source notes live in each artwork file and `artworks/SOURCES.md`. Optimized WebP files live under `public/artworks/<slug>/`.
+- **Project:** a contribution or collaboration, with period, roles, context, location, paragraphs, links and optional related experiment IDs. The list shows title/year/roles; context appears on hover or keyboard selection.
+- **Experiment:** a study or individual output, with year, context, medium, summary, paragraphs, images and links. Context appears on selection. Images live in `public/experiments/<slug>/`.
+- **Text:** exact source notes in `original`, new English edition in `english`, title, date and source URL. Paragraphs are separated by blank lines. No images or old Korean/English translation fields.
+- **Artwork:** retains its own existing exhibition, medium, image, publication and bilingual search structure.
 
-The `/oi` About interaction displays only the English paragraphs from `about/index.ts`. Korean profile copy remains available to the Korean search/discovery route.
+A project and experiment may concern the same collaboration while describing different things. Link them through `relatedExperiments`; do not copy the artwork schema into either collection.
+
+## Adding an entry
+
+Projects and experiments: add one JSON file matching that collection's `types.ts`, then import it in the ordered `index.ts` array.
+
+Texts: add one JSON file matching `texts/types.ts`, add its small list record to `catalog.json`, and its dynamic import to `loaders.ts`. The catalog's `description` is the hover text. Full text bodies load only after selection, through the validated `/api/content/[collection]/[slug]` route. This avoids shipping every essay in the first-page bundle.
+
+`lib/content/details.ts` adapts each collection to terminal presentation. It is not the source ontology. Projects, experiments and texts remain inside the terminal; artwork selections keep their separate-window behaviour. Experiment galleries use the same numbered-image interaction.
+
+`site.ts` holds opening copy and menu order. Each collection's `menuDescription` supplies its home-menu preview. `app/oi/terminal.tsx` handles interaction. Search-only text remains in `lib/seo/`. The shared CV is managed in `content/cv/`; its public PDF is `public/cv/JeanyoonChoi_CV.pdf`.
+
+Run `node scripts/check-content.cjs`, `node scripts/check-seo.cjs`, and `pnpm typecheck` after editing. See `MIGRATION.md` for source decisions.

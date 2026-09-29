@@ -3,6 +3,8 @@ import "./globals.css";
 import GoogleAnalytics from "@/components/seo/google-analytics";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/site";
 
+import { siteDescriptions } from "@/lib/seo/metadata";
+
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
@@ -14,14 +16,15 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: { absolute: SITE_NAME },
-  description: "Artworks, projects, and research by Jeanyoon Choi.",
+  description: siteDescriptions.en,
   applicationName: SITE_NAME,
+  icons: { icon: [{ url: "/favicon.png", type: "image/png", sizes: "96x96" }] },
   twitter: { card: "summary_large_image", title: SITE_NAME },
   openGraph: {
     type: "website",
     siteName: SITE_NAME,
     title: SITE_NAME,
-    description: "Artworks, projects, and research by Jeanyoon Choi.",
+    description: siteDescriptions.en,
   },
 };
 

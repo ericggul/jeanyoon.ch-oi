@@ -19,3 +19,6 @@
 .footerLink:hover, .footerLink:focus-visible { color: #000; background: #87d7ff; outline: none; }
 .space { margin-top: 1.35em; }
 @media (max-width: 600px) { .imageStage { height: min(55vh, 480px); } }
+
+/* Real gallery slides and links are server-rendered; disclosure keeps the existing typing sequence. */
+.artwork [hidden] { display: none !important; }

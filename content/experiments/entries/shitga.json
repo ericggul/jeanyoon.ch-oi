@@ -1,0 +1,38 @@
+{
+  "slug": "shitga",
+  "title": "Shitga",
+  "year": "2022",
+  "context": "HTML on Canvas",
+  "medium": "HTML on Canvas",
+  "summary": "25 artworks which its price increasing in an order of Fibonacci",
+  "paragraphs": [
+    "These 25 generative artworks, made of Fibonacci sequences, are sold in Fibonacci sequences, where the ith artwork is sold at a price of sum of (i-1)th and (i-2)th’s prices. In an age of increased volatility and unpredictability in a Financial Market, such an insuring increasing sequence of prices reveals a myth beneath the recent boom in NFT and Cryptocurrencies."
+  ],
+  "images": [
+    {
+      "src": "/experiments/shitga/1.webp",
+      "alt": "Shitga (2022), documentation image 1.",
+      "width": 6100,
+      "height": 6100
+    },
+    {
+      "src": "/experiments/shitga/2.webp",
+      "alt": "Shitga (2022), documentation image 2.",
+      "width": 1000,
+      "height": 1334
+    },
+    {
+      "src": "/experiments/shitga/3.webp",
+      "alt": "Shitga (2022), documentation image 3.",
+      "width": 2000,
+      "height": 1399
+    }
+  ],
+  "links": [
+    {
+      "label": "Visit experiment ↗",
+      "href": "https://laboratory-occupied.com/shitga"
+    }
+  ],
+  "source": "https://portfolio-jyc.org/works/clrhplw7y0002t7flb2b4hnlk"
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "reverse-voight-kampff-test",
+  "title": "Reverse Voight-Kampff Test",
+  "year": "2023",
+  "context": "HTML",
+  "medium": "HTML",
+  "summary": "\"Reverse Voight-Kampff Testing\" is an interactive artwork challenging the boundaries between humans and machines. Inspired by the fictional Voight-Kampff test from \"Blade Runner,\" this project invites participants to engage with real-time, seemingly random numbers on a screen, representing the birthdates of major AI-contributing companies. By inputting personal information like names and birthdays, participants become emotionally attached to their data's appearance. The artwork explores the human tendency to find meaning and connection in data, contrasting with the algorithm's indifferent awareness. Inverting the original concept, this artwork highlights how humans, not machines, bring emotional significance to data, emphasising the profound gap between human and machine understanding in the context of personal information and emotional response.",
+  "paragraphs": [
+    "The Voight-Kampff test, originating from Philip K. Dick's \"Do Androids Dream of Electric Sheep?\" and its film adaptation \"Blade Runner\" by Ridley Scott, is a fictional method used to distinguish humans from androids. This test presupposes that androids, though human-like in appearance, lack emotional depth and empathy, particularly in personal contexts. It probes the fundamental differences between humans and AI, setting boundaries on what AI or machines could potentially achieve.",
+    "\"Reverse Voight-Kampff Testing\" is an interactive artwork that challenges the boundary between humans and machines or algorithms. It contrasts the awareness ('cogito') of humans and machines, as well as their capacity for emotional connection, particularly towards personal data like birthdays.",
+    "The artwork displays a multitude of real-time numbers on a screen, initially perceived as random and meaningless by viewers. Participants engage with the artwork through a mobile device, entering personal details such as their name and birthday. This interaction adds their data to the screen's array of numbers. Interestingly, these numbers also represent the birthdates of major companies (e.g., Google, Apple) significant in AI development, denoted by their stock market abbreviations like 'AAPL.'",
+    "Prior to interaction, viewers feel no connection to the numbers. However, upon realizing their personal data is now part of the display, they develop a sense of attachment, particularly to their own birthday’s appearance. This human reaction contrasts sharply with the algorithm's unchanged perception of the data, highlighting a fundamental difference in understanding and emotional response.",
+    "While humans find new meaning and develop emotional connections post-interaction, the algorithm remains indifferent, always aware of the data's nature. This discrepancy reflects a unique human trait – the ability to find personal significance in data, akin to a simplified form of Nietzsche's will-to-power concept. Conversely, machines and corporations, aware of how the numbers appear, do not experience such emotional responses.",
+    "ChatGPT’s Reflection on the Term 'Reverse Voight-Kampff Testing’",
+    "The term 'Reverse Voight-Kampff Testing' aptly describes this artwork because it inverts the original concept from Philip K. Dick's narrative. In the original Voight-Kampff test, the goal is to elicit emotional responses from androids to prove their non-human nature. In this artistic inversion, it's the human emotional response to algorithmically generated data that's under scrutiny. The artwork highlights how humans imbue meaning and emotional significance to data once it becomes personally relevant, a capacity that machines inherently lack. This reversal of roles – with humans as subjects reacting emotionally to machine-generated content – underscores the persistent and profound gap between human and machine understanding, particularly in the realm of personal and emotional significance."
+  ],
+  "images": [
+    {
+      "src": "/experiments/reverse-voight-kampff-test/1.webp",
+      "alt": "Reverse Voight-Kampff Test (2023), documentation image 1.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "src": "/experiments/reverse-voight-kampff-test/2.webp",
+      "alt": "Reverse Voight-Kampff Test (2023), documentation image 2.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "src": "/experiments/reverse-voight-kampff-test/3.webp",
+      "alt": "Reverse Voight-Kampff Test (2023), documentation image 3.",
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "links": [
+    {
+      "label": "Visit experiment ↗",
+      "href": "https://internetinental.herokuapp.com/term4/rvkt"
+    },
+    {
+      "label": "Watch video ↗",
+      "href": "https://www.youtube.com/embed/YWydgNFl7DY"
+    }
+  ],
+  "source": "https://portfolio-jyc.org/works/clrgzuws60001u59zbicydnus"
+}

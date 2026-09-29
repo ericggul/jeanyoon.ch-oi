@@ -4,6 +4,13 @@ import type { Artwork, Locale } from "@/content/artworks/types";
 import { absoluteUrl, SITE_NAME } from "./site";
 import { artworkLocales, artworkPath, artworkText } from "./artworks";
 
+import { artworkDiscovery } from "./artwork-content";
+
+export const siteDescriptions = {
+  en: "Explore Jeanyoon Choi’s interactive web artworks: connect your phone to screens, encounter AI and social systems, and discover installations, images and research.",
+  ko: "최정윤(Jeanyoon Choi)의 인터랙티브 웹 아트. 휴대전화와 스크린을 연결해 AI와 사회 시스템을 탐구하는 설치 작품, 전시 이미지와 연구를 만나보세요.",
+};
+
 export const profileLanguages = {
   en: absoluteUrl("/oi/en"), ko: absoluteUrl("/oi/ko"), "x-default": absoluteUrl("/oi"),
 };
@@ -22,14 +29,14 @@ export function pageMetadata({ description, path, locale = "en", languages, imag
   };
 }
 export function profileMetadata(locale: Locale) {
-  return pageMetadata({ ...profile[locale], path: `/oi/${locale}`, locale, languages: profileLanguages });
+  return pageMetadata({ ...profile[locale], description: siteDescriptions[locale], path: `/oi/${locale}`, locale, languages: profileLanguages });
 }
 export function artworkMetadata(artwork: Artwork, locale: Locale) {
   const text = artworkText(artwork, locale)!;
   return pageMetadata({
-    description: text.summary,
+    description: locale === "en" ? artworkDiscovery[artwork.slug]?.description ?? text.summary : text.summary,
     path: artworkPath(artwork, locale), locale,
-    languages: Object.fromEntries(artworkLocales(artwork).map((language) => [language, absoluteUrl(artworkPath(artwork, language))])),
+    languages: { ...Object.fromEntries(artworkLocales(artwork).map((language) => [language, absoluteUrl(artworkPath(artwork, language))])), "x-default": absoluteUrl(artworkPath(artwork, "en")) },
     image: artwork.image ? { url: absoluteUrl(artwork.image), alt: text.imageAlt || artwork.images?.find((image) => image.src === artwork.image)?.alt || text.title } : undefined,
   });
 }

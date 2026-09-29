@@ -1,4 +1,4 @@
-import { cvDownload } from "../about";
+import { cvPage } from "../about";
 
 export const menuDescription = "Social links, email, and CV.";
 export const introduction = "You can get in touch with me through following channels:";
@@ -30,5 +30,5 @@ export const contactLinks = [
     description: "Personal email.",
     href: "mailto:ericggul@gmail.com",
   },
-  cvDownload,
+  cvPage,
 ] as const;

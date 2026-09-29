@@ -8,7 +8,7 @@
 - Metadata, Open Graph, Twitter cards and a generated 1200×630 PNG sharing image at `/share-image`.
 - `Person`, `WebSite`, `ProfilePage`, and completed works' `VisualArtwork` and `BreadcrumbList` JSON-LD. These express the content; they do not promise a Google rich result.
 - `/sitemap.xml` includes the public profiles and only artwork translations with a title, summary and nonempty body. Revision dates are actual record dates, never the current build time.
-- `/robots.txt` permits crawling. Unfinished artwork previews remain `noindex` and are absent from the sitemap and LLM artwork lists.
+- `/robots.txt` permits crawling. All four completed interactive artwork routes are indexable. Incomplete translations remain absent from the sitemap and LLM lists.
 - `/llms.txt` follows the community proposal; `/llm.txt` is the requested compatibility spelling; `/llms-full.txt` exposes the same public profile and completed artwork text, with source URLs. All are generated from content modules. No separately maintained AI copy, unpublished manuscripts, or sample Sheet projects are promoted as completed works.
 - GA4 measurement ID `G-EEL6QFJKB8`, stream ID `15848583095` (stream name: Jeanyoon Choi). Tag loads only on the public hostnames `jeanyoon.ch` and `www.jeanyoon.ch`, excluding localhost, `.local` and Vercel preview hosts.
 
@@ -64,7 +64,7 @@ export const work: Artwork = {
 };
 ```
 
-This documentation example is not registered or indexed. With real text registered, `/oi/artworks/<slug>/en` and `/ko` render the descriptions, each with a canonical, sharing metadata and structured data. The old `/oi/artworks/<slug>` entry redirects to the first available translation. Missing translations return 404 and never receive `hreflang` links. The profiles, sitemap and LLM documents update from the same record. Rebuild/redeploy after content edits.
+This documentation example is not registered or indexed. With real text registered, `/oi/artworks/<slug>/en` and `/ko` render the descriptions, with sharing metadata and structured data. The interactive `/oi/artworks/<slug>` is the canonical English document. The existing `/en` reference document points its canonical to that interactive page; `/ko` is self-canonical. Missing translations return 404 and never receive `hreflang` links. The profiles, sitemap and LLM documents update from the same record. Rebuild/redeploy after content edits.
 
 Use the artwork's real title, artist, year, medium, audience interaction, conceptual question, location/exhibition context where verified, documentation images and relevant source links. Explain relevant concepts in sentences rather than adding lists of unrelated search terms. Do not publish the current placeholder titles/years as substantive work descriptions without checking them. Future independent projects/texts should receive the same full-page treatment when real content is available; Sheet samples remain interface samples.
 
@@ -129,4 +129,21 @@ Google recognizes tabs, accordions and other user-accessible disclosure UI as le
 | 웹 아트 · 컨템포러리 웹 아트 · 넷 아트 | web art · contemporary web art · net art | Contemporary web art and net art section |
 | 미디어 아트 연구 · 웹 아트 연구자 | media art research · web art researcher | Research section and credited publication list |
 
-These SEO topic notes are kept in `lib/seo/practice.ts` and appear in the full LLM document; the actual About menu and language profiles use `content/about/index.ts`. No additional visible link index, no keyword-specific doorway pages, no meta-keywords ranking claim. The research wording points to the existing co-authored SoTA and Passage of Water records without assigning that work solely to this artist. Complete individual artwork descriptions are still required for artwork-specific queries; external citations/links and post-deployment Search Console observations remain necessary to evaluate outcomes. Neither topic metadata nor JSON-LD can force first place.
+These SEO topic notes are kept in `lib/seo/practice.ts` and appear in the full LLM document; the actual About menu and language profiles use `content/about/index.ts`. No additional visible link index, no keyword-specific doorway pages, no meta-keywords ranking claim. The research wording points to the existing co-authored SoTA and Passage of Water records without assigning that work solely to this artist. The four artwork records now supply individual English descriptions and Korean reference text; external citations/links and post-deployment Search Console observations remain necessary to evaluate outcomes. Neither topic metadata nor JSON-LD can force first place.
+
+
+## Artwork and image discovery — 2026-09-29
+
+- The four interactive artwork URLs are indexable, have individual search descriptions and JSON-LD, and use reciprocal English/Korean alternates. Titles remain exactly `jeanyoon.ch/oi`.
+- `lib/seo/artwork-content/index.ts` contains search-only descriptions, grounded topic terms, aliases, and Korean public reference text. Terminal prose is unchanged. Existing English artwork modules remain the source of their visible text.
+- All 56 existing WebP images retain their requested numbered filenames, bytes, order, captions, and display dimensions. They appear as actual server-rendered gallery images, with inactive slides hidden until selected. All are listed in the sitemap and as `ImageObject` records linking the depicted artwork and artist. Authorship is not a claim that the artist photographed or owns every photograph.
+- Artist identity (Jeanyoon Choi / 최정윤), social profiles, artwork entities, co-creators, representative images, and image descriptions are connected. No unrelated keyword list or fabricated image license is added.
+- The favicon is the pure-black v3 mark (explicit user requirement): `app/favicon.ico` and `app/apple-icon.png` are byte-identical copies of `../portfolio-v3/app/favicon.ico` and `../portfolio-v3/app/icon/apple-touch-icon.png`; `/favicon.png` is the v3 192px icon downscaled to 96px. Do not redesign or regenerate it without an explicit user instruction.
+- Live read-only checks on 2026-09-29 found apex and www both arriving at `/oi`, already returning the correct title and canonical. The reported Google result differs from live HTML. These new local changes still require deployment and subsequent recrawl; they do not update Google's stored result directly.
+- After deployment inspect `/oi`, each canonical artwork URL, `/ko` alternates, `/favicon.png`, `/robots.txt`, and `/sitemap.xml`. Request recrawl of the homepage and artwork pages in Search Console and submit the updated sitemap. Monitor image-search impressions for both artist-name spellings as well as artwork names; monitor web-search query/page data separately.
+- Google controls chosen site names, snippets, favicons and ranking. GPT/Gemini/Claude indexing and citation are not guaranteed by metadata or LLM text endpoints. Do not claim first place or successful indexing from local checks.
+
+Additional official references:
+- https://developers.google.com/search/docs/appearance/site-names
+- https://developers.google.com/search/docs/appearance/favicon-in-search
+- https://developers.google.com/search/docs/appearance/google-images

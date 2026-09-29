@@ -1,0 +1,56 @@
+{
+  "slug": "laboratory-occupied",
+  "title": "Laboratory Occupied",
+  "year": "2021",
+  "context": "HTML",
+  "medium": "HTML",
+  "summary": "A set of early web-based Creative Coding Drawings.",
+  "paragraphs": [
+    "Early attempts to create Generative Visuals using HTML Canvas, aiming to expand the boundary of expressions."
+  ],
+  "images": [
+    {
+      "src": "/experiments/laboratory-occupied/1.webp",
+      "alt": "Laboratory Occupied (2021), documentation image 1.",
+      "width": 2880,
+      "height": 1800
+    },
+    {
+      "src": "/experiments/laboratory-occupied/2.webp",
+      "alt": "Laboratory Occupied (2021), documentation image 2.",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "src": "/experiments/laboratory-occupied/3.webp",
+      "alt": "Laboratory Occupied (2021), documentation image 3.",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "src": "/experiments/laboratory-occupied/4.webp",
+      "alt": "Laboratory Occupied (2021), documentation image 4.",
+      "width": 1212,
+      "height": 1216
+    },
+    {
+      "src": "/experiments/laboratory-occupied/5.webp",
+      "alt": "Laboratory Occupied (2021), documentation image 5.",
+      "width": 1208,
+      "height": 1220
+    },
+    {
+      "src": "/experiments/laboratory-occupied/6.webp",
+      "alt": "Laboratory Occupied (2021), documentation image 6.",
+      "width": 2880,
+      "height": 1800
+    }
+  ],
+  "links": [
+    {
+      "label": "Visit experiment ↗",
+      "href": "https://laboratory-occupied.com/lobby"
+    }
+  ],
+  "source": "https://portfolio-jyc.org/works/clrm9boxb0001wxp9t1vlwskh"
+}

@@ -1,0 +1,52 @@
+{
+  "slug": "scrolling-times",
+  "title": "Scrolling Times",
+  "year": "2023",
+  "context": "HTML",
+  "medium": "HTML",
+  "summary": "In Marshall McLuhan's words, ads are the standout feature in print media, embodying wit and art that often surpass prose. This sentiment extends to our digital age, where news and ads intertwine seamlessly on mobile screens. ‘Scrolling Times’ delves into this fusion by allowing audiences to navigate two screens with contrasting content through a single scroll. This juxtaposition mirrors our daily media consumption, where, for example, news about real estate escalation swiftly transitions to an ad for luxury flats. The piece, inspired by Instagram's grid, symbolises the complex interplay between news and ads, shedding light on the paradoxical forces underlying modern media consumption.",
+  "paragraphs": [
+    "“The ads are by far the best part of any magazine or newspaper. More pains and thought, more wit and art go into the making of an ad than into any prose feature of press or magazine. Ads are news. What is wrong with them is that they are always good news. In order to balance off the effect and to sell good news, it is necessary to have a lot of bad news.” - Marshall McLuhan, Understanding Media: The Extensions of Man, 1964",
+    "The same phenomenon is evident in our contemporary media culture - a complex tapestry where the bad and the good, news and advertisement, are interwoven within couple of pixels The boundaries between them are blurred. This is no longer the era of newspapers; now, our focus is on mobile phone screens, particularly the feeds on platforms like Instagram and YouTube. Wherever we venture in our digital journey, whichever news or content we engage with, advertisements invariably follow. It’s intriguing how, in response to grim news, a contrasting, upbeat advertisement often emerges. It's almost as if these positive ads are, in some way, a response to or even a catalyst for the negative news, and vice versa.",
+    "In today's world, where everything is moving in its own distinct trajectory, the presence of these two opposing forces, moving in different directions, is commonplace. In this highly-segmented media landscape, for instance, we might encounter news about soaring real estate prices, immediately followed by an advertisement for the latest luxury flat development. Or news about climate change is quickly succeeded by ads promoting international air travel. As an artist, I find this juxtaposition not contradictory but rather reflective of the world we live in - a world where ecological artists take taxi to the gallery opening.",
+    "This artwork, ‘Scrolling Times’, aims to reconstruct this phenomenon - the ease with which we encounter two opposing elements, news and advertisement, within the span of a single scroll. Scrolling has become a significant act in our interaction with mobile devices and is integral to Human-Computer Interaction. It’s through the seemingly unconscious act of scrolling that we are inundated with these snippets of information.",
+    "‘Scrolling Times’ is comprised of two screens. Audiences are encouraged to engage with the artwork by scrolling on their mobile device, which alternates the content displayed on each screen. The imagery is a collage of abstract elements, inspired by the grid layout of Instagram feeds. With each scroll on their device, the audience toggles between topics - one moment focusing on news-related content, the next on advertisement-specific content. For example, news about real estate may transition into an advertisement for luxury apartments, or a diamond ad may be followed by news on unemployment. Likewise, a report on climate change might lead into airline advertisements. As the audience scrolls, the two channels respond accordingly, one channel dedicated to news, the other to advertisements. This creates a layered, paradoxical narrative that links seemingly unrelated elements, like ‘Soaring Real Estate Prices’ and ‘Luxury Apartments’. This dynamic and somewhat chaotic interaction offers a commentary on the contemporary media landscape, reflecting not only the narrative and the form of interaction - scrolling - of our media consumption, characterized by scrolling, but also highlighting the underlying paradoxical and contradictory forces at play between news and advertisements."
+  ],
+  "images": [
+    {
+      "src": "/experiments/scrolling-times/1.webp",
+      "alt": "Scrolling Times (2023), documentation image 1.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "src": "/experiments/scrolling-times/2.webp",
+      "alt": "Scrolling Times (2023), documentation image 2.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "src": "/experiments/scrolling-times/3.webp",
+      "alt": "Scrolling Times (2023), documentation image 3.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "src": "/experiments/scrolling-times/4.webp",
+      "alt": "Scrolling Times (2023), documentation image 4.",
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "links": [
+    {
+      "label": "Visit experiment ↗",
+      "href": "https://internetinental.herokuapp.com/term4/scrolling-times/screen?screenIdx=0"
+    },
+    {
+      "label": "Watch video ↗",
+      "href": "https://www.youtube.com/embed/PU9bpP51LzM"
+    }
+  ],
+  "source": "https://portfolio-jyc.org/works/clrgzqgmz0000u59zt6yc06h4"
+}

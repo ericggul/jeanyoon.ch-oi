@@ -1,0 +1,27 @@
+{
+  "slug": "oscillating-cultures",
+  "title": "Oscillating Cultures",
+  "period": "2023",
+  "roles": [
+    "Team Lead",
+    "AR Developer"
+  ],
+  "context": "Snap AR × Royal College of Art",
+  "location": "London, United Kingdom",
+  "paragraphs": [
+    "A collaboration with Snap AR and the Royal College of Art, developed from February to September 2023.",
+    "Jeanyoon Choi led the team and developed the AR interaction. The multi-device work examines cultural classification, stereotypes and the feedback between interface choices and generated images."
+  ],
+  "links": [
+    {
+      "label": "Watch video ↗",
+      "href": "https://www.youtube.com/watch?v=MbI2SSxFQWU"
+    }
+  ],
+  "relatedExperiments": [
+    "oscillating-cultures"
+  ],
+  "sources": [
+    "/cv/JeanyoonChoi_CV.pdf"
+  ]
+}

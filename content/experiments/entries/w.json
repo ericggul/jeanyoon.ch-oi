@@ -1,0 +1,73 @@
+{
+  "slug": "w",
+  "title": "W",
+  "year": "2022",
+  "context": "HTML",
+  "medium": "HTML",
+  "summary": "Interaction-based Moving Image",
+  "paragraphs": [
+    "Pressing 'W' on the keyboard is how viewers 'play' this artwork. Constructed of four different scenes, this interactive web artwork investigates how the 'acceleration of cycle' can be expressed within different contexts.",
+    "Each of the four scenes has a different theme and setting. Whilst the fundamental structure of how the scene is designed and animated is identical. As the user presses the keyboard ‘W’ continuously, the visual state goes through a certain morphing phase. When the morphing phase reaches its extreme, it goes back to the initial state, creating a certain cycle within the different visual statuses. Within each cycle, the speed of interaction accelerates; That is, the temporal cycle of returning back to the initial state shortens, until it reaches a certain critical point. Once its speed exceeds the critical point, each scene goes through the certain step of ‘explosion’, followed by the transition to the succeeding scene.",
+    "This acceleration of cycle metaphors the simulativeness and unrealness of modern society. It criticises our misconceptions in terms of time, AI, and the weight-bearing spirit(In terms of Nietzsche’s idea on the camel), respectively.",
+    "Four scenes are structured as follows:",
+    "1. Abstract Scene: An abstractive colour-based composition guiding users through the accelerative rhythm of this artwork.",
+    "2. Time Scene: A scene symbolically objecting to the linearity of time, and human fantasy on temporal eternalness.",
+    "3. Chatbot Scene: The conversation generated on the left part is AI-generated, while the right part is repeatedly asking 'why'. Presenting the repetitiveness and un-creativeness of AI.",
+    "4. Tunnel Scene: Countering the common concept that 'there will be the light at the end of the tunnel', as often referred to in self-help texts. Applying a post-structuralistic narrative that the reality will not be at the end of the tunnel, but rather, above or outside of the tunnel, where matrix-like reality is presented."
+  ],
+  "images": [
+    {
+      "src": "/experiments/w/1.webp",
+      "alt": "W (2022), documentation image 1.",
+      "width": 2577,
+      "height": 2031
+    },
+    {
+      "src": "/experiments/w/2.webp",
+      "alt": "W (2022), documentation image 2.",
+      "width": 2577,
+      "height": 2061
+    },
+    {
+      "src": "/experiments/w/3.webp",
+      "alt": "W (2022), documentation image 3.",
+      "width": 2577,
+      "height": 2031
+    },
+    {
+      "src": "/experiments/w/4.webp",
+      "alt": "W (2022), documentation image 4.",
+      "width": 2577,
+      "height": 2031
+    },
+    {
+      "src": "/experiments/w/5.webp",
+      "alt": "W (2022), documentation image 5.",
+      "width": 2577,
+      "height": 2031
+    },
+    {
+      "src": "/experiments/w/6.webp",
+      "alt": "W (2022), documentation image 6.",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "src": "/experiments/w/7.webp",
+      "alt": "W (2022), documentation image 7.",
+      "width": 990,
+      "height": 660
+    }
+  ],
+  "links": [
+    {
+      "label": "Visit experiment ↗",
+      "href": "https://internetinental.herokuapp.com/w"
+    },
+    {
+      "label": "Watch video ↗",
+      "href": "https://www.youtube.com/embed/RcD8YENpm-k"
+    }
+  ],
+  "source": "https://portfolio-jyc.org/works/clrgzuws70003u59z7eia0vcp"
+}

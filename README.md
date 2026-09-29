@@ -1,6 +1,6 @@
 # Portfolio v4
 
-A separate Next.js App Router prototype for Jeanyoon Choi's future portfolio. The root page redirects to the literal terminal-format portfolio at `/oi`. The structure and wording are placeholders.
+A separate Next.js App Router prototype for Jeanyoon Choi's future portfolio. The root page redirects to the literal terminal-format portfolio at `/oi`. Content is stored in independent local collections.
 
 ## Run locally
 
@@ -15,14 +15,11 @@ When port 3000 is occupied, open `http://localhost:3001/` on this Mac or `http:/
 
 Run only one dev server for this checkout. If Next.js reports an existing server for this directory, use its URL or stop that portfolio-v4 process before restarting. This project does not modify `../portfolio-v3`.
 
-## Connect a Google Sheet
+## Edit content
 
-1. Make a sheet with the headers in `content/projects/example.csv`: `id,title,year,kind,summary,url,status,order`.
-2. Publish only the intended project tab as CSV, or use its public CSV export URL. Anyone with the URL may be able to read the published data.
-3. Copy `.env.example` to `.env.local` and set `GOOGLE_SHEET_CSV_URL` to that full HTTPS CSV URL.
-4. Restart the dev server. The portfolio will read the sheet rows. Changes are revalidated about every five minutes in production.
+Content is maintained locally, with separate types for projects, experiments, artworks and texts. See [content/README.md](content/README.md) for entry locations and [content/MIGRATION.md](content/MIGRATION.md) for source and translation decisions. There is no Sheet dependency or sample-data fallback.
 
-`id` and `title` are required. Set `status` to `hidden` to omit a row. Empty optional fields are allowed. Sheet content is rendered as text; the URL column only accepts HTTP(S) links. When the sheet cannot be loaded, the site displays marked sample entries and logs the error.
+Run `node scripts/check-content.cjs`, `node scripts/check-seo.cjs`, and `pnpm typecheck` for in-process validation.
 
 ## Search and migration status
 

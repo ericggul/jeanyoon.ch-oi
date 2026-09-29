@@ -1,0 +1,324 @@
+% Document class and font size
+\documentclass[a4paper,9pt]{extarticle}
+
+% Packages
+\usepackage[utf8]{inputenc} % For input encoding
+\usepackage{geometry} % For page margins
+\geometry{letterpaper, margin=0.75in} % Set paper size and margins
+\usepackage{titlesec} % For section title formatting
+\usepackage{enumitem} % For itemized list formatting
+\usepackage{hyperref} % For hyperlinks
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+
+% Formatting
+\setlist{noitemsep} % Removes item separation
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule] % Section title format
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip} % Section title spacing
+%%%%%%%%%%
+
+\hbadness=99999  % or any number >=10000
+\vbadness=99999  % or any number >=10000
+\hfuzz=20pt
+
+% Begin document
+\begin{document}
+
+% Disable page numbers
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead{}
+\fancyhead[L]{\textit{Jeanyoon Choi}}
+\fancyhead[R]{\textit{Jun 2026}}
+\thispagestyle{empty} % Remove header from the first page
+
+% Header
+\begin{flushleft}
+\textbf{\LARGE Jeanyoon Choi}\\[2pt] % Name
+PhD Candidate, XD Lab (Advised by Dr. Yiyun Kang), KAIST (Korea Advanced Institute of Science \& Technology)
+\\ \href{mailto:jeanyoon.choi@kaist.ac.kr}{jeanyoon.choi@kaist.ac.kr} | \href{tel:01035195953}{+82 10 3519 5953} | \href{https://www.linkedin.com/in/jeanyoonchoi/}{www.linkedin.com/in/jeanyoonchoi} | \href{https://jeanyoon.ch/oi}{Portfolio} % Contact info
+\end{flushleft}
+
+% Education Section
+\section*{RESEARCH TOPICS}
+\noindent
+Multi-Device Web Artwork, Computational Interactive Art, Complex Systems, Systems Art
+% Education Section
+\section*{EDUCATION}
+\noindent
+\textbf{KAIST (Korea Advanced Institute of Science \& Technology)}, Daejeon, South Korea \hfill Feb 2024 | Feb 2028 \\
+PhD Candidate in Industrial Design, College of Engineering\\
+Researcher of the Experience Design Lab (\href{https://www.xdlab.net/}{XD Lab}) - Directed by Dr. Yiyun Kang
+
+\noindent\\
+\textbf{RCA (Royal College of Art)},  London, United Kingdom \hfill Sep 2022 | Aug 2023\\ % University name and location
+MA in Information Experience Design, School of Communication
+
+\noindent\\
+\textbf{Seoul National University},  Seoul, South Korea \hfill Mar 2018 | Feb 2022\\ % University name and location
+BSc in Industrial Engineering, College of Engineering \\
+
+
+
+% Teaching Section
+\section*{TEACHING}
+\label{TEACHING}
+\noindent
+\textbf{Lecturer | Convergence Design III \& IV, Interaction Design Convergence II} \hfill Seoul, South Korea\\ % Project name and location
+{Interaction Design Track, Department of Design, Korea National University of Arts (K-Arts)} \hfill Sep 2024 | Feb 2026 \\
+\textit{Web-based experimental interaction design using Next.js, WebSocket, and Three.js} \hfill \\
+
+
+\noindent
+\textbf{Teaching Assistant | ID 412 Interactive Space} \hfill Daejeon, South Korea\\ % Project name and location
+{Department of Industrial Design, KAIST} \hfill Sep 2024 | Feb 2026 \\
+\textit{Teaching Assistant for a course on web-based experimental interactive media art using Next.js, WebSocket, and TouchDesigner} \hfill \\
+
+\noindent
+\textbf{Teaching Assistant | ID 430 Immersive Space} \hfill Daejeon, South Korea\\ % Project name and location
+{Department of Industrial Design, KAIST} \hfill Mar 2024 | Aug 2024 \\
+\textit{Teaching Assistant for Three.js-based multi-device interaction design and its immersive applications} \hfill \\
+
+\noindent
+\textbf{Software Engineering Lecturer | Frontend Dev. Bootcamp} \hfill Seoul, South Korea\\ % Project name and location
+{Elice Coding Inc.} \hfill Mar 2022 | Aug 2022 \\
+\textit{Taught HTML, CSS, JavaScript, React.js, and other front-end frameworks for professional development} \hfill \\
+
+% \noindent
+% \textbf{Peer Tutor | Calculus} \hfill Seoul, South Korea\\ % Project name and location
+% {College of Engineering, Seoul National University} \hfill Sep 2019 | Dec 2019 \\
+% \textit{Selected Peer Tutor on College Freshman-level Calculus} \hfill \\
+
+
+% Publications Section
+\section*{PUBLICATIONS}
+\label{PUBLICATIONS}
+
+
+\noindent
+\textbf{Jeanyoon Choi}, Intae Hwang, SeJoon Park, Hyungjun Cho, Heejae Bae, and Yiyun Kang \hfill 2026\\ % Project name and location
+{SoTA: An Interactive Art Exhibition for Public AI Engagement} \\
+\textbf{Proceedings of the 2026 ACM Designing Interactive Systems Conference (DIS '26)} \\ Honorable Mention. \href{https://doi.org/10.1145/3800645.3812889}{DOI} \hfill \\
+
+
+\noindent
+Yiyun Kang, \textbf{Jeanyoon Choi} \hfill 2025\\ % Project name and location
+{Passage of Water: Artistic Exploration of Earth's Freshwater with Google and NASA} \\
+\textbf{Leonardo}, MIT Press \hfill \\
+
+\noindent
+Steve Butler, \textbf{Jeanyoon Choi}, Kimyung Kim, and Kyuhyeok Seo \hfill 2019\\ % Project name and location
+{Enumerating multiplex juggling patterns} \\
+\textbf{Journal of Integer Sequences}, Vol.22, University of Waterloo \hfill \\
+
+
+
+% Projects Section
+\section*{SELECTED PROJECTS}
+\label{SELECTED_PROJECTS}
+
+
+\noindent
+\textbf{Banpo-Xism} \hfill YDP Art Square\\ % Project name and location
+Critiquing the Korean real-estate market through interactive higher-dimensional geometry. \hfill May 2025 | May 2026 \\
+\textit{Artist, Interaction Designer, and Software Engineer} \hfill \\
+
+
+
+\noindent
+\textbf{$\Omega$ (Resistance)} \hfill Design Korea\\ % Project name and location
+Interactive installation urging resistance to the vectorization of personality through MBTI. \hfill Jun 2023 | Nov 2025 \\
+\textit{Artist, Interaction Designer, and Software Engineer} \hfill \\
+
+\noindent
+\textbf{SoTA: State-of-the-Art} \hfill KAIST Art Museum\\ % Project name and location
+{Interactive XAI installation exploring the representational and abstractive characteristics of AI.} \hfill Jun 2024 | Dec 2024 \\
+\textit{KAIST XD Lab | Artist, Concept Designer, Visualization Designer, and Software Engineer} \hfill \href{https://sota-xdlab.net/}{LINK} \\
+
+\noindent
+\textbf{Projecting the Anthropocene} \hfill Centre for Anthropocene Studies\\ % Project name and location
+{Projection Mapping Project in collaboration with the Center for Anthropocene Studies.} \hfill Mar 2024 | Oct 2024 \\
+\textit{KAIST XD Lab | Project Manager} \\
+
+\noindent
+\textbf{Passage of Water} \hfill Yiyun Kang Studio, Google, NASA\\ % Project name and location
+{Engineer for Kang's web artwork, in collaboration with Google Arts \& Culture and NASA JPL.} \hfill Jul 2023 | Dec 2023 \\
+\textit{Software Engineer, Web Developer, Data Analyst, and Visualization Designer} \hfill \href{https://goo.gle/passageofwater}{LINK} \\
+
+\noindent
+\textbf{Mirror Mirror on the Wall} \hfill Art Council Korea\\ % Project name and location
+{Metaverse Exhibition project, funded by ARKO (Arts Council Korea) and the Korean Ministry of Culture.} \hfill Oct 2022 | Nov 2023 \\
+\textit{Team Lead \& Unity Developer}  \hfill \href{https://monaverse.com/spaces/mirror-mirror-on-the-wall-7c21}{LINK} \\
+
+%
+
+
+% Exhibitions Section
+\section*{SELECTED EXHIBITIONS}
+
+\noindent
+\textbf{Living Geometry: XD Lab Exhibition} \hfill Seoul, South Korea\\ % Project name and location
+{YDP Art Square, Seoul} \hfill May - Jun 2026 \\
+
+\noindent
+\textbf{ACM DIS 2026 Interactivity Demo} \hfill Singapore\\ % Project name and location
+{ACM DIS, NUS, Singapore} \hfill Jun 2026 \\
+
+
+\noindent
+\textbf{Design Korea 2025: New Orders Drawn by Design} \hfill Seoul, South Korea\\ % Project name and location
+{COEX, MOTIE (Ministry of Trade, Industry and Energy), Seoul} \hfill Nov 2025 \\
+
+\noindent
+\textbf{Platform: Still Human} \hfill Seoul, South Korea\\ % Project name and location
+{Korea Foundation (KF) XR Gallery, Seoul} \hfill Sep 2025 - Feb 2026 \\
+
+\noindent
+\textbf{SoTA: State-of-the-Art} \hfill Daejeon, South Korea\\ % Project name and location
+{KAIST Art Museum, Daejeon} \hfill Dec 2024 - Jun 2025 \\
+
+\noindent
+\textbf{Noli: jeux coréens} \hfill Paris, France\\ % Project name and location
+{ID KAIST Exhibition, Centre Culturel Coréen, Paris} \hfill May - Oct 2024 \\
+
+% \noindent
+% \textbf{2024 ADAF: Techno(s)cene} \hfill Athens, Greece\\ % Project name and location
+% {Athens Digital Art Festival, Former Santarosa Courthouse, Athens} \hfill M 2024 \\
+
+\noindent
+\textbf{2024 IDAF: Search Reality} \hfill Istanbul, Türkiye\\ % Project name and location
+{Istanbul Digital Art Festival, Türkiye Ministry of Culture, Atatürk Cultural Centre, Istanbul} \hfill May 2024 \\
+
+\noindent
+\textbf{Mirror Mirror on the Wall} \hfill London, United Kingdom\\ % Project name and location
+{ARKO (Arts Council Korea) Metaverse Art Project Showcase, Feelium Gallery, London} \hfill Nov 2023 \\
+
+\noindent
+\textbf{2023 Ars Electronica: Who Owns the Truth} \hfill Linz, Austria\\ % Project name and location
+{Ars Electronica 2023 RCA Campus Exhibition, Postcity, Linz} \hfill \href{https://ars.electronica.art/who-owns-the-truth/de/%E2%89%A0/}{LINK} Sep 2023 \\
+
+
+\noindent
+\textbf{Shitga: Varying Numbers} \hfill Seoul, South Korea\\ % Project name and location
+{Emerging Artists' Art Market, Seoul Arts Centre, Seoul} \hfill May 2022 \\
+
+
+
+
+
+
+
+
+
+% Guest Lectures Section
+\section*{INVITED TALKS}
+\label{INVITED TALKS}
+
+\noindent
+% \textbf{ACM DIS Full Paper Presentation} \hfillS, Singapore, 2026\\
+\textbf{Artist Talk | Living Geometry} \hfill YDP Art Square, Seoul, South Korea, 2026\\
+\textbf{Exhibition Roundtable | KF XR Gallery} \hfill KF XR Gallery, Seoul, South Korea, 2026\\
+\textbf{Designer's Talk | Design Korea 2025} \hfill COEX, Seoul, South Korea, 2025\\
+\textbf{Guest Lecture | Information Design Course} \hfill ID KAIST, Daejeon, South Korea, 2025\\
+\textbf{Artist Talk | KAIST Art Museum} \hfill KAIST Art Museum, Daejeon, South Korea, 2024\\
+\textbf{Lecture-Performance | G-Artience} \hfill G-Artience, Daejeon, South Korea, 2024\\
+\textbf{Roundtable | Anthropocene Labs} \hfill KAIST, Daejeon, South Korea, 2024\\
+\textbf{Seminar Talk | RCA EAP Pre-sessional Seminar} \hfill RCA, London, United Kingdom, 2024\\
+
+
+
+% % Guest Lectures Section
+% \section*{ACADEMIC SERVICES}
+% \label{INVITED TALKS}
+
+% \noindent
+% \textbf{ACM TEI Reviewer} \hfill 2027\\
+% \textbf{ACM NeurIPS Creative AI Reviewer} \hfill 2026\\
+% \textbf{Digital Creativity Reviewer} \hfill 2026\\
+
+
+% Performances Section
+\section*{PERFORMANCES}
+
+\noindent
+\textbf{Dadaism for the Algorithmic Age: Lecture-Performance} \hfill G-Artience, DCC, Daejeon, South Korea, 2024\\
+\textbf{IRCAM Forum Seoul Hors-les-Murs} \hfill IRCAM, Seoul National University, Seoul, South Korea, 2024\\
+\textbf{The Fragments of Babel} \hfill ARKO (Arts Council Korea) Theatre, Seoul, South Korea, 2024\\
+\textbf{Mirror Mirror on the Wall} \hfill IKLECTIK, London, United Kingdom, 2023\\
+\textbf{LING} \hfill The Place, London, United Kingdom, 2023\\
+\textbf{Counterpoint} \hfill IKLECTIK, London, United Kingdom, 2023\\
+\textbf{Flicker} \hfill IKLECTIK, London, United Kingdom, 2023\\
+\textbf{IRCAM Forum Workshop} \hfill IRCAM, Paris, France, 2023\\
+\textbf{Murmations} \hfill RCA Kensington, London, United Kingdom, 2023\\
+\textbf{Passages} \hfill IKLECTIK, London, United Kingdom, 2022\\
+
+
+% All Exhibitions Section
+\section*{GROUP EXHIBITIONS}
+% List Excluding Selected Exhibitions \ref{SELECTED_PROJECTS} \\
+
+\noindent
+\textbf{SCREENS CONTEXTUALIZED} \hfill Miyashita Park, Tokyo, Japan, 2026\\
+\textbf{EPAFF 2025} \hfill Bulgwangcheon Media Centre, Seoul, South Korea, 2025\\
+\textbf{Design Korea 2025} \hfill COEX, Seoul, South Korea, 2025\\
+\textbf{CyberFrames} \hfill Boston Cyberarts Gallery, Boston, United States, 2025\\
+\textbf{SoTA: State-of-the-Art} \hfill KAIST Art Museum, Daejeon, South Korea, 2024-2025\\
+\textbf{Into the Flux} \hfill International Body of Art (IBA), London, United Kingdom, 2024\\
+\textbf{Noli: jeux coréens} \hfill Centre Culturel Coréen, Paris, France, 2024\\
+\textbf{ADAF 2024: Techno(s)cene} \hfill Athens Digital Art Festival (ADAF), Athens, Greece, 2024\\
+\textbf{IDAF 2024: Search Reality} \hfill Istanbul Digital Art Festival (IDAF), Istanbul, Turkey, 2024\\
+\textbf{Mirror Mirror on the Wall} \hfill Feelium Gallery, London, United Kingdom, 2023\\
+\textbf{Who Owns the Truth} \hfill Ars Electronica, Linz, Austria, 2023\\
+\textbf{The Arrival of a Train} \hfill Cromwell Place, London, United Kingdom, 2023\\
+\textbf{Counterpoint} \hfill Royal College of Art, London, United Kingdom, 2023\\
+\textbf{I saw it on TV} \hfill International Body of Art (IBA), London, United Kingdom, 2023\\
+\textbf{Some Facts at Midnight} \hfill Studio Motif, Seoul, South Korea, 2023\\
+\textbf{Coding Creativity} \hfill Hera Gallery, Rhode Island, United States, 2023\\
+\textbf{Beyond a priori} \hfill Seasons Gallery, London, United Kingdom, 2023\\
+\textbf{HYPERSPECTRAL} \hfill PhotoAccess, Manuka, Australia, 2023\\
+\textbf{Raise Love by One Inch} \hfill Crypt Gallery, London, United Kingdom, 2023\\
+\textbf{Beyond Binary: Exploring Life Beyond Data} \hfill Beyond Boundary, Online, Australia, 2023\\
+\textbf{Counterpoint} \hfill Royal College of Art, Online, United Kingdom, 2023\\
+\textbf{Welcome to the Uncanny} \hfill ADAF (Athens Digital Art Festival), Online, Greece, 2023\\
+\textbf{N Ways to Expand the Square} \hfill Art \& Technology Conference, Sogang University, Seoul, South Korea, 2022\\
+\textbf{Shitga: Varying Numbers} \hfill Seoul Arts Centre, Seoul, South Korea, 2022\\
+\textbf{World Digital Art Festival} \hfill WDAF, Online, South Korea, 2022\\
+\textbf{Artifacts: Creator's Perspective} \hfill Unscene-Unseen, Online, South Korea, 2022\\
+
+
+
+
+
+% \section*{AWARDS AND GRANTS}
+% \textbf{Top 10 Research Achievements (Co-Investigator)}  \hfill Daejeon, South Korea\\
+% KAIST (Korea Advanced Institute of Science \& Technology) \hfill 2024 \\
+% \textbf{Metaverse Art Project Support Grant}  \hfill Seoul, South Korea\\
+% Arts Council Korea, Korean Ministry of Culture \hfill 2023 \\
+% \textbf{Andy Warhol's Campbell's Soup Cans Award}  \hfill Seoul, South Korea\\
+% Self-Given Award \hfill 2020 \\
+% \textbf{23d Market Economy Column Competition Grand Award}  \hfill Seoul, South Korea\\
+% Center for Free Enterprise \hfill 2020 \\
+% \textbf{Korean Presidential Science Scholarship (Math Sector)}  \hfill Seoul, South Korea\\
+% Office of the President, Republic of Korea \hfill 2018-2022 \\
+
+% \noindent
+% \textbf{Shortlisted} \\
+
+% \noindent
+% \textbf{Unfold X}  \hfill Seoul Cultural Foundation, Seoul, South Korea, 2024\\
+% \textbf{Project Hashtag}  \hfill MMCA (National Museum of Modern and Contemporary Art), Seoul, South Korea, 2023\\
+% \textbf{Small File Photo Festival}  \hfill The Photographers' Gallery, London, United Kingdom, 2023
+
+% \section*{OTHER EXPERIENCES}
+% \noindent
+% \textbf{\# you can here experiences those are less related to you applying position}  \hfill \#City, \#Country\\ % Company name and location
+% \textit{\# Your Position} \hfill \#Month \#Year | \#Month \#Year % Position and duration
+% \begin{itemize}
+%     \item \# Description of your job duty and responsibilities.
+%     \item \# Description of your job duty and responsibilities.
+%     \item \# Description of your job duty and responsibilities.
+%     \item \# Description of your job duty and responsibilities.
+% \end{itemize}
+
+% End document
+\end{document}

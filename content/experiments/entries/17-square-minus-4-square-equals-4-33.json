@@ -1,0 +1,33 @@
+{
+  "slug": "17-square-minus-4-square-equals-4-33",
+  "title": "17 Square minus 4 Square equals 4'33''",
+  "year": "2022",
+  "context": "HTML",
+  "medium": "HTML",
+  "summary": "On voidness, performing John Cage's 4'33''",
+  "paragraphs": [
+    "How can we efficiently perceive an existence?",
+    "- By voidness. That is, a perception of existence via non-existence.",
+    "This 4’49’’ video is made of two parts: A silent, void part that is actually playing John Cage’s notoriously famous 4’43’’, and 16 seconds of perceptible intermission which is placed between. Here, the sudden presence of audiovisual stimulus within intermission, which is followed by complete silence for more than four minutes, induces spectators to finally acknowledge the existence of the artwork and its concept, which would have been otherwise unacknowledgeable.",
+    "Then why should the intermission be exactly 16 seconds? Our Narrative Fallacy induces us to give false justification to the 4’33’’. This artwork criticises and humiliates such a tendency, by using its very strategy of giving a false narrative to 4’33’’ explicitly, which in this case is the following mathematical equation.",
+    "4’33’’=273s=13*21s=(17-4)*(17+4)s=17^2s-4^2s=4’49’’-16s=(Whole Length)-(Intermission)",
+    "This equation is logically flawless, creating a perfect justification for the 4’33’’ on why its length should be exactly 4’33’’. Hence, its mathematical perfectness does not imply that such a narrative of interpreting the running time should be also correct. Thus, this artwork metaphorically criticises contemporary society which is obsessed with data and numbers, which look logical and faultless, but which in fact only create an illusion to cogitate our incognito.",
+    "This artwork is made of 273 seconds of silence and 16 seconds of presence, where the former acts as the existence and the latter as an intermission, metaphorically criticising contemporary society obsessed with data and false justification.",
+    "This equation is logically flawless, creating a perfect justification for John Cage’s 4’33’’’. Hence, its mathematical perfectness does not imply that such a narrative of interpreting the running time should be also correct. Thus, this artwork metaphorically criticises contemporary society which is obsessed with data and numbers, which look logical and faultless, but which in fact only create an illusion to cogitate our incognito."
+  ],
+  "images": [
+    {
+      "src": "/experiments/17-square-minus-4-square-equals-4-33/1.webp",
+      "alt": "17 Square minus 4 Square equals 4'33'' (2022), documentation image 1.",
+      "width": 1386,
+      "height": 1306
+    }
+  ],
+  "links": [
+    {
+      "label": "Visit experiment ↗",
+      "href": "https://operating-as-usual.vercel.app/17square/v3"
+    }
+  ],
+  "source": "https://portfolio-jyc.org/works/clrhpoemg0005t7fl1r97tpt0"
+}

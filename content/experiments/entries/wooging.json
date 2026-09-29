@@ -1,0 +1,32 @@
+{
+  "slug": "wooging",
+  "title": "Wooging",
+  "year": "2023",
+  "context": "HTML",
+  "medium": "HTML",
+  "summary": "Reconstructing Mondrian with MDWA (Multi-Device Web Artwork).",
+  "paragraphs": [
+    "Woogie-Booging is an interactive web-based public artwork where participants reconstruct Mondrian's Broadway Boogie-Woogie by tap dancing their fingers on top of their mobile devices. It invites two or more people to interact at the same time, creating abstractive geometric grids throughout mobile and screen canvases that induce tension and rhythm just like the jazz Boogie-Woogie itself, diminishing the boundary of individuality and opening a space for creative collaboration between spectators."
+  ],
+  "images": [
+    {
+      "src": "/experiments/wooging/1.webp",
+      "alt": "Wooging (2023), documentation image 1.",
+      "width": 4000,
+      "height": 2800
+    },
+    {
+      "src": "/experiments/wooging/2.webp",
+      "alt": "Wooging (2023), documentation image 2.",
+      "width": 2370,
+      "height": 1386
+    }
+  ],
+  "links": [
+    {
+      "label": "Visit experiment ↗",
+      "href": "https://internetinental.herokuapp.com/wooging/screen"
+    }
+  ],
+  "source": "https://portfolio-jyc.org/works/clrhpoemg0006t7flg87xtvdl"
+}

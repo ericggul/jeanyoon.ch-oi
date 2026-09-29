@@ -1,0 +1,42 @@
+{
+  "slug": "mba-medium-based-approach",
+  "title": "MBA (Medium-Based Approach)",
+  "year": "2022",
+  "context": "Multi-Device Web Artwork",
+  "medium": "Multi-Device Web Artwork",
+  "summary": "Medium-Based Approach on MDWA (Multi-Device Web Artwork)",
+  "paragraphs": [
+    "MBA is an artwork made of five(or more) devices, consisting of two mobiles, two PCs, and a single screen, all connected through the internet. This Medium-Based Approach is designed to show and present my approach to the MDWA(Multi-Device Web Artwork), following the minimalist approach of minimising the external context blended into the artwork, aiming to purely create and implement the artwork based on the understanding and consideration of the medium itself.",
+    "Created as the representative project of Term 1 in the Royal College of Art, MBA follows the performative language, customised to emphasise the physicality of the MDWA format. MBA consists of three stages, presented in chronological order: 1) Verfremdungseffekt(Alienation Effect), or V-Effekt stage, 2) Causality Perception Stage, and last, 3) Chaos Stage.",
+    "Participants interacting with the artwork first encounter the alienation effect, as the button presented within their mobile phone will not be working, or at least, does not come out with a certain kind of effect, which is normally expected in every digital interaction. This alienation might be slightly diminished over time as other screens of MBA might now start to respond to the participants’ interaction, coming with visual and audio reactions which might look somehow logical, as the numbers of the screen for instance will increase linearly upon the participants’ button click interaction. Thus, within this phase, participants expect some causal relationship to be built between the mobiles and other screens, as our brain is capable of creating causal relationships for new or unfamiliar environments, substituting such unfamiliarity with familiarity.",
+    "However, such an adjustment toward a causal relationship will be soon transformed into the form of boredom within a postmodern hyper-consumeristic culture. That’s why the third stage, of reversing such causal relationships and creating chaos is needed. Within this stage, both of interaction-audio relationship and the interaction-visual relationship is distorted again, creating a more massive amount of stimulus which induces a chaotic experience."
+  ],
+  "images": [
+    {
+      "src": "/experiments/mba-medium-based-approach/1.webp",
+      "alt": "MBA (Medium-Based Approach) (2022), documentation image 1.",
+      "width": 3992,
+      "height": 2800
+    },
+    {
+      "src": "/experiments/mba-medium-based-approach/2.webp",
+      "alt": "MBA (Medium-Based Approach) (2022), documentation image 2.",
+      "width": 3992,
+      "height": 2800
+    },
+    {
+      "src": "/experiments/mba-medium-based-approach/3.webp",
+      "alt": "MBA (Medium-Based Approach) (2022), documentation image 3.",
+      "width": 3992,
+      "height": 2800
+    },
+    {
+      "src": "/experiments/mba-medium-based-approach/4.webp",
+      "alt": "MBA (Medium-Based Approach) (2022), documentation image 4.",
+      "width": 750,
+      "height": 1334
+    }
+  ],
+  "links": [],
+  "source": "https://portfolio-jyc.org/works/clrhplw7y0003t7fl6eb00hsk"
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "death-of-blue-screen",
+  "title": "Death of Blue Screen",
+  "year": "2024",
+  "context": "HTML",
+  "medium": "HTML",
+  "summary": "Bridging the Techincal notation of Blue with the Artistic notation of Blue.",
+  "paragraphs": [
+    "The Death of Blue Screen Bridging the Techincal notation of Blue with the Artistic notation of Blue. Relating Blue Screen of Death with Yves Klein's IKB (International Klein Blue), and considering spectators' interaction and experience with both situations/artworks as the central concept of the artwork. Relating these concepts through Abstractive Multi-Device Web Artwork, involving a gigantic Blue Screen and Mobile Platform which invites spectators to interact. The Death of Blue Screen is an abstract art piece that merges the complex technological layers behind user frustration with the Blue Screen of Death and the experience of viewing modern art. The Blue Screen represents not only system failure, but also a failure in design that has evolved over time to be more interpretable and less frustrating. This trend parallels the evolution of human-computer interaction and the shift towards a more humanised, AI-based approach. Yves Klein's International Klein Blue is an iconic colour in art and symbolises the uniformity and entirety of the world. Tate Modern encourages visitors to consider fundamental concepts of colour and materials in abstract art by asking questions about their reactions and experiences of the artwork. It remains to be seen whether this approach helps visitors to interpret and appreciate the art in their own way. The text above was automatically generated using ChatGPT.",
+    "This artwork is made of two parts; The Blue Screen, and mobile interaction. Spectators are first expected to encounter the gigantic blue screen, filled with the exact colour of the IKB. Then they are invited to use their own mobile phones to interact with the artwork, answering themselves verbally to 9 given questions within the mobile platform, questions which are selected from Tate Modern's curatorial descriptions. Such answers and interactions will look like producing no change to the screen, as there will be no visible alteration within the screen over the process of interaction. However, the answers that each spectator records through the platform are in fact feed into the screen, creating a conceptual two-way interaction where spectators react to the artwork, and artwork reacts to such spectators’ artwork.",
+    "Below is the list of 9 questions displayed within the mobile interaction:",
+    "What is your first reaction to the work? Why does it make you feel or think like that? What is it made of? Why has the artist chosen those materials? Does the size of the work affect your experience of it? Where is the artist from and when did they live? How has this influenced them? What do you think the work is about? Why don’t you take a photograph of this list, so you can refer to it when you look at the art? This artwork exists in the format of Web Art, build and existing in the format of Javascript Code.",
+    "Website Technical Credit: Jeanyoon Choi (View Github, LinkedIn)",
+    "Website Technical Stacks: HTML, CSS, Javascript, React.js, Next.js, Google TTS (Text-to-Speech), Speech Recognition"
+  ],
+  "images": [
+    {
+      "src": "/experiments/death-of-blue-screen/1.webp",
+      "alt": "Death of Blue Screen (2024), documentation image 1.",
+      "width": 5184,
+      "height": 3456
+    }
+  ],
+  "links": [
+    {
+      "label": "Visit experiment ↗",
+      "href": "https://acrossrca2023.rca.ac.uk/projects/dobs"
+    }
+  ],
+  "source": "https://portfolio-jyc.org/works/clrm9boxg0005wxp9csgd8qdc"
+}

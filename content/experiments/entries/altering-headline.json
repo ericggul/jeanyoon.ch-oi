@@ -1,0 +1,29 @@
+{
+  "slug": "altering-headline",
+  "title": "Altering Headline",
+  "year": "2023",
+  "context": "HTML",
+  "medium": "HTML",
+  "summary": "Public Human-AI Interaction Experiment.",
+  "paragraphs": [
+    "Altering Headline is an interactive web-based artwork where participants tweak one of the NYT headlines, which will trigger an AI to generate an image accordingly to the altered headline.",
+    "We read numerous negative and gloomy headlines from the Latest News, which are designed in a way to sound extreme so that it can drive the public’s attention. Whilst, it is also worth noting that most of the headlines sound lookalike, and thus are easily substitutable by AI-generated headlines.",
+    "This artwork is created to tackle such status quo of news headlines and see how AI can collaborate with human creativity to tweak the gloomy headline in a more funny and hilarious manner. Participants are invited to alter one of the NYT Headlines with their mobile phone in a funnier and brighter way, which is then led to a step where Stable Diffusion will generate a new Image based upon this new headline. Altered Headlines and Images are displayed in the public square with the Original Headlines, enabling the public to laugh and enjoy the result of collective creativity between AI and humans.",
+    "Altering Headline invites participants to interact with the artwork with their mobile phones. Once participants alter one of the NYT Headlines with their mobile phone, the new image generated upon this new headline will be displayed on the screen. This artwork is using Stable Diffusion to generate Images from Text. Participants are invited to use their creativity and humor to tweak the headline, and the image accordingly."
+  ],
+  "images": [
+    {
+      "src": "/experiments/altering-headline/1.webp",
+      "alt": "Altering Headline (2023), documentation image 1.",
+      "width": 4000,
+      "height": 2570
+    }
+  ],
+  "links": [
+    {
+      "label": "Visit experiment ↗",
+      "href": "https://internetinental.herokuapp.com/altering-headline"
+    }
+  ],
+  "source": "https://portfolio-jyc.org/works/clrhpoemg0007t7flnet48g6o"
+}

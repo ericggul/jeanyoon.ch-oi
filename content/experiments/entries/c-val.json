@@ -1,0 +1,19 @@
+{
+  "slug": "c-val",
+  "title": "C-VAL",
+  "year": "2026",
+  "context": "Phone-driven market installation.",
+  "medium": "Interactive web experiment",
+  "summary": "Phone movement changes volatility, activity and liquidity in a shared simulated market.",
+  "paragraphs": [
+    "The installation translates phone rotation into market conditions. Those conditions generate orders and executions on a shared server; the displayed price is the last executed trade. News, media and comment screens present different views of the resulting market."
+  ],
+  "images": [],
+  "links": [
+    {
+      "label": "Visit experiment ↗",
+      "href": "https://c-val.vercel.app"
+    }
+  ],
+  "source": "experiments-jyc/apps/c-val/docs/README.md"
+}

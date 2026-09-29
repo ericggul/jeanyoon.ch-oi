@@ -1,0 +1,49 @@
+{
+  "slug": "105",
+  "title": "105",
+  "year": "2022",
+  "context": "HTML",
+  "medium": "HTML",
+  "summary": "Pseudo-Game accusing how human is becoming a machine.",
+  "paragraphs": [
+    "105 = 3X5X7",
+    "That is the combination of three different backgrounds, five different Platonic solids, and seven different rainbow lightings.",
+    "We live in a simulated world where every individual’s status quo is labeled and categorised under finite options of socio-economical states. Our work and life can be described as continuous attempts to transit between these states. We work hard and study hard to reach the so-called ‘higher state’, a state which is socially well-recognised and reputed. But is this state really the status quo we genuinely desire? Aren’t we sacrificing our humanity, and becoming machines by blindly taking part in this transition? What are we all doing this for?",
+    "105 is a web-based interactive artwork where users can reflect themselves on the machination of humanity, related to the concept of blinded efficiency. As users access the artwork, a certain combination of background, Platonic solid and lighting will be shown as one of the 105 states. As users click the artwork, they encounter a captcha authentication modal asking to ‘verify their humanity’. Upon successful verification, they will encounter even further steps of authentication to clarify their humanness, even though each task should be a completely manual machinery task.",
+    "In the end, users will successfully transit from one state to another, encountering different backgrounds, different Platonic Solid, and different lighting setups. They will also have a chance to access archiving page, where all the transitions that have been completed by past participants will be archived. As there is a finite number of steps, however, the accumulation of each participant’s effort to transform the state will eventually result in regression to the starting point. This symbolically shows the modern obsession with results should eventually mean nothing, as each individual’s state transition will result in complete voidness; That the sum of local optimisation should not always result in global optimisation.",
+    "Inspired by Yayoi Kusama’s Infinity Mirror rooms, Numerous mirrors surround the archived states, creating reflected and blurred images that emphasise the simulative nature of each geometry. This may look beautiful and glorious from the inside, but its simulated and manipulated beauty will be slowly diminished if panned out. This even emphasises the simulativeness of the world we’re living in, arguing that our competitive every day lives might be in fact a big systemic illusion."
+  ],
+  "images": [
+    {
+      "src": "/experiments/105/1.webp",
+      "alt": "105 (2022), documentation image 1.",
+      "width": 2520,
+      "height": 1863
+    },
+    {
+      "src": "/experiments/105/2.webp",
+      "alt": "105 (2022), documentation image 2.",
+      "width": 2520,
+      "height": 1890
+    },
+    {
+      "src": "/experiments/105/3.webp",
+      "alt": "105 (2022), documentation image 3.",
+      "width": 2510,
+      "height": 1252
+    },
+    {
+      "src": "/experiments/105/4.webp",
+      "alt": "105 (2022), documentation image 4.",
+      "width": 6000,
+      "height": 4000
+    }
+  ],
+  "links": [
+    {
+      "label": "Visit experiment ↗",
+      "href": "https://internetinental.herokuapp.com/105/archive"
+    }
+  ],
+  "source": "https://portfolio-jyc.org/works/clrgzuws60002u59znswrt63s"
+}

@@ -1,0 +1,66 @@
+{
+  "slug": "mirror-mirror-on-the-wall",
+  "title": "Mirror Mirror on the Wall",
+  "year": "2023",
+  "context": "ARKO (Arts Council Korea), Ministry of Culture",
+  "medium": "Metaverse",
+  "summary": "ARKO (Art Council Korea)-funded Metaverse Project.",
+  "paragraphs": [
+    "Mirror, Mirror in the Metaverse: Reflections on Self and Space",
+    "Welcome to \"Mirror, Mirror in the Metaverse\" - a transformative exhibition that invites you on an introspective journey, challenging your perceptions of the past, present, and future self within the expansive realms of the metaverse. Inspired by Marshall McLuhan's probing insights on media and technology's impact on humanity, our interactive space offers a gaze into our digital evolutions and a blueprint, malleable to the influences of today and tomorrow.",
+    "While many corners of the metaverse cling to familiar formats, merely showcasing NFTs akin to traditional exhibits, \"Mirror, Mirror\" aspires to transcend. We challenge the constraints of reality and the orthodoxies of the industry, reimagining what a virtual exhibition can be. Instead of replicating real-world environments or defaulting to rudimentary 3D graphics, we immerse you in a limitless expanse, capturing the full breadth of imagination only possible within the metaverse.",
+    "Our vision extends beyond aesthetics and technological prowess. The evolving concept of 'self' within this boundless digital universe is central to our narrative. Charting the ebb and flow of self-identity through history, we explore the profound impacts of modern techniques on our perception of selfhood. But, we don’t stop at today; we venture into the horizon, postulating how emerging media will further sculpt our self-concepts.",
+    "Engage with our exhibits, ponder your reflection, and interact with the avant-garde innovations that push the boundaries of virtual space. Beyond a spectacle for the eyes, \"Mirror, Mirror in the Metaverse\" is a philosophical arena urging you to question, understand, and reimagine your digital identity. In doing so, we aim to ignite a broader discourse about the dance between our inner selves and the ever-evolving digital cosmos.",
+    "Step in. Reflect. Imagine. Challenge. Welcome to a frontier where you are both the observer and the observed.",
+    "Team",
+    "Interaction Design | Jeanyoon Choi",
+    "Space Design | Alexandra Topaz",
+    "Curation & Organisation | Devanshi Rungta",
+    "3D Design | Los"
+  ],
+  "images": [
+    {
+      "src": "/experiments/mirror-mirror-on-the-wall/1.webp",
+      "alt": "Mirror Mirror on the Wall (2023), documentation image 1.",
+      "width": 1666,
+      "height": 1180
+    },
+    {
+      "src": "/experiments/mirror-mirror-on-the-wall/2.webp",
+      "alt": "Mirror Mirror on the Wall (2023), documentation image 2.",
+      "width": 2880,
+      "height": 1800
+    },
+    {
+      "src": "/experiments/mirror-mirror-on-the-wall/3.webp",
+      "alt": "Mirror Mirror on the Wall (2023), documentation image 3.",
+      "width": 1542,
+      "height": 1390
+    },
+    {
+      "src": "/experiments/mirror-mirror-on-the-wall/4.webp",
+      "alt": "Mirror Mirror on the Wall (2023), documentation image 4.",
+      "width": 2880,
+      "height": 1800
+    },
+    {
+      "src": "/experiments/mirror-mirror-on-the-wall/5.webp",
+      "alt": "Mirror Mirror on the Wall (2023), documentation image 5.",
+      "width": 1588,
+      "height": 1380
+    },
+    {
+      "src": "/experiments/mirror-mirror-on-the-wall/6.webp",
+      "alt": "Mirror Mirror on the Wall (2023), documentation image 6.",
+      "width": 1182,
+      "height": 1284
+    }
+  ],
+  "links": [
+    {
+      "label": "Visit experiment ↗",
+      "href": "https://monaverse.com/spaces/mirror-mirror-on-the-wall-7c21"
+    }
+  ],
+  "source": "https://portfolio-jyc.org/works/clrh0ppkt000114e8g5vlklpw"
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "snu-virtual-festival",
+  "title": "SNU Virtual Festival",
+  "year": "2021",
+  "context": "HTML",
+  "medium": "HTML",
+  "summary": "Virtual Festival for an exceptional Web Experience.",
+  "paragraphs": [
+    "Seoul National University's web-based online festival was held in the middle of Covid-19. A web avant-garde project twisting and humiliating pre-existing/popular web pages, such as Google's search console or Personality Tests."
+  ],
+  "images": [
+    {
+      "src": "/experiments/snu-virtual-festival/1.webp",
+      "alt": "SNU Virtual Festival (2021), documentation image 1.",
+      "width": 2000,
+      "height": 1400
+    },
+    {
+      "src": "/experiments/snu-virtual-festival/2.webp",
+      "alt": "SNU Virtual Festival (2021), documentation image 2.",
+      "width": 1510,
+      "height": 1058
+    },
+    {
+      "src": "/experiments/snu-virtual-festival/3.webp",
+      "alt": "SNU Virtual Festival (2021), documentation image 3.",
+      "width": 2000,
+      "height": 1400
+    }
+  ],
+  "links": [],
+  "source": "https://portfolio-jyc.org/works/clrm9boxg0004wxp98lyrpbbi"
+}

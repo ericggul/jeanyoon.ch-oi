@@ -12,6 +12,7 @@ function load(specifier, parent = path.join(root, 'entry.ts')) {
   if (base.endsWith('.css')) return new Proxy({}, { get: (_, name) => String(name) });
   const filename = [base, base + '.ts', base + '.tsx', path.join(base, 'index.ts')].find((file) => fs.existsSync(file) && fs.statSync(file).isFile());
   if (!filename) throw new Error(`Cannot resolve ${specifier}`);
+  if (filename.endsWith('.json')) return JSON.parse(fs.readFileSync(filename, 'utf8'));
   if (cache.has(filename)) return cache.get(filename).exports;
   const module = { exports: {} };
   cache.set(filename, module);
@@ -29,6 +30,9 @@ async function main() {
   const sitemap = load('@/app/sitemap').default;
   const { llmsIndex, llmsFull } = load('@/lib/seo/llms');
   // Explicit user naming requirement: generic SEO work must never rename the site.
+  const favicon = fs.readFileSync(path.join(root, 'public/favicon.png'));
+  assert.equal(favicon.readUInt32BE(16), 96);
+  assert.equal(favicon.readUInt32BE(20), 96);
   const fixedName = 'jeanyoon.ch/oi';
   assert.equal(load('@/lib/seo/site').SITE_NAME, fixedName);
   function assertSiteMetadata(metadata) {
@@ -39,7 +43,7 @@ async function main() {
     }
     if (metadata.twitter) assert.equal(metadata.twitter.title, fixedName);
   }
-  for (const route of ['layout', 'oi/page', 'oi/research/banpo-xism/page', 'oi/artworks/[slug]/page']) {
+  for (const route of ['layout', 'oi/page', 'oi/research/banpo-xism/page']) {
     assertSiteMetadata(load(`@/app/${route}`).metadata);
   }
   assert.equal(load('@/app/layout').metadata.applicationName, fixedName);
@@ -58,6 +62,21 @@ async function main() {
     assert(!sitemap().some((entry) => entry.url.includes(`/artworks/${artwork.slug}`)));
     assert(!llmsIndex().includes(`/artworks/${artwork.slug}`));
   }
+  for (const artwork of artworks) {
+    assert.deepEqual(artworkLocales(artwork), ['en', 'ko']);
+    const metadata = await load('@/app/oi/artworks/[slug]/page').generateMetadata({ params: Promise.resolve({ slug: artwork.slug }) });
+    assertSiteMetadata(metadata);
+    assert.equal(metadata.robots.index, true);
+    assert.equal(metadata.alternates.canonical, `https://jeanyoon.ch/oi/artworks/${artwork.slug}`);
+    const html = renderToStaticMarkup(await load('@/app/oi/artworks/[slug]/page').default({ params: Promise.resolve({ slug: artwork.slug }) }));
+    for (const image of artwork.images) {
+      assert(html.includes(`src="${image.src}"`), `Missing server-rendered gallery image ${image.src}`);
+      assert(sitemap().find((entry) => entry.url === metadata.alternates.canonical).images.includes(`https://jeanyoon.ch${image.src}`));
+    }
+    assert(html.includes('Artwork by Jeanyoon Choi'));
+    assert(html.includes('href="/oi"'));
+    assert.equal(artworkSchema(artwork, 'en')['@graph'][1].image.length, artwork.images.length);
+  }
   const fixture = { slug: 'seo-test-only', title: 'Fixture', year: '2026', width: 960, height: 720,
     updated: '2026-09-26', image: '/test-image.jpg', content: {
       en: { title: 'Test interaction', summary: 'Test summary', paragraphs: ['A visitor connects two screens.'], medium: 'Web artwork' },
@@ -70,7 +89,7 @@ async function main() {
     assert.equal(artworkMetadata(fixture, 'en').alternates.languages.ko, undefined);
     fixture.content.ko.paragraphs.push('관람자가 두 화면을 연결합니다.');
     for (const lang of ['en', 'ko']) {
-      const url = `https://jeanyoon.ch/oi/artworks/seo-test-only/${lang}`;
+      const url = `https://jeanyoon.ch/oi/artworks/seo-test-only${lang === "en" ? "" : "/ko"}`;
       assertSiteMetadata(artworkMetadata(fixture, lang));
       assert.equal(artworkMetadata(fixture, lang).alternates.canonical, url);
       assert.equal(artworkMetadata(fixture, lang).alternates.languages[lang], url);
@@ -130,4 +149,5 @@ async function main() {
   assert.deepEqual([...bytes.slice(0, 8)], [137, 80, 78, 71, 13, 10, 26, 10]);
   console.log('SEO checks passed: bilingual HTML, real-content filtering, canonical/hreflang, sitemap, artwork schema, text routes, PNG share image and 404s.');
 }
-main().catch((error) => { console.error(error); process.exitCode = 1; });
+module.exports = { load };
+if (require.main === module) main().catch((error) => { console.error(error); process.exitCode = 1; });

@@ -1,0 +1,38 @@
+{
+  "slug": "the-chronology-of-values",
+  "title": "The Chronology of Values",
+  "year": "2022",
+  "context": "HTML",
+  "medium": "HTML",
+  "summary": "Time-sensitive 3D web sculpture.",
+  "paragraphs": [
+    "Influenced by Nietzsche's Eternal recurrence, this time-based 3D model changes its shape with each hour representing a different moment in human civilization."
+  ],
+  "images": [
+    {
+      "src": "/experiments/the-chronology-of-values/1.webp",
+      "alt": "The Chronology of Values (2022), documentation image 1.",
+      "width": 1080,
+      "height": 727
+    },
+    {
+      "src": "/experiments/the-chronology-of-values/2.webp",
+      "alt": "The Chronology of Values (2022), documentation image 2.",
+      "width": 2000,
+      "height": 1400
+    },
+    {
+      "src": "/experiments/the-chronology-of-values/3.webp",
+      "alt": "The Chronology of Values (2022), documentation image 3.",
+      "width": 2000,
+      "height": 1400
+    }
+  ],
+  "links": [
+    {
+      "label": "Visit experiment ↗",
+      "href": "https://operating-as-usual.vercel.app/chronology"
+    }
+  ],
+  "source": "https://portfolio-jyc.org/works/clrm9boxg0002wxp95taku6nl"
+}
