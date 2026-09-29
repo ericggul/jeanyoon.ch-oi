@@ -1,4 +1,4 @@
-import { profile } from "@/content/profile";
+import { profile } from "@/content/about";
 import type { Artwork, Locale } from "@/content/artworks/types";
 import { absoluteUrl, SITE_NAME } from "./site";
 import { artworkPath, artworkText } from "./artworks";

@@ -17,7 +17,7 @@ Run only one dev server for this checkout. If Next.js reports an existing server
 
 ## Connect a Google Sheet
 
-1. Make a sheet with the headers in `data/projects.example.csv`: `id,title,year,kind,summary,url,status,order`.
+1. Make a sheet with the headers in `content/projects/example.csv`: `id,title,year,kind,summary,url,status,order`.
 2. Publish only the intended project tab as CSV, or use its public CSV export URL. Anyone with the URL may be able to read the published data.
 3. Copy `.env.example` to `.env.local` and set `GOOGLE_SHEET_CSV_URL` to that full HTTPS CSV URL.
 4. Restart the dev server. The portfolio will read the sheet rows. Changes are revalidated about every five minutes in production.

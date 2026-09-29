@@ -38,6 +38,7 @@
 }
 .choice { cursor: pointer; touch-action: manipulation; }
 .selected, .choice:hover { color: #000; background: #87d7ff; }
+.choiceDescription { color: inherit; }
 .choice:focus { outline: none; }
 .previousChoice { color: #999; }
 .cursor { display: inline-block; margin-top: .35em; animation: blink 1s steps(1) infinite; }

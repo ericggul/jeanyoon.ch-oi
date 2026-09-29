@@ -1,4 +1,4 @@
-import { artworks } from "@/lib/artworks";
+import { artworks } from "@/content/artworks";
 import type { Artwork, Locale } from "@/content/artworks/types";
 
 export function artworkText(artwork: Artwork, locale: Locale) {

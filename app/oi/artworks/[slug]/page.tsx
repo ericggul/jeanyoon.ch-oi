@@ -1,7 +1,7 @@
 import { SITE_NAME } from "@/lib/seo/site";
 import type { Metadata } from "next";
 import { notFound, permanentRedirect } from "next/navigation";
-import { artworks } from "@/lib/artworks";
+import { artworks } from "@/content/artworks";
 import ArtworkPreview from "./preview";
 import { artworkLocales, artworkPath } from "@/lib/seo/artworks";
 

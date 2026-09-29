@@ -1,3 +1,5 @@
+export const menuDescription = "Research papers and manuscripts.";
+
 import { banpoXism } from "./banpo-xism";
 import { sota } from "./sota";
 import { passageOfWater } from "./passage-of-water";

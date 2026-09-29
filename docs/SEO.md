@@ -16,12 +16,12 @@
 
 | Content | File |
 | --- | --- |
-| Identity, exact Korean name, bilingual profile | `content/profile.ts` |
+| Identity, exact Korean name, bilingual profile | `content/about/index.ts` |
 | Existing terminal wording | `content/site.ts` |
-| Practice topics and bilingual topic sections | `content/practice.ts` |
+| SEO/LLM practice topic context | `lib/seo/practice.ts` |
 | Independent publication records | `content/research/*.ts` |
 | Artwork type and localized text fields | `content/artworks/types.ts` |
-| Current artwork registry | `lib/artworks.ts` |
+| Current artwork registry | `content/artworks/index.ts` |
 | Metadata and canonical helpers | `lib/seo/metadata.ts` |
 | Structured data | `lib/seo/structured-data.ts` |
 | LLM text output | `lib/seo/llms.ts` |
@@ -30,7 +30,7 @@ Use 최정윤 (Jeanyoon Choi) together in Korean-facing copy. The Korean name is
 
 ## Adding a real artwork
 
-Create a per-work module in `content/artworks/` and import its exported `Artwork` record into the existing `lib/artworks.ts` registry. Existing popup `width` and `height` remain presentation fields.
+Edit the per-work module in `content/artworks/` and register its `Artwork` record in `content/artworks/index.ts`. Existing popup `width` and `height` remain presentation fields.
 
 ```ts
 import type { Artwork } from './types';
@@ -129,4 +129,4 @@ Google recognizes tabs, accordions and other user-accessible disclosure UI as le
 | 웹 아트 · 컨템포러리 웹 아트 · 넷 아트 | web art · contemporary web art · net art | Contemporary web art and net art section |
 | 미디어 아트 연구 · 웹 아트 연구자 | media art research · web art researcher | Research section and credited publication list |
 
-These sections come from `content/practice.ts` and appear in the actual About menu, language profiles and full LLM document. No additional visible link index, no keyword-specific doorway pages, no meta-keywords ranking claim. The research wording points to the existing co-authored SoTA and Passage of Water records without assigning that work solely to this artist. Complete individual artwork descriptions are still required for artwork-specific queries; external citations/links and post-deployment Search Console observations remain necessary to evaluate outcomes. Neither topic metadata nor JSON-LD can force first place.
+These SEO topic notes are kept in `lib/seo/practice.ts` and appear in the full LLM document; the actual About menu and language profiles use `content/about/index.ts`. No additional visible link index, no keyword-specific doorway pages, no meta-keywords ranking claim. The research wording points to the existing co-authored SoTA and Passage of Water records without assigning that work solely to this artist. Complete individual artwork descriptions are still required for artwork-specific queries; external citations/links and post-deployment Search Console observations remain necessary to evaluate outcomes. Neither topic metadata nor JSON-LD can force first place.

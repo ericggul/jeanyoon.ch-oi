@@ -1,7 +1,7 @@
-import { practice } from "@/content/practice";
-import { profile } from "@/content/profile";
+import { practice } from "@/lib/seo/practice";
+import { profile } from "@/content/about";
 import { research } from "@/content/research";
-import { artworks } from "@/lib/artworks";
+import { artworks } from "@/content/artworks";
 import { absoluteUrl, locales, SITE_NAME } from "./site";
 import { artworkLocales, artworkPath, artworkText } from "./artworks";
 

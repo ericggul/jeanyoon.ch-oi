@@ -5,6 +5,7 @@ import type { ResearchPublication } from "./types";
 export const multiplexJuggling = {
   id: "multiplex-juggling",
   title: "Enumerating Multiplex Juggling Patterns",
+  menuDescription: "Mathematical research on multiplex juggling patterns.",
   authors: ["Steve Butler", "Jeongyoon Choi", "Kimyung Kim", "Kyuhyeok Seo"],
   year: 2019,
   kind: "journal-article",

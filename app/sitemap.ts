@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { artworks } from "@/lib/artworks";
+import { artworks } from "@/content/artworks";
 import { absoluteUrl } from "@/lib/seo/site";
 import { profileLanguages } from "@/lib/seo/metadata";
 import { artworkLocales, artworkPath } from "@/lib/seo/artworks";

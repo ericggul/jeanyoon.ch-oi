@@ -2,6 +2,7 @@
 export type ResearchPublication = {
   id: string;
   title: string;
+  menuDescription?: string;
   authors: readonly string[];
   year: number;
   kind: "conference-paper" | "journal-article" | "preprint";
@@ -22,6 +23,7 @@ export type ResearchPublication = {
 export type ResearchManuscript = {
   id: string;
   title: string;
+  menuDescription?: string;
   kind: "manuscript";
   status: "Under Review";
   submittedTo: string;

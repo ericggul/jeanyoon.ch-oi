@@ -11,6 +11,7 @@ export type Artwork = {
   slug: string;
   title: string;
   year: string;
+  menuDescription?: string; // Short pre-selection preview; independent of the full work text.
   width: number;
   height: number;
   content?: Partial<Record<Locale, ArtworkText>>;

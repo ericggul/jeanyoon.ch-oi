@@ -3,6 +3,7 @@ import type { ResearchPublication } from "./types";
 export const sota = {
   id: "sota",
   title: "SoTA: An Interactive Art Exhibition for Public AI Engagement",
+  menuDescription: "Interactive art exhibition for public AI engagement.",
   authors: ["Jeanyoon Choi", "Intae Hwang", "SeJoon Park", "Hyungjun Cho", "Heejae Bae", "Yiyun Kang"],
   venueLabel: "DIS",
   distinction: "Honourable Mention",

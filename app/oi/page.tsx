@@ -1,5 +1,5 @@
 import { getProjects } from "@/lib/projects";
-import { profile } from "@/content/profile";
+import { profile } from "@/content/about";
 import { pageMetadata, profileLanguages } from "@/lib/seo/metadata";
 import { profileSchema } from "@/lib/seo/structured-data";
 import JsonLd from "@/components/seo/json-ld";

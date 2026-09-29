@@ -1,20 +1,6 @@
-export type Project = {
-  id: string;
-  title: string;
-  year: string;
-  kind: string;
-  summary: string;
-  url: string;
-  status: string;
-  order: number;
-};
-
-// These are interface samples, not claims about existing works.
-const samples: Project[] = [
-  { id: "sample-1", title: "Project title", year: "2026", kind: "Web artwork", summary: "A short description will appear here.", url: "", status: "sample", order: 1 },
-  { id: "sample-2", title: "Another project", year: "2025", kind: "Installation", summary: "Project information can come from a Google Sheet.", url: "", status: "sample", order: 2 },
-  { id: "sample-3", title: "A third entry", year: "2024", kind: "Research", summary: "A short project description will appear here.", url: "", status: "sample", order: 3 },
-];
+import { sampleProjects } from "@/content/projects";
+import type { Project } from "@/content/projects";
+export type { Project } from "@/content/projects";
 
 function parseCsv(input: string): string[][] {
   const rows: string[][] = [];
@@ -71,7 +57,7 @@ export function projectsFromCsv(csv: string): Project[] {
 
 export async function getProjects(): Promise<Project[]> {
   const source = process.env.GOOGLE_SHEET_CSV_URL;
-  if (!source) return samples;
+  if (!source) return sampleProjects;
   try {
     const url = new URL(source);
     if (url.protocol !== "https:") throw new Error("The sheet URL must use HTTPS");
@@ -80,6 +66,6 @@ export async function getProjects(): Promise<Project[]> {
     return projectsFromCsv(await response.text());
   } catch (error) {
     console.error("Could not load the project sheet:", error);
-    return samples;
+    return sampleProjects;
   }
 }

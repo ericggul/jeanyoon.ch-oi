@@ -3,6 +3,7 @@ import type { ResearchPublication } from "./types";
 export const passageOfWater = {
   id: "passage-of-water",
   title: "Passage of Water: Artistic Exploration of Earth’s Freshwater with Google and NASA",
+  menuDescription: "Artistic exploration of Earth’s freshwater.",
   authors: ["Yiyun Kang", "Jeanyoon Choi"],
   venueLabel: "Leonardo Journal",
   distinction: "Cover Article",

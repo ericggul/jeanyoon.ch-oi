@@ -2,24 +2,28 @@
 
 import { useEffect, useRef, useState, type MouseEvent } from "react";
 import { siteContent as copy, type SiteSection } from "@/content/site";
-import { practice } from "@/content/practice";
-import { profile } from "@/content/profile";
+import { cvDownload, profile } from "@/content/about";
 import { research } from "@/content/research";
-import { artworks } from "@/lib/artworks";
+import { artworks } from "@/content/artworks";
+import { selectMessage as projectSelectMessage, emptyMessage as projectEmptyMessage } from "@/content/projects";
+import { emptyMessage as experimentsEmptyMessage } from "@/content/experiments";
+import { emptyMessage as textsEmptyMessage } from "@/content/texts";
+import { contactLinks, introduction as contactIntroduction } from "@/content/contact";
 import type { Project } from "@/lib/projects";
 import styles from "./terminal.module.css";
 
 type Section = SiteSection;
-type Choice = { label: string; section?: Section; project?: Project; href?: string; windowSize?: { width: number; height: number } };
+type Choice = { label: string; description?: string; section?: Section; project?: Project; href?: string; download?: string; windowSize?: { width: number; height: number } };
 type Line = { text: string; tone?: "identity" | "path" | "muted"; heading?: boolean; lang?: "en" | "ko" };
 type Turn = { promptPath?: string; path: string; command: string; lines: Line[]; choices: Choice[] };
 
 const introduction: Line[] = [
-  { text: copy.name, heading: true },
+  { text: copy.heading, heading: true },
   ...copy.introduction.map((text) => ({ text })),
 ];
 const artworkChoices: Choice[] = artworks.map((artwork) => ({
   label: `${artwork.title} (${artwork.year})`,
+  description: artwork.menuDescription,
   href: `/oi/artworks/${artwork.slug}`,
   windowSize: { width: artwork.width, height: artwork.height },
 }));
@@ -27,10 +31,13 @@ const researchChoices: Choice[] = research.map((publication) => ({
   label: publication.kind === "manuscript"
     ? `${publication.title} | ${publication.status}`
     : `${publication.title} (${publication.year}) | ${publication.venueLabel ?? publication.repository ?? publication.venue}${publication.distinction ? ` | ${publication.distinction}` : ""}${publication.kind === "preprint" ? " [preprint]" : ""}`,
+  description: publication.menuDescription,
   href: publication.url,
 }));
-const homeChoices = copy.menu.map((section) => ({ label: section, section }));
-const back: Choice = { label: copy.backToOi, section: "oi" };
+const contactChoices: Choice[] = contactLinks.map((link) => ({ ...link }));
+const homeChoices: Choice[] = copy.menu.map(({ id, description }) => ({ label: id, description, section: id }));
+const back: Choice = { label: copy.backToOi, description: copy.backToOiDescription, section: "oi" };
+const aboutChoices: Choice[] = [cvDownload, ...homeChoices.filter(({ section }) => section === "contact"), back];
 const hint = copy.hint;
 const initial: Turn = { path: "~", command: "cd /oi", lines: introduction, choices: homeChoices };
 const prompt = (turn: Turn) => `${copy.identity} ${turn.promptPath ?? turn.path} % `;
@@ -42,16 +49,17 @@ function sectionTurn(section: Section, from: string, projects: Project[]): Turn 
   const lines: Line[] = section === "oi" ? []
     : section === "artworks" ? []
     : section === "research" ? []
-    : section === "about" ? [{ text: copy.name, heading: true }, ...profile.en.paragraphs.map((text) => ({ text, lang: "en" as const })), ...profile.ko.paragraphs.map((text) => ({ text, lang: "ko" as const })), ...practice.flatMap((entry) => (["en", "ko"] as const).flatMap((lang) => [{ text: entry[lang].heading, heading: true, lang }, ...entry[lang].paragraphs.map((text) => ({ text, lang }))]))]
-    : section === "projects" ? [{ text: projects.length ? copy.projects.select : copy.projects.empty, tone: "muted" }]
-    : [{ text: copy[section], tone: "muted" }];
+    : section === "about" ? [{ text: profile.name, heading: true }, ...profile.en.paragraphs.map((text) => ({ text, lang: "en" as const }))]
+    : section === "projects" ? [{ text: projects.length ? projectSelectMessage : projectEmptyMessage, tone: "muted" }]
+    : section === "contact" ? [{ text: contactIntroduction }]
+    : [{ text: section === "experiments" ? experimentsEmptyMessage : textsEmptyMessage, tone: "muted" }];
   return {
     promptPath: from,
     path: section === "oi" ? "/oi" : `/oi/${section}`,
     command: section === "oi" ? "cd /oi" : from === "/oi" ? `cd ${section}` : `cd /oi/${section}`,
     lines,
-    choices: section === "oi" ? homeChoices : section === "artworks" ? [...artworkChoices, back] : section === "research" ? [...researchChoices, back] : section === "projects"
-      ? [...projects.map((project) => ({ label: `${project.title}${project.status === "sample" ? ` ${copy.sampleLabel}` : ""}`, project })), back]
+    choices: section === "oi" ? homeChoices : section === "artworks" ? [...artworkChoices, back] : section === "research" ? [...researchChoices, back] : section === "about" ? aboutChoices : section === "contact" ? [...contactChoices, back] : section === "projects"
+      ? [...projects.map((project) => ({ label: `${project.title}${project.status === "sample" ? ` ${copy.sampleLabel}` : ""}`, description: project.summary, project })), back]
       : [back],
   };
 }
@@ -130,8 +138,8 @@ export default function TerminalSession({ projects }: { projects: Project[] }) {
           ...(project.status === "sample" ? [{ text: copy.sampleEntry, tone: "muted" as const }] : []),
         ],
         choices: [
-          ...(project.url ? [{ label: copy.openWebsite, href: project.url }] : []),
-          { label: copy.backToProjects, section: "projects" }, back,
+          ...(project.url ? [{ label: copy.openWebsite, description: copy.openWebsiteDescription, href: project.url }] : []),
+          { label: copy.backToProjects, description: copy.backToProjectsDescription, section: "projects" }, back,
         ],
       };
     } else {
@@ -169,14 +177,14 @@ export default function TerminalSession({ projects }: { projects: Project[] }) {
   // Unopened sections are real menu panels, not a search-only duplicate document.
   // They are already in the response HTML; selecting the menu moves the same
   // content into the transcript and removes its dormant instance.
-  const dormant = copy.menu.filter((section) => !turns.some((turn) => turn.path === `/oi/${section}`));
+  const dormant = copy.menu.map(({ id }) => id).filter((section) => !turns.some((turn) => turn.path === `/oi/${section}`));
   const rendered = [
     ...turns.map((turn, index) => ({ turn, key: `turn-${index}`, dormant: false })),
     ...dormant.map((section) => ({ turn: sectionTurn(section, "/oi", projects), key: `panel-${section}`, dormant: true })),
   ];
 
   return (
-    <main className={styles.terminal} aria-label={`${copy.name} — oi`}>
+    <main className={styles.terminal} aria-label={`${profile.name} — oi`}>
       <div className={styles.srOnly} role="status" aria-live="polite">{announcement}</div>
       {rendered.map(({ turn, key, dormant }, turnIndex) => {
         const active = !dormant && turnIndex === turns.length - 1;
@@ -217,9 +225,11 @@ export default function TerminalSession({ projects }: { projects: Project[] }) {
                   className: `${styles.choice} ${!dormant && selected === index ? styles.selected : ""}`,
                   onPointerEnter: () => setSelected(index), onFocus: () => setSelected(index),
                 };
-                const content = <><span aria-hidden="true">{!dormant && selected === index ? "> " : "  "}</span>{label}</>;
+                const isSelected = !dormant && selected === index;
+                const content = <><span aria-hidden="true">{isSelected ? "> " : "  "}</span>{label}{isSelected && choice.description && <span className={styles.choiceDescription}>{` | ${choice.description}`}</span>}</>;
+                const external = choice.href?.startsWith("http");
                 return choice.href
-                  ? <a key={index} {...props} href={choice.href} target="_blank" rel="noreferrer" onClick={(event) => openArtwork(event, choice)} aria-label={choice.windowSize ? `${label} — opens in a new window or tab` : undefined}>{content}</a>
+                  ? <a key={index} {...props} href={choice.href} target={external ? "_blank" : undefined} rel={external ? "noopener noreferrer" : undefined} download={choice.download} onClick={(event) => openArtwork(event, choice)} aria-label={choice.windowSize ? `${label}${isSelected && choice.description ? ` | ${choice.description}` : ""} — opens in a new window or tab` : undefined}>{content}</a>
                   : <button key={index} {...props} type="button" onClick={() => choose(choice)}>{content}</button>;
               })}
             </div>
@@ -230,7 +240,7 @@ export default function TerminalSession({ projects }: { projects: Project[] }) {
       <div ref={end} />
       <noscript>
         <style>{`.${styles.terminal} .${styles.turn}[hidden] { display: block !important; } .${styles.terminal} .${styles.turn} [hidden] { display: revert !important; }`}</style>
-        {copy.name} — {copy.introduction[0]}
+        {profile.name} — {copy.introduction[0]}
       </noscript>
     </main>
   );

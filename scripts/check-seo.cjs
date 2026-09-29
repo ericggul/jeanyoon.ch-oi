@@ -22,7 +22,7 @@ function load(specifier, parent = path.join(root, 'entry.ts')) {
   return module.exports;
 }
 async function main() {
-  const { artworks } = load('@/lib/artworks');
+  const { artworks } = load('@/content/artworks');
   const { artworkText, artworkLocales } = load('@/lib/seo/artworks');
   const { artworkMetadata } = load('@/lib/seo/metadata');
   const { serializeJsonLd, artworkSchema } = load('@/lib/seo/structured-data');
@@ -100,15 +100,19 @@ async function main() {
   const terminalHtml = renderToStaticMarkup(React.createElement(load('@/app/oi/terminal').default, { projects: [] }));
   assert.equal((terminalHtml.match(/<h1[ >]/g) || []).length, 1);
   assert(terminalHtml.includes('<h2'));
-  assert(terminalHtml.includes('최정윤'));
-  assert(terminalHtml.includes('인터랙티브'));
+  assert(!terminalHtml.includes('최정윤'));
+  assert(!terminalHtml.includes('인터랙티브'));
   assert(terminalHtml.includes('id="panel-about" hidden=""'));
   assert(terminalHtml.includes('id="panel-artworks" hidden=""'));
   assert(terminalHtml.includes('href="/oi/artworks/banpo-xism"'));
-  for (const term of ['미디어 아트', '인터랙티브 아트', '미디어 아트 연구', '웹 아트', '컨템포러리 웹 아트', '넷 아트', '웹 아트 연구자', 'media art', 'interactive art', 'media art research', 'web art', 'contemporary web art', 'net art', 'web art researcher']) {
-    assert(terminalHtml.includes(term), `Missing actual About content: ${term}`);
+  assert(terminalHtml.includes('provocatively interactive environments'));
+  assert(terminalHtml.includes('href="mailto:jeanyoon.choi@kaist.ac.kr"'));
+  assert.equal((terminalHtml.match(/href="\/cv\/JeanyoonChoi_CV\.pdf"/g) || []).length, 2);
+  assert.equal((terminalHtml.match(/download="JeanyoonChoi_CV\.pdf"/g) || []).length, 2);
+  for (const term of ['미디어 아트', '컨템포러리 웹 아트', '넷 아트', 'media art research', 'contemporary web art', 'net art']) {
     assert(llmsFull().includes(term), `Missing LLM text: ${term}`);
   }
+  assert(llmsFull().includes('동시대 사회기술 시스템의 복잡성'));
   assert(!terminalHtml.includes('Text index'));
   assert(!terminalHtml.includes('텍스트 목록'));
   assert(!terminalHtml.includes('href="/oi/en"'));

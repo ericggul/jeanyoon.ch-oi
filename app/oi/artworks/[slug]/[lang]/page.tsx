@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
-import { artworks } from "@/lib/artworks";
-import { profile } from "@/content/profile";
+import { artworks } from "@/content/artworks";
+import { profile } from "@/content/about";
 import { artworkLocales, artworkPath, artworkText } from "@/lib/seo/artworks";
 import { artworkMetadata } from "@/lib/seo/metadata";
 import { artworkSchema } from "@/lib/seo/structured-data";
