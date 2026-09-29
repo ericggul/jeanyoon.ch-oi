@@ -8,7 +8,7 @@
 - Metadata, Open Graph, Twitter cards and a generated 1200×630 PNG sharing image at `/share-image`.
 - `Person`, `WebSite`, `ProfilePage`, and completed works' `VisualArtwork` and `BreadcrumbList` JSON-LD. These express the content; they do not promise a Google rich result.
 - `/sitemap.xml` includes the public profiles and only artwork translations with a title, summary and nonempty body. Revision dates are actual record dates, never the current build time.
-- `/robots.txt` permits crawling. The existing `/oi-v1` study and unfinished artwork previews remain `noindex` and are absent from the sitemap and LLM artwork lists.
+- `/robots.txt` permits crawling. Unfinished artwork previews remain `noindex` and are absent from the sitemap and LLM artwork lists.
 - `/llms.txt` follows the community proposal; `/llm.txt` is the requested compatibility spelling; `/llms-full.txt` exposes the same public profile and completed artwork text, with source URLs. All are generated from content modules. No separately maintained AI copy, unpublished manuscripts, or sample Sheet projects are promoted as completed works.
 - GA4 measurement ID `G-EEL6QFJKB8`, stream ID `15848583095` (stream name: Jeanyoon Choi). Tag loads only on the public hostnames `jeanyoon.ch` and `www.jeanyoon.ch`, excluding localhost, `.local` and Vercel preview hosts.
 

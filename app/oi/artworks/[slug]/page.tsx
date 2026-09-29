@@ -1,3 +1,4 @@
+import { SITE_NAME } from "@/lib/seo/site";
 import type { Metadata } from "next";
 import { notFound, permanentRedirect } from "next/navigation";
 import { artworks } from "@/lib/artworks";
@@ -8,11 +9,9 @@ type Props = { params: Promise<{ slug: string }> };
 export function generateStaticParams() {
   return artworks.map(({ slug }) => ({ slug }));
 }
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params;
-  const artwork = artworks.find((entry) => entry.slug === slug);
-  return { title: artwork?.title ?? "Artwork", robots: { index: false, follow: true } };
-}
+export const metadata: Metadata = {
+  title: { absolute: SITE_NAME }, robots: { index: false, follow: true },
+};
 export default async function ArtworkPage({ params }: Props) {
   const { slug } = await params;
   const artwork = artworks.find((entry) => entry.slug === slug);

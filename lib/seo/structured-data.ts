@@ -1,6 +1,6 @@
 import { profile } from "@/content/profile";
 import type { Artwork, Locale } from "@/content/artworks/types";
-import { absoluteUrl } from "./site";
+import { absoluteUrl, SITE_NAME } from "./site";
 import { artworkPath, artworkText } from "./artworks";
 
 export function person() {
@@ -12,10 +12,10 @@ export function person() {
 export function profileSchema(locale?: Locale) {
   const path = locale ? `/oi/${locale}` : "/oi";
   return { "@context": "https://schema.org", "@graph": [person(),
-    { "@type": "WebSite", "@id": absoluteUrl("/#website"), url: absoluteUrl("/"), name: profile.name,
+    { "@type": "WebSite", "@id": absoluteUrl("/#website"), url: absoluteUrl("/"), name: SITE_NAME,
       inLanguage: ["en", "ko"], publisher: { "@id": absoluteUrl("/oi#person") } },
     { "@type": "ProfilePage", "@id": absoluteUrl(`${path}#page`), url: absoluteUrl(path),
-      name: profile[locale ?? "en"].title, description: profile[locale ?? "en"].description,
+      name: SITE_NAME, description: profile[locale ?? "en"].description,
       inLanguage: locale ?? "en", mainEntity: { "@id": absoluteUrl("/oi#person") }, isPartOf: { "@id": absoluteUrl("/#website") } },
   ] };
 }
@@ -34,7 +34,7 @@ export function artworkSchema(artwork: Artwork, locale: Locale) {
       ...(artwork.references?.length ? { citation: artwork.references.map((ref) => ref.url) } : {}),
     },
     { "@type": "BreadcrumbList", itemListElement: [
-      { "@type": "ListItem", position: 1, name: profile.name, item: absoluteUrl("/oi") },
+      { "@type": "ListItem", position: 1, name: SITE_NAME, item: absoluteUrl("/oi") },
       { "@type": "ListItem", position: 2, name: text.title, item: url },
     ] },
   ] };

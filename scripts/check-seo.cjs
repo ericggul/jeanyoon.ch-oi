@@ -28,6 +28,31 @@ async function main() {
   const { serializeJsonLd, artworkSchema } = load('@/lib/seo/structured-data');
   const sitemap = load('@/app/sitemap').default;
   const { llmsIndex, llmsFull } = load('@/lib/seo/llms');
+  // Explicit user naming requirement: generic SEO work must never rename the site.
+  const fixedName = 'jeanyoon.ch/oi';
+  assert.equal(load('@/lib/seo/site').SITE_NAME, fixedName);
+  function assertSiteMetadata(metadata) {
+    assert.deepEqual(metadata.title, { absolute: fixedName });
+    if (metadata.openGraph) {
+      assert.equal(metadata.openGraph.title, fixedName);
+      assert.equal(metadata.openGraph.siteName, fixedName);
+    }
+    if (metadata.twitter) assert.equal(metadata.twitter.title, fixedName);
+  }
+  for (const route of ['layout', 'oi/page', 'oi/research/banpo-xism/page', 'oi/artworks/[slug]/page']) {
+    assertSiteMetadata(load(`@/app/${route}`).metadata);
+  }
+  assert.equal(load('@/app/layout').metadata.applicationName, fixedName);
+  for (const lang of ['en', 'ko']) {
+    assertSiteMetadata(load('@/lib/seo/metadata').profileMetadata(lang));
+    const graph = load('@/lib/seo/structured-data').profileSchema(lang)['@graph'];
+    assert.equal(graph.find((entity) => entity['@type'] === 'WebSite').name, fixedName);
+    assert.equal(graph.find((entity) => entity['@type'] === 'ProfilePage').name, fixedName);
+    assert.equal(graph.find((entity) => entity['@type'] === 'Person').name, 'Jeanyoon Choi');
+  }
+  assert(llmsIndex().startsWith(`# ${fixedName}\n`));
+  assert(llmsFull().startsWith(`# ${fixedName}\n`));
+
   for (const item of sitemap()) assert(!item.url.includes('oi-v1'));
   for (const artwork of artworks.filter((entry) => !artworkLocales(entry).length)) {
     assert(!sitemap().some((entry) => entry.url.includes(`/artworks/${artwork.slug}`)));
@@ -46,6 +71,7 @@ async function main() {
     fixture.content.ko.paragraphs.push('관람자가 두 화면을 연결합니다.');
     for (const lang of ['en', 'ko']) {
       const url = `https://jeanyoon.ch/oi/artworks/seo-test-only/${lang}`;
+      assertSiteMetadata(artworkMetadata(fixture, lang));
       assert.equal(artworkMetadata(fixture, lang).alternates.canonical, url);
       assert.equal(artworkMetadata(fixture, lang).alternates.languages[lang], url);
       const entry = sitemap().find((entry) => entry.url === url);

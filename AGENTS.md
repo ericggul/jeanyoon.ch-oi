@@ -20,6 +20,12 @@ Use a publicly readable, published CSV URL in `GOOGLE_SHEET_CSV_URL` (server-sid
 
 Do not put private sheet data or service credentials into a public CSV. If private access becomes necessary, design a server-side Google API integration then.
 
+## Fixed site name — explicit user requirement
+
+The exact site name and every page's browser/SEO title are **`jeanyoon.ch/oi`**, in every language and route. Use `SITE_NAME` from `lib/seo/site.ts` for metadata titles, Open Graph/Twitter titles, `applicationName`, `WebSite` names, and other site-branding labels. Do not add prefixes, suffixes, artist names, artwork names, translated names, keywords, or title templates to these titles.
+
+AI agents must preserve this naming rule during all future SEO, search-engine, LLM discovery, content, and refactoring work. Only a new explicit user instruction to change the site name/title may override it; a general request to improve SEO is not permission. Keep the artist's actual identity and artwork/publication titles in their respective content and entity data. Run `node scripts/check-seo.cjs` after SEO changes.
+
 ## Migration and SEO
 
 The site URL is fixed to `https://jeanyoon.ch`, with no launch environment switch or preview indexing block. SEO modules generate canonicals, language alternates, structured data, sitemap and LLM text from real content. See `docs/SEO.md`. Keep unfinished artwork previews and design studies out of the index. Before public cutover, replace sample data and verify public metadata.

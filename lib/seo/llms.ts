@@ -2,12 +2,12 @@ import { practice } from "@/content/practice";
 import { profile } from "@/content/profile";
 import { research } from "@/content/research";
 import { artworks } from "@/lib/artworks";
-import { absoluteUrl, locales } from "./site";
+import { absoluteUrl, locales, SITE_NAME } from "./site";
 import { artworkLocales, artworkPath, artworkText } from "./artworks";
 
 export function llmsIndex() {
   return [
-    `# ${profile.name}${profile.koreanName ? ` / ${profile.koreanName}` : ""}`,
+    `# ${SITE_NAME}`,
     "", `> ${profile.en.description}`, "", profile.ko.description, "",
     "This is the artist's own portfolio. Artwork pages describe the artist's work; linked publications retain their listed authors and publication status.",
     "", "## Artist", "",

@@ -13,6 +13,7 @@ export type ResearchPublication = {
   volume?: string;
   issue?: string;
   pages?: string;
+  articleNumber?: string;
   doi?: string;
   url: string;
   scholarUrl: string;

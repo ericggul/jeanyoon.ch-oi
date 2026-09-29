@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import GoogleAnalytics from "@/components/seo/google-analytics";
-import { SITE_URL } from "@/lib/seo/site";
+import { SITE_NAME, SITE_URL } from "@/lib/seo/site";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -12,13 +12,14 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: { default: "Jeanyoon Choi", template: "%s | Jeanyoon Choi" },
+  title: { absolute: SITE_NAME },
   description: "Artworks, projects, and research by Jeanyoon Choi.",
-  applicationName: "Jeanyoon Choi",
+  applicationName: SITE_NAME,
+  twitter: { card: "summary_large_image", title: SITE_NAME },
   openGraph: {
     type: "website",
-    siteName: "Jeanyoon Choi",
-    title: "Jeanyoon Choi",
+    siteName: SITE_NAME,
+    title: SITE_NAME,
     description: "Artworks, projects, and research by Jeanyoon Choi.",
   },
 };
