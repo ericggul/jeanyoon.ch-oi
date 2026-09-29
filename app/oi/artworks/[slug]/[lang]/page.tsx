@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { artworks } from "@/content/artworks";
+import { displayArtworkTitle } from "@/content/artworks/title";
 import { profile } from "@/content/about";
 import { artworkLocales, artworkPath, artworkText } from "@/lib/seo/artworks";
 import { artworkMetadata } from "@/lib/seo/metadata";
@@ -27,16 +28,17 @@ export async function generateMetadata(props: Props) {
 export default async function ArtworkPage(props: Props) {
   const { artwork, text, lang } = await resolve(props);
   const artistName = lang === "ko" ? `${profile.koreanName} (${profile.name})` : profile.name;
+  const creatorNames = artwork.creators?.join(", ") || artistName;
   return <main lang={lang} className={styles.text}>
     <JsonLd data={artworkSchema(artwork, lang)} />
     <nav aria-label={lang === "ko" ? "작가 및 언어" : "Artist and language"}>
       <a href={`/oi/${lang}`}>← {artistName}</a>
       {artworkLocales(artwork).map((language) => <a key={language} href={artworkPath(artwork, language)} hrefLang={language}>{language === "ko" ? "한국어" : "English"}</a>)}
     </nav>
-    <h1>{text.title}</h1>
-    <p>{artistName} · {artwork.year}{text.medium ? ` · ${text.medium}` : ""}</p>
+    <h1>{displayArtworkTitle(text.title)}</h1>
+    <p>{creatorNames} · {artwork.year}{text.medium ? ` · ${text.medium}` : ""}</p>
     <p>{text.summary}</p>
-    {artwork.image && <img src={artwork.image} alt={text.imageAlt || text.title} />}
+    {artwork.image && <img src={artwork.image} alt={text.imageAlt || artwork.images?.find((image) => image.src === artwork.image)?.alt || text.title} />}
     {text.paragraphs.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
     {artwork.references?.length ? <section>
       <h2>{lang === "ko" ? "관련 자료" : "References"}</h2>

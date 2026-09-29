@@ -7,17 +7,17 @@ export const introduction = "You can get in touch with me through following chan
 export const contactLinks = [
   {
     label: "LinkedIn",
-    description: "Professional profile.",
+    description: "@jeanyoonchoi",
     href: "https://www.linkedin.com/in/jeanyoonchoi",
   },
   {
     label: "Instagram",
-    description: "Art and updates.",
+    description: "@schumpeterstrasse",
     href: "https://www.instagram.com/schumpeterstrasse",
   },
   {
     label: "KAIST XD Lab",
-    description: "Research lab.",
+    description: "xdlab.net",
     href: "https://www.xdlab.net/",
   },
   {

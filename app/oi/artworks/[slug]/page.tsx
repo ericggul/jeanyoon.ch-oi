@@ -1,9 +1,9 @@
 import { SITE_NAME } from "@/lib/seo/site";
 import type { Metadata } from "next";
-import { notFound, permanentRedirect } from "next/navigation";
+import { notFound } from "next/navigation";
 import { artworks } from "@/content/artworks";
-import ArtworkPreview from "./preview";
-import { artworkLocales, artworkPath } from "@/lib/seo/artworks";
+import { research } from "@/content/research";
+import ArtworkView from "./artwork-view";
 
 type Props = { params: Promise<{ slug: string }> };
 export function generateStaticParams() {
@@ -16,7 +16,6 @@ export default async function ArtworkPage({ params }: Props) {
   const { slug } = await params;
   const artwork = artworks.find((entry) => entry.slug === slug);
   if (!artwork) notFound();
-  const [locale] = artworkLocales(artwork);
-  if (locale) permanentRedirect(artworkPath(artwork, locale));
-  return <ArtworkPreview title={artwork.title} year={artwork.year} slug={artwork.slug} />;
+  const paper = research.find((entry) => entry.id === artwork.relatedResearchId);
+  return <ArtworkView artwork={artwork} paper={paper ? { url: paper.url, label: "Read DIS paper ↗" } : undefined} otherArtworks={artworks.filter((entry) => entry.slug !== slug).map(({ slug, title, year }) => ({ slug, title, year }))} />;
 }

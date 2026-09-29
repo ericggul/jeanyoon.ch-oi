@@ -1,5 +1,10 @@
 export const menuDescription = "Biography and artistic practice.";
 
+export const explore = {
+  introduction: "You can explore my practice through my artworks, research, experiments, projects, and texts:",
+  sections: ["artworks", "research", "experiments", "projects", "texts"],
+} as const;
+
 export const cvDownload = {
   label: "Download CV ↓",
   description: "Download CV as a PDF.",

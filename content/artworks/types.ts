@@ -7,6 +7,8 @@ export type ArtworkText = {
   medium?: string;
   imageAlt?: string;
 };
+export type ArtworkImage = { src: string; alt: string; caption: string; width: number; height: number };
+export type ArtworkExhibition = { name: string; venue?: string; dates?: string; url?: string };
 export type Artwork = {
   slug: string;
   title: string;
@@ -16,6 +18,13 @@ export type Artwork = {
   height: number;
   content?: Partial<Record<Locale, ArtworkText>>;
   image?: string;
+  images?: readonly ArtworkImage[];
+  video?: { label: string; url: string };
+  exhibitions?: readonly ArtworkExhibition[];
+  site?: string;
+  relatedResearchId?: string;
+  creators?: readonly string[];
+  venue?: string;
   updated?: string; // Actual content revision date, YYYY-MM-DD; not a build timestamp.
   references?: readonly { label: string; url: string }[];
 };

@@ -2,9 +2,10 @@
 
 import { useEffect, useRef, useState, type MouseEvent } from "react";
 import { siteContent as copy, type SiteSection } from "@/content/site";
-import { cvDownload, profile } from "@/content/about";
+import { cvDownload, profile, explore } from "@/content/about";
 import { research } from "@/content/research";
-import { artworks } from "@/content/artworks";
+import { artworks, introduction as artworksIntroduction } from "@/content/artworks";
+import { displayArtworkTitle } from "@/content/artworks/title";
 import { selectMessage as projectSelectMessage, emptyMessage as projectEmptyMessage } from "@/content/projects";
 import { emptyMessage as experimentsEmptyMessage } from "@/content/experiments";
 import { emptyMessage as textsEmptyMessage } from "@/content/texts";
@@ -22,7 +23,7 @@ const introduction: Line[] = [
   ...copy.introduction.map((text) => ({ text })),
 ];
 const artworkChoices: Choice[] = artworks.map((artwork) => ({
-  label: `${artwork.title} (${artwork.year})`,
+  label: `${displayArtworkTitle(artwork.title)} (${artwork.year})`,
   description: artwork.menuDescription,
   href: `/oi/artworks/${artwork.slug}`,
   windowSize: { width: artwork.width, height: artwork.height },
@@ -37,7 +38,10 @@ const researchChoices: Choice[] = research.map((publication) => ({
 const contactChoices: Choice[] = contactLinks.map((link) => ({ ...link }));
 const homeChoices: Choice[] = copy.menu.map(({ id, description }) => ({ label: id, description, section: id }));
 const back: Choice = { label: copy.backToOi, description: copy.backToOiDescription, section: "oi" };
-const aboutChoices: Choice[] = [cvDownload, ...homeChoices.filter(({ section }) => section === "contact"), back];
+const aboutChoices: Choice[] = [
+  ...explore.sections.flatMap((section) => homeChoices.filter((choice) => choice.section === section)),
+  cvDownload, ...homeChoices.filter(({ section }) => section === "contact"), back,
+];
 const hint = copy.hint;
 const initial: Turn = { path: "~", command: "cd /oi", lines: introduction, choices: homeChoices };
 const prompt = (turn: Turn) => `${copy.identity} ${turn.promptPath ?? turn.path} % `;
@@ -47,9 +51,9 @@ const length = (turn: Turn) => prompt(turn).length + turn.command.length + 1
 
 function sectionTurn(section: Section, from: string, projects: Project[]): Turn {
   const lines: Line[] = section === "oi" ? []
-    : section === "artworks" ? []
+    : section === "artworks" ? [{ text: artworksIntroduction }]
     : section === "research" ? []
-    : section === "about" ? [{ text: profile.name, heading: true }, ...profile.en.paragraphs.map((text) => ({ text, lang: "en" as const }))]
+    : section === "about" ? [{ text: profile.name, heading: true }, ...profile.en.paragraphs.map((text) => ({ text, lang: "en" as const })), { text: `\n${explore.introduction}` }]
     : section === "projects" ? [{ text: projects.length ? projectSelectMessage : projectEmptyMessage, tone: "muted" }]
     : section === "contact" ? [{ text: contactIntroduction }]
     : [{ text: section === "experiments" ? experimentsEmptyMessage : textsEmptyMessage, tone: "muted" }];
@@ -64,8 +68,8 @@ function sectionTurn(section: Section, from: string, projects: Project[]): Turn 
   };
 }
 
-export default function TerminalSession({ projects }: { projects: Project[] }) {
-  const [turns, setTurns] = useState<Turn[]>([initial]);
+export default function TerminalSession({ projects, initialSection }: { projects: Project[]; initialSection?: "artworks" }) {
+  const [turns, setTurns] = useState<Turn[]>(() => initialSection ? [initial, sectionTurn(initialSection, "/oi", projects)] : [initial]);
   const [characters, setCharacters] = useState(0);
   const [selected, setSelected] = useState(0);
   const [announcement, setAnnouncement] = useState("");

@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import "./globals.css";
 import GoogleAnalytics from "@/components/seo/google-analytics";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/site";
 

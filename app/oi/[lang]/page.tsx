@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { profile } from "@/content/about";
 import { research } from "@/content/research";
+import { displayArtworkTitle } from "@/content/artworks/title";
 import { locales } from "@/lib/seo/site";
 import { profileMetadata } from "@/lib/seo/metadata";
 import { profileSchema } from "@/lib/seo/structured-data";
@@ -26,7 +27,7 @@ export default async function ProfilePage({ params }: Props) {
     {works.length > 0 && <section>
       <h2>{lang === "ko" ? "작품" : "Artworks"}</h2>
       <ul>{works.map((work) => <li key={work.slug}>
-        <a href={artworkPath(work, lang)}>{artworkText(work, lang)!.title}</a> ({work.year})
+        <a href={artworkPath(work, lang)}>{displayArtworkTitle(artworkText(work, lang)!.title)}</a> ({work.year})
         <p>{artworkText(work, lang)!.summary}</p>
       </li>)}</ul>
     </section>}

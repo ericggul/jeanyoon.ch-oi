@@ -25,7 +25,11 @@ export function artworkSchema(artwork: Artwork, locale: Locale) {
   return { "@context": "https://schema.org", "@graph": [person(),
     { "@type": "VisualArtwork", "@id": absoluteUrl(`/oi/artworks/${artwork.slug}#artwork`),
       name: text.title, description: text.summary, url, mainEntityOfPage: url,
-      creator: { "@id": absoluteUrl("/oi#person") }, inLanguage: locale,
+      creator: artwork.creators && artwork.creators.length > 1
+        ? artwork.creators.map((name) => name === profile.name
+          ? { "@id": absoluteUrl("/oi#person") }
+          : { "@type": "Person", name })
+        : { "@id": absoluteUrl("/oi#person") }, inLanguage: locale,
       ...(artwork.year ? { dateCreated: artwork.year } : {}),
       ...(artwork.updated ? { dateModified: artwork.updated } : {}),
       ...(artwork.image ? { image: absoluteUrl(artwork.image) } : {}),

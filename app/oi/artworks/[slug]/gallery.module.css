@@ -1,0 +1,21 @@
+.artwork { max-width: none; }
+.heading, .summary, .body { white-space: pre-wrap; }
+.heading { color: #87d7ff; }
+.summary, .body { max-width: 82ch; }
+.viewer { max-width: 960px; margin: 1.35em 0; }
+.figure { margin: 0; }
+.imageStage { height: min(64vh, 640px); }
+.imageStage img { display: block; width: 100%; height: 100%; object-fit: contain; object-position: left center; }
+.caption { max-width: 82ch; min-height: 2.7em; margin-top: 0.65em; color: #aaa; }
+.browseLabel { margin-top: 0.8em; color: #999; }
+.imageIndex { display: flex; flex-wrap: wrap; align-items: center; gap: 0 0.35em; margin-top: 0.2em; color: #999; }
+.imageIndex button { border: 0; border-radius: 0; padding: 4px; background: transparent; color: #87d7ff; font: inherit; cursor: pointer; touch-action: manipulation; }
+.imageIndex button:hover, .imageIndex button:focus-visible, .imageIndex .currentIndex { color: #000; background: #87d7ff; outline: none; }
+.indexEntry { white-space: nowrap; }
+.body { margin-top: 1.35em; }
+.footer { margin-top: 1.35em; max-width: 82ch; }
+.footerLine { display: block; white-space: pre-wrap; }
+.footerLink { width: fit-content; max-width: 100%; padding: 3px 8px 3px 0; color: #87d7ff; text-decoration: none; }
+.footerLink:hover, .footerLink:focus-visible { color: #000; background: #87d7ff; outline: none; }
+.space { margin-top: 1.35em; }
+@media (max-width: 600px) { .imageStage { height: min(55vh, 480px); } }

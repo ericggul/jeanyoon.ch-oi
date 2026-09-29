@@ -30,6 +30,6 @@ export function artworkMetadata(artwork: Artwork, locale: Locale) {
     description: text.summary,
     path: artworkPath(artwork, locale), locale,
     languages: Object.fromEntries(artworkLocales(artwork).map((language) => [language, absoluteUrl(artworkPath(artwork, language))])),
-    image: artwork.image ? { url: absoluteUrl(artwork.image), alt: text.imageAlt || text.title } : undefined,
+    image: artwork.image ? { url: absoluteUrl(artwork.image), alt: text.imageAlt || artwork.images?.find((image) => image.src === artwork.image)?.alt || text.title } : undefined,
   });
 }
