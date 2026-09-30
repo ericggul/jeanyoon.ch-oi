@@ -23,6 +23,8 @@ export const profile = {
   name: "Jeanyoon Choi",
   koreanName: "최정윤",
   alternateNames: ["Jean-Yoon Choi"],
+  // Scholarly identity profiles (ORCID from the v3 SoTA record; Scholar from content/research).
+  identifiers: ["https://orcid.org/0009-0002-9846-3865", "https://scholar.google.com/citations?user=dBBmS0oAAAAJ"],
   en: {
     title: "Jeanyoon Choi — Media Art, Interactive Art & Web Art",
     description: "Jeanyoon Choi is a Korean computational artist and researcher creating multi-device web artworks about the complexity of AI, algorithmic culture, and economic structures.",

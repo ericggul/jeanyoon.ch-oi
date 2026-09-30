@@ -6,6 +6,9 @@ import { artworkPath, artworkText } from "./artworks";
 import { artworks } from "@/content/artworks";
 import { contactLinks } from "@/content/contact";
 import { artworkDiscovery } from "./artwork-content";
+import type { Collection, Detail } from "@/lib/content/types";
+import type { ResearchPublication } from "@/content/research";
+import { collectionCopy, entryPath } from "./collections";
 
 export function artworkImages(artwork: Artwork) {
   return (artwork.images ?? []).map((image) => ({
@@ -24,7 +27,7 @@ export function person() {
   return { "@type": "Person", "@id": absoluteUrl("/oi#person"), name: profile.name,
     alternateName: [...profile.alternateNames, ...(profile.koreanName ? [profile.koreanName] : [])],
     url: absoluteUrl("/oi"), jobTitle: ["Computational Artist", "Web Art Researcher"],
-    sameAs: contactLinks.filter((link) => /linkedin.com|instagram.com/.test(link.href)).map((link) => link.href),
+    sameAs: [...contactLinks.filter((link) => /linkedin.com|instagram.com/.test(link.href)).map((link) => link.href), ...profile.identifiers],
     subjectOf: artworks.map((artwork) => ({ "@type": "WebPage", url: absoluteUrl(artworkPath(artwork, "en")), about: { "@id": absoluteUrl("/oi#person") }, mainEntity: { "@id": absoluteUrl(`/oi/artworks/${artwork.slug}#artwork`) } })),
     knowsAbout: [...profile.en.topics, ...profile.ko.topics], description: profile.en.description };
 }
@@ -66,5 +69,46 @@ export function artworkSchema(artwork: Artwork, locale: Locale) {
       { "@type": "ListItem", position: 2, name: text.title, item: url },
     ] },
   ] };
+}
+const breadcrumb = (items: { name: string; path: string }[]) => ({ "@type": "BreadcrumbList", itemListElement: [
+  { "@type": "ListItem", position: 1, name: SITE_NAME, item: absoluteUrl("/oi") },
+  ...items.map((item, index) => ({ "@type": "ListItem", position: index + 2, name: item.name, item: absoluteUrl(item.path) })),
+] });
+
+export function entrySchema(collection: Collection, detail: Detail, extra: { date?: string; description: string; location?: string; roles?: string[] }) {
+  const path = entryPath(collection, detail.slug);
+  const url = absoluteUrl(path);
+  const artist = { "@id": absoluteUrl("/oi#person") };
+  const common = { "@id": `${url}#entry`, name: detail.title, url, mainEntityOfPage: url, description: extra.description, inLanguage: "en", isPartOf: { "@id": absoluteUrl("/#website") } };
+  const entity = collection === "texts"
+    ? { "@type": "BlogPosting", ...common, headline: detail.title, author: artist, publisher: artist, ...(extra.date ? { datePublished: extra.date } : {}) }
+    : collection === "experiments"
+      ? { "@type": "CreativeWork", ...common, creator: artist, ...(extra.date ? { dateCreated: extra.date } : {}),
+        ...(detail.images?.length ? { image: detail.images.map((image) => ({ "@type": "ImageObject", contentUrl: absoluteUrl(image.src), description: image.alt, width: image.width, height: image.height })) } : {}) }
+      : { "@type": "CreativeWork", ...common, ...(extra.date ? { temporalCoverage: extra.date } : {}),
+        contributor: { "@type": "Role", roleName: extra.roles ?? [], contributor: artist },
+        ...(extra.location ? { locationCreated: { "@type": "Place", name: extra.location } } : {}) };
+  return { "@context": "https://schema.org", "@graph": [person(), entity,
+    breadcrumb([{ name: collectionCopy[collection].heading, path: `/oi/${collection}` }, { name: detail.title, path }])] };
+}
+export function collectionSchema(collection: Collection, items: { slug: string; title: string }[]) {
+  const url = absoluteUrl(`/oi/${collection}`);
+  return { "@context": "https://schema.org", "@graph": [person(),
+    { "@type": "CollectionPage", "@id": `${url}#page`, url, name: SITE_NAME, description: collectionCopy[collection].description,
+      isPartOf: { "@id": absoluteUrl("/#website") }, about: { "@id": absoluteUrl("/oi#person") },
+      mainEntity: { "@type": "ItemList", numberOfItems: items.length, itemListElement: items.map((item, index) => ({ "@type": "ListItem", position: index + 1, name: item.title, url: absoluteUrl(entryPath(collection, item.slug)) })) } },
+    breadcrumb([{ name: collectionCopy[collection].heading, path: `/oi/${collection}` }])] };
+}
+export function publicationSchema(entry: ResearchPublication, path: string) {
+  const url = absoluteUrl(path);
+  return { "@context": "https://schema.org", "@graph": [person(),
+    { "@type": "ScholarlyArticle", "@id": `${url}#article`, url, mainEntityOfPage: url, headline: entry.title, name: entry.title,
+      ...(entry.abstract ? { abstract: entry.abstract } : {}), datePublished: entry.published ?? String(entry.year),
+      author: entry.authors.map((name) => name === profile.name ? { "@id": absoluteUrl("/oi#person") } : { "@type": "Person", name }),
+      isPartOf: { "@type": "PublicationEvent", name: entry.venue }, ...(entry.publisher ? { publisher: { "@type": "Organization", name: entry.publisher } } : {}),
+      ...(entry.pages ? { pagination: entry.pages } : {}),
+      ...(entry.doi ? { identifier: { "@type": "PropertyValue", propertyID: "DOI", value: entry.doi }, sameAs: [`https://doi.org/${entry.doi}`] } : {}),
+      ...(entry.relatedArtwork ? { about: { "@id": absoluteUrl(`/oi/artworks/${entry.relatedArtwork}#artwork`) } } : {}) },
+    breadcrumb([{ name: entry.title, path }])] };
 }
 export function serializeJsonLd(data: unknown) { return JSON.stringify(data).replace(/</g, "\\u003c"); }

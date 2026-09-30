@@ -1,0 +1,1046 @@
+[
+  {
+    "source": "/",
+    "destination": "/oi"
+  },
+  {
+    "source": "/about",
+    "destination": "/oi/en"
+  },
+  {
+    "source": "/works",
+    "destination": "/oi/experiments"
+  },
+  {
+    "source": "/texts",
+    "destination": "/oi/texts"
+  },
+  {
+    "source": "/research-blog",
+    "destination": "/oi/texts"
+  },
+  {
+    "source": "/research-blog/all",
+    "destination": "/oi/texts"
+  },
+  {
+    "source": "/nonequality",
+    "destination": "/oi/artworks/not-equal"
+  },
+  {
+    "source": "/artworks/civilisation",
+    "destination": "/oi/experiments/the-symphony-of-civilisation"
+  },
+  {
+    "source": "/publications/sota-dis-2026",
+    "destination": "/oi/research/sota"
+  },
+  {
+    "source": "/publications/sota-dis-2026.md",
+    "destination": "/oi/research/sota.md"
+  },
+  {
+    "source": "/cv/JeanyoonChoi_CV.pdf",
+    "destination": "/cv/JeanyoonChoi_CV.pdf"
+  },
+  {
+    "source": "/llms.txt",
+    "destination": "/llms.txt"
+  },
+  {
+    "source": "/works/cmfxi7bvf0000aqhb3v8w5ytx",
+    "destination": "/oi/artworks/sota"
+  },
+  {
+    "source": "/works/cmfxi7bvh0001aqhbacb9z7e9",
+    "destination": "/oi/artworks/omega"
+  },
+  {
+    "source": "/works/clrhocwxp0000t7flufzc1356",
+    "destination": "/oi/artworks/not-equal"
+  },
+  {
+    "source": "/text/clufmj6qa000512bjhbi492kd",
+    "destination": "/oi/texts/a-psychology-behind-sneak-peeking-other-s-avod-in-airplanes"
+  },
+  {
+    "source": "/text/cm8dzdc6b0008832iyyfsryeq",
+    "destination": "/oi/texts/abstraction-and-system-creation"
+  },
+  {
+    "source": "/text/clue7a1jw000312bjc1xhscoj",
+    "destination": "/oi/texts/against-rounded-personality-the-lonely-crowd-by-david-riesman"
+  },
+  {
+    "source": "/text/cm9i3i4x00009vhleh2g62mcr",
+    "destination": "/oi/texts/also-sprach-zarathustra"
+  },
+  {
+    "source": "/text/clzsh0n430001xuvy4gseejhs",
+    "destination": "/oi/texts/audio-visual-disentanglement"
+  },
+  {
+    "source": "/text/cm83267kg0000119w9dg6pbww",
+    "destination": "/oi/texts/auto-generating-auto-generative-systems"
+  },
+  {
+    "source": "/text/clzmwh631000012himt7kc5tv",
+    "destination": "/oi/texts/behavioural-interface"
+  },
+  {
+    "source": "/text/cm6xw7sni00112kp5nywhg8sa",
+    "destination": "/oi/texts/broadly-defining-the-term-data-visualisation"
+  },
+  {
+    "source": "/text/clzlnnp980000osmbfa0zd521",
+    "destination": "/oi/texts/brutal-interface-naked-interface"
+  },
+  {
+    "source": "/text/cm6wuir0h00102kp5k989ux4i",
+    "destination": "/oi/texts/button-based-interaction-amplified-interaction-and-mobile-jockey"
+  },
+  {
+    "source": "/text/clz9v4lyn00009er0h54ix5bk",
+    "destination": "/oi/texts/competition-relativeness-and-absoluteness"
+  },
+  {
+    "source": "/text/cltzylm1c000414gc8b3comm8",
+    "destination": "/oi/texts/conducting-screens-a-possible-approach-to-multi-device-web-artwork"
+  },
+  {
+    "source": "/text/clu3wjno40000dcicc7h7vx79",
+    "destination": "/oi/texts/creating-monochrome-digital-paintings-out-of-chatgpt"
+  },
+  {
+    "source": "/text/cm6vawj8z000d2kp58h0mwuof",
+    "destination": "/oi/texts/dadaism-for-the-algorithm-age"
+  },
+  {
+    "source": "/text/cm6vch6u3000n2kp51dxlc17u",
+    "destination": "/oi/texts/dark-matter-berlin-vs-multi-device-web-artwork"
+  },
+  {
+    "source": "/text/cm14nziig0000iuy9sjbe6lta",
+    "destination": "/oi/texts/data-emotionalisation"
+  },
+  {
+    "source": "/text/cm9i3cutk0005vhlezv1z0dzs",
+    "destination": "/oi/texts/data-vis-and-system-parametrisation"
+  },
+  {
+    "source": "/text/clul7dral0000kpmf2xydw4dc",
+    "destination": "/oi/texts/de-semantising-semantics"
+  },
+  {
+    "source": "/text/cm9i3y6uo000fvhlepdyvn7r4",
+    "destination": "/oi/texts/dimensional-transformation-system-parameterisation"
+  },
+  {
+    "source": "/text/cm1h8xxfw0000u3af6190utrg",
+    "destination": "/oi/texts/disentanglement-and-entanglement"
+  },
+  {
+    "source": "/text/cm9i3ssvi000bvhle5cn1hsj0",
+    "destination": "/oi/texts/every-object-is-part-of-the-system"
+  },
+  {
+    "source": "/text/cm9i3wam0000dvhlerptk9sdc",
+    "destination": "/oi/texts/everyday-interface-as-systematic-output"
+  },
+  {
+    "source": "/text/cm7xgkkf50001ss1myzbx4iqs",
+    "destination": "/oi/texts/explicit-commercial-interface-implicit-user-behaviour-tracking"
+  },
+  {
+    "source": "/text/cm9i3feaw0007vhleokxqrdo2",
+    "destination": "/oi/texts/from-euclidean-to-mandelbrotian-making-system-art-natural"
+  },
+  {
+    "source": "/text/cm7vsk8ut0000ss1muh7ous1y",
+    "destination": "/oi/texts/from-semantic-interaction-to-phenomenological-interaction"
+  },
+  {
+    "source": "/text/cluy70pqb0000ao9f2orbln50",
+    "destination": "/oi/texts/hacking-systems-more-primitive-than-a-game"
+  },
+  {
+    "source": "/text/clu9hr2lc000012bjfiamz804",
+    "destination": "/oi/texts/how-everyone-is-obsessed-with-base-interest-rates-and-how-i-am-obsessed-with-making-an-experience-out-of-such-an-obsession"
+  },
+  {
+    "source": "/text/cm8dynn210001832i4pc4hhne",
+    "destination": "/oi/texts/how-to-build-an-evolving-interactive-system-art"
+  },
+  {
+    "source": "/text/cm6tvsc8v0000x9owi6ff92x5",
+    "destination": "/oi/texts/how-to-well-design-semantical-interaction-which-users-actually-care"
+  },
+  {
+    "source": "/text/clz9v5yyd00019er0d90au77i",
+    "destination": "/oi/texts/human-as-interface-human-sliders-human-mouse"
+  },
+  {
+    "source": "/text/cm8dyvftk0005832i10h4ac3o",
+    "destination": "/oi/texts/i-multi-user-interaction-scenario-quantum-state-management"
+  },
+  {
+    "source": "/text/cm8dyrpxq0003832ig2lg1b0h",
+    "destination": "/oi/texts/i-odm-auto-generating-systems"
+  },
+  {
+    "source": "/text/clztg0sbd0001qkfn9g0odmw9",
+    "destination": "/oi/texts/integration-of-real-world-api-real-world-data-collaged-collective-world"
+  },
+  {
+    "source": "/text/cm6twaw620002x9owgqn8vtgk",
+    "destination": "/oi/texts/junk-site-the-digital-echo-chamber-of-ai-generated-web-spaces"
+  },
+  {
+    "source": "/text/cm1gl2pd600007m4775eh9k7o",
+    "destination": "/oi/texts/llm-gui-lui"
+  },
+  {
+    "source": "/text/cm9i38hyr0003vhle5yobj0oo",
+    "destination": "/oi/texts/multiple-globes"
+  },
+  {
+    "source": "/text/clyor2ao00000a2vc1c5jqnmu",
+    "destination": "/oi/texts/my-interpretation-of-hyperobject-accelerating-interactionn"
+  },
+  {
+    "source": "/text/clztfxx6w0000qkfnp2k7uopl",
+    "destination": "/oi/texts/perceivable-experience-vs-non-perceivable-experience"
+  },
+  {
+    "source": "/text/cltzyg7in000114gcorwhbuer",
+    "destination": "/oi/texts/platform-art-a-modular-approach"
+  },
+  {
+    "source": "/text/clzwzox7b00001aqj8k4i7ppj",
+    "destination": "/oi/texts/platform-art"
+  },
+  {
+    "source": "/text/cluanrh1b000212bjewnt4iv8",
+    "destination": "/oi/texts/procrustesing-time"
+  },
+  {
+    "source": "/text/clyor9pqe0001a2vcgveu0zaa",
+    "destination": "/oi/texts/proposal-the-innovative-interactive-immersive-inspirational-metaverse"
+  },
+  {
+    "source": "/text/clz4zvbd60001tfy89qg6s0bu",
+    "destination": "/oi/texts/puppet-show-and-will-to-power"
+  },
+  {
+    "source": "/text/clv4j8lfq0001ao9fpw1wrkci",
+    "destination": "/oi/texts/real-time-archiving-art"
+  },
+  {
+    "source": "/text/clxr8zxbt0000ql7kbwqvv6mk",
+    "destination": "/oi/texts/research-for-omega-the-hallucination-of-vectorisation"
+  },
+  {
+    "source": "/text/cm6vcnyuq000q2kp5haj509fg",
+    "destination": "/oi/texts/resting-is-part-of-the-data-resting-is-part-of-the-art"
+  },
+  {
+    "source": "/text/cm6wggtq8000x2kp5s25nve2z",
+    "destination": "/oi/texts/semantic-interaction-dimensional-transformation"
+  },
+  {
+    "source": "/text/clvpk5x800000f27qblilhavg",
+    "destination": "/oi/texts/simple-interaction-based-immersiveness"
+  },
+  {
+    "source": "/text/cm7abb5ag00172kp5umxda97z",
+    "destination": "/oi/texts/system-art-contextual-switch-generatable-automatic-systems"
+  },
+  {
+    "source": "/text/cm78xp4js00162kp5ze324afi",
+    "destination": "/oi/texts/system-art-generative-x-generative-simulacra"
+  },
+  {
+    "source": "/text/cm9i376g90001vhlewsftivap",
+    "destination": "/oi/texts/system-art-module-layout-and-layers"
+  },
+  {
+    "source": "/text/cm78xd9th00132kp5tckgu9tn",
+    "destination": "/oi/texts/system-art-progressive-storytelling-vs-state-based-approach"
+  },
+  {
+    "source": "/text/cm9i367kl0000vhlep120wlwm",
+    "destination": "/oi/texts/system-art-rebellion-to-the-system"
+  },
+  {
+    "source": "/text/cm6who79g000y2kp55iflttn5",
+    "destination": "/oi/texts/system-art-the-age-of-generated-automated-system"
+  },
+  {
+    "source": "/text/cm78x7qse00122kp5r2ny5jya",
+    "destination": "/oi/texts/system-art-the-elephant-and-the-blind"
+  },
+  {
+    "source": "/text/cm78xkx9100152kp5uxoh9rr5",
+    "destination": "/oi/texts/system-art-visual-state-and-system-state"
+  },
+  {
+    "source": "/text/cm1h9meog0001u3afk76he78z",
+    "destination": "/oi/texts/system-dynamics-depciting-the-ecosystem-as-multi-device-web-artwork-mdwa"
+  },
+  {
+    "source": "/text/cm6cb39eh0000gmd4po5qk2hg",
+    "destination": "/oi/texts/tech-art-not-art-tech"
+  },
+  {
+    "source": "/text/cm6tvxd250001x9ow41j7mimm",
+    "destination": "/oi/texts/the-individual-vs-the-system-from-human-professional-services-to-ai-agents"
+  },
+  {
+    "source": "/text/cm6vct9gt000u2kp5msa3gkxc",
+    "destination": "/oi/texts/two-rooms-problem-creating-inter-spatial-multi-device-web-artwork"
+  },
+  {
+    "source": "/text/clz4ysoqn0000tfy8lc593dtd",
+    "destination": "/oi/texts/two-rooms-problem-interrogation-room"
+  },
+  {
+    "source": "/text/clupdbfjp0002kpmfkjxzeuz0",
+    "destination": "/oi/texts/two-simple-experiment-ideas-using-multi-modality"
+  },
+  {
+    "source": "/text/cltzyca90000014gc1d1j5d9e",
+    "destination": "/oi/texts/why-i-started-writing"
+  },
+  {
+    "source": "/works/clrgzuws60002u59znswrt63s",
+    "destination": "/oi/experiments/105"
+  },
+  {
+    "source": "/works/clrhpoemg0005t7fl1r97tpt0",
+    "destination": "/oi/experiments/17-square-minus-4-square-equals-4-33"
+  },
+  {
+    "source": "/works/clrhpoemg0007t7flnet48g6o",
+    "destination": "/oi/experiments/altering-headline"
+  },
+  {
+    "source": "/works/clrhplw7y0004t7flqxh3ymfr",
+    "destination": "/oi/experiments/an-echo"
+  },
+  {
+    "source": "/works/clrhplw7w0001t7fleblch9qa",
+    "destination": "/oi/experiments/andy-warhol-s-campbell-s-soup-cans-award"
+  },
+  {
+    "source": "/works/clvl3k9ia0000l1rwrlc7py9s",
+    "destination": "/oi/experiments/bigger-dreams"
+  },
+  {
+    "source": "/works/clrgzhjlp000013x6fhe54z1b",
+    "destination": "/oi/experiments/das-gerede"
+  },
+  {
+    "source": "/works/clrm9boxg0005wxp9csgd8qdc",
+    "destination": "/oi/experiments/death-of-blue-screen"
+  },
+  {
+    "source": "/works/clyorw1wv0000aqyc596en808",
+    "destination": "/oi/experiments/factory-4-0"
+  },
+  {
+    "source": "/works/clrm9boxg0003wxp9oo2e7ynw",
+    "destination": "/oi/experiments/festival-messenger"
+  },
+  {
+    "source": "/works/clrm9boxb0001wxp9t1vlwskh",
+    "destination": "/oi/experiments/laboratory-occupied"
+  },
+  {
+    "source": "/works/clrm9boxh0006wxp9kecdc5q7",
+    "destination": "/oi/experiments/ling"
+  },
+  {
+    "source": "/works/clrhplw7y0003t7fl6eb00hsk",
+    "destination": "/oi/experiments/mba-medium-based-approach"
+  },
+  {
+    "source": "/works/clrh0ppkt000114e8g5vlklpw",
+    "destination": "/oi/experiments/mirror-mirror-on-the-wall"
+  },
+  {
+    "source": "/works/clrm3irql0000wxp9l50j6117",
+    "destination": "/oi/experiments/oscillating-cultures"
+  },
+  {
+    "source": "/works/clrh0ppkq000014e8hsyd2t9x",
+    "destination": "/oi/experiments/passage-of-water"
+  },
+  {
+    "source": "/works/clv4l9wsp000010snfvky4mut",
+    "destination": "/oi/experiments/registration"
+  },
+  {
+    "source": "/works/clrgzuws60001u59zbicydnus",
+    "destination": "/oi/experiments/reverse-voight-kampff-test"
+  },
+  {
+    "source": "/works/clrgzqgmz0000u59zt6yc06h4",
+    "destination": "/oi/experiments/scrolling-times"
+  },
+  {
+    "source": "/works/clrhplw7y0002t7flb2b4hnlk",
+    "destination": "/oi/experiments/shitga"
+  },
+  {
+    "source": "/works/clrm9boxg0004wxp98lyrpbbi",
+    "destination": "/oi/experiments/snu-virtual-festival"
+  },
+  {
+    "source": "/works/clrm9boxg0002wxp95taku6nl",
+    "destination": "/oi/experiments/the-chronology-of-values"
+  },
+  {
+    "source": "/works/clxndm7sw0000chq1zn6rnq61",
+    "destination": "/oi/experiments/the-symphony-of-civilisation"
+  },
+  {
+    "source": "/works/clyosc13b0001aqyc9xy3mc4y",
+    "destination": "/oi/experiments/uncharted-territory"
+  },
+  {
+    "source": "/works/clrgzuws70003u59z7eia0vcp",
+    "destination": "/oi/experiments/w"
+  },
+  {
+    "source": "/works/clrhpoemg0006t7flg87xtvdl",
+    "destination": "/oi/experiments/wooging"
+  },
+  {
+    "source": "/research-blog/dimensional-transformation-system-parameterisation",
+    "destination": "/oi/texts/dimensional-transformation-system-parameterisation"
+  },
+  {
+    "source": "/research-blog/everyday-interface-as-systematic-output",
+    "destination": "/oi/texts/everyday-interface-as-systematic-output"
+  },
+  {
+    "source": "/research-blog/every-object-is-part-of-the-system",
+    "destination": "/oi/texts/every-object-is-part-of-the-system"
+  },
+  {
+    "source": "/research-blog/also-sprach-zarathustra",
+    "destination": "/oi/texts/also-sprach-zarathustra"
+  },
+  {
+    "source": "/research-blog/system-art-visual-state-and-system-state",
+    "destination": "/oi/texts/system-art-visual-state-and-system-state"
+  },
+  {
+    "source": "/research-blog/auto-generating-auto-generative-systems",
+    "destination": "/oi/texts/auto-generating-auto-generative-systems"
+  },
+  {
+    "source": "/research-blog/from-euclidean-to-mandelbrotian-making-system-art-natural",
+    "destination": "/oi/texts/from-euclidean-to-mandelbrotian-making-system-art-natural"
+  },
+  {
+    "source": "/research-blog/data-vis-and-system-parametrisation",
+    "destination": "/oi/texts/data-vis-and-system-parametrisation"
+  },
+  {
+    "source": "/research-blog/i-multi-user-interaction-scenario-quantum-state-management",
+    "destination": "/oi/texts/i-multi-user-interaction-scenario-quantum-state-management"
+  },
+  {
+    "source": "/research-blog/multiple-globes",
+    "destination": "/oi/texts/multiple-globes"
+  },
+  {
+    "source": "/research-blog/system-art-module-layout-and-layers",
+    "destination": "/oi/texts/system-art-module-layout-and-layers"
+  },
+  {
+    "source": "/research-blog/system-art-rebellion-to-the-system",
+    "destination": "/oi/texts/system-art-rebellion-to-the-system"
+  },
+  {
+    "source": "/research-blog/abstraction-and-system-creation",
+    "destination": "/oi/texts/abstraction-and-system-creation"
+  },
+  {
+    "source": "/research-blog/how-to-build-an-evolving-interactive-system-art",
+    "destination": "/oi/texts/how-to-build-an-evolving-interactive-system-art"
+  },
+  {
+    "source": "/research-blog/i-odm-auto-generating-systems",
+    "destination": "/oi/texts/i-odm-auto-generating-systems"
+  },
+  {
+    "source": "/research-blog/clock-and-contemporary-society",
+    "destination": "/oi/texts"
+  },
+  {
+    "source": "/research-blog/explicit-commercial-interface-implicit-user-behaviour-tracking",
+    "destination": "/oi/texts/explicit-commercial-interface-implicit-user-behaviour-tracking"
+  },
+  {
+    "source": "/research-blog/from-semantic-interaction-to-phenomenological-interaction",
+    "destination": "/oi/texts/from-semantic-interaction-to-phenomenological-interaction"
+  },
+  {
+    "source": "/research-blog/system-art-generative-x-generative-simulacra",
+    "destination": "/oi/texts/system-art-generative-x-generative-simulacra"
+  },
+  {
+    "source": "/research-blog/system-art-contextual-switch-generatable-automatic-systems",
+    "destination": "/oi/texts/system-art-contextual-switch-generatable-automatic-systems"
+  },
+  {
+    "source": "/research-blog/system-art-progressive-storytelling-vs-state-based-approach",
+    "destination": "/oi/texts/system-art-progressive-storytelling-vs-state-based-approach"
+  },
+  {
+    "source": "/research-blog/f-system-art-and-carlo-rovelli",
+    "destination": "/oi/texts"
+  },
+  {
+    "source": "/research-blog/system-art-the-elephant-and-the-blind",
+    "destination": "/oi/texts/system-art-the-elephant-and-the-blind"
+  },
+  {
+    "source": "/research-blog/broadly-defining-the-term-data-visualisation",
+    "destination": "/oi/texts/broadly-defining-the-term-data-visualisation"
+  },
+  {
+    "source": "/research-blog/button-based-interaction-and-amplified-interaction",
+    "destination": "/oi/texts/button-based-interaction-amplified-interaction-and-mobile-jockey"
+  },
+  {
+    "source": "/research-blog/system-art-the-age-of-generated-automated-system",
+    "destination": "/oi/texts/system-art-the-age-of-generated-automated-system"
+  },
+  {
+    "source": "/research-blog/semantic-interaction-dimensional-transformation",
+    "destination": "/oi/texts/semantic-interaction-dimensional-transformation"
+  },
+  {
+    "source": "/research-blog/dark-matter-berlin-vs-mdwa",
+    "destination": "/oi/texts/dark-matter-berlin-vs-multi-device-web-artwork"
+  },
+  {
+    "source": "/research-blog/system-dynamics-depciting-the-ecosystem-as-mdwa",
+    "destination": "/oi/texts/system-dynamics-depciting-the-ecosystem-as-multi-device-web-artwork-mdwa"
+  },
+  {
+    "source": "/research-blog/dis-entanglement-and-entanglement",
+    "destination": "/oi/texts/disentanglement-and-entanglement"
+  },
+  {
+    "source": "/research-blog/llm-gui-lui",
+    "destination": "/oi/texts/llm-gui-lui"
+  },
+  {
+    "source": "/research-blog/data-emotionalisation",
+    "destination": "/oi/texts/data-emotionalisation"
+  },
+  {
+    "source": "/research-blog/platform-art",
+    "destination": "/oi/texts/platform-art"
+  },
+  {
+    "source": "/research-blog/integration-of-real-world-apireal-world-data-collaged-collective-world",
+    "destination": "/oi/texts/integration-of-real-world-api-real-world-data-collaged-collective-world"
+  },
+  {
+    "source": "/research-blog/perceivable-experience-vs-non-perceivable-experience",
+    "destination": "/oi/texts/perceivable-experience-vs-non-perceivable-experience"
+  },
+  {
+    "source": "/research-blog/audio-visual-disentanglement",
+    "destination": "/oi/texts/audio-visual-disentanglement"
+  },
+  {
+    "source": "/research-blog/behavioural-interface-natural-nudging",
+    "destination": "/oi/texts/behavioural-interface"
+  },
+  {
+    "source": "/research-blog/brutal-interfacenaked-interface",
+    "destination": "/oi/texts/brutal-interface-naked-interface"
+  },
+  {
+    "source": "/research-blog/human-as-interface-human-sliders-human-mouse",
+    "destination": "/oi/texts/human-as-interface-human-sliders-human-mouse"
+  },
+  {
+    "source": "/research-blog/competition-relativeness-and-absoluteness",
+    "destination": "/oi/texts/competition-relativeness-and-absoluteness"
+  },
+  {
+    "source": "/research-blog/puppet-show-and-will-to-power",
+    "destination": "/oi/texts/puppet-show-and-will-to-power"
+  },
+  {
+    "source": "/research-blog/two-rooms-problem-interrogation-room",
+    "destination": "/oi/texts/two-rooms-problem-interrogation-room"
+  },
+  {
+    "source": "/research-blog/proposal-the-innovative-interactive-immersive-inspirational-metaverse",
+    "destination": "/oi/texts/proposal-the-innovative-interactive-immersive-inspirational-metaverse"
+  },
+  {
+    "source": "/research-blog/my-interpretation-of-hyperobject-accelerating-interaction",
+    "destination": "/oi/texts/my-interpretation-of-hyperobject-accelerating-interactionn"
+  },
+  {
+    "source": "/research-blog/conducting-screens",
+    "destination": "/oi/texts/conducting-screens-a-possible-approach-to-multi-device-web-artwork"
+  },
+  {
+    "source": "/research-blog/why-i-started-writing",
+    "destination": "/oi/texts/why-i-started-writing"
+  },
+  {
+    "source": "/research-blog/platform-art-a-modular-approach",
+    "destination": "/oi/texts/platform-art-a-modular-approach"
+  },
+  {
+    "source": "/assets/personal/2021/campbell/1.webp",
+    "destination": "/experiments/andy-warhol-s-campbell-s-soup-cans-award/1.webp"
+  },
+  {
+    "source": "/assets/personal/2021/laboratory-occupied/1.webp",
+    "destination": "/experiments/laboratory-occupied/1.webp"
+  },
+  {
+    "source": "/assets/personal/2021/laboratory-occupied/2.webp",
+    "destination": "/experiments/laboratory-occupied/2.webp"
+  },
+  {
+    "source": "/assets/personal/2021/laboratory-occupied/3.webp",
+    "destination": "/experiments/laboratory-occupied/3.webp"
+  },
+  {
+    "source": "/assets/personal/2021/laboratory-occupied/4.webp",
+    "destination": "/experiments/laboratory-occupied/4.webp"
+  },
+  {
+    "source": "/assets/personal/2021/laboratory-occupied/5.webp",
+    "destination": "/experiments/laboratory-occupied/5.webp"
+  },
+  {
+    "source": "/assets/personal/2021/laboratory-occupied/6.webp",
+    "destination": "/experiments/laboratory-occupied/6.webp"
+  },
+  {
+    "source": "/assets/personal/2022/105/1.webp",
+    "destination": "/experiments/105/1.webp"
+  },
+  {
+    "source": "/assets/personal/2022/105/2.webp",
+    "destination": "/experiments/105/2.webp"
+  },
+  {
+    "source": "/assets/personal/2022/105/3.webp",
+    "destination": "/experiments/105/3.webp"
+  },
+  {
+    "source": "/assets/personal/2022/105/4.webp",
+    "destination": "/experiments/105/4.webp"
+  },
+  {
+    "source": "/assets/personal/2022/17square/1.webp",
+    "destination": "/experiments/17-square-minus-4-square-equals-4-33/1.webp"
+  },
+  {
+    "source": "/assets/personal/2022/an-echo/1.webp",
+    "destination": "/experiments/an-echo/1.webp"
+  },
+  {
+    "source": "/assets/personal/2022/an-echo/2.webp",
+    "destination": "/experiments/an-echo/2.webp"
+  },
+  {
+    "source": "/assets/personal/2022/chronology/1.webp",
+    "destination": "/experiments/the-chronology-of-values/1.webp"
+  },
+  {
+    "source": "/assets/personal/2022/chronology/2.webp",
+    "destination": "/experiments/the-chronology-of-values/2.webp"
+  },
+  {
+    "source": "/assets/personal/2022/chronology/3.webp",
+    "destination": "/experiments/the-chronology-of-values/3.webp"
+  },
+  {
+    "source": "/assets/personal/2022/mba/1.webp",
+    "destination": "/experiments/mba-medium-based-approach/1.webp"
+  },
+  {
+    "source": "/assets/personal/2022/mba/2.webp",
+    "destination": "/experiments/mba-medium-based-approach/2.webp"
+  },
+  {
+    "source": "/assets/personal/2022/mba/3.webp",
+    "destination": "/experiments/mba-medium-based-approach/3.webp"
+  },
+  {
+    "source": "/assets/personal/2022/mba/4.webp",
+    "destination": "/experiments/mba-medium-based-approach/4.webp"
+  },
+  {
+    "source": "/assets/personal/2022/shitga/1.webp",
+    "destination": "/experiments/shitga/1.webp"
+  },
+  {
+    "source": "/assets/personal/2022/shitga/2.webp",
+    "destination": "/experiments/shitga/2.webp"
+  },
+  {
+    "source": "/assets/personal/2022/shitga/3.webp",
+    "destination": "/experiments/shitga/3.webp"
+  },
+  {
+    "source": "/assets/personal/2022/w/1.webp",
+    "destination": "/experiments/w/1.webp"
+  },
+  {
+    "source": "/assets/personal/2022/w/2.webp",
+    "destination": "/experiments/w/2.webp"
+  },
+  {
+    "source": "/assets/personal/2022/w/3.webp",
+    "destination": "/experiments/w/3.webp"
+  },
+  {
+    "source": "/assets/personal/2022/w/4.webp",
+    "destination": "/experiments/w/4.webp"
+  },
+  {
+    "source": "/assets/personal/2022/w/5.webp",
+    "destination": "/experiments/w/5.webp"
+  },
+  {
+    "source": "/assets/personal/2022/w/6.webp",
+    "destination": "/experiments/w/6.webp"
+  },
+  {
+    "source": "/assets/personal/2022/w/7.webp",
+    "destination": "/experiments/w/7.webp"
+  },
+  {
+    "source": "/assets/personal/2023/altering-headline/1.webp",
+    "destination": "/experiments/altering-headline/1.webp"
+  },
+  {
+    "source": "/assets/personal/2023/das-gerede/1.webp",
+    "destination": "/experiments/das-gerede/1.webp"
+  },
+  {
+    "source": "/assets/personal/2023/das-gerede/2.webp",
+    "destination": "/experiments/das-gerede/2.webp"
+  },
+  {
+    "source": "/assets/personal/2023/nonequality/11.webp",
+    "destination": "/artworks/not-equal/7.webp"
+  },
+  {
+    "source": "/assets/personal/2023/nonequality/16.webp",
+    "destination": "/artworks/not-equal/4.webp"
+  },
+  {
+    "source": "/assets/personal/2023/nonequality/8.webp",
+    "destination": "/artworks/not-equal/3.webp"
+  },
+  {
+    "source": "/assets/personal/2023/rvkt/1.webp",
+    "destination": "/experiments/reverse-voight-kampff-test/1.webp"
+  },
+  {
+    "source": "/assets/personal/2023/rvkt/2.webp",
+    "destination": "/experiments/reverse-voight-kampff-test/2.webp"
+  },
+  {
+    "source": "/assets/personal/2023/rvkt/3.webp",
+    "destination": "/experiments/reverse-voight-kampff-test/3.webp"
+  },
+  {
+    "source": "/assets/personal/2023/scrolling-times/1.webp",
+    "destination": "/experiments/scrolling-times/1.webp"
+  },
+  {
+    "source": "/assets/personal/2023/scrolling-times/2.webp",
+    "destination": "/experiments/scrolling-times/2.webp"
+  },
+  {
+    "source": "/assets/personal/2023/scrolling-times/3.webp",
+    "destination": "/experiments/scrolling-times/3.webp"
+  },
+  {
+    "source": "/assets/personal/2023/scrolling-times/4.webp",
+    "destination": "/experiments/scrolling-times/4.webp"
+  },
+  {
+    "source": "/assets/personal/2023/wooging/1.webp",
+    "destination": "/experiments/wooging/1.webp"
+  },
+  {
+    "source": "/assets/personal/2023/wooging/2.webp",
+    "destination": "/experiments/wooging/2.webp"
+  },
+  {
+    "source": "/assets/personal/2024/bigger-dreams/1.webp",
+    "destination": "/experiments/bigger-dreams/1.webp"
+  },
+  {
+    "source": "/assets/personal/2024/bigger-dreams/2.webp",
+    "destination": "/experiments/bigger-dreams/2.webp"
+  },
+  {
+    "source": "/assets/personal/2024/bigger-dreams/3.webp",
+    "destination": "/experiments/bigger-dreams/3.webp"
+  },
+  {
+    "source": "/assets/personal/2024/bigger-dreams/4.webp",
+    "destination": "/experiments/bigger-dreams/4.webp"
+  },
+  {
+    "source": "/assets/personal/2024/bigger-dreams/5.webp",
+    "destination": "/experiments/bigger-dreams/5.webp"
+  },
+  {
+    "source": "/assets/personal/2024/bigger-dreams/6.webp",
+    "destination": "/experiments/bigger-dreams/6.webp"
+  },
+  {
+    "source": "/assets/personal/2024/bigger-dreams/7.webp",
+    "destination": "/experiments/bigger-dreams/7.webp"
+  },
+  {
+    "source": "/assets/personal/2024/registration/1.webp",
+    "destination": "/experiments/registration/1.webp"
+  },
+  {
+    "source": "/assets/personal/2024/registration/2.webp",
+    "destination": "/experiments/registration/2.webp"
+  },
+  {
+    "source": "/assets/personal/2024/registration/3.webp",
+    "destination": "/experiments/registration/3.webp"
+  },
+  {
+    "source": "/assets/personal/2024/registration/4.webp",
+    "destination": "/experiments/registration/4.webp"
+  },
+  {
+    "source": "/assets/personal/2024/registration/5.webp",
+    "destination": "/experiments/registration/5.webp"
+  },
+  {
+    "source": "/assets/personal/2025/omega/4.webp",
+    "destination": "/artworks/omega/5.webp"
+  },
+  {
+    "source": "/assets/personal/2025/omega/7.webp",
+    "destination": "/artworks/omega/2.webp"
+  },
+  {
+    "source": "/assets/projects/2022/festival-messenger/1.webp",
+    "destination": "/experiments/festival-messenger/1.webp"
+  },
+  {
+    "source": "/assets/projects/2022/festival-messenger/2.webp",
+    "destination": "/experiments/festival-messenger/2.webp"
+  },
+  {
+    "source": "/assets/projects/2022/festival-messenger/3.webp",
+    "destination": "/experiments/festival-messenger/3.webp"
+  },
+  {
+    "source": "/assets/projects/2022/festival-messenger/4.webp",
+    "destination": "/experiments/festival-messenger/4.webp"
+  },
+  {
+    "source": "/assets/projects/2022/snu-festival/1.webp",
+    "destination": "/experiments/snu-virtual-festival/1.webp"
+  },
+  {
+    "source": "/assets/projects/2022/snu-festival/2.webp",
+    "destination": "/experiments/snu-virtual-festival/2.webp"
+  },
+  {
+    "source": "/assets/projects/2022/snu-festival/3.webp",
+    "destination": "/experiments/snu-virtual-festival/3.webp"
+  },
+  {
+    "source": "/assets/projects/2023/dobs/1.webp",
+    "destination": "/experiments/death-of-blue-screen/1.webp"
+  },
+  {
+    "source": "/assets/projects/2023/ling/1.webp",
+    "destination": "/experiments/ling/1.webp"
+  },
+  {
+    "source": "/assets/projects/2023/ling/2.webp",
+    "destination": "/experiments/ling/2.webp"
+  },
+  {
+    "source": "/assets/projects/2023/ling/3.webp",
+    "destination": "/experiments/ling/3.webp"
+  },
+  {
+    "source": "/assets/projects/2023/ling/4.webp",
+    "destination": "/experiments/ling/4.webp"
+  },
+  {
+    "source": "/assets/projects/2023/mirror/1.webp",
+    "destination": "/experiments/mirror-mirror-on-the-wall/1.webp"
+  },
+  {
+    "source": "/assets/projects/2023/mirror/2.webp",
+    "destination": "/experiments/mirror-mirror-on-the-wall/2.webp"
+  },
+  {
+    "source": "/assets/projects/2023/mirror/3.webp",
+    "destination": "/experiments/mirror-mirror-on-the-wall/3.webp"
+  },
+  {
+    "source": "/assets/projects/2023/mirror/4.webp",
+    "destination": "/experiments/mirror-mirror-on-the-wall/4.webp"
+  },
+  {
+    "source": "/assets/projects/2023/mirror/5.webp",
+    "destination": "/experiments/mirror-mirror-on-the-wall/5.webp"
+  },
+  {
+    "source": "/assets/projects/2023/mirror/6.webp",
+    "destination": "/experiments/mirror-mirror-on-the-wall/6.webp"
+  },
+  {
+    "source": "/assets/projects/2023/pow/1.webp",
+    "destination": "/experiments/passage-of-water/1.webp"
+  },
+  {
+    "source": "/assets/projects/2023/pow/2.webp",
+    "destination": "/experiments/passage-of-water/2.webp"
+  },
+  {
+    "source": "/assets/projects/2023/pow/3.webp",
+    "destination": "/experiments/passage-of-water/3.webp"
+  },
+  {
+    "source": "/assets/projects/2023/pow/4.webp",
+    "destination": "/experiments/passage-of-water/4.webp"
+  },
+  {
+    "source": "/assets/projects/2023/pow/5.webp",
+    "destination": "/experiments/passage-of-water/5.webp"
+  },
+  {
+    "source": "/assets/projects/2023/pow/6.webp",
+    "destination": "/experiments/passage-of-water/6.webp"
+  },
+  {
+    "source": "/assets/projects/2023/pow/7.webp",
+    "destination": "/experiments/passage-of-water/7.webp"
+  },
+  {
+    "source": "/assets/projects/2023/pow/8.webp",
+    "destination": "/experiments/passage-of-water/8.webp"
+  },
+  {
+    "source": "/assets/projects/2023/snap/1.webp",
+    "destination": "/experiments/oscillating-cultures/1.webp"
+  },
+  {
+    "source": "/assets/projects/2023/snap/2.webp",
+    "destination": "/experiments/oscillating-cultures/2.webp"
+  },
+  {
+    "source": "/assets/projects/2024/civilisation/1.webp",
+    "destination": "/experiments/the-symphony-of-civilisation/1.webp"
+  },
+  {
+    "source": "/assets/projects/2024/civilisation/2.webp",
+    "destination": "/experiments/the-symphony-of-civilisation/2.webp"
+  },
+  {
+    "source": "/assets/projects/2024/civilisation/3.webp",
+    "destination": "/experiments/the-symphony-of-civilisation/3.webp"
+  },
+  {
+    "source": "/assets/projects/2024/civilisation/4.webp",
+    "destination": "/experiments/the-symphony-of-civilisation/4.webp"
+  },
+  {
+    "source": "/assets/projects/2024/civilisation/5.webp",
+    "destination": "/experiments/the-symphony-of-civilisation/5.webp"
+  },
+  {
+    "source": "/assets/projects/2024/civilisation/6.webp",
+    "destination": "/experiments/the-symphony-of-civilisation/6.webp"
+  },
+  {
+    "source": "/assets/projects/2024/civilisation/7.webp",
+    "destination": "/experiments/the-symphony-of-civilisation/7.webp"
+  },
+  {
+    "source": "/assets/projects/2024/civilisation/8.webp",
+    "destination": "/experiments/the-symphony-of-civilisation/8.webp"
+  },
+  {
+    "source": "/assets/projects/2024/civilisation/9.webp",
+    "destination": "/experiments/the-symphony-of-civilisation/9.webp"
+  },
+  {
+    "source": "/assets/projects/2024/factory4.0/1.webp",
+    "destination": "/experiments/factory-4-0/1.webp"
+  },
+  {
+    "source": "/assets/projects/2024/factory4.0/2.webp",
+    "destination": "/experiments/factory-4-0/2.webp"
+  },
+  {
+    "source": "/assets/projects/2024/factory4.0/3.webp",
+    "destination": "/experiments/factory-4-0/3.webp"
+  },
+  {
+    "source": "/assets/projects/2024/factory4.0/4.webp",
+    "destination": "/experiments/factory-4-0/4.webp"
+  },
+  {
+    "source": "/assets/projects/2024/uncharted-territory/1.webp",
+    "destination": "/experiments/uncharted-territory/1.webp"
+  },
+  {
+    "source": "/assets/projects/2024/uncharted-territory/2.webp",
+    "destination": "/experiments/uncharted-territory/2.webp"
+  },
+  {
+    "source": "/assets/projects/2024/uncharted-territory/3.webp",
+    "destination": "/experiments/uncharted-territory/3.webp"
+  },
+  {
+    "source": "/assets/projects/2024/uncharted-territory/4.webp",
+    "destination": "/experiments/uncharted-territory/4.webp"
+  },
+  {
+    "source": "/assets/projects/2024/uncharted-territory/5.webp",
+    "destination": "/experiments/uncharted-territory/5.webp"
+  },
+  {
+    "source": "/assets/projects/2024/uncharted-territory/6.webp",
+    "destination": "/experiments/uncharted-territory/6.webp"
+  },
+  {
+    "source": "/works/:id",
+    "destination": "/oi/experiments"
+  },
+  {
+    "source": "/text/:id",
+    "destination": "/oi/texts"
+  },
+  {
+    "source": "/research-blog/:slug",
+    "destination": "/oi/texts"
+  }
+]

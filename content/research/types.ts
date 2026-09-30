@@ -18,6 +18,14 @@ export type ResearchPublication = {
   doi?: string;
   url: string;
   scholarUrl: string;
+  abstract?: string;
+  /** ISO publication date, when known. */
+  published?: string;
+  /** Artwork slug this publication studies. */
+  relatedArtwork?: string;
+  /** Local citation record, e.g. /oi/research/sota. */
+  recordPath?: string;
+  links?: readonly { label: string; href: string }[];
 };
 
 export type ResearchManuscript = {

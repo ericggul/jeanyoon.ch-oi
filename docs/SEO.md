@@ -147,3 +147,17 @@ Additional official references:
 - https://developers.google.com/search/docs/appearance/site-names
 - https://developers.google.com/search/docs/appearance/favicon-in-search
 - https://developers.google.com/search/docs/appearance/google-images
+
+## portfolio-jyc.org → jeanyoon.ch/oi migration — 2026-09-30
+
+- Every terminal entry has its own indexable URL: `/oi/texts/<slug>`, `/oi/experiments/<slug>`, `/oi/projects/<slug>` plus `/oi/texts`, `/oi/experiments`, `/oi/projects` (`lib/seo/entry-route.tsx`). **They render the same terminal** (`TerminalSession` with `initialEntry`/`initialSection`) with that entry or section already opened — every page keeps the terminal structure (explicit user requirement). They carry `BlogPosting`/`CreativeWork` + `BreadcrumbList` JSON-LD, appear in the sitemap and `llms.txt`, and `llms-full.txt` includes all project/experiment text and the English text editions. Titles remain `jeanyoon.ch/oi`.
+- Terminal entry choices are now real `<a href="/oi/<collection>/<slug>">` links (plain click still opens inline), so crawlers reach those pages from `/oi`.
+- `/oi/research/sota` (terminal with the paper opened) replaces v3's citation page `/publications/sota-dis-2026` with the same abstract, `citation_*` (Google Scholar) tags and `ScholarlyArticle`; `/oi/research/sota.md` replaces the Markdown record.
+- `content/legacy-redirects.json` (built by `node scripts/build-legacy-redirects.cjs`) maps every indexed v3 URL: 64 `/text/<id>`, 31 `/works/<id>`, 50 `/research-blog/<slug>`, static pages, CV, and 107 byte-identical images. Unknown IDs fall back to the collection index. The v3 repo serves a copy as `v4-redirects.json`; this project's `next.config.ts` applies the same map only on the `portfolio-jyc.org` host, so the old domain can later be moved to this Vercel project without losing redirects. Regenerate and recopy after renaming slugs.
+
+### Cutover order
+1. Deploy v4; confirm `/oi/texts/why-i-started-writing`, `/oi/research/sota`, `/sitemap.xml` are live.
+2. Deploy v3 with `v4-redirects.json`. Verify: `curl -sI https://www.portfolio-jyc.org/about` → 308 to `https://jeanyoon.ch/oi/en`. Rollback: `V4_REDIRECTS=off` in v3 env + redeploy.
+3. Search Console: verify both properties, then use **Change of address** on the portfolio-jyc.org property → jeanyoon.ch. Keep the old sitemap submitted (v3 keeps serving `/sitemap.xml` and `/robots.txt` unredirected) so Google recrawls old URLs and follows the redirects. Submit `https://jeanyoon.ch/sitemap.xml`. Do the same site-move in Bing Webmaster Tools; register jeanyoon.ch with Naver.
+4. Update inbound links you control (Instagram/LinkedIn bio, Google Scholar homepage, ORCID, KAIST/XD Lab profile, CV) to jeanyoon.ch/oi.
+5. Keep portfolio-jyc.org registered and redirecting for at least 12 months (ideally permanently).

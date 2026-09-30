@@ -126,8 +126,8 @@ async function main() {
   assert(terminalHtml.includes('href="/oi/artworks/banpo-xism"'));
   assert(terminalHtml.includes('provocatively interactive environments'));
   assert(terminalHtml.includes('href="mailto:jeanyoon.choi@kaist.ac.kr"'));
-  assert.equal((terminalHtml.match(/href="\/cv\/JeanyoonChoi_CV\.pdf"/g) || []).length, 2);
-  assert.equal((terminalHtml.match(/download="JeanyoonChoi_CV\.pdf"/g) || []).length, 2);
+  // The terminal links the /oi/cv page (which offers the PDF download).
+  assert((terminalHtml.match(/href="\/oi\/cv"/g) || []).length >= 1);
   for (const term of ['미디어 아트', '컨템포러리 웹 아트', '넷 아트', 'media art research', 'contemporary web art', 'net art']) {
     assert(llmsFull().includes(term), `Missing LLM text: ${term}`);
   }
@@ -147,6 +147,48 @@ async function main() {
   assert(image.headers.get('content-type').includes('image/png'));
   const bytes = new Uint8Array(await image.arrayBuffer());
   assert.deepEqual([...bytes.slice(0, 8)], [137, 80, 78, 71, 13, 10, 26, 10]);
+  // Entry pages, SoTA citation record and the portfolio-jyc.org redirect map.
+  const { entryList, collections } = load('@/lib/seo/collections');
+  for (const collection of collections) {
+    const route = load(`@/app/oi/${collection}/[slug]/page`);
+    const index = load(`@/app/oi/${collection}/page`);
+    assertSiteMetadata(index.metadata);
+    assert.equal(index.metadata.alternates.canonical, `https://jeanyoon.ch/oi/${collection}`);
+    assert(sitemap().some((entry) => entry.url === `https://jeanyoon.ch/oi/${collection}`));
+    const indexHtml = renderToStaticMarkup(index.default());
+    for (const entry of entryList(collection)) {
+      const url = `https://jeanyoon.ch/oi/${collection}/${entry.slug}`;
+      const params = Promise.resolve({ slug: entry.slug });
+      const metadata = await route.generateMetadata({ params });
+      assertSiteMetadata(metadata);
+      assert.equal(metadata.alternates.canonical, url);
+      assert(metadata.description.length > 20 && metadata.description.length <= 170, url);
+      assert(sitemap().some((item) => item.url === url), `Sitemap misses ${url}`);
+      assert(llmsIndex().includes(url));
+      assert(indexHtml.includes(`href="/oi/${collection}/${entry.slug}"`));
+      assert(terminalHtml.includes(`href="/oi/${collection}/${entry.slug}"`), `Terminal does not link ${url}`);
+    }
+    const sample = entryList(collection)[0];
+    const html = renderToStaticMarkup(await route.default({ params: Promise.resolve({ slug: sample.slug }) }));
+    // Direct entry URLs render the terminal with the entry already opened.
+    assert(html.includes('application/ld+json') && html.includes(`cat ${sample.slug}`) && html.includes(sample.title) && html.includes('id="panel-'));
+    await assert.rejects(() => route.default({ params: Promise.resolve({ slug: "missing" }) }), /NEXT_HTTP_ERROR_FALLBACK;404/);
+  }
+  const sotaPage = load('@/app/oi/research/sota/page');
+  assertSiteMetadata(sotaPage.metadata);
+  assert.equal(sotaPage.metadata.other.citation_doi, '10.1145/3800645.3812889');
+  const sotaHtml = renderToStaticMarkup(sotaPage.default());
+  assert(sotaHtml.includes('ScholarlyArticle') && sotaHtml.includes('cat sota') && sotaHtml.includes('id="panel-'));
+  assert((await load('@/app/oi/research/sota.md/route').GET().text()).includes('https://jeanyoon.ch/oi/research/sota'));
+  const staticRoutes = new Set(['/oi', '/oi/en', '/oi/cv', '/oi/research/sota', '/oi/research/sota.md', '/llms.txt', '/cv/JeanyoonChoi_CV.pdf', ...collections.map((c) => `/oi/${c}`)]);
+  for (const { source, destination } of require('../content/legacy-redirects.json')) {
+    const [, section, collection, slug] = destination.split('/');
+    const ok = staticRoutes.has(destination)
+      || (section === 'oi' && collections.includes(collection) && entryList(collection).some((entry) => entry.slug === slug))
+      || (section === 'oi' && collection === 'artworks' && artworks.some((entry) => entry.slug === slug))
+      || fs.existsSync(path.join(root, 'public', destination));
+    assert(ok, `Legacy redirect ${source} -> ${destination} has no destination`);
+  }
   console.log('SEO checks passed: bilingual HTML, real-content filtering, canonical/hreflang, sitemap, artwork schema, text routes, PNG share image and 404s.');
 }
 module.exports = { load };

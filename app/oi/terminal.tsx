@@ -70,8 +70,23 @@ function sectionTurn(section: Section, from: string): Turn {
   };
 }
 
-export default function TerminalSession({ initialSection }: { initialSection?: "artworks" }) {
-  const [turns, setTurns] = useState<Turn[]>(() => initialSection ? [initial, sectionTurn(initialSection, "/oi")] : [initial]);
+function detailTurn(detail: Detail, path: string, parent: Section, from: string): Turn {
+  return {
+    promptPath: from, path, command: `cat ${detail.slug}`,
+    lines: [{ text: detail.title, heading: true }, { text: detail.meta.filter(Boolean).join(" | "), tone: "muted" }, ...detail.paragraphs.map((text) => ({ text: `\n${text}` }))],
+    detail,
+    choices: [...detail.links.map((link) => ({ ...link })), ...(detail.related ?? []).map(({ collection, slug, label }) => ({ label, entry: { collection, slug } })),
+      ...(detail.original ? [{ label: "Read original notes", description: "Unedited source notes and collected references.", original: detail }] : []),
+      { label: `back to ../${parent}`, description: `Return to ${parent}.`, section: parent }, back],
+  };
+}
+
+// Direct URLs (/oi/texts, /oi/texts/<slug>, /oi/research/sota…) open the same terminal
+// with that section or entry already selected.
+export type InitialEntry = { path: string; parent: Section; detail: Detail };
+export default function TerminalSession({ initialSection, initialEntry }: { initialSection?: Section; initialEntry?: InitialEntry }) {
+  const [turns, setTurns] = useState<Turn[]>(() => initialEntry ? [initial, detailTurn(initialEntry.detail, initialEntry.path, initialEntry.parent, "/oi")]
+    : initialSection ? [initial, sectionTurn(initialSection, "/oi")] : [initial]);
   const [characters, setCharacters] = useState(0);
   const [selected, setSelected] = useState(0);
   const [loading, setLoading] = useState(false);
@@ -143,14 +158,7 @@ export default function TerminalSession({ initialSection }: { initialSection?: "
         const response = await fetch(`/api/content/${collection}/${slug}`);
         if (!response.ok) throw new Error("Unable to load this entry.");
         const detail: Detail = await response.json();
-        next = {
-          promptPath: from, path: `/oi/${collection}/${slug}`, command: `cat ${slug}`,
-          lines: [{ text: detail.title, heading: true }, { text: detail.meta.filter(Boolean).join(" | "), tone: "muted" }, ...detail.paragraphs.map((text) => ({ text: `\n${text}` }))],
-          detail,
-          choices: [...detail.links.map((link) => ({ ...link })), ...(detail.related ?? []).map(({ collection, slug, label }) => ({ label, entry: { collection, slug } })),
-            ...(detail.original ? [{ label: "Read original notes", description: "Unedited source notes and collected references.", original: detail }] : []),
-            { label: `back to ../${collection}`, description: `Return to ${collection}.`, section: collection }, back],
-        };
+        next = detailTurn(detail, `/oi/${collection}/${slug}`, collection, from);
       } catch {
         setError("Could not load this entry. Please select it again to retry.");
         locked.current = false;
@@ -235,8 +243,9 @@ export default function TerminalSession({ initialSection }: { initialSection?: "
                 const revealed = slice(`${choice.label}\n`);
                 const label = revealed.visible.trimEnd();
                 const fullLabel = <>{label}<span hidden>{choice.label.slice(label.length)}</span></>;
-                if ((!active || !ready) && !dormant) return choice.href
-                  ? <a key={index} hidden={!label} className={styles.previousChoice} href={choice.href} tabIndex={-1} aria-hidden={!ready && active} onClick={(event) => event.preventDefault()}>{"  "}{fullLabel}</a>
+                const entryHref = choice.entry && `/oi/${choice.entry.collection}/${choice.entry.slug}`;
+                if ((!active || !ready) && !dormant) return choice.href || entryHref
+                  ? <a key={index} hidden={!label} className={styles.previousChoice} href={choice.href ?? entryHref} tabIndex={-1} aria-hidden={!ready && active} onClick={(event) => event.preventDefault()}>{"  "}{fullLabel}</a>
                   : <span key={index} hidden={!label} className={styles.previousChoice} aria-hidden={!ready && active}>{"  "}{fullLabel}</span>;
                 const props = {
                   className: `${styles.choice} ${!dormant && selected === index ? styles.selected : ""}`,
@@ -248,7 +257,14 @@ export default function TerminalSession({ initialSection }: { initialSection?: "
                 const newWindow = Boolean(choice.windowSize) || (external && !turn.detail);
                 return choice.href
                   ? <a key={index} {...props} href={choice.href} target={newWindow ? "_blank" : undefined} rel={newWindow ? "noopener noreferrer" : undefined} download={choice.download} onClick={(event) => openArtwork(event, choice)} aria-label={choice.windowSize ? `${label}${isSelected && choice.description ? ` | ${choice.description}` : ""} — opens in a new window or tab` : undefined}>{content}</a>
-                  : <button key={index} {...props} type="button" onClick={() => choose(choice)}>{content}</button>;
+                  : choice.entry
+                    // A real link to the entry's own page keeps it crawlable; a plain click still opens it inline.
+                    ? <a key={index} {...props} href={entryHref} onClick={(event) => {
+                      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+                      event.preventDefault();
+                      choose(choice);
+                    }}>{content}</a>
+                    : <button key={index} {...props} type="button" onClick={() => choose(choice)}>{content}</button>;
               })}
             </div>
             {active && <span className={styles.cursor} aria-hidden="true">█</span>}
