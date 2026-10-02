@@ -17,9 +17,11 @@ The eventual public address is `https://jeanyoon.ch/oi`. The domain has been pur
 
 ## Fixed site name — explicit user requirement
 
-The exact site name and every page's browser/SEO title are **`jeanyoon.ch/oi`**, in every language and route. Use `SITE_NAME` from `lib/seo/site.ts` for metadata titles, Open Graph/Twitter titles, `applicationName`, `WebSite` names, and other site-branding labels. Do not add prefixes, suffixes, artist names, artwork names, translated names, keywords, or title templates to these titles.
+The exact site name is **`jeanyoon.ch/oi`**. Every page's browser/SEO title is `jeanyoon.ch/oi` (`SITE_NAME`), **except: the home profiles `/oi`, `/oi/en`, `/oi/ko` are titled exactly `Jeanyoon Choi` (`HOME_TITLE`); individual artwork, experiment, project, text and publication pages are titled `<title> - Jeanyoon Choi` (`detailTitle()`)** — explicit user instructions, 2026-10-02. Collection lists, CV and other pages stay `jeanyoon.ch/oi`. Use `SITE_NAME` for all other metadata titles, Open Graph/Twitter titles, `og:site_name`, `applicationName`, `WebSite` names, and other site-branding labels. Do not add prefixes, suffixes, artwork names, translated names, keywords, or title templates. Never produce any combination such as "Jeanyoon Choi: oi" or "Jeanyoon Choi — oi" anywhere in titles, labels or hidden text (Google rewrites title links from such text).
 
-AI agents must preserve this naming rule during all future SEO, search-engine, LLM discovery, content, and refactoring work. Only a new explicit user instruction to change the site name/title may override it; a general request to improve SEO is not permission. Keep the artist's actual identity and artwork/publication titles in their respective content and entity data. Run `node scripts/check-seo.cjs` after SEO changes.
+SEO work may change only search/LLM/hidden-facing data (metadata, JSON-LD, LLM text, aria/hidden attributes, sitemap, icons). Never edit user-visible copy for SEO.
+
+AI agents must preserve this naming rule during all future SEO, search-engine, LLM discovery, content, and refactoring work. Only a new explicit user instruction to change the site name/titles may override it; a general request to improve SEO is not permission. Keep the artist's actual identity and artwork/publication titles in their respective content and entity data. Run `node scripts/check-seo.cjs` after SEO changes.
 
 ## CV — single source of truth
 

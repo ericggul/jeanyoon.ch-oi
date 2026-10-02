@@ -35,20 +35,27 @@ async function main() {
   assert.equal(favicon.readUInt32BE(20), 96);
   const fixedName = 'jeanyoon.ch/oi';
   assert.equal(load('@/lib/seo/site').SITE_NAME, fixedName);
-  function assertSiteMetadata(metadata) {
-    assert.deepEqual(metadata.title, { absolute: fixedName });
+  // Explicit user instruction: home profiles (/oi, /oi/en, /oi/ko) are titled with the
+  // artist name; every other page is titled jeanyoon.ch/oi. Site name is always fixedName.
+  const homeTitle = 'Jeanyoon Choi';
+  // Individual work/text/publication pages: "<title> - Jeanyoon Choi".
+  const detail = (title) => `${title} - Jeanyoon Choi`;
+  assert.equal(load('@/lib/seo/site').HOME_TITLE, homeTitle);
+  function assertSiteMetadata(metadata, title = fixedName) {
+    assert.deepEqual(metadata.title, { absolute: title });
     if (metadata.openGraph) {
-      assert.equal(metadata.openGraph.title, fixedName);
+      assert.equal(metadata.openGraph.title, title);
       assert.equal(metadata.openGraph.siteName, fixedName);
     }
-    if (metadata.twitter) assert.equal(metadata.twitter.title, fixedName);
+    if (metadata.twitter) assert.equal(metadata.twitter.title, title);
   }
-  for (const route of ['layout', 'oi/page', 'oi/research/banpo-xism/page']) {
+  for (const route of ['layout', 'oi/research/banpo-xism/page']) {
     assertSiteMetadata(load(`@/app/${route}`).metadata);
   }
+  assertSiteMetadata(load('@/app/oi/page').metadata, homeTitle);
   assert.equal(load('@/app/layout').metadata.applicationName, fixedName);
   for (const lang of ['en', 'ko']) {
-    assertSiteMetadata(load('@/lib/seo/metadata').profileMetadata(lang));
+    assertSiteMetadata(load('@/lib/seo/metadata').profileMetadata(lang), homeTitle);
     const graph = load('@/lib/seo/structured-data').profileSchema(lang)['@graph'];
     assert.equal(graph.find((entity) => entity['@type'] === 'WebSite').name, fixedName);
     assert.equal(graph.find((entity) => entity['@type'] === 'ProfilePage').name, fixedName);
@@ -65,7 +72,7 @@ async function main() {
   for (const artwork of artworks) {
     assert.deepEqual(artworkLocales(artwork), ['en', 'ko']);
     const metadata = await load('@/app/oi/artworks/[slug]/page').generateMetadata({ params: Promise.resolve({ slug: artwork.slug }) });
-    assertSiteMetadata(metadata);
+    assertSiteMetadata(metadata, detail(artworkText(artwork, 'en').title));
     assert.equal(metadata.robots.index, true);
     assert.equal(metadata.alternates.canonical, `https://jeanyoon.ch/oi/artworks/${artwork.slug}`);
     const html = renderToStaticMarkup(await load('@/app/oi/artworks/[slug]/page').default({ params: Promise.resolve({ slug: artwork.slug }) }));
@@ -90,7 +97,7 @@ async function main() {
     fixture.content.ko.paragraphs.push('관람자가 두 화면을 연결합니다.');
     for (const lang of ['en', 'ko']) {
       const url = `https://jeanyoon.ch/oi/artworks/seo-test-only${lang === "en" ? "" : "/ko"}`;
-      assertSiteMetadata(artworkMetadata(fixture, lang));
+      assertSiteMetadata(artworkMetadata(fixture, lang), detail(artworkText(fixture, lang).title));
       assert.equal(artworkMetadata(fixture, lang).alternates.canonical, url);
       assert.equal(artworkMetadata(fixture, lang).alternates.languages[lang], url);
       const entry = sitemap().find((entry) => entry.url === url);
@@ -121,6 +128,16 @@ async function main() {
   assert(terminalHtml.includes('<h2'));
   assert(!terminalHtml.includes('최정윤'));
   assert(!terminalHtml.includes('인터랙티브'));
+  // Explicit user requirement: Google must never be fed "Jeanyoon Choi — oi"-style
+  // text it can rewrite into a "Jeanyoon Choi: oi" title link.
+  assert(!/Choi\s*[—–:|-]\s*oi\b/.test(terminalHtml), 'Name + "oi" label in terminal HTML');
+  assert(terminalHtml.includes('aria-label="jeanyoon.ch/oi"'));
+  const person = load('@/lib/seo/structured-data').person();
+  for (const name of ['Jean-Yoon Choi', 'JeanyoonChoi', 'Jeongyoon Choi', '최정윤']) assert(person.alternateName.includes(name), `Missing alternateName ${name}`);
+  const icons = load('@/app/layout').metadata.icons;
+  assert(icons.apple.some((icon) => icon.url === '/apple-touch-icon.png'));
+  for (const icon of [...icons.icon, ...icons.apple]) assert(fs.existsSync(path.join(root, 'public', icon.url)), `Missing icon ${icon.url}`);
+  assert(fs.existsSync(path.join(root, 'app/favicon.ico')));
   assert(terminalHtml.includes('id="panel-about" hidden=""'));
   assert(terminalHtml.includes('id="panel-artworks" hidden=""'));
   assert(terminalHtml.includes('href="/oi/artworks/banpo-xism"'));
@@ -160,7 +177,7 @@ async function main() {
       const url = `https://jeanyoon.ch/oi/${collection}/${entry.slug}`;
       const params = Promise.resolve({ slug: entry.slug });
       const metadata = await route.generateMetadata({ params });
-      assertSiteMetadata(metadata);
+      assertSiteMetadata(metadata, detail((await load('@/lib/content/details').getDetail(collection, entry.slug)).title));
       assert.equal(metadata.alternates.canonical, url);
       assert(metadata.description.length > 20 && metadata.description.length <= 170, url);
       assert(sitemap().some((item) => item.url === url), `Sitemap misses ${url}`);
@@ -172,10 +189,22 @@ async function main() {
     const html = renderToStaticMarkup(await route.default({ params: Promise.resolve({ slug: sample.slug }) }));
     // Direct entry URLs render the terminal with the entry already opened.
     assert(html.includes('application/ld+json') && html.includes(`cat ${sample.slug}`) && html.includes(sample.title) && html.includes('id="panel-'));
+    // The entry title is the page's only h1.
+    assert.equal((html.match(/<h1[ >]/g) || []).length, 1, `h1 count on ${collection}/${sample.slug}`);
+    assert(/<h1[^>]*>(<span hidden="">)?[^<]*/.test(html));
+    if (collection === 'experiments') {
+      // Google Images indexes only real page <img>s: every image must be in the server HTML.
+      const { experiments } = load('@/content/experiments');
+      for (const entry of experiments.filter((item) => item.images?.length)) {
+        const page = renderToStaticMarkup(await route.default({ params: Promise.resolve({ slug: entry.slug }) }));
+        for (const image of entry.images) assert(page.includes(`src="${image.src}"`), `Missing server-rendered image ${image.src}`);
+        assert(page.includes("from Jeanyoon Choi&#x27;s experiments") || page.includes("from Jeanyoon Choi's experiments"), `Alt text lacks artist on ${entry.slug}`);
+      }
+    }
     await assert.rejects(() => route.default({ params: Promise.resolve({ slug: "missing" }) }), /NEXT_HTTP_ERROR_FALLBACK;404/);
   }
   const sotaPage = load('@/app/oi/research/sota/page');
-  assertSiteMetadata(sotaPage.metadata);
+  assertSiteMetadata(sotaPage.metadata, detail(load('@/content/research/sota').sota.title));
   assert.equal(sotaPage.metadata.other.citation_doi, '10.1145/3800645.3812889');
   const sotaHtml = renderToStaticMarkup(sotaPage.default());
   assert(sotaHtml.includes('ScholarlyArticle') && sotaHtml.includes('cat sota') && sotaHtml.includes('id="panel-'));

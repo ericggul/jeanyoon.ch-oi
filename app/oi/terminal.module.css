@@ -54,5 +54,6 @@
 
 .inlineGallery { max-width: 960px; margin: 1.35em 0; }
 .inlineGallery img { display: block; max-width: 100%; width: auto; height: auto; max-height: 65vh; object-fit: contain; }
+.inlineGallery img[hidden] { display: none; }
 .inlineImageIndex { display: flex; flex-wrap: wrap; gap: 0 .5em; }
 .inlineImageIndex .choice { padding: 3px 6px; }

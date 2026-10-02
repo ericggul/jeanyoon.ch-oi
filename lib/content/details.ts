@@ -16,7 +16,9 @@ export async function getDetail(collection: Collection, slug: string): Promise<D
   if (collection === "experiments") {
     const entry = experiments.find((item) => item.slug === slug);
     if (!entry) return;
-    return { slug, title: entry.title, meta: [entry.year, entry.medium], paragraphs: [entry.summary, ...entry.paragraphs].filter(Boolean), images: entry.images, links: entry.links };
+    return { slug, title: entry.title, meta: [entry.year, entry.medium], paragraphs: [entry.summary, ...entry.paragraphs].filter(Boolean),
+      // Alt text only (not visible copy): ties each image to the artist's name for image search.
+      images: entry.images?.map((image) => ({ ...image, alt: `${image.alt.replace(/\.$/, "")}, from Jeanyoon Choi's experiments.` })), links: entry.links };
   }
   if (collection === "texts" && Object.hasOwn(textLoaders, slug)) {
     const { default: entry } = await textLoaders[slug]();

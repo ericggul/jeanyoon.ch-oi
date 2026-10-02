@@ -25,7 +25,10 @@ export function artworkImages(artwork: Artwork) {
 
 export function person() {
   return { "@type": "Person", "@id": absoluteUrl("/oi#person"), name: profile.name,
-    alternateName: [...profile.alternateNames, ...(profile.koreanName ? [profile.koreanName] : [])],
+    alternateName: [...profile.alternateNames, profile.koreanName],
+    givenName: profile.givenName, familyName: profile.familyName, birthDate: "1999", nationality: { "@type": "Country", name: "South Korea" },
+    alumniOf: [{ "@type": "CollegeOrUniversity", name: "Seoul National University" }, { "@type": "CollegeOrUniversity", name: "Royal College of Art" }],
+    affiliation: { "@type": "CollegeOrUniversity", name: "KAIST", alternateName: "Korea Advanced Institute of Science and Technology" },
     url: absoluteUrl("/oi"), jobTitle: ["Computational Artist", "Web Art Researcher"],
     sameAs: [...contactLinks.filter((link) => /linkedin.com|instagram.com/.test(link.href)).map((link) => link.href), ...profile.identifiers],
     subjectOf: artworks.map((artwork) => ({ "@type": "WebPage", url: absoluteUrl(artworkPath(artwork, "en")), about: { "@id": absoluteUrl("/oi#person") }, mainEntity: { "@id": absoluteUrl(`/oi/artworks/${artwork.slug}#artwork`) } })),
@@ -35,6 +38,8 @@ export function profileSchema(locale?: Locale) {
   const path = locale ? `/oi/${locale}` : "/oi";
   return { "@context": "https://schema.org", "@graph": [person(),
     { "@type": "WebSite", "@id": absoluteUrl("/#website"), url: absoluteUrl("/"), name: SITE_NAME,
+      // Google site-name candidates: only the two names the owner accepts.
+      alternateName: [profile.name],
       inLanguage: ["en", "ko"], publisher: { "@id": absoluteUrl("/oi#person") } },
     { "@type": "ProfilePage", "@id": absoluteUrl(`${path}#page`), url: absoluteUrl(path),
       name: SITE_NAME, description: profile[locale ?? "en"].description,
@@ -84,7 +89,10 @@ export function entrySchema(collection: Collection, detail: Detail, extra: { dat
     ? { "@type": "BlogPosting", ...common, headline: detail.title, author: artist, publisher: artist, ...(extra.date ? { datePublished: extra.date } : {}) }
     : collection === "experiments"
       ? { "@type": "CreativeWork", ...common, creator: artist, ...(extra.date ? { dateCreated: extra.date } : {}),
-        ...(detail.images?.length ? { image: detail.images.map((image) => ({ "@type": "ImageObject", contentUrl: absoluteUrl(image.src), description: image.alt, width: image.width, height: image.height })) } : {}) }
+        ...(detail.images?.length ? { image: detail.images.map((image, index) => ({ "@type": "ImageObject", "@id": `${absoluteUrl(image.src)}#image`,
+          contentUrl: absoluteUrl(image.src), url: absoluteUrl(image.src), name: `${detail.title} — Jeanyoon Choi (${index + 1})`, description: image.alt, caption: image.alt,
+          width: image.width, height: image.height, encodingFormat: "image/webp", representativeOfPage: index === 0,
+          about: [{ "@id": `${url}#entry` }, artist], isPartOf: { "@id": `${url}#entry` } })) } : {}) }
       : { "@type": "CreativeWork", ...common, ...(extra.date ? { temporalCoverage: extra.date } : {}),
         contributor: { "@type": "Role", roleName: extra.roles ?? [], contributor: artist },
         ...(extra.location ? { locationCreated: { "@type": "Place", name: extra.location } } : {}) };

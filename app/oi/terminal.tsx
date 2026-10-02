@@ -12,6 +12,7 @@ import { texts } from "@/content/texts";
 import { contactLinks, introduction as contactIntroduction } from "@/content/contact";
 import type { Collection, Detail } from "@/lib/content/types";
 import InlineGallery from "./inline-gallery";
+import { SITE_NAME } from "@/lib/seo/site";
 import styles from "./terminal.module.css";
 
 type Section = SiteSection;
@@ -208,7 +209,7 @@ export default function TerminalSession({ initialSection, initialEntry }: { init
   ];
 
   return (
-    <main className={styles.terminal} aria-label={`${profile.name} — oi`}>
+    <main className={styles.terminal} aria-label={SITE_NAME}>
       <div className={styles.srOnly} role="status" aria-live="polite">{announcement}</div>
       {rendered.map(({ turn, key, dormant }, turnIndex) => {
         const active = !dormant && turnIndex === turns.length - 1;
@@ -230,10 +231,12 @@ export default function TerminalSession({ initialSection, initialEntry }: { init
             </h2>}
             {turn.lines.map((line, index) => {
               const text = slice(`${line.text}\n`);
-              const Tag = line.heading ? (turnIndex === 0 ? "h1" : "h3") : "p";
+              // On an entry's own URL the entry title is the page h1 (same styling as h3/p).
+              const entryPage = Boolean(initialEntry);
+              const Tag = !line.heading ? "p" : turnIndex === 0 ? (entryPage ? "p" : "h1") : entryPage && turnIndex === 1 ? "h1" : "h3";
               return <Tag key={index} lang={line.lang} hidden={!text.visible} className={line.tone ? styles[line.tone] : undefined} aria-hidden={active && !ready}>{text.content}</Tag>;
             })}
-            {turn.detail?.images?.length && (!active || ready) ? <InlineGallery images={turn.detail.images} /> : null}
+            {turn.detail?.images?.length ? <InlineGallery images={turn.detail.images} hidden={active && !ready} /> : null}
             {(() => {
               const text = slice(`${hint}\n`);
               return <div hidden={!text.visible} className={styles.hint} aria-hidden={active && !ready}>{text.content}</div>;

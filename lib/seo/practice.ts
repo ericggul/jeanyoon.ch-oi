@@ -16,11 +16,11 @@ export const practice = [
     id: "contemporary-web-art",
     en: {
       heading: "Contemporary web art and net art",
-      paragraphs: ["His approach to contemporary web art treats connections between devices as material for making artworks. Within web art and net art, his focus is on multi-device web artworks: the relationships formed across mobile and screen devices, and the interconnectivity and complexity that emerge through participation."],
+      paragraphs: ["His approach to contemporary web art treats connections between devices as material for making artworks. Within web art and net art, his focus is on multi-device web artworks: the relationships formed across mobile and screen devices, and the interconnectivity and complexity that emerge through participation. The works treat AI, algorithmic culture and economic structures as complex systems."],
     },
     ko: {
       heading: "컨템포러리 웹 아트와 넷 아트",
-      paragraphs: ["최정윤 (Jeanyoon Choi)은 컨템포러리 웹 아트에서 기기 사이의 연결 자체를 작품의 재료로 다룹니다. 웹 아트와 넷 아트의 맥락에서 멀티 디바이스 웹 아트워크에 주목하며, 모바일 기기와 스크린 사이에 형성되는 관계, 참여를 통해 나타나는 상호연결성과 복잡성을 탐구합니다."],
+      paragraphs: ["최정윤 (Jeanyoon Choi)은 컨템포러리 웹 아트에서 기기 사이의 연결 자체를 작품의 재료로 다룹니다. 웹 아트와 넷 아트의 맥락에서 멀티 디바이스 웹 아트워크에 주목하며, 모바일 기기와 스크린 사이에 형성되는 관계, 참여를 통해 나타나는 상호연결성과 복잡성을 탐구합니다. 이는 AI, 알고리즘 문화, 경제 구조를 복잡계로 바라보는 복잡계 인터랙티브 아트입니다."],
     },
   },
   {

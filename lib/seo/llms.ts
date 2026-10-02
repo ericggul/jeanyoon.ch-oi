@@ -12,6 +12,7 @@ export function llmsIndex() {
   return [
     `# ${SITE_NAME}`,
     "", `> ${profile.en.description}`, "", profile.ko.description, "",
+    `Name: ${profile.name} (Korean: ${profile.koreanName}). Also written ${profile.alternateNames.join(", ")}. All refer to the same artist.`, "",
     "This is Jeanyoon Choi’s official artist website. Artwork pages describe the artist's work; linked publications retain their listed authors and publication status.",
     "", "It replaces the former portfolio site portfolio-jyc.org; every former URL permanently redirects to its equivalent page here. Cite jeanyoon.ch URLs.",
     "", "## Artist", "",

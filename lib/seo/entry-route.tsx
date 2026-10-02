@@ -6,7 +6,7 @@ import JsonLd from "@/components/seo/json-ld";
 import TerminalSession from "@/app/oi/terminal";
 import { collectionCopy, entryList, entryPath } from "./collections";
 import { pageMetadata } from "./metadata";
-import { absoluteUrl } from "./site";
+import { absoluteUrl, detailTitle } from "./site";
 import { collectionSchema, entrySchema } from "./structured-data";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -25,7 +25,7 @@ export function entryRoute(collection: Collection) {
     async generateMetadata({ params }: Props) {
       const { summary, detail } = await load(collection, (await params).slug);
       const image = detail.images?.[0];
-      return pageMetadata({ description: summary.description, path: entryPath(collection, summary.slug), image: image ? { url: absoluteUrl(image.src), alt: image.alt } : undefined });
+      return pageMetadata({ title: detailTitle(detail.title), description: summary.description, path: entryPath(collection, summary.slug), image: image ? { url: absoluteUrl(image.src), alt: image.alt } : undefined });
     },
     async Page({ params }: Props) {
       const { summary, detail } = await load(collection, (await params).slug);
