@@ -7,7 +7,8 @@ const legacyHost = [{ type: "host" as const, value: "(?:www\\.)?portfolio-jyc\\.
 
 // Markdown alternates (lib/seo/markdown.ts) for LLM agents: `<page>.md`, or the page
 // itself requested with `Accept: text/markdown`. Browsers never send that header.
-const entryPage = "/oi/:collection(texts|experiments|projects|artworks)/:slug";
+// Slugs never contain dots, so `<slug>.md` itself does not match an entry page.
+const entryPage = "/oi/:collection(texts|experiments|projects|artworks)/:slug([^/.]+)";
 const wantsMarkdown = [{ type: "header" as const, key: "accept", value: ".*text/markdown.*" }];
 
 const nextConfig: NextConfig = {
