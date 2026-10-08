@@ -9,6 +9,8 @@ import { artworkDiscovery } from "./artwork-content";
 import type { Collection, Detail } from "@/lib/content/types";
 import type { ResearchPublication } from "@/content/research";
 import { collectionCopy, entryPath } from "./collections";
+import { enrichment, enrichmentSchema, glossary } from "./enrichment";
+import { research } from "@/content/research";
 
 export function artworkImages(artwork: Artwork) {
   return (artwork.images ?? []).map((image) => ({
@@ -30,9 +32,20 @@ export function person() {
     alumniOf: [{ "@type": "CollegeOrUniversity", name: "Seoul National University" }, { "@type": "CollegeOrUniversity", name: "Royal College of Art" }],
     affiliation: { "@type": "CollegeOrUniversity", name: "KAIST", alternateName: "Korea Advanced Institute of Science and Technology" },
     url: absoluteUrl("/oi"), jobTitle: ["Computational Artist", "Web Art Researcher"],
-    sameAs: [...contactLinks.filter((link) => /linkedin.com|instagram.com/.test(link.href)).map((link) => link.href), ...profile.identifiers],
+    sameAs: [...contactLinks.filter((link) => /linkedin.com|instagram.com/.test(link.href)).map((link) => link.href), ...profile.identifiers, "https://github.com/ericggul"],
+    hasOccupation: [{ "@type": "Occupation", name: "Computational artist" }, { "@type": "Occupation", name: "Researcher" }],
+    worksFor: { "@type": "ResearchOrganization", name: "KAIST Experience Design Lab (XD Lab)", url: "https://www.xdlab.net/" },
     subjectOf: artworks.map((artwork) => ({ "@type": "WebPage", url: absoluteUrl(artworkPath(artwork, "en")), about: { "@id": absoluteUrl("/oi#person") }, mainEntity: { "@id": absoluteUrl(`/oi/artworks/${artwork.slug}#artwork`) } })),
-    knowsAbout: [...profile.en.topics, ...profile.ko.topics], description: profile.en.description };
+    knowsAbout: [...profile.en.topics, ...profile.ko.topics], description: profile.en.description,
+    // Published papers credited to the artist (co-authorship kept as listed).
+    ...{ "@reverse": { author: research.flatMap((entry) => entry.kind === "manuscript" ? [] : [{ "@type": "ScholarlyArticle", name: entry.title, url: entry.recordPath ? absoluteUrl(entry.recordPath) : entry.url }]) } } };
+}
+
+// The artist's own vocabulary, defined in the texts/works that introduce each term.
+export function glossarySchema() {
+  const terms = glossary();
+  return { "@type": "DefinedTermSet", "@id": absoluteUrl("/oi/texts#glossary"), name: `Concepts in ${profile.name}'s practice`, creator: { "@id": absoluteUrl("/oi#person") },
+    hasDefinedTerm: terms.map(({ term, definition, source }) => ({ "@type": "DefinedTerm", name: term, description: definition, url: source, inDefinedTermSet: absoluteUrl("/oi/texts#glossary") })) };
 }
 export function profileSchema(locale?: Locale) {
   const path = locale ? `/oi/${locale}` : "/oi";
@@ -44,6 +57,7 @@ export function profileSchema(locale?: Locale) {
     { "@type": "ProfilePage", "@id": absoluteUrl(`${path}#page`), url: absoluteUrl(path),
       name: SITE_NAME, description: profile[locale ?? "en"].description,
       inLanguage: locale ?? "en", mainEntity: { "@id": absoluteUrl("/oi#person") }, isPartOf: { "@id": absoluteUrl("/#website") } },
+    glossarySchema(),
   ] };
 }
 export function artworkSchema(artwork: Artwork, locale: Locale) {
@@ -68,6 +82,7 @@ export function artworkSchema(artwork: Artwork, locale: Locale) {
       ...(text.medium ? { artMedium: text.medium } : {}),
       ...(text.keywords?.length ? { keywords: text.keywords } : {}),
       ...(artwork.references?.length ? { citation: artwork.references.map((ref) => ref.url) } : {}),
+      ...(locale === "en" ? enrichmentSchema(enrichment("artworks", artwork.slug), ["about", "keywords"]) : {}),
     },
     { "@type": "BreadcrumbList", itemListElement: [
       { "@type": "ListItem", position: 1, name: SITE_NAME, item: absoluteUrl("/oi") },
@@ -84,7 +99,8 @@ export function entrySchema(collection: Collection, detail: Detail, extra: { dat
   const path = entryPath(collection, detail.slug);
   const url = absoluteUrl(path);
   const artist = { "@id": absoluteUrl("/oi#person") };
-  const common = { "@id": `${url}#entry`, name: detail.title, url, mainEntityOfPage: url, description: extra.description, inLanguage: "en", isPartOf: { "@id": absoluteUrl("/#website") } };
+  const common = { "@id": `${url}#entry`, name: detail.title, url, mainEntityOfPage: url, description: extra.description, inLanguage: "en", isPartOf: { "@id": absoluteUrl("/#website") },
+    ...enrichmentSchema(enrichment(collection, detail.slug)), encoding: { "@type": "MediaObject", encodingFormat: "text/markdown", contentUrl: `${url}.md` } };
   const entity = collection === "texts"
     ? { "@type": "BlogPosting", ...common, headline: detail.title, author: artist, publisher: artist, ...(extra.date ? { datePublished: extra.date } : {}) }
     : collection === "experiments"
@@ -102,6 +118,7 @@ export function entrySchema(collection: Collection, detail: Detail, extra: { dat
 export function collectionSchema(collection: Collection, items: { slug: string; title: string }[]) {
   const url = absoluteUrl(`/oi/${collection}`);
   return { "@context": "https://schema.org", "@graph": [person(),
+    ...(collection === "texts" ? [glossarySchema()] : []),
     { "@type": "CollectionPage", "@id": `${url}#page`, url, name: SITE_NAME, description: collectionCopy[collection].description,
       isPartOf: { "@id": absoluteUrl("/#website") }, about: { "@id": absoluteUrl("/oi#person") },
       mainEntity: { "@type": "ItemList", numberOfItems: items.length, itemListElement: items.map((item, index) => ({ "@type": "ListItem", position: index + 1, name: item.title, url: absoluteUrl(entryPath(collection, item.slug)) })) } },
@@ -116,6 +133,7 @@ export function publicationSchema(entry: ResearchPublication, path: string) {
       isPartOf: { "@type": "PublicationEvent", name: entry.venue }, ...(entry.publisher ? { publisher: { "@type": "Organization", name: entry.publisher } } : {}),
       ...(entry.pages ? { pagination: entry.pages } : {}),
       ...(entry.doi ? { identifier: { "@type": "PropertyValue", propertyID: "DOI", value: entry.doi }, sameAs: [`https://doi.org/${entry.doi}`] } : {}),
+      ...enrichmentSchema(enrichment("research", entry.id), ["about", "abstract"]),
       ...(entry.relatedArtwork ? { about: { "@id": absoluteUrl(`/oi/artworks/${entry.relatedArtwork}#artwork`) } } : {}) },
     breadcrumb([{ name: entry.title, path }])] };
 }

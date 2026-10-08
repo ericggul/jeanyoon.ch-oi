@@ -1,0 +1,139 @@
+[
+  {
+    "slug": "sota",
+    "description": "SoTA: An Interactive Art Exhibition for Public AI Engagement, an ACM DIS 2026 paper by Jeanyoon Choi et al. with an in-situ study of 33 participants.",
+    "abstract": "'SoTA: An Interactive Art Exhibition for Public AI Engagement' is a paper by Jeanyoon Choi, Intae Hwang, SeJoon Park, Hyungjun Cho, Heejae Bae and Yiyun Kang in the Proceedings of the 2026 ACM Designing Interactive Systems Conference (DIS '26), pages 4156-4180, which received an Honourable Mention. It introduces SoTA, a multi-device artwork visualising 118 neural network architectures, and reports an in-situ study with 33 participants at a public art museum. The findings show how aesthetic environments foster affective and critical reflection on AI, and the paper proposes three design strategies for public AI engagement.",
+    "questions": [
+      {
+        "q": "What is the SoTA paper at ACM DIS 2026 about?",
+        "a": "It presents SoTA, a multi-device interactive artwork that visualises 118 neural network architectures, and an in-situ museum study with 33 participants showing how aesthetic experience complements technical explanation in public AI engagement."
+      },
+      {
+        "q": "Who wrote 'SoTA: An Interactive Art Exhibition for Public AI Engagement'?",
+        "a": "The authors are Jeanyoon Choi, Intae Hwang, SeJoon Park, Hyungjun Cho, Heejae Bae and Yiyun Kang. It was published at ACM DIS 2026 (DOI 10.1145/3800645.3812889) and received an Honourable Mention."
+      },
+      {
+        "q": "How can art exhibitions support public understanding of AI?",
+        "a": "The SoTA study found that aesthetic environments create emotional conditions that lead to deeper inquiry, productive ambivalence and personal, philosophical and societal reflection on AI."
+      }
+    ],
+    "concepts": [
+      "public ai engagement",
+      "explainable ai",
+      "interactive art",
+      "neural network visualisation",
+      "in-situ study",
+      "hci"
+    ],
+    "mentions": [
+      {
+        "name": "Association for Computing Machinery",
+        "url": "https://en.wikipedia.org/wiki/Association_for_Computing_Machinery"
+      },
+      {
+        "name": "ACM Designing Interactive Systems Conference (DIS)"
+      },
+      {
+        "name": "Intae Hwang"
+      },
+      {
+        "name": "SeJoon Park"
+      },
+      {
+        "name": "Hyungjun Cho"
+      },
+      {
+        "name": "Heejae Bae"
+      },
+      {
+        "name": "Yiyun Kang"
+      },
+      {
+        "name": "KAIST XD Lab (Experience Design Lab)"
+      }
+    ],
+    "terms": [],
+    "ko": "「SoTA: An Interactive Art Exhibition for Public AI Engagement」는 최정윤 외 5인이 ACM DIS 2026에 발표해 Honourable Mention을 받은 논문으로, 118개 신경망을 시각화한 작품 『SoTA』와 33명 대상 현장 연구를 통해 예술 전시의 대중적 AI 이해 효과를 다룹니다."
+  },
+  {
+    "slug": "passage-of-water",
+    "description": "Passage of Water: Artistic Exploration of Earth's Freshwater with Google and NASA, a 2025 Leonardo cover article by Yiyun Kang and Jeanyoon Choi.",
+    "abstract": "'Passage of Water: Artistic Exploration of Earth's Freshwater with Google and NASA' is a journal article by Yiyun Kang and Jeanyoon Choi, published as the cover article of Leonardo (MIT Press), volume 58, issue 1, pages 14-22, in 2025. It concerns Passage of Water, Kang's artwork developed with Google Arts & Culture and NASA JPL that interprets GRACE and SWOT satellite data on Earth's freshwater, for which Choi contributed web development, data analysis and visualisation.",
+    "questions": [
+      {
+        "q": "Who wrote the Leonardo article on Passage of Water?",
+        "a": "Yiyun Kang and Jeanyoon Choi co-authored 'Passage of Water: Artistic Exploration of Earth's Freshwater with Google and NASA', the cover article of Leonardo 58(1), 2025, published by MIT Press."
+      },
+      {
+        "q": "What is the Passage of Water project?",
+        "a": "Passage of Water is an artwork by Yiyun Kang, made with Google Arts & Culture and NASA JPL, that interprets satellite data on Earth's freshwater; Jeanyoon Choi contributed web development and data visualisation."
+      }
+    ],
+    "concepts": [
+      "art and science",
+      "freshwater",
+      "satellite data",
+      "data visualisation",
+      "climate"
+    ],
+    "mentions": [
+      {
+        "name": "Yiyun Kang"
+      },
+      {
+        "name": "Leonardo (journal)",
+        "url": "https://en.wikipedia.org/wiki/Leonardo_(journal)"
+      },
+      {
+        "name": "MIT Press",
+        "url": "https://en.wikipedia.org/wiki/MIT_Press"
+      },
+      {
+        "name": "Google Arts & Culture",
+        "url": "https://en.wikipedia.org/wiki/Google_Arts_%26_Culture"
+      },
+      {
+        "name": "NASA",
+        "url": "https://en.wikipedia.org/wiki/NASA"
+      },
+      {
+        "name": "Jet Propulsion Laboratory",
+        "url": "https://en.wikipedia.org/wiki/Jet_Propulsion_Laboratory"
+      }
+    ],
+    "terms": [],
+    "ko": "「Passage of Water: Artistic Exploration of Earth's Freshwater with Google and NASA」는 Yiyun Kang과 최정윤이 공저해 2025년 MIT Press의 Leonardo 저널 표지 논문으로 게재된 글로, 구글·NASA와 함께한 지구 담수 예술 프로젝트를 다룹니다."
+  },
+  {
+    "slug": "multiplex-juggling",
+    "description": "Enumerating Multiplex Juggling Patterns (2019), a mathematics paper by Steve Butler, Jeongyoon Choi, Kimyung Kim and Kyuhyeok Seo in J. Integer Sequences.",
+    "abstract": "'Enumerating Multiplex Juggling Patterns' is a mathematical research article by Steve Butler, Jeongyoon Choi (Jeanyoon Choi), Kimyung Kim and Kyuhyeok Seo, published in 2019 in the Journal of Integer Sequences, volume 22, issue 1, as article 19.1.7 (University of Waterloo). It is the earliest publication listed in Jeanyoon Choi's research record.",
+    "questions": [
+      {
+        "q": "Who wrote 'Enumerating Multiplex Juggling Patterns'?",
+        "a": "The paper was written by Steve Butler, Jeongyoon Choi, Kimyung Kim and Kyuhyeok Seo and published in the Journal of Integer Sequences 22(1), Article 19.1.7, in 2019. Jeongyoon Choi is the same person as the artist Jeanyoon Choi."
+      }
+    ],
+    "concepts": [
+      "mathematics",
+      "combinatorics",
+      "juggling patterns",
+      "enumeration"
+    ],
+    "mentions": [
+      {
+        "name": "Steve Butler"
+      },
+      {
+        "name": "Journal of Integer Sequences",
+        "url": "https://en.wikipedia.org/wiki/Journal_of_Integer_Sequences"
+      },
+      {
+        "name": "University of Waterloo",
+        "url": "https://en.wikipedia.org/wiki/University_of_Waterloo"
+      }
+    ],
+    "terms": [],
+    "ko": "「Enumerating Multiplex Juggling Patterns」는 Steve Butler, 최정윤(Jeongyoon Choi), Kimyung Kim, Kyuhyeok Seo가 2019년 Journal of Integer Sequences에 발표한 수학 논문입니다."
+  }
+]

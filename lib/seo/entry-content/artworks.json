@@ -1,0 +1,268 @@
+[
+  {
+    "slug": "banpo-xism",
+    "description": "Banpo-Xism (2026) is a multi-device web artwork by Jeanyoon Choi turning Korea's apartment hierarchy of location and brand into higher-dimensional geometry.",
+    "abstract": "Banpo-Xism (반포자이즘) is a 2026 multi-device web artwork by Jeanyoon Choi that treats South Korea's apartment culture as a myth in which location (L) and brand (B) act as coordinates of wealth and status. Audiences scroll an SNS-like feed of fictional apartments on phones, moving up a 19 x 19 L-B plane shown on a media wall and three vertical TVs. Clicking an advertisement reveals hidden dimensions; touching, shaking and shouting into phones deforms the plane into a differentiable manifold whose projection shifts prices. Referring to Abbott's Flatland, it presents the apartment hierarchy as a lower-dimensional projection of a larger value system. It was shown in Living Geometry, Seoul, 2026.",
+    "questions": [
+      {
+        "q": "What is Banpo-Xism by Jeanyoon Choi?",
+        "a": "Banpo-Xism (2026) is a multi-device web artwork that critiques South Korea's apartment culture, where location and brand function as coordinates of status. Audience phones drive a media wall and three TVs, turning a flat apartment ranking into higher-dimensional geometry."
+      },
+      {
+        "q": "How do audiences interact with Banpo-Xism?",
+        "a": "Visitors scroll an Instagram-like feed of fictional apartments to move up a location-brand plane, then click an advertisement to enter 'a higher-dimensional world', where touching, shaking and shouting into their phones folds and deforms the apartment field."
+      },
+      {
+        "q": "What does the term Banpo-Xism mean?",
+        "a": "In the work, Banpo-Xism names a Korean social pattern of blind, zero-sum competition toward the same idealised real-estate coordinate of location and brand, with Banpo-Xi at the top."
+      },
+      {
+        "q": "Where was Banpo-Xism exhibited?",
+        "a": "Banpo-Xism was shown in Living Geometry, the KAIST XD Lab media art exhibition at Yeongdeungpo Art Square, Seoul, from 1 May to 28 June 2026."
+      }
+    ],
+    "concepts": [
+      "multi-device web artwork",
+      "apartment culture",
+      "real estate",
+      "higher-dimensional geometry",
+      "differential geometry",
+      "social status"
+    ],
+    "mentions": [
+      {
+        "name": "Flatland",
+        "url": "https://en.wikipedia.org/wiki/Flatland"
+      },
+      {
+        "name": "Edwin Abbott Abbott",
+        "url": "https://en.wikipedia.org/wiki/Edwin_Abbott_Abbott"
+      },
+      {
+        "name": "Differential geometry",
+        "url": "https://en.wikipedia.org/wiki/Differential_geometry"
+      },
+      {
+        "name": "Differentiable manifold",
+        "url": "https://en.wikipedia.org/wiki/Differentiable_manifold"
+      },
+      {
+        "name": "Living Geometry"
+      },
+      {
+        "name": "Yeongdeungpo Art Square"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://en.wikipedia.org/wiki/Instagram"
+      }
+    ],
+    "terms": [
+      {
+        "term": "Banpo-Xism",
+        "definition": "A coined term for the contemporary Korean pursuit of the same idealised real-estate coordinate of location and brand, a blind, zero-sum competition toward 'Banpo-Xi'."
+      },
+      {
+        "term": "L-B plane",
+        "definition": "The two-dimensional field of 19 x 19 apartment complexes in the artwork, ordered by location (L) and brand (B), with lower-value complexes at the bottom-left and Banpo-Xi at the upper-right."
+      }
+    ],
+    "ko": "최정윤의 『Banpo-Xism(반포자이즘)』(2026)은 입지와 브랜드가 부와 지위의 좌표가 되는 한국 아파트 문화를 다루는 멀티 디바이스 웹 아트워크로, 관객의 휴대전화 상호작용이 아파트 평면을 고차원 기하학적 형태로 변형시킵니다."
+  },
+  {
+    "slug": "omega",
+    "description": "Ω (Omega, 2025) is a multi-device web artwork by Jeanyoon Choi in which a GPT-based MBTI test builds a 3D vector space that shaking phones disrupt.",
+    "abstract": "Ω is a 2025 interactive multi-device web artwork by Jeanyoon Choi that critiques the vectorisation of human identity, specifically the MBTI craze in Korea. Visitors answer an endless GPT-based binary questionnaire on their phones, and the resulting MBTI type and AI-generated videos form a rotating cylindrical 3D vector space across four displays. Small tremors of the hand trigger glitches; as visitors shake harder, the structure collapses and blurred phone-camera photos of the audience overwrite the polished AI imagery. Named after the symbol for electrical resistance, the work was shown at Design Korea 2025.",
+    "questions": [
+      {
+        "q": "What is Ω (Omega) by Jeanyoon Choi?",
+        "a": "Ω (2025) is an interactive multi-device web artwork that critiques the reduction of identity to MBTI types and algorithmic vectors. A GPT-based MBTI test on the phone builds a cylindrical 3D vector space on four displays."
+      },
+      {
+        "q": "How do audiences interact with Ω?",
+        "a": "Visitors scan a QR code and answer binary questions on their phones. Shaking the phone causes glitches; shaking more collapses the vector space and replaces AI-generated images with blurred photos of the audience."
+      },
+      {
+        "q": "Why is the artwork titled Ω?",
+        "a": "Ω is the symbol for electrical resistance. Jeanyoon Choi uses it to argue that questioning, doubting and shaking the trend of vectorising personality is necessary, just as resistance is part of a working circuit."
+      },
+      {
+        "q": "Where was Ω exhibited?",
+        "a": "Ω was exhibited at Design Korea 2025 at COEX, Seoul, in November 2025."
+      }
+    ],
+    "concepts": [
+      "multi-device web artwork",
+      "mbti",
+      "algorithmic classification",
+      "identity",
+      "glitch",
+      "generative ai"
+    ],
+    "mentions": [
+      {
+        "name": "Myers-Briggs Type Indicator",
+        "url": "https://en.wikipedia.org/wiki/Myers%E2%80%93Briggs_Type_Indicator"
+      },
+      {
+        "name": "Three.js",
+        "url": "https://en.wikipedia.org/wiki/Three.js"
+      },
+      {
+        "name": "Panopticon",
+        "url": "https://en.wikipedia.org/wiki/Panopticon"
+      },
+      {
+        "name": "Ohm",
+        "url": "https://en.wikipedia.org/wiki/Ohm"
+      },
+      {
+        "name": "Design Korea 2025"
+      },
+      {
+        "name": "COEX Convention & Exhibition Center"
+      }
+    ],
+    "terms": [
+      {
+        "term": "Vectorisation of personality",
+        "definition": "The reduction of human identity to positions in a classification system such as MBTI, which Ω visualises as a cylindrical 3D vector space and invites audiences to resist."
+      }
+    ],
+    "ko": "최정윤의 『Ω(오메가)』(2025)는 MBTI처럼 인간의 정체성을 유형과 벡터로 환원하는 알고리즘적 분류를 비판하는 멀티 디바이스 웹 아트워크로, 관객이 휴대전화를 흔들면 질서정연한 벡터 공간이 무너집니다. 2025 디자인코리아에서 전시되었습니다."
+  },
+  {
+    "slug": "sota",
+    "description": "SoTA (2024) is an explainable-AI multi-device web artwork by Jeanyoon Choi and KAIST XD Lab collaborators that visualises 118 neural network architectures.",
+    "abstract": "SoTA (State-of-the-Art) is a 2024 explainable-AI (XAI) multi-device web artwork created by Jeanyoon Choi with Euan Kang, SeJoon Park, Minhyeok Seo and Prof. Yiyun Kang at KAIST XD Lab. Using two projectors, four PCs and audience phones, it presents 118 neural network architectures in an interactive 3D, representational form (the Frontend). When audiences stop interacting, the screens switch to chaotic monochrome visuals of LLM token cross-similarities (the Backend). Drawing on Rich Sutton's 'Bitter Lesson' and modernism's turn to abstraction, it asks whether AI is drifting toward self-referential abstraction. It opened at KAIST Art Museum (December 2024 to June 2025).",
+    "questions": [
+      {
+        "q": "What is SoTA by Jeanyoon Choi?",
+        "a": "SoTA (2024) is an interactive explainable-AI multi-device web artwork by Jeanyoon Choi and KAIST XD Lab collaborators. It lets audiences explore 118 neural network architectures in 3D and then shifts to abstract visualisations of LLM token similarities."
+      },
+      {
+        "q": "How do audiences interact with SoTA?",
+        "a": "Visitors scan a QR code and use their phones to select and navigate neural network models shown across projectors and four screens. When they leave, the installation switches from this representational Frontend to an abstract monochrome Backend."
+      },
+      {
+        "q": "Where has SoTA been exhibited?",
+        "a": "SoTA was shown in the KAIST Art Museum Opening Media Art Exhibition from 17 December 2024 to 30 June 2025, and at ACM DIS 2026 Interactivity at the National University of Singapore in June 2026."
+      },
+      {
+        "q": "Is there a research paper about SoTA?",
+        "a": "Yes. 'SoTA: An Interactive Art Exhibition for Public AI Engagement' by Jeanyoon Choi, Intae Hwang, SeJoon Park, Hyungjun Cho, Heejae Bae and Yiyun Kang appeared at ACM DIS 2026 and received an Honourable Mention."
+      }
+    ],
+    "concepts": [
+      "explainable ai",
+      "neural network visualisation",
+      "multi-device web artwork",
+      "abstraction",
+      "large language models",
+      "public ai engagement"
+    ],
+    "mentions": [
+      {
+        "name": "Explainable artificial intelligence",
+        "url": "https://en.wikipedia.org/wiki/Explainable_artificial_intelligence"
+      },
+      {
+        "name": "Richard S. Sutton",
+        "url": "https://en.wikipedia.org/wiki/Richard_S._Sutton"
+      },
+      {
+        "name": "Jackson Pollock",
+        "url": "https://en.wikipedia.org/wiki/Jackson_Pollock"
+      },
+      {
+        "name": "Modernism",
+        "url": "https://en.wikipedia.org/wiki/Modernism"
+      },
+      {
+        "name": "KAIST Art Museum"
+      },
+      {
+        "name": "Yiyun Kang"
+      },
+      {
+        "name": "Euan Kang"
+      },
+      {
+        "name": "SeJoon Park"
+      },
+      {
+        "name": "Minhyeok Seo"
+      }
+    ],
+    "terms": [
+      {
+        "term": "Frontend and Backend (SoTA)",
+        "definition": "The work's two phases: the Frontend presents neural architectures in a representational, interactive 3D form, while the Backend, triggered when audiences leave, shows abstract monochrome visuals of LLM token cross-similarities."
+      }
+    ],
+    "ko": "『SoTA』(2024)는 최정윤과 KAIST XD Lab 공동 제작자들이 만든 설명 가능한 AI(XAI) 멀티 디바이스 웹 아트워크로, 118개 신경망 구조를 3차원으로 탐색하게 한 뒤 LLM 토큰 유사성의 추상적 시각화로 전환되며 KAIST 미술관에서 전시되었습니다."
+  },
+  {
+    "slug": "not-equal",
+    "description": "≠ (Nonequality, 2023) is a four-channel multi-device web artwork by Jeanyoon Choi arguing that the world cannot be understood through equations alone.",
+    "abstract": "≠ (Nonequality) is a 2023 four-channel interactive multi-device web artwork by Jeanyoon Choi exploring illogicality within seemingly logical systems, with reference to Dostoevsky's criticism of the Crystal Palace. Audiences scan a QR code and click blue hyperlink keywords in an encyclopaedic mobile interface; each click updates all channels via WebSocket, including a rhizomatic database, overlaid videos and a TTS dialogue in which one screen generates LLM scripts and the other answers 'Ja', shifting to 'Nein' as interaction accelerates. It was shown at Ars Electronica 2023 and the Istanbul Digital Art Festival 2024.",
+    "questions": [
+      {
+        "q": "What is ≠ (Nonequality) by Jeanyoon Choi?",
+        "a": "≠ (2023) is a four-channel interactive multi-device web artwork arguing that the world cannot be understood solely through equations. Individually logical AI outputs from GPT, Stable Diffusion and TTS combine into an illogical, decentralised whole."
+      },
+      {
+        "q": "How do audiences interact with ≠?",
+        "a": "Visitors scan a QR code and click blue hyperlink keywords on a mobile encyclopaedia-like interface. Each click changes all four channels in real time, accelerating the work toward a chaotic final state."
+      },
+      {
+        "q": "Where has ≠ been exhibited?",
+        "a": "≠ was shown at Ars Electronica 2023 (Who Owns the Truth?) in Linz and the Istanbul Digital Art Festival 2024 (Search Reality), as well as COUNTERPOINT at the Royal College of Art, HYPERSPECTRAL, Coding Creativity at Hera Gallery, Beyond Binary and Some Facts at Midnight in 2023."
+      }
+    ],
+    "concepts": [
+      "multi-device web artwork",
+      "generative ai",
+      "hypertext",
+      "illogicality",
+      "nietzsche",
+      "rhizome"
+    ],
+    "mentions": [
+      {
+        "name": "Fyodor Dostoevsky",
+        "url": "https://en.wikipedia.org/wiki/Fyodor_Dostoevsky"
+      },
+      {
+        "name": "The Crystal Palace",
+        "url": "https://en.wikipedia.org/wiki/The_Crystal_Palace"
+      },
+      {
+        "name": "Friedrich Nietzsche",
+        "url": "https://en.wikipedia.org/wiki/Friedrich_Nietzsche"
+      },
+      {
+        "name": "Stable Diffusion",
+        "url": "https://en.wikipedia.org/wiki/Stable_Diffusion"
+      },
+      {
+        "name": "WebSocket",
+        "url": "https://en.wikipedia.org/wiki/WebSocket"
+      },
+      {
+        "name": "Ars Electronica",
+        "url": "https://en.wikipedia.org/wiki/Ars_Electronica"
+      },
+      {
+        "name": "Istanbul Digital Art Festival"
+      }
+    ],
+    "terms": [
+      {
+        "term": "Nonequality (≠)",
+        "definition": "The work's name for the joyful illogicality that emerges when seemingly logical algorithmic components (=) are aggregated into a deconstructed, decentralised whole."
+      }
+    ],
+    "ko": "최정윤의 『≠ (Nonequality)』(2023)는 세계를 등식만으로 이해할 수 없다는 문제의식에서 출발한 4채널 멀티 디바이스 웹 아트워크로, 논리적인 AI 결과물들이 모여 비논리적 혼돈을 만들어 내며 아르스 일렉트로니카 2023 등에서 전시되었습니다."
+  }
+]

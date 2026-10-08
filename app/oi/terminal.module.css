@@ -50,7 +50,7 @@
 
 /* Semantic tags retain the literal terminal typography and spacing. */
 .turn h1, .turn h2, .turn h3, .turn p { margin: 0; font: inherit; }
-.turn [hidden] { display: none !important; }
+.turn [hidden], .pending { display: none !important; }
 
 .inlineGallery { max-width: 960px; margin: 1.35em 0; }
 .inlineGallery img { display: block; max-width: 100%; width: auto; height: auto; max-height: 65vh; object-fit: contain; }

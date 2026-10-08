@@ -1,0 +1,241 @@
+[
+  {
+    "slug": "ling",
+    "description": "LING (2023) is a performance directed by Yijun Deng at The Place, London; Jeanyoon Choi was co-director, co-producer and visual programmer.",
+    "abstract": "LING is a 2023 collaborative performance directed by Yijun Deng and developed at The Place, London. It combines live moving graphics, sound, projection, stage lighting, fabric and clay. Jeanyoon Choi was a co-director and co-producer with Bryan Yueshen Wu and Chang Meng, and contributed visual programming with Bryan Yueshen Wu. The performance is listed among the performances on his CV.",
+    "questions": [
+      {
+        "q": "What was Jeanyoon Choi's role in LING?",
+        "a": "In LING (2023), directed by Yijun Deng, Jeanyoon Choi was a co-director and co-producer with Bryan Yueshen Wu and Chang Meng, and a visual programmer with Bryan Yueshen Wu."
+      },
+      {
+        "q": "Where was the performance LING developed?",
+        "a": "LING was developed at The Place in London in 2023."
+      }
+    ],
+    "concepts": [
+      "performance",
+      "live visuals",
+      "projection",
+      "collaboration",
+      "visual programming"
+    ],
+    "mentions": [
+      {
+        "name": "Yijun Deng"
+      },
+      {
+        "name": "Bryan Yueshen Wu"
+      },
+      {
+        "name": "Chang Meng"
+      },
+      {
+        "name": "The Place (London)"
+      }
+    ],
+    "terms": [],
+    "ko": "『LING』(2023)은 Yijun Deng이 연출하고 런던 The Place에서 개발된 협업 퍼포먼스로, 최정윤은 공동 연출·공동 제작과 비주얼 프로그래밍을 맡았습니다."
+  },
+  {
+    "slug": "living-geometry",
+    "description": "Living Geometry (2026) is a KAIST XD Lab media art exhibition at Yeongdeungpo Art Square, Seoul; Jeanyoon Choi was artist and project manager.",
+    "abstract": "Living Geometry is a media art exhibition by KAIST's Experience Design Lab (XD Lab) that explored the city through ecology, technology, data and everyday experience. It ran from 1 May to 28 June 2026 at Yeongdeungpo Art Square (YDP Art Square) in Seoul, with talks and workshops. Jeanyoon Choi took part as an artist and project manager; the exhibition included his multi-device web artwork Banpo-Xism, and he gave an artist talk there in 2026.",
+    "questions": [
+      {
+        "q": "What was Jeanyoon Choi's role in Living Geometry?",
+        "a": "Jeanyoon Choi was an artist and project manager for Living Geometry, the XD Lab media art exhibition at Yeongdeungpo Art Square, Seoul, from 1 May to 28 June 2026. His work Banpo-Xism was shown there."
+      },
+      {
+        "q": "What is the Living Geometry exhibition?",
+        "a": "Living Geometry is a KAIST XD Lab media art exhibition that explored the city through ecology, technology, data and everyday experience, with talks and workshops."
+      }
+    ],
+    "concepts": [
+      "media art exhibition",
+      "city",
+      "ecology",
+      "data",
+      "project management"
+    ],
+    "mentions": [
+      {
+        "name": "KAIST XD Lab (Experience Design Lab)"
+      },
+      {
+        "name": "Yeongdeungpo Art Square"
+      },
+      {
+        "name": "Banpo-Xism"
+      }
+    ],
+    "terms": [],
+    "ko": "『Living Geometry』는 2026년 5월 1일부터 6월 28일까지 서울 영등포 아트스퀘어에서 열린 KAIST XD Lab 미디어 아트 전시로, 최정윤은 작가이자 프로젝트 매니저로 참여해 『Banpo-Xism』을 선보였습니다."
+  },
+  {
+    "slug": "mirror-mirror-on-the-wall",
+    "description": "Mirror Mirror on the Wall (2022-2023) is an ARKO-funded metaverse project on self and space; Jeanyoon Choi was team lead and Unity developer.",
+    "abstract": "Mirror Mirror on the Wall is a metaverse exhibition project funded by ARKO (Arts Council Korea) and the Korean Ministry of Culture, investigating how media and virtual space shape the sense of self. Jeanyoon Choi led the team and worked as a Unity developer from October 2022 to November 2023, and is credited for interaction design. The project was showcased at Feelium Gallery, London, in November 2023, and his CV also lists a Mirror Mirror on the Wall performance at IKLECTIK, London, in 2023.",
+    "questions": [
+      {
+        "q": "What was Jeanyoon Choi's role in Mirror Mirror on the Wall?",
+        "a": "He was team lead and Unity developer from October 2022 to November 2023 for this ARKO-funded metaverse project, which was showcased at Feelium Gallery, London, in November 2023."
+      },
+      {
+        "q": "Who funded Mirror Mirror on the Wall?",
+        "a": "The project was funded by ARKO (Arts Council Korea) and the Korean Ministry of Culture."
+      }
+    ],
+    "concepts": [
+      "metaverse",
+      "virtual exhibition",
+      "selfhood",
+      "unity development",
+      "team leadership"
+    ],
+    "mentions": [
+      {
+        "name": "Arts Council Korea"
+      },
+      {
+        "name": "Korean Ministry of Culture"
+      },
+      {
+        "name": "Feelium Gallery"
+      },
+      {
+        "name": "IKLECTIK"
+      },
+      {
+        "name": "Unity (game engine)",
+        "url": "https://en.wikipedia.org/wiki/Unity_(game_engine)"
+      }
+    ],
+    "terms": [],
+    "ko": "『Mirror Mirror on the Wall』은 한국문화예술위원회(ARKO)가 지원한 메타버스 프로젝트로, 최정윤은 2022년 10월부터 2023년 11월까지 팀장 겸 Unity 개발자로 참여했습니다."
+  },
+  {
+    "slug": "oscillating-cultures",
+    "description": "Oscillating Cultures (2023) is a Snap AR x Royal College of Art collaboration; Jeanyoon Choi led the team and built the multi-device AR interaction.",
+    "abstract": "Oscillating Cultures is a collaboration between Snap AR and the Royal College of Art, developed in London from February to September 2023. Jeanyoon Choi led the team, with Sabrina Tian and Nora, and developed the AR interaction. The multi-device work connects three phones so that interface choices on one generate face filters on the others, examining cultural classification, stereotypes and the feedback between interface choices and generated images.",
+    "questions": [
+      {
+        "q": "What was Jeanyoon Choi's role in Oscillating Cultures?",
+        "a": "Jeanyoon Choi was team lead and AR developer for Oscillating Cultures, a Snap AR and Royal College of Art collaboration developed from February to September 2023."
+      },
+      {
+        "q": "What does Oscillating Cultures examine?",
+        "a": "It examines cultural classification and stereotypes, and the feedback between button-driven interface choices and generated face-filter images across three linked phones."
+      }
+    ],
+    "concepts": [
+      "augmented reality",
+      "cultural stereotypes",
+      "multi-device artwork",
+      "face filters",
+      "team leadership"
+    ],
+    "mentions": [
+      {
+        "name": "Snap Inc.",
+        "url": "https://en.wikipedia.org/wiki/Snap_Inc."
+      },
+      {
+        "name": "Royal College of Art",
+        "url": "https://en.wikipedia.org/wiki/Royal_College_of_Art"
+      },
+      {
+        "name": "Sabrina Tian"
+      }
+    ],
+    "terms": [],
+    "ko": "『Oscillating Cultures』(2023)는 스냅 AR과 영국 왕립예술학교의 협업 프로젝트로, 최정윤은 팀을 이끌고 AR 인터랙션을 개발했습니다."
+  },
+  {
+    "slug": "passage-of-water",
+    "description": "Passage of Water is Yiyun Kang's artwork on Earth's freshwater with Google Arts & Culture and NASA JPL; Jeanyoon Choi was web developer.",
+    "abstract": "Passage of Water is an artwork by Yiyun Kang, developed in collaboration with Google Arts & Culture and NASA's Jet Propulsion Laboratory, that examines Earth's freshwater through GRACE and SWOT satellite data. Jeanyoon Choi contributed web development, data analysis and visualisation from July to December 2023. The work was presented online and at UNFCCC COP28 in Dubai. Kang and Choi co-authored 'Passage of Water: Artistic Exploration of Earth's Freshwater with Google and NASA' in Leonardo (MIT Press, 2025).",
+    "questions": [
+      {
+        "q": "What was Jeanyoon Choi's role in Passage of Water?",
+        "a": "Jeanyoon Choi was web developer and handled data analysis and visualisation for Yiyun Kang's Passage of Water from July to December 2023."
+      },
+      {
+        "q": "Where was Passage of Water presented?",
+        "a": "Passage of Water was presented online and at UNFCCC COP28 in Dubai."
+      },
+      {
+        "q": "What satellite data does Passage of Water use?",
+        "a": "It uses data from NASA's GRACE and SWOT satellite missions to examine Earth's freshwater."
+      }
+    ],
+    "concepts": [
+      "freshwater",
+      "satellite data",
+      "data visualisation",
+      "climate",
+      "art and science collaboration"
+    ],
+    "mentions": [
+      {
+        "name": "Yiyun Kang"
+      },
+      {
+        "name": "Google Arts & Culture",
+        "url": "https://en.wikipedia.org/wiki/Google_Arts_%26_Culture"
+      },
+      {
+        "name": "Jet Propulsion Laboratory",
+        "url": "https://en.wikipedia.org/wiki/Jet_Propulsion_Laboratory"
+      },
+      {
+        "name": "GRACE (Gravity Recovery and Climate Experiment)",
+        "url": "https://en.wikipedia.org/wiki/Gravity_Recovery_and_Climate_Experiment"
+      },
+      {
+        "name": "SWOT (Surface Water and Ocean Topography)",
+        "url": "https://en.wikipedia.org/wiki/Surface_Water_and_Ocean_Topography"
+      },
+      {
+        "name": "2023 United Nations Climate Change Conference (COP28)",
+        "url": "https://en.wikipedia.org/wiki/2023_United_Nations_Climate_Change_Conference"
+      },
+      {
+        "name": "Leonardo (journal)",
+        "url": "https://en.wikipedia.org/wiki/Leonardo_(journal)"
+      }
+    ],
+    "terms": [],
+    "ko": "『Passage of Water』는 Yiyun Kang 작가가 구글 아츠 앤 컬처, NASA JPL과 함께 GRACE·SWOT 위성 데이터로 지구의 담수를 다룬 작품으로, 최정윤은 웹 개발과 데이터 분석·시각화를 맡았고 COP28 두바이에서도 소개되었습니다."
+  },
+  {
+    "slug": "projecting-the-anthropocene",
+    "description": "Projecting the Anthropocene (2024) is a projection-mapping project by KAIST XD Lab and the Center for Anthropocene Studies, managed by Jeanyoon Choi.",
+    "abstract": "Projecting the Anthropocene is a projection-mapping project developed by KAIST's Experience Design Lab (XD Lab) in collaboration with the Center for Anthropocene Studies in Daejeon. Jeanyoon Choi served as project manager from March to October 2024.",
+    "questions": [
+      {
+        "q": "What was Jeanyoon Choi's role in Projecting the Anthropocene?",
+        "a": "Jeanyoon Choi was project manager, from March to October 2024, for Projecting the Anthropocene, a projection-mapping project by KAIST XD Lab with the Center for Anthropocene Studies."
+      }
+    ],
+    "concepts": [
+      "projection mapping",
+      "anthropocene",
+      "project management"
+    ],
+    "mentions": [
+      {
+        "name": "KAIST XD Lab (Experience Design Lab)"
+      },
+      {
+        "name": "Center for Anthropocene Studies"
+      },
+      {
+        "name": "Anthropocene",
+        "url": "https://en.wikipedia.org/wiki/Anthropocene"
+      }
+    ],
+    "terms": [],
+    "ko": "『Projecting the Anthropocene』(2024)은 KAIST XD Lab과 인류세연구센터가 협업한 프로젝션 매핑 프로젝트로, 최정윤은 2024년 3월부터 10월까지 프로젝트 매니저를 맡았습니다."
+  }
+]

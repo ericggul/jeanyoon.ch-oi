@@ -93,6 +93,10 @@ export default function TerminalSession({ initialSection, initialEntry }: { init
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [announcement, setAnnouncement] = useState("");
+  // Server HTML carries every untyped character (class-hidden, not `hidden`/aria-hidden),
+  // so non-JS readers and text extractors receive the entry text; display is unchanged.
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
   const menu = useRef<HTMLDivElement>(null);
   const end = useRef<HTMLDivElement>(null);
   const follow = useRef(true);
@@ -217,16 +221,18 @@ export default function TerminalSession({ initialSection, initialEntry }: { init
         function slice(text: string) {
           const visible = text.slice(0, Math.max(0, remaining));
           remaining -= text.length;
-          return { visible, content: <>{visible}<span hidden>{text.slice(visible.length)}</span></> };
+          return { visible, content: <>{visible}<span className={styles.pending}>{text.slice(visible.length)}</span></> };
         }
         const identity = slice(`${copy.identity} `);
         const path = slice(`${turn.promptPath ?? turn.path} `);
         const command = slice(`% ${turn.command}\n`);
+        const typing = mounted && active && !ready;
+        const pending = (shown: boolean | string, className?: string) => [className, shown ? undefined : styles.pending].filter(Boolean).join(" ") || undefined;
         return (
           <section key={key} id={dormant ? `panel-${turn.path.split("/").pop()}` : undefined} hidden={dormant} className={styles.turn} aria-label={turn.command}>
-            {turnIndex === 0 ? <div className={styles.command} aria-hidden={active && !ready}>
+            {turnIndex === 0 ? <div className={styles.command} aria-hidden={typing}>
               <span className={styles.identity}>{identity.content}</span><span className={styles.path}>{path.content}</span>{command.content}
-            </div> : <h2 className={styles.command} aria-hidden={active && !ready}>
+            </div> : <h2 className={styles.command} aria-hidden={typing}>
               <span className={styles.identity}>{identity.content}</span><span className={styles.path}>{path.content}</span>{command.content}
             </h2>}
             {turn.lines.map((line, index) => {
@@ -234,22 +240,22 @@ export default function TerminalSession({ initialSection, initialEntry }: { init
               // On an entry's own URL the entry title is the page h1 (same styling as h3/p).
               const entryPage = Boolean(initialEntry);
               const Tag = !line.heading ? "p" : turnIndex === 0 ? (entryPage ? "p" : "h1") : entryPage && turnIndex === 1 ? "h1" : "h3";
-              return <Tag key={index} lang={line.lang} hidden={!text.visible} className={line.tone ? styles[line.tone] : undefined} aria-hidden={active && !ready}>{text.content}</Tag>;
+              return <Tag key={index} lang={line.lang} className={pending(text.visible, line.tone ? styles[line.tone] : undefined)} aria-hidden={typing}>{text.content}</Tag>;
             })}
             {turn.detail?.images?.length ? <InlineGallery images={turn.detail.images} hidden={active && !ready} /> : null}
             {(() => {
               const text = slice(`${hint}\n`);
-              return <div hidden={!text.visible} className={styles.hint} aria-hidden={active && !ready}>{text.content}</div>;
+              return <div className={pending(text.visible, styles.hint)} aria-hidden={typing}>{text.content}</div>;
             })()}
             <div ref={active ? menu : undefined} className={styles.choices} aria-label="Choose a destination">
               {turn.choices.map((choice, index) => {
                 const revealed = slice(`${choice.label}\n`);
                 const label = revealed.visible.trimEnd();
-                const fullLabel = <>{label}<span hidden>{choice.label.slice(label.length)}</span></>;
+                const fullLabel = <>{label}<span className={styles.pending}>{choice.label.slice(label.length)}</span></>;
                 const entryHref = choice.entry && `/oi/${choice.entry.collection}/${choice.entry.slug}`;
                 if ((!active || !ready) && !dormant) return choice.href || entryHref
-                  ? <a key={index} hidden={!label} className={styles.previousChoice} href={choice.href ?? entryHref} tabIndex={-1} aria-hidden={!ready && active} onClick={(event) => event.preventDefault()}>{"  "}{fullLabel}</a>
-                  : <span key={index} hidden={!label} className={styles.previousChoice} aria-hidden={!ready && active}>{"  "}{fullLabel}</span>;
+                  ? <a key={index} className={pending(label, styles.previousChoice)} href={choice.href ?? entryHref} tabIndex={-1} aria-hidden={typing} onClick={(event) => event.preventDefault()}>{"  "}{fullLabel}</a>
+                  : <span key={index} className={pending(label, styles.previousChoice)} aria-hidden={typing}>{"  "}{fullLabel}</span>;
                 const props = {
                   className: `${styles.choice} ${!dormant && selected === index ? styles.selected : ""}`,
                   onPointerEnter: () => setSelected(index), onFocus: () => setSelected(index),
@@ -278,7 +284,7 @@ export default function TerminalSession({ initialSection, initialEntry }: { init
       {error && <p role="alert">{error}</p>}
       <div ref={end} />
       <noscript>
-        <style>{`.${styles.terminal} .${styles.turn}[hidden] { display: block !important; } .${styles.terminal} .${styles.turn} [hidden] { display: revert !important; }`}</style>
+        <style>{`.${styles.terminal} .${styles.turn}[hidden] { display: block !important; } .${styles.terminal} .${styles.turn} [hidden], .${styles.terminal} .${styles.turn} .${styles.pending} { display: revert !important; }`}</style>
         {profile.name} — {copy.introduction[0]}
       </noscript>
     </main>

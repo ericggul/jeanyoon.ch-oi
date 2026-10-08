@@ -1,0 +1,1137 @@
+[
+  {
+    "slug": "105",
+    "description": "105 (2022) is a web-based interactive pseudo-game by Jeanyoon Choi in which CAPTCHA checks ask users to prove their humanity while cycling through 105 states.",
+    "abstract": "105 is a 2022 web-based interactive artwork by Jeanyoon Choi. Its 105 states combine three backgrounds, five Platonic solids and seven rainbow lightings. Clicking the work triggers repeated CAPTCHA-style requests to 'verify humanity' before a user can move from one state to another, and an archive records every past transition. Because the number of steps is finite, the participants' accumulated effort eventually returns the work to its starting point, which the text reads as a critique of blind efficiency and of local optimisation that does not add up to global optimisation.",
+    "questions": [
+      {
+        "q": "What is the artwork 105 by Jeanyoon Choi?",
+        "a": "105 (2022) is a web-based interactive pseudo-game by Jeanyoon Choi. Its 105 states (3 backgrounds x 5 Platonic solids x 7 lightings) can only be changed after repeated humanity verifications, reflecting on how people become machine-like in pursuit of a 'higher state'."
+      },
+      {
+        "q": "Why does the artwork 105 return to its starting point?",
+        "a": "The work has a finite number of steps, so the accumulated transitions of all participants eventually lead back to the starting state. Jeanyoon Choi uses this to suggest that the sum of local optimisation does not always produce global optimisation."
+      },
+      {
+        "q": "How does 105 use mirrors?",
+        "a": "Inspired by Yayoi Kusama's Infinity Mirror rooms, the archive of past states is surrounded by mirrors whose reflections emphasise the simulated nature of each geometry."
+      }
+    ],
+    "concepts": [
+      "web art",
+      "interactive artwork",
+      "captcha",
+      "platonic solids",
+      "blind efficiency",
+      "simulation",
+      "socio-economic status"
+    ],
+    "mentions": [
+      {
+        "name": "Yayoi Kusama",
+        "url": "https://en.wikipedia.org/wiki/Yayoi_Kusama"
+      },
+      {
+        "name": "Platonic solid",
+        "url": "https://en.wikipedia.org/wiki/Platonic_solid"
+      },
+      {
+        "name": "CAPTCHA",
+        "url": "https://en.wikipedia.org/wiki/CAPTCHA"
+      }
+    ],
+    "terms": [],
+    "ko": "최정윤의 『105』(2022)는 3가지 배경, 5개의 플라톤 입체, 7가지 조명이 만드는 105개 상태를 반복적인 '인간 인증'을 거쳐 이동하게 하는 웹 기반 인터랙티브 의사 게임으로, 맹목적 효율성 속에서 기계가 되어 가는 인간을 성찰합니다."
+  },
+  {
+    "slug": "17-square-minus-4-square-equals-4-33",
+    "description": "A 2022 video work by Jeanyoon Choi that frames John Cage's 4'33'' with a 16-second intermission and a mock equation, critiquing false data justification.",
+    "abstract": "17 Square minus 4 Square equals 4'33'' is a 2022 web video work by Jeanyoon Choi. It plays John Cage's silent 4'33'' together with a 16-second perceptible intermission, so that the brief audiovisual stimulus makes viewers notice the surrounding silence. The total 4'49'' running time is justified by the equation 4'33'' = 17^2 s - 4^2 s. The work treats this logically flawless but meaningless equation as a parody of narrative fallacy and of a society that trusts data and numbers because they look faultless.",
+    "questions": [
+      {
+        "q": "What is '17 Square minus 4 Square equals 4'33''' by Jeanyoon Choi about?",
+        "a": "It is a 2022 video work that performs John Cage's 4'33'' with a 16-second intermission. Its title equation gives a mathematically correct but arbitrary justification for the running time, criticising society's trust in numbers and false justification."
+      },
+      {
+        "q": "How can silence make an artwork perceptible?",
+        "a": "In this work by Jeanyoon Choi, more than four minutes of silence are punctuated by a 16-second audiovisual intermission. The sudden presence makes viewers acknowledge the existence of the work, a perception of existence through non-existence."
+      }
+    ],
+    "concepts": [
+      "john cage",
+      "silence",
+      "narrative fallacy",
+      "video art",
+      "data and justification"
+    ],
+    "mentions": [
+      {
+        "name": "John Cage",
+        "url": "https://en.wikipedia.org/wiki/John_Cage"
+      },
+      {
+        "name": "4'33''"
+      }
+    ],
+    "terms": [],
+    "ko": "최정윤의 『17 Square minus 4 Square equals 4'33''』(2022)는 존 케이지의 4'33''에 16초의 간주와 수학적 등식을 덧붙여, 숫자와 데이터가 만드는 그럴듯한 정당화를 비판하는 영상 작업입니다."
+  },
+  {
+    "slug": "altering-headline",
+    "description": "Altering Headline (2023) is a public human-AI interaction artwork by Jeanyoon Choi: visitors rewrite NYT headlines on phones and Stable Diffusion images them.",
+    "abstract": "Altering Headline is a 2023 interactive web-based artwork by Jeanyoon Choi. Participants use their mobile phones to rewrite one of the New York Times headlines in a funnier or brighter way, and Stable Diffusion generates an image from the altered text. The new headlines and images are displayed on a public screen next to the originals. The work responds to the gloomy, extreme and interchangeable tone of news headlines and presents the result as collective creativity between humans and AI.",
+    "questions": [
+      {
+        "q": "What is Altering Headline by Jeanyoon Choi?",
+        "a": "Altering Headline (2023) is a public human-AI interaction artwork in which participants rewrite New York Times headlines on their phones. Stable Diffusion turns each altered headline into an image displayed on a shared screen beside the original."
+      },
+      {
+        "q": "How can AI image generation be used in public participatory art?",
+        "a": "In Altering Headline, Jeanyoon Choi uses Stable Diffusion to visualise headlines that participants have humorously rewritten, so the public screen shows a collective result of human and AI creativity."
+      }
+    ],
+    "concepts": [
+      "human-ai interaction",
+      "generative ai",
+      "news headlines",
+      "participatory art",
+      "text-to-image"
+    ],
+    "mentions": [
+      {
+        "name": "The New York Times",
+        "url": "https://en.wikipedia.org/wiki/The_New_York_Times"
+      },
+      {
+        "name": "Stable Diffusion",
+        "url": "https://en.wikipedia.org/wiki/Stable_Diffusion"
+      }
+    ],
+    "terms": [],
+    "ko": "최정윤의 『Altering Headline』(2023)은 관객이 휴대전화로 뉴욕타임스 헤드라인을 유쾌하게 바꾸면 Stable Diffusion이 이미지를 생성해 공공 스크린에 띄우는 인간-AI 상호작용 작품입니다."
+  },
+  {
+    "slug": "an-echo",
+    "description": "An Echo (2022) is an interactive web collage by Jeanyoon Choi contrasting short- and long-term futures and critiquing the urge to predict the unpredictable.",
+    "abstract": "An Echo is a 2022 interactive web artwork by Jeanyoon Choi that collages signs and icons to contrast the short-term future, placed on the left of the screen, with the long-term future on the right. It draws on references including Marcel Duchamp, Henri Bergson's inverted cone, Nietzsche's camel and child, Lee Kun-hee, Jeff Bezos and Elon Musk. Named after the nymph Echo, who could only repeat the last words spoken to her, the work criticises the habit of projecting the recent past onto the near future instead of affirming randomness.",
+    "questions": [
+      {
+        "q": "What is An Echo by Jeanyoon Choi about?",
+        "a": "An Echo (2022) is an interactive web collage that contrasts short-term and long-term futures. It criticises how people, like the nymph Echo, repeat the recent past when trying to predict an unpredictable future."
+      },
+      {
+        "q": "Why is the artwork An Echo named after the Greek nymph Echo?",
+        "a": "Echo could only repeat the last words spoken to her. Jeanyoon Choi uses her as a figure for 'future insight' that simply projects what happened in the near past into the near future."
+      }
+    ],
+    "concepts": [
+      "web collage",
+      "future",
+      "uncertainty",
+      "nietzsche",
+      "interactive web art"
+    ],
+    "mentions": [
+      {
+        "name": "Marcel Duchamp",
+        "url": "https://en.wikipedia.org/wiki/Marcel_Duchamp"
+      },
+      {
+        "name": "Henri Bergson",
+        "url": "https://en.wikipedia.org/wiki/Henri_Bergson"
+      },
+      {
+        "name": "Friedrich Nietzsche",
+        "url": "https://en.wikipedia.org/wiki/Friedrich_Nietzsche"
+      },
+      {
+        "name": "Lee Kun-hee",
+        "url": "https://en.wikipedia.org/wiki/Lee_Kun-hee"
+      },
+      {
+        "name": "Jeff Bezos",
+        "url": "https://en.wikipedia.org/wiki/Jeff_Bezos"
+      },
+      {
+        "name": "Elon Musk",
+        "url": "https://en.wikipedia.org/wiki/Elon_Musk"
+      },
+      {
+        "name": "Echo (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Echo_(mythology)"
+      }
+    ],
+    "terms": [],
+    "ko": "최정윤의 『An Echo』(2022)는 단기적 미래와 장기적 미래를 대비시키는 인터랙티브 웹 콜라주로, 가까운 과거를 반복해 미래를 예측하려는 경향을 그리스 신화의 에코에 빗대어 비판합니다."
+  },
+  {
+    "slug": "andy-warhol-s-campbell-s-soup-cans-award",
+    "description": "Andy Warhol's Campbell's Soup Cans Award is a 2021 self-given award by Jeanyoon Choi, a conceptual gesture that questions the authority of awards.",
+    "abstract": "Andy Warhol's Campbell's Soup Cans Award is a self-given award that Jeanyoon Choi made in 2021. The entry describes it as a gesture questioning the authority of awards.",
+    "questions": [
+      {
+        "q": "What is Andy Warhol's Campbell's Soup Cans Award?",
+        "a": "It is a self-given award by Jeanyoon Choi, dated 2021 in his experiments archive, that questions the authority of awards."
+      }
+    ],
+    "concepts": [
+      "self-given award",
+      "institutional critique",
+      "conceptual art"
+    ],
+    "mentions": [
+      {
+        "name": "Andy Warhol",
+        "url": "https://en.wikipedia.org/wiki/Andy_Warhol"
+      },
+      {
+        "name": "Campbell's Soup Cans",
+        "url": "https://en.wikipedia.org/wiki/Campbell%27s_Soup_Cans"
+      }
+    ],
+    "terms": [],
+    "ko": "『Andy Warhol's Campbell's Soup Cans Award』는 최정윤이 2021년 스스로에게 수여한 상으로, 상이 지닌 권위를 질문하는 작업입니다."
+  },
+  {
+    "slug": "bigger-dreams",
+    "description": "Bigger Dreams (2024) is a single-channel moving image by Jeanyoon Choi: inflating 'DREAM' balloon letters loop, accelerate and collapse into chaotic collage.",
+    "abstract": "Bigger Dreams is a 2024 single-channel moving image by Jeanyoon Choi that critiques the consumerist notion of the Dream as an endlessly reproducible commodity. Referring to Jeff Koons's Balloon Dog and a 2023 incident in which a visitor broke one, it iterates a 45-second Cinema4D animation of balloon letters spelling 'DREAM' more than fifty times within about two and a half minutes. Each loop accelerates, and from the tenth iteration clips are overlaid into a chaotic collage. The text describes three degrees of immersiveness and pairs the visuals with Elgar's Pomp and Circumstance.",
+    "questions": [
+      {
+        "q": "What is Bigger Dreams by Jeanyoon Choi?",
+        "a": "Bigger Dreams (2024) is a single-channel moving image that loops an animation of inflating 'DREAM' balloon letters at accelerating speed until the clips overlap into a chaotic collage, critiquing the fragility of consumerist dreams."
+      },
+      {
+        "q": "How does Bigger Dreams relate to Jeff Koons's Balloon Dog?",
+        "a": "Jeanyoon Choi reads the shiny, inflated Balloon Dog as an image of the consumerist Dream and cites a 2023 incident in which a visitor broke one, showing how quickly such a Dream can shatter."
+      },
+      {
+        "q": "Why does Bigger Dreams use Pomp and Circumstance?",
+        "a": "Elgar's Pomp and Circumstance is often played at graduations and other celebrations of an inflated Dream; syncing it with the accelerating visuals amplifies the chaos and dismantles that association."
+      }
+    ],
+    "concepts": [
+      "moving image",
+      "consumerism",
+      "acceleration",
+      "repetition",
+      "immersiveness",
+      "dream"
+    ],
+    "mentions": [
+      {
+        "name": "Jeff Koons",
+        "url": "https://en.wikipedia.org/wiki/Jeff_Koons"
+      },
+      {
+        "name": "Balloon Dog",
+        "url": "https://en.wikipedia.org/wiki/Balloon_Dog"
+      },
+      {
+        "name": "Edward Elgar",
+        "url": "https://en.wikipedia.org/wiki/Edward_Elgar"
+      },
+      {
+        "name": "Pomp and Circumstance Marches",
+        "url": "https://en.wikipedia.org/wiki/Pomp_and_Circumstance_Marches"
+      },
+      {
+        "name": "Cinema 4D",
+        "url": "https://en.wikipedia.org/wiki/Cinema_4D"
+      },
+      {
+        "name": "The Guardian",
+        "url": "https://en.wikipedia.org/wiki/The_Guardian"
+      }
+    ],
+    "terms": [
+      {
+        "term": "Three degrees of immersiveness",
+        "definition": "In Bigger Dreams, immersion arises first from the tension between inflation and the fragile balloon, second from the shortening rhythm of accelerating loops, and third from the unexpected chaos of overlaid clips."
+      }
+    ],
+    "ko": "최정윤의 『Bigger Dreams』(2024)는 'DREAM' 글자 풍선이 부풀어 오르는 애니메이션을 가속·중첩해 혼돈의 콜라주로 만드는 단채널 영상으로, 소비주의적 꿈의 취약함을 비판합니다."
+  },
+  {
+    "slug": "c-val",
+    "description": "C-VAL (2026) is a phone-driven market installation by Jeanyoon Choi: phone rotation sets volatility, activity and liquidity in a shared simulated market.",
+    "abstract": "C-VAL is a 2026 interactive web experiment by Jeanyoon Choi, described as a phone-driven market installation. Phone rotation is translated into market conditions such as volatility, activity and liquidity, which generate orders and executions on a shared server. The displayed price is the last executed trade, while news, media and comment screens present different views of the resulting market.",
+    "questions": [
+      {
+        "q": "What is C-VAL by Jeanyoon Choi?",
+        "a": "C-VAL (2026) is a phone-driven market installation in which audience phone rotation changes volatility, activity and liquidity in a shared simulated market. The price shown is the last executed trade."
+      },
+      {
+        "q": "How can a phone control a simulated market in an artwork?",
+        "a": "In C-VAL, phone rotation sets market conditions that generate orders and trades on a shared server, and separate news, media and comment screens show different views of the outcome."
+      }
+    ],
+    "concepts": [
+      "simulated market",
+      "phone interaction",
+      "multi-screen installation",
+      "economic systems"
+    ],
+    "mentions": [],
+    "terms": [],
+    "ko": "최정윤의 『C-VAL』(2026)은 휴대전화의 회전이 공유된 가상 시장의 변동성, 활동성, 유동성을 바꾸는 인터랙티브 시장 설치 작업입니다."
+  },
+  {
+    "slug": "das-gerede",
+    "description": "Das Gerede (2023) by Jeanyoon Choi uses the ChatGPT API to stage Heidegger's idle talk as AI small talk on a departure board that visitors book by phone.",
+    "abstract": "Das Gerede is a 2023 interactive multi-device web artwork by Jeanyoon Choi based on Heidegger's concept of idle, superficial talk. Three fictional characters, Tom, Mary and Smith, hold real-time conversations generated with the ChatGPT API about movies, weather, asset management, fashion and politics. The display imitates a London terminal departure board, and visitors use a parody booking site, Booking.conv, to reserve new conversations. The work suggests that people conforming to 'Das Man' may already be existentially replaceable by AI.",
+    "questions": [
+      {
+        "q": "What is Das Gerede by Jeanyoon Choi?",
+        "a": "Das Gerede (2023) is a multi-device web artwork in which ChatGPT-generated characters exchange superficial small talk on a train departure board. Visitors can 'book' new conversations through a parody booking site on their phones."
+      },
+      {
+        "q": "How does Das Gerede use Heidegger's philosophy?",
+        "a": "It takes Heidegger's 'Das Gerede' (idle talk) and 'Das Man' (the average existence) to argue that predictable social conversation can be simulated by AI, questioning the authenticity of everyday exchange."
+      }
+    ],
+    "concepts": [
+      "multi-device web artwork",
+      "heidegger",
+      "idle talk",
+      "chatgpt",
+      "human-ai interaction",
+      "simulation"
+    ],
+    "mentions": [
+      {
+        "name": "Martin Heidegger",
+        "url": "https://en.wikipedia.org/wiki/Martin_Heidegger"
+      },
+      {
+        "name": "ChatGPT",
+        "url": "https://en.wikipedia.org/wiki/ChatGPT"
+      },
+      {
+        "name": "London"
+      }
+    ],
+    "terms": [
+      {
+        "term": "Das Gerede",
+        "definition": "Heidegger's term for idle, meaningless social conversation; in this work, the routine small talk about trivial topics that Jeanyoon Choi argues is replaceable by AI."
+      },
+      {
+        "term": "Booking.conv",
+        "definition": "The work's parody hotel-booking mobile site, where participants reserve a conversation by choosing its time, topics and participants."
+      }
+    ],
+    "ko": "최정윤의 『Das Gerede』(2023)는 하이데거의 '잡담' 개념을 바탕으로 ChatGPT가 만든 피상적 대화를 기차 출발 안내판 형식으로 보여 주고, 관객이 휴대전화로 대화를 '예약'하게 하는 멀티 디바이스 웹 아트워크입니다."
+  },
+  {
+    "slug": "ddong-meong",
+    "description": "ddong-meong (2026) is a humorous interactive wellness app by Jeanyoon Choi: a 4-minute-33-second toilet meditation linked to a shared exhibition screen.",
+    "abstract": "ddong-meong is a 2026 interactive web experiment by Jeanyoon Choi, consisting of a humorous wellness app and a connected exhibition screen. The app offers a 4-minute-33-second meditation for time spent on the toilet, using the calm, courteous language of wellness services. The exhibition screen turns private sessions into a shared field of nicknames, times and activity, exposing the contradiction of using another platform to escape platform-shaped attention.",
+    "questions": [
+      {
+        "q": "What is ddong-meong by Jeanyoon Choi?",
+        "a": "ddong-meong (2026) is a humorous wellness app offering a 4-minute-33-second meditation for time on the toilet, connected to an exhibition screen that shows participants' nicknames, times and activity."
+      },
+      {
+        "q": "What contradiction does ddong-meong point to?",
+        "a": "By pairing a private meditation app with a public screen, Jeanyoon Choi's work exposes the contradiction of using yet another platform to escape platform-shaped attention."
+      }
+    ],
+    "concepts": [
+      "wellness app",
+      "attention",
+      "platforms",
+      "humour",
+      "exhibition screen"
+    ],
+    "mentions": [],
+    "terms": [],
+    "ko": "최정윤의 『ddong-meong』(2026)은 화장실에서 보내는 4분 33초를 위한 명상 앱과 전시 화면으로 이루어진 유머러스한 인터랙티브 작업으로, 플랫폼에서 벗어나기 위해 또 다른 플랫폼을 쓰는 모순을 드러냅니다."
+  },
+  {
+    "slug": "death-of-blue-screen",
+    "description": "Death of Blue Screen by Jeanyoon Choi links the Blue Screen of Death with Yves Klein's IKB in a multi-device web artwork using Tate Modern questions.",
+    "abstract": "Death of Blue Screen is a multi-device web artwork by Jeanyoon Choi, dated 2024, that connects the technical Blue Screen of Death with Yves Klein's International Klein Blue. Spectators face a large screen filled with IKB and use their phones to answer aloud nine questions taken from Tate Modern's curatorial prompts. The screen shows no visible change, yet the recorded answers are fed into it, creating a conceptual two-way interaction. Jeanyoon Choi is credited for the website, built with React, Next.js, Google text-to-speech and speech recognition.",
+    "questions": [
+      {
+        "q": "What is Death of Blue Screen by Jeanyoon Choi?",
+        "a": "It is a multi-device web artwork that pairs a giant screen in International Klein Blue with a mobile platform where spectators answer nine questions drawn from Tate Modern. It relates the Blue Screen of Death to Yves Klein's IKB."
+      },
+      {
+        "q": "Why does the screen in Death of Blue Screen not change when people interact?",
+        "a": "The answers spectators record are fed into the screen without any visible alteration, creating a conceptual two-way interaction in which the work reacts to its viewers as they react to it."
+      }
+    ],
+    "concepts": [
+      "multi-device web artwork",
+      "international klein blue",
+      "blue screen of death",
+      "abstract art",
+      "speech recognition"
+    ],
+    "mentions": [
+      {
+        "name": "Blue screen of death",
+        "url": "https://en.wikipedia.org/wiki/Blue_screen_of_death"
+      },
+      {
+        "name": "Yves Klein",
+        "url": "https://en.wikipedia.org/wiki/Yves_Klein"
+      },
+      {
+        "name": "International Klein Blue",
+        "url": "https://en.wikipedia.org/wiki/International_Klein_Blue"
+      },
+      {
+        "name": "Tate Modern",
+        "url": "https://en.wikipedia.org/wiki/Tate_Modern"
+      },
+      {
+        "name": "ChatGPT",
+        "url": "https://en.wikipedia.org/wiki/ChatGPT"
+      }
+    ],
+    "terms": [],
+    "ko": "최정윤의 『Death of Blue Screen』은 블루스크린 오류와 이브 클라인의 IKB를 연결하는 멀티 디바이스 웹 아트워크로, 관객은 휴대전화로 테이트 모던의 질문에 답하며 거대한 파란 화면과 상호작용합니다."
+  },
+  {
+    "slug": "factory-4-0",
+    "description": "Factory 4.0 (2024) by Jeanyoon Choi and Intae Hwang is a multi-device web artwork that cuts up GPT-4o text and feeds it back into an endless loop.",
+    "abstract": "Factory 4.0 is a 2024 multi-device web artwork by Jeanyoon Choi and Intae Hwang, made at the Experience Design Lab. It applies the Dada-inspired cut-up technique to mass-generated text across three channels: audiences type or speak to GPT-4o on their phones, the responses are cut into 2-6 word phrases styled on a screen, and the collaged phrases are fed back into the user input and six other chat interfaces. As the loop accelerates, topics across seven channels converge, presenting a factory of mass-generated, fragmented meaning in the age of Industry 4.0.",
+    "questions": [
+      {
+        "q": "What is Factory 4.0 by Jeanyoon Choi?",
+        "a": "Factory 4.0 (2024), by Jeanyoon Choi and Intae Hwang, is a multi-device web artwork that cuts GPT-4o responses into short phrases and repeatedly feeds them back into GPT, creating an endless factory-like loop of generated text."
+      },
+      {
+        "q": "How is the cut-up technique used with large language models in art?",
+        "a": "In Factory 4.0, GPT-4o output is randomly cut into 2-6 word phrases, displayed as a collage, and fed back as new prompts, so meaning fragments and becomes homogenous across seven channels."
+      }
+    ],
+    "concepts": [
+      "multi-device web artwork",
+      "cut-up technique",
+      "dadaism",
+      "large language models",
+      "text generation",
+      "industry 4.0"
+    ],
+    "mentions": [
+      {
+        "name": "Cut-up technique",
+        "url": "https://en.wikipedia.org/wiki/Cut-up_technique"
+      },
+      {
+        "name": "Dada",
+        "url": "https://en.wikipedia.org/wiki/Dada"
+      },
+      {
+        "name": "GPT-4o",
+        "url": "https://en.wikipedia.org/wiki/GPT-4o"
+      },
+      {
+        "name": "Intae Hwang"
+      },
+      {
+        "name": "KAIST XD Lab (Experience Design Lab)"
+      }
+    ],
+    "terms": [],
+    "ko": "최정윤과 Intae Hwang의 『Factory 4.0』(2024)은 GPT-4o의 응답을 컷업 기법으로 잘라 다시 입력하는 순환을 만드는 멀티 디바이스 웹 아트워크로, 대량 생성 텍스트 시대의 '의미 없는 의미'를 보여 줍니다."
+  },
+  {
+    "slug": "festival-messenger",
+    "description": "Festival Messenger (2022) is a GPS-based messenger by Jeanyoon Choi: a message opens only where the sender designated it. Includes 100 loading screens.",
+    "abstract": "Festival Messenger is a 2022 web experiment by Jeanyoon Choi: a spatially restricted, GPS-based messenger. A receiver can open a message only at the location the sender designated. The project also includes an experimental UI design with 100 different loading-screen interfaces.",
+    "questions": [
+      {
+        "q": "What is Festival Messenger by Jeanyoon Choi?",
+        "a": "Festival Messenger (2022) is a GPS-based messenger in which a message can be opened only at the place the sender chose. It includes 100 different loading-screen interfaces."
+      }
+    ],
+    "concepts": [
+      "location-based messaging",
+      "gps",
+      "experimental ui design",
+      "web experiment"
+    ],
+    "mentions": [],
+    "terms": [],
+    "ko": "최정윤의 『Festival Messenger』(2022)는 보낸 사람이 지정한 장소에서만 메시지를 열 수 있는 GPS 기반 메신저로, 100가지 로딩 화면 디자인을 포함합니다."
+  },
+  {
+    "slug": "fractal-clock",
+    "description": "Fractal Clock (2026) is a recursive analogue-clock study by Jeanyoon Choi: a deterministic tree of clocks attached to every hour, minute and second hand.",
+    "abstract": "Fractal Clock is a 2026 interactive web experiment by Jeanyoon Choi. It is a deterministic tree of analogue clocks in which further clocks are recursively attached to each hour, minute and second hand. Their repeated movements form a nested structure of time and motion.",
+    "questions": [
+      {
+        "q": "What is Fractal Clock by Jeanyoon Choi?",
+        "a": "Fractal Clock (2026) is a recursive analogue-clock study in which every clock hand carries further clocks, forming a deterministic, nested structure of time and motion."
+      }
+    ],
+    "concepts": [
+      "recursion",
+      "fractal",
+      "time",
+      "complex systems",
+      "generative visual"
+    ],
+    "mentions": [],
+    "terms": [],
+    "ko": "최정윤의 『Fractal Clock』(2026)은 시·분·초침마다 다시 시계가 재귀적으로 붙는 결정론적 시계 트리로, 시간과 움직임의 중첩 구조를 만드는 웹 실험입니다."
+  },
+  {
+    "slug": "laboratory-occupied",
+    "description": "Laboratory Occupied (2021) is a set of early web-based creative coding drawings by Jeanyoon Choi, generative visuals made with HTML Canvas.",
+    "abstract": "Laboratory Occupied is a 2021 set of early web-based creative coding drawings by Jeanyoon Choi. The works are early attempts to create generative visuals with HTML Canvas, aiming to expand the boundary of expression.",
+    "questions": [
+      {
+        "q": "What is Laboratory Occupied by Jeanyoon Choi?",
+        "a": "Laboratory Occupied (2021) is a collection of early creative coding drawings made with HTML Canvas, Jeanyoon Choi's first attempts at web-based generative visuals."
+      }
+    ],
+    "concepts": [
+      "creative coding",
+      "generative art",
+      "html canvas",
+      "web art"
+    ],
+    "mentions": [],
+    "terms": [],
+    "ko": "최정윤의 『Laboratory Occupied』(2021)는 HTML Canvas로 제작한 초기 웹 기반 크리에이티브 코딩 드로잉 모음입니다."
+  },
+  {
+    "slug": "ling",
+    "description": "LING (2023) is a performance directed by Yijun Deng at The Place, London, with Jeanyoon Choi as co-director, co-producer and visual programmer.",
+    "abstract": "LING is a 2023 collaborative performance directed and choreographed by Yijun Deng and developed at The Place in London. It combines HD live moving graphics, stereo sound, projection, stage lighting, a 6 m by 2 m fabric and clay in a 20-minute piece. The title refers to the character 靈, whose oracle-bone form shows rain, a mouth and a shaman praying for rain. Jeanyoon Choi was a co-director and co-producer with Bryan Yueshen Wu and Chang Meng, and visual programmer with Bryan Yueshen Wu.",
+    "questions": [
+      {
+        "q": "What was Jeanyoon Choi's role in the performance LING?",
+        "a": "Jeanyoon Choi was a co-director and co-producer of LING (2023), alongside Bryan Yueshen Wu and Chang Meng, and worked as visual programmer with Bryan Yueshen Wu. The piece was directed by Yijun Deng and developed at The Place, London."
+      },
+      {
+        "q": "What does the title LING mean?",
+        "a": "Ling (靈) derives from oracle bone script showing rain above, a mouth in the middle and a shaman below, representing a shaman's prayer for rain; it can also refer to sacred spirits."
+      }
+    ],
+    "concepts": [
+      "performance",
+      "live visuals",
+      "projection",
+      "dance",
+      "collaboration"
+    ],
+    "mentions": [
+      {
+        "name": "Yijun Deng"
+      },
+      {
+        "name": "Bryan Yueshen Wu"
+      },
+      {
+        "name": "Chang Meng"
+      },
+      {
+        "name": "The Place (London)"
+      },
+      {
+        "name": "Oracle bone script",
+        "url": "https://en.wikipedia.org/wiki/Oracle_bone_script"
+      }
+    ],
+    "terms": [],
+    "ko": "『LING』(2023)은 Yijun Deng이 연출하고 런던 The Place에서 개발된 퍼포먼스로, 최정윤은 공동 연출·공동 제작과 비주얼 프로그래밍을 맡았습니다."
+  },
+  {
+    "slug": "mba-medium-based-approach",
+    "description": "MBA (Medium-Based Approach, 2022) by Jeanyoon Choi is a five-device multi-device web artwork moving through alienation, causality and chaos stages.",
+    "abstract": "MBA (Medium-Based Approach) is a 2022 multi-device web artwork by Jeanyoon Choi, made as his representative project for Term 1 at the Royal College of Art. It connects two mobiles, two PCs and a screen over the internet and minimises external context to focus on the medium itself. It runs in three stages: an alienation (Verfremdungseffekt) stage in which phone buttons seem not to work, a causality perception stage in which screens respond logically, and a chaos stage that distorts the interaction-audio and interaction-visual relationships.",
+    "questions": [
+      {
+        "q": "What is MBA (Medium-Based Approach) by Jeanyoon Choi?",
+        "a": "MBA (2022) is a multi-device web artwork of at least five connected devices that presents Jeanyoon Choi's medium-focused approach to MDWA (Multi-Device Web Artwork). It was his Term 1 project at the Royal College of Art."
+      },
+      {
+        "q": "What are the three stages of MBA?",
+        "a": "MBA moves from a Verfremdungseffekt (alienation) stage, to a causality perception stage where screens respond predictably to button clicks, to a chaos stage where those relationships are reversed and distorted."
+      },
+      {
+        "q": "What is a medium-based approach to multi-device web art?",
+        "a": "In Jeanyoon Choi's MBA, it means minimising external context and building the work from an understanding of the multi-device medium itself, emphasising its physicality through performative language."
+      }
+    ],
+    "concepts": [
+      "multi-device web artwork",
+      "mdwa",
+      "medium specificity",
+      "alienation effect",
+      "causality",
+      "minimalism"
+    ],
+    "mentions": [
+      {
+        "name": "Royal College of Art",
+        "url": "https://en.wikipedia.org/wiki/Royal_College_of_Art"
+      },
+      {
+        "name": "Distancing effect (Verfremdungseffekt)",
+        "url": "https://en.wikipedia.org/wiki/Distancing_effect"
+      }
+    ],
+    "terms": [
+      {
+        "term": "Medium-Based Approach",
+        "definition": "Jeanyoon Choi's minimalist approach to Multi-Device Web Artwork that minimises external context and builds the work from consideration of the medium itself."
+      },
+      {
+        "term": "Multi-Device Web Artwork (MDWA)",
+        "definition": "An artwork made of several internet-connected devices, such as mobiles, PCs and screens, in which interaction on one device produces responses on others."
+      }
+    ],
+    "ko": "최정윤의 『MBA (Medium-Based Approach)』(2022)는 휴대전화, PC, 스크린 등 다섯 대 이상의 기기를 연결한 멀티 디바이스 웹 아트워크로, 소외 효과·인과 인식·혼돈의 세 단계로 매체 자체를 탐구합니다."
+  },
+  {
+    "slug": "mirror-mirror-on-the-wall",
+    "description": "Mirror Mirror on the Wall is an ARKO-funded metaverse exhibition on digital selfhood; Jeanyoon Choi was team lead, interaction designer and Unity developer.",
+    "abstract": "Mirror Mirror on the Wall is a metaverse exhibition project funded by ARKO (Arts Council Korea) and the Korean Ministry of Culture. Inspired by Marshall McLuhan's ideas on media, it invites visitors to reflect on past, present and future selves in a virtual space that avoids replicating real-world galleries. The team credits Jeanyoon Choi for interaction design, with Alexandra Topaz (space design), Devanshi Rungta (curation and organisation) and Los (3D design). Jeanyoon Choi led the team and worked as a Unity developer from October 2022 to November 2023; it was shown at Feelium Gallery, London, in November 2023.",
+    "questions": [
+      {
+        "q": "What was Jeanyoon Choi's role in Mirror Mirror on the Wall?",
+        "a": "Jeanyoon Choi was team lead, interaction designer and Unity developer for Mirror Mirror on the Wall, an ARKO-funded metaverse exhibition project showcased at Feelium Gallery, London, in November 2023."
+      },
+      {
+        "q": "What is the metaverse exhibition Mirror Mirror on the Wall about?",
+        "a": "It explores how media and virtual space shape the sense of self, drawing on Marshall McLuhan, and aims to go beyond metaverse exhibitions that simply display NFTs in replicas of real galleries."
+      }
+    ],
+    "concepts": [
+      "metaverse",
+      "virtual exhibition",
+      "digital identity",
+      "selfhood",
+      "media theory"
+    ],
+    "mentions": [
+      {
+        "name": "Arts Council Korea"
+      },
+      {
+        "name": "Korean Ministry of Culture"
+      },
+      {
+        "name": "Marshall McLuhan",
+        "url": "https://en.wikipedia.org/wiki/Marshall_McLuhan"
+      },
+      {
+        "name": "Alexandra Topaz"
+      },
+      {
+        "name": "Devanshi Rungta"
+      },
+      {
+        "name": "Feelium Gallery"
+      },
+      {
+        "name": "Unity (game engine)",
+        "url": "https://en.wikipedia.org/wiki/Unity_(game_engine)"
+      }
+    ],
+    "terms": [],
+    "ko": "『Mirror Mirror on the Wall』은 한국문화예술위원회(ARKO)가 지원한 메타버스 전시 프로젝트로, 최정윤은 팀장이자 인터랙션 디자이너, Unity 개발자로 참여했으며 2023년 11월 런던 Feelium Gallery에서 선보였습니다."
+  },
+  {
+    "slug": "oscillating-cultures",
+    "description": "Oscillating Cultures (2023) is a Snap AR x Royal College of Art multi-device AR artwork on cultural stereotypes, by Jeanyoon Choi, Sabrina Tian and Nora.",
+    "abstract": "Oscillating Cultures is a 2023 multi-device AR artwork made in a collaboration between Snap AR and the Royal College of Art by Jeanyoon Choi, Sabrina Tian and Nora; Jeanyoon Choi led the team and developed the AR interaction. Three phones interact so that tapping cultural choices on one generates face filters reflected on the others, first resembling advertisements and then increasingly stereotyped depictions. The work links button-driven interfaces, recommendation algorithms and AI training to the tendency of humans and AI to impose stereotypes on other cultures.",
+    "questions": [
+      {
+        "q": "What is Oscillating Cultures?",
+        "a": "Oscillating Cultures (2023) is a multi-device AR artwork from a Snap AR and Royal College of Art collaboration. Three linked phones generate face filters from cultural choices to critique stereotyping by both humans and AI."
+      },
+      {
+        "q": "What was Jeanyoon Choi's role in Oscillating Cultures?",
+        "a": "Jeanyoon Choi led the team, with Sabrina Tian and Nora, and developed the AR interaction between February and September 2023."
+      }
+    ],
+    "concepts": [
+      "augmented reality",
+      "face filters",
+      "cultural stereotypes",
+      "recommendation algorithms",
+      "multi-device artwork",
+      "ai bias"
+    ],
+    "mentions": [
+      {
+        "name": "Snap Inc.",
+        "url": "https://en.wikipedia.org/wiki/Snap_Inc."
+      },
+      {
+        "name": "Royal College of Art",
+        "url": "https://en.wikipedia.org/wiki/Royal_College_of_Art"
+      },
+      {
+        "name": "Sabrina Tian"
+      },
+      {
+        "name": "Distancing effect (Verfremdungseffekt)",
+        "url": "https://en.wikipedia.org/wiki/Distancing_effect"
+      }
+    ],
+    "terms": [],
+    "ko": "『Oscillating Cultures』(2023)는 스냅 AR과 영국 왕립예술학교의 협업으로 만든 멀티 디바이스 AR 작품으로, 최정윤이 팀을 이끌며 문화적 고정관념과 AI의 분류 방식을 얼굴 필터로 비판합니다."
+  },
+  {
+    "slug": "passage-of-water",
+    "description": "Passage of Water is Yiyun Kang's interactive work on NASA freshwater data, made with Google Arts & Culture and NASA JPL; web development by Jeanyoon Choi.",
+    "abstract": "Passage of Water is an interactive experience by artist Yiyun Kang that interprets NASA satellite data on Earth's freshwater, developed with Google Arts & Culture and NASA's Jet Propulsion Laboratory. Jeanyoon Choi contributed web development, data analysis and visualisation between July and December 2023. The work draws on GRACE and SWOT satellite data and was presented online and at UNFCCC COP28 in Dubai. Kang and Choi later co-authored a Leonardo article on the project.",
+    "questions": [
+      {
+        "q": "Who made Passage of Water?",
+        "a": "Passage of Water is an artwork by Yiyun Kang, developed with Google Arts & Culture and NASA JPL. Jeanyoon Choi contributed web development, data analysis and visualisation."
+      },
+      {
+        "q": "What data does Passage of Water use?",
+        "a": "It interprets NASA satellite data on Earth's freshwater, specifically from the GRACE and SWOT missions."
+      }
+    ],
+    "concepts": [
+      "freshwater",
+      "satellite data",
+      "data visualisation",
+      "climate",
+      "web development"
+    ],
+    "mentions": [
+      {
+        "name": "Yiyun Kang"
+      },
+      {
+        "name": "Google Arts & Culture",
+        "url": "https://en.wikipedia.org/wiki/Google_Arts_%26_Culture"
+      },
+      {
+        "name": "Jet Propulsion Laboratory",
+        "url": "https://en.wikipedia.org/wiki/Jet_Propulsion_Laboratory"
+      },
+      {
+        "name": "NASA",
+        "url": "https://en.wikipedia.org/wiki/NASA"
+      }
+    ],
+    "terms": [],
+    "ko": "『Passage of Water』는 Yiyun Kang 작가가 구글 아츠 앤 컬처, NASA JPL과 함께 지구의 담수를 위성 데이터로 해석한 인터랙티브 작품으로, 최정윤은 웹 개발과 데이터 분석·시각화를 맡았습니다."
+  },
+  {
+    "slug": "registration",
+    "description": "Registration (2024) by Jeanyoon Choi is a Dadaist multi-device web artwork where sign-up form inputs on a phone trigger rings, pop-ups and text on a screen.",
+    "abstract": "Registration is a 2024 multi-device web artwork by Jeanyoon Choi using one screen and one mobile. Visitors simulate signing up to a website, entering names, addresses and phone numbers and accepting policies, and each input produces real-time audio-visual output: names appear on screen, phone numbers trigger ringing, and consent spawns promotional pop-ups. Drawing on the artist's experience of repeated job applications, the work critiques how technology that simplifies single tasks makes life more complicated and argues that actions on 'my' device are always collective.",
+    "questions": [
+      {
+        "q": "What is Registration by Jeanyoon Choi?",
+        "a": "Registration (2024) is a multi-device web artwork that turns online sign-up into a Dadaist experience: each detail typed on a phone triggers text, ringing or pop-ups on a shared screen."
+      },
+      {
+        "q": "How can typing on a phone create immersion in an installation?",
+        "a": "In Registration, simple text inputs on a mobile produce amplified real-time changes on a screen, which Jeanyoon Choi presents as a form of interactive immersiveness distinct from motion capture."
+      }
+    ],
+    "concepts": [
+      "multi-device web artwork",
+      "dadaism",
+      "online registration",
+      "consumerism",
+      "interconnectivity",
+      "immersiveness"
+    ],
+    "mentions": [
+      {
+        "name": "Distancing effect (Verfremdungseffekt)",
+        "url": "https://en.wikipedia.org/wiki/Distancing_effect"
+      },
+      {
+        "name": "Zoom"
+      },
+      {
+        "name": "Google Meet",
+        "url": "https://en.wikipedia.org/wiki/Google_Meet"
+      }
+    ],
+    "terms": [],
+    "ko": "최정윤의 『Registration』(2024)은 휴대전화에서 회원가입 정보를 입력하면 스크린에 텍스트, 전화벨, 광고 팝업이 나타나는 다다이즘적 멀티 디바이스 웹 아트워크로, 반복적인 온라인 등록 과정을 비판합니다."
+  },
+  {
+    "slug": "reverse-voight-kampff-test",
+    "description": "Reverse Voight-Kampff Test (2023) by Jeanyoon Choi inverts Blade Runner's test: visitors' birthdays join AI-company numbers, showing attachment to data.",
+    "abstract": "Reverse Voight-Kampff Test is a 2023 interactive artwork by Jeanyoon Choi that inverts the fictional test from Philip K. Dick's novel and Ridley Scott's Blade Runner. A screen shows many real-time numbers that represent the founding dates of companies central to AI, labelled by stock tickers such as AAPL. Participants add their names and birthdays from a phone and become attached to their own data as it appears, while the algorithm stays indifferent. The work frames this emotional response to data as a distinctly human trait.",
+    "questions": [
+      {
+        "q": "What is the Reverse Voight-Kampff Test by Jeanyoon Choi?",
+        "a": "It is a 2023 interactive artwork in which participants enter their names and birthdays on a phone, adding them to a screen of numbers that represent birthdates of AI-related companies. It tests humans, not machines, for emotional response to data."
+      },
+      {
+        "q": "How does the Reverse Voight-Kampff Test differ from the test in Blade Runner?",
+        "a": "The original test elicits emotional responses to identify androids. Jeanyoon Choi's version examines how humans become emotionally attached to data once it is personally relevant, a response the algorithm does not share."
+      }
+    ],
+    "concepts": [
+      "human-machine boundary",
+      "personal data",
+      "emotional response",
+      "blade runner",
+      "interactive artwork"
+    ],
+    "mentions": [
+      {
+        "name": "Do Androids Dream of Electric Sheep?",
+        "url": "https://en.wikipedia.org/wiki/Do_Androids_Dream_of_Electric_Sheep%3F"
+      },
+      {
+        "name": "Blade Runner",
+        "url": "https://en.wikipedia.org/wiki/Blade_Runner"
+      },
+      {
+        "name": "Philip K. Dick",
+        "url": "https://en.wikipedia.org/wiki/Philip_K._Dick"
+      },
+      {
+        "name": "Ridley Scott",
+        "url": "https://en.wikipedia.org/wiki/Ridley_Scott"
+      },
+      {
+        "name": "Google",
+        "url": "https://en.wikipedia.org/wiki/Google"
+      },
+      {
+        "name": "Apple Inc.",
+        "url": "https://en.wikipedia.org/wiki/Apple_Inc."
+      },
+      {
+        "name": "ChatGPT",
+        "url": "https://en.wikipedia.org/wiki/ChatGPT"
+      }
+    ],
+    "terms": [
+      {
+        "term": "Reverse Voight-Kampff Testing",
+        "definition": "An inversion of the fictional Voight-Kampff test in which the human emotional response to algorithmically presented data, rather than a machine's, is under scrutiny."
+      }
+    ],
+    "ko": "최정윤의 『Reverse Voight-Kampff Test』(2023)는 블레이드 러너의 보이트-캄프 테스트를 뒤집은 인터랙티브 작품으로, 관객이 입력한 생일이 AI 기업들의 숫자 사이에 나타날 때 생기는 인간의 정서적 애착을 드러냅니다."
+  },
+  {
+    "slug": "scrolling-times",
+    "description": "Scrolling Times (2023) is a two-screen artwork by Jeanyoon Choi where scrolling on a phone toggles paired news and ads, after Marshall McLuhan on advertising.",
+    "abstract": "Scrolling Times is a 2023 interactive artwork by Jeanyoon Choi built around Marshall McLuhan's remark in Understanding Media that ads are always good news balanced by bad news. Audiences scroll on their phones to drive two screens, one for news and one for advertisements, with collage imagery inspired by Instagram's grid. Each scroll pairs opposing content, such as rising real-estate prices and luxury flats, or climate change and airline ads, reconstructing the paradoxical juxtaposition of news and advertising in mobile feeds.",
+    "questions": [
+      {
+        "q": "What is Scrolling Times by Jeanyoon Choi?",
+        "a": "Scrolling Times (2023) is a two-screen interactive artwork in which audiences scroll on their phones to toggle between paired news and advertisement content, reflecting how feeds juxtapose bad news and good-news ads."
+      },
+      {
+        "q": "How does Scrolling Times use Marshall McLuhan's ideas?",
+        "a": "It starts from McLuhan's observation in Understanding Media (1964) that ads are good news that need bad news to balance them, and translates it into the act of scrolling on mobile feeds."
+      }
+    ],
+    "concepts": [
+      "scrolling",
+      "news and advertising",
+      "media consumption",
+      "mobile interaction",
+      "multi-screen installation"
+    ],
+    "mentions": [
+      {
+        "name": "Marshall McLuhan",
+        "url": "https://en.wikipedia.org/wiki/Marshall_McLuhan"
+      },
+      {
+        "name": "Understanding Media",
+        "url": "https://en.wikipedia.org/wiki/Understanding_Media"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://en.wikipedia.org/wiki/Instagram"
+      },
+      {
+        "name": "YouTube",
+        "url": "https://en.wikipedia.org/wiki/YouTube"
+      }
+    ],
+    "terms": [],
+    "ko": "최정윤의 『Scrolling Times』(2023)는 휴대전화 스크롤로 뉴스와 광고 화면을 번갈아 바꾸는 두 채널 작품으로, 마셜 매클루언의 광고론을 바탕으로 피드 속 뉴스와 광고의 역설적 병치를 보여 줍니다."
+  },
+  {
+    "slug": "shitga",
+    "description": "Shitga (2022) by Jeanyoon Choi is a series of 25 generative artworks priced in a Fibonacci sequence, questioning the myth behind the NFT and crypto boom.",
+    "abstract": "Shitga is a 2022 series of 25 generative artworks by Jeanyoon Choi, made from Fibonacci sequences and sold in a Fibonacci sequence: the price of each work is the sum of the two previous prices. Against volatile financial markets, this guaranteed price increase exposes the myth beneath the boom in NFTs and cryptocurrencies. Jeanyoon Choi's CV lists 'Shitga: Varying Numbers' at the Emerging Artists' Art Market, Seoul Arts Centre, in May 2022.",
+    "questions": [
+      {
+        "q": "What is Shitga by Jeanyoon Choi?",
+        "a": "Shitga (2022) is a series of 25 generative artworks priced in Fibonacci order, each costing the sum of the two before it, as a comment on the NFT and cryptocurrency boom."
+      },
+      {
+        "q": "Where was Shitga exhibited?",
+        "a": "Jeanyoon Choi's CV lists 'Shitga: Varying Numbers' at the Emerging Artists' Art Market, Seoul Arts Centre, Seoul, in May 2022."
+      }
+    ],
+    "concepts": [
+      "generative art",
+      "fibonacci sequence",
+      "art market",
+      "nft",
+      "cryptocurrency",
+      "pricing"
+    ],
+    "mentions": [
+      {
+        "name": "Fibonacci sequence",
+        "url": "https://en.wikipedia.org/wiki/Fibonacci_sequence"
+      },
+      {
+        "name": "Non-fungible token",
+        "url": "https://en.wikipedia.org/wiki/Non-fungible_token"
+      },
+      {
+        "name": "Seoul Arts Center",
+        "url": "https://en.wikipedia.org/wiki/Seoul_Arts_Center"
+      }
+    ],
+    "terms": [],
+    "ko": "최정윤의 『Shitga』(2022)는 피보나치 수열로 만들고 피보나치 수열로 가격을 매긴 25점의 생성 예술 작품으로, NFT와 암호화폐 붐의 신화를 드러내며 2022년 5월 예술의전당 신진작가 아트마켓에서 선보였습니다."
+  },
+  {
+    "slug": "snu-virtual-festival",
+    "description": "SNU Virtual Festival (2021) is a web avant-garde project by Jeanyoon Choi for Seoul National University's online Covid-19 festival, parodying web pages.",
+    "abstract": "SNU Virtual Festival is a 2021 web project by Jeanyoon Choi for Seoul National University's web-based online festival, held during Covid-19. Described as a web avant-garde project, it twists and parodies existing popular web pages such as Google's search console and personality tests.",
+    "questions": [
+      {
+        "q": "What was the SNU Virtual Festival project by Jeanyoon Choi?",
+        "a": "It was a 2021 web avant-garde project for Seoul National University's online festival during Covid-19 that parodied popular web pages such as Google's search console and personality tests."
+      }
+    ],
+    "concepts": [
+      "online festival",
+      "web parody",
+      "covid-19",
+      "web art"
+    ],
+    "mentions": [
+      {
+        "name": "Seoul National University",
+        "url": "https://en.wikipedia.org/wiki/Seoul_National_University"
+      },
+      {
+        "name": "COVID-19 pandemic",
+        "url": "https://en.wikipedia.org/wiki/COVID-19_pandemic"
+      }
+    ],
+    "terms": [],
+    "ko": "『SNU Virtual Festival』(2021)은 코로나19 시기 서울대학교 온라인 축제를 위해 최정윤이 만든 웹 아방가르드 프로젝트로, 구글 검색 화면과 성격 테스트 같은 익숙한 웹페이지를 비틀었습니다."
+  },
+  {
+    "slug": "the-chronology-of-values",
+    "description": "The Chronology of Values (2022) is a time-based 3D web sculpture by Jeanyoon Choi that changes shape each hour, after Nietzsche's eternal recurrence.",
+    "abstract": "The Chronology of Values is a 2022 time-sensitive 3D web sculpture by Jeanyoon Choi. Influenced by Nietzsche's idea of eternal recurrence, the model changes its shape each hour, with each form representing a different moment in human civilisation.",
+    "questions": [
+      {
+        "q": "What is The Chronology of Values by Jeanyoon Choi?",
+        "a": "It is a 2022 time-based 3D web sculpture that changes shape every hour, each form representing a different moment in human civilisation, influenced by Nietzsche's eternal recurrence."
+      }
+    ],
+    "concepts": [
+      "web sculpture",
+      "3d",
+      "time-based art",
+      "eternal recurrence",
+      "civilisation"
+    ],
+    "mentions": [
+      {
+        "name": "Friedrich Nietzsche",
+        "url": "https://en.wikipedia.org/wiki/Friedrich_Nietzsche"
+      },
+      {
+        "name": "Eternal return",
+        "url": "https://en.wikipedia.org/wiki/Eternal_return"
+      }
+    ],
+    "terms": [],
+    "ko": "최정윤의 『The Chronology of Values』(2022)는 니체의 영원회귀에서 영향을 받아 매시간 형태가 바뀌며 인류 문명의 서로 다른 순간을 표현하는 3D 웹 조각입니다."
+  },
+  {
+    "slug": "the-symphony-of-civilisation",
+    "description": "The Symphony of Civilisation (2024) is a four-movement multi-device web symphony by Jeanyoon Choi and Suhyun Lim in which shaking phones conduct the room.",
+    "abstract": "The Symphony of Civilisation is a 2024 multi-device web artwork by Jeanyoon Choi (artist, developer) and Suhyun Lim (artist, designer), supervised by Dr. Yiyun Kang. Using two projectors, more than five laptops and audience phones across over ten channels, it presents civilisation in four movements: The Birth, The Rise, The Rhythm and The Dionysian. In the final movement audiences shake their phones so that accelerometer data brightens the screens and swells Mahler's Symphony No. 1, while WebRTC mixes webcam faces, presenting a collectively conducted, Dionysian future.",
+    "questions": [
+      {
+        "q": "What is The Symphony of Civilisation?",
+        "a": "It is a 2024 multi-device web artwork by Jeanyoon Choi and Suhyun Lim, supervised by Dr. Yiyun Kang, presenting civilisation's past, present and future in four symphonic movements across more than ten channels."
+      },
+      {
+        "q": "How do audiences take part in The Symphony of Civilisation?",
+        "a": "In the fourth movement, The Dionysian, audiences scan a QR code and shake their phones; the accelerometer brightens surrounding screens and intensifies Mahler's Symphony No. 1, letting them conduct the room together."
+      },
+      {
+        "q": "What is a Multi-Device Web Symphony?",
+        "a": "Jeanyoon Choi and Suhyun Lim use the term for a symphonic work spread across projectors, laptops and audience phones, combining interactivity with collaborative immersion beyond a single device."
+      }
+    ],
+    "concepts": [
+      "multi-device web artwork",
+      "civilisation",
+      "symphony",
+      "audience participation",
+      "accelerometer",
+      "dionysian"
+    ],
+    "mentions": [
+      {
+        "name": "Suhyun Lim"
+      },
+      {
+        "name": "Yiyun Kang"
+      },
+      {
+        "name": "Midjourney",
+        "url": "https://en.wikipedia.org/wiki/Midjourney"
+      },
+      {
+        "name": "Symphony No. 1 (Mahler)",
+        "url": "https://en.wikipedia.org/wiki/Symphony_No._1_(Mahler)"
+      },
+      {
+        "name": "WebRTC",
+        "url": "https://en.wikipedia.org/wiki/WebRTC"
+      },
+      {
+        "name": "Will to power",
+        "url": "https://en.wikipedia.org/wiki/Will_to_power"
+      },
+      {
+        "name": "Apollonian and Dionysian",
+        "url": "https://en.wikipedia.org/wiki/Apollonian_and_Dionysian"
+      },
+      {
+        "name": "Jean-Paul Sartre",
+        "url": "https://en.wikipedia.org/wiki/Jean-Paul_Sartre"
+      }
+    ],
+    "terms": [
+      {
+        "term": "Multi-Device Web Symphony",
+        "definition": "A symphonic, multi-movement form of multi-device web artwork that uses many connected screens and audience phones to combine interactiveness and collaborative immersiveness."
+      }
+    ],
+    "ko": "최정윤과 Suhyun Lim의 『The Symphony of Civilisation』(2024)은 10개 이상의 채널로 문명의 과거·현재·미래를 4악장으로 표현하는 멀티 디바이스 웹 심포니로, 마지막 악장에서 관객이 휴대전화를 흔들어 공간 전체를 지휘합니다."
+  },
+  {
+    "slug": "uncharted-territory",
+    "description": "Uncharted Territory (2024) by Yiyun Kang and Jeanyoon Choi is an interactive web artwork where users act on the Earth amid drought, wildfire and extinction.",
+    "abstract": "Uncharted Territory is a 2024 web-based interactive artwork by Yiyun Kang and Jeanyoon Choi, made at the Experience Design Lab. It symbolically represents aspects of the Anthropocene, including drought, wildfires and the Holocene extinction, and lets audiences manipulate the Earth through a simple, playful interface. The resulting scenes are dreamlike yet sorrowful, inviting viewers to imagine the Earth in uncharted territory if no effort is made.",
+    "questions": [
+      {
+        "q": "What is Uncharted Territory by Yiyun Kang and Jeanyoon Choi?",
+        "a": "Uncharted Territory (2024) is a web-based interactive artwork from the Experience Design Lab in which audiences manipulate the Earth to unfold scenes of drought, wildfires and the Holocene extinction."
+      },
+      {
+        "q": "How can interactive web art address the Anthropocene?",
+        "a": "Uncharted Territory pairs a playful interface with sorrowful scenes of environmental change so that viewers relate to the narrative by acting on the Earth themselves."
+      }
+    ],
+    "concepts": [
+      "anthropocene",
+      "climate",
+      "web artwork",
+      "interactive artwork",
+      "extinction"
+    ],
+    "mentions": [
+      {
+        "name": "Yiyun Kang"
+      },
+      {
+        "name": "Anthropocene",
+        "url": "https://en.wikipedia.org/wiki/Anthropocene"
+      },
+      {
+        "name": "Holocene extinction",
+        "url": "https://en.wikipedia.org/wiki/Holocene_extinction"
+      },
+      {
+        "name": "KAIST XD Lab (Experience Design Lab)"
+      }
+    ],
+    "terms": [],
+    "ko": "Yiyun Kang과 최정윤의 『Uncharted Territory』(2024)는 관객이 지구를 조작하며 가뭄, 산불, 홀로세 대멸종 등 인류세의 장면을 마주하는 웹 기반 인터랙티브 작품입니다."
+  },
+  {
+    "slug": "w",
+    "description": "W (2022) by Jeanyoon Choi is an interaction-based moving image played by pressing 'W'; four scenes loop faster until they explode into the next scene.",
+    "abstract": "W is a 2022 interactive web artwork by Jeanyoon Choi, played by pressing the W key. Four scenes (Abstract, Time, Chatbot and Tunnel) share one structure: continuous pressing morphs the visual state until it resets, and each cycle shortens until a critical point triggers an 'explosion' and the next scene. This 'acceleration of cycle' is used to criticise misconceptions about time, AI and the weight-bearing spirit of Nietzsche's camel.",
+    "questions": [
+      {
+        "q": "What is W by Jeanyoon Choi?",
+        "a": "W (2022) is an interaction-based moving image played by pressing the W key. Across four scenes, repeated presses accelerate a visual cycle until each scene explodes and gives way to the next."
+      },
+      {
+        "q": "What does the Tunnel scene in W suggest?",
+        "a": "It counters the self-help idea of 'light at the end of the tunnel', proposing that reality lies above or outside the tunnel, where a matrix-like reality is shown."
+      }
+    ],
+    "concepts": [
+      "interactive moving image",
+      "acceleration",
+      "cycles",
+      "keyboard interaction",
+      "nietzsche"
+    ],
+    "mentions": [
+      {
+        "name": "Friedrich Nietzsche",
+        "url": "https://en.wikipedia.org/wiki/Friedrich_Nietzsche"
+      }
+    ],
+    "terms": [
+      {
+        "term": "Acceleration of cycle",
+        "definition": "In W, the shortening loop in which a visual state morphs and resets faster with each cycle until it explodes, used as a metaphor for the simulated, unreal character of modern society."
+      }
+    ],
+    "ko": "최정윤의 『W』(2022)는 키보드 'W'를 눌러 재생하는 인터랙티브 영상으로, 네 개의 장면이 점점 빨라지는 순환 끝에 폭발하며 시간, AI, 니체의 낙타에 대한 오해를 비판합니다."
+  },
+  {
+    "slug": "wooging",
+    "description": "Wooging (2023) by Jeanyoon Choi is a multi-device web artwork where participants rebuild Mondrian's Broadway Boogie-Woogie by tapping their phones together.",
+    "abstract": "Wooging, also called Woogie-Booging, is a 2023 interactive web-based public artwork by Jeanyoon Choi. Two or more participants tap-dance their fingers on their phones to reconstruct Piet Mondrian's Broadway Boogie-Woogie, creating geometric grids across mobile and screen canvases. The resulting tension and rhythm echo boogie-woogie music and open a space for creative collaboration between spectators.",
+    "questions": [
+      {
+        "q": "What is Wooging by Jeanyoon Choi?",
+        "a": "Wooging (2023) is a multi-device web artwork in which two or more participants tap on their phones to reconstruct Mondrian's Broadway Boogie-Woogie as geometric grids on phone and screen canvases."
+      }
+    ],
+    "concepts": [
+      "multi-device web artwork",
+      "mondrian",
+      "public art",
+      "collaborative interaction",
+      "geometric abstraction"
+    ],
+    "mentions": [
+      {
+        "name": "Piet Mondrian",
+        "url": "https://en.wikipedia.org/wiki/Piet_Mondrian"
+      },
+      {
+        "name": "Broadway Boogie Woogie",
+        "url": "https://en.wikipedia.org/wiki/Broadway_Boogie_Woogie"
+      },
+      {
+        "name": "Boogie-woogie",
+        "url": "https://en.wikipedia.org/wiki/Boogie-woogie"
+      }
+    ],
+    "terms": [],
+    "ko": "최정윤의 『Wooging』(2023)은 여러 관객이 휴대전화를 두드려 몬드리안의 「브로드웨이 부기우기」를 함께 재구성하는 멀티 디바이스 웹 공공 예술 작품입니다."
+  }
+]

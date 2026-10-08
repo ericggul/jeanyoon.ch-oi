@@ -1,0 +1,531 @@
+[
+  {
+    "slug": "a-psychology-behind-sneak-peeking-other-s-avod-in-airplanes",
+    "description": "Essay by Jeanyoon Choi on why a stranger's inflight screen can be more compelling than your own, and what it suggests for multi-device web artworks.",
+    "abstract": "A short 2024 essay asking why glancing at another passenger's inflight film, or a stranger's phone on the underground, can hold more interest than one's own screen. Jeanyoon Choi offers a spatial reading, explicitly as personal observation rather than established psychology: the other screen arrives through distance, obstruction and the risk of being noticed. The essay turns this into a design aim for multi-device web artworks, imagining a composition across an aircraft's 180 seat-back screens that turns parallel private channels into a shared event.",
+    "questions": [
+      {
+        "q": "Why is it more interesting to look at someone else's screen on a plane than at your own?",
+        "a": "In 'A Psychology behind sneak-peeking other's AVOD in airplanes', Jeanyoon Choi suggests the reason is spatial: the other screen is encountered through distance, obstruction, unchosen content and the awkward possibility of being seen looking, so the experience includes physical uncertainty. He presents this as a personal observation, not an established psychological explanation."
+      },
+      {
+        "q": "How could the seat-back screens on an aircraft be used for an artwork?",
+        "a": "Jeanyoon Choi imagines an audiovisual composition across an aircraft's 180 seat-back screens, coordinated by a performer with music, or a simple collective game in which passengers cooperate or split into two groups, or very subtle changes that create a quiet, sleep-friendly atmosphere."
+      }
+    ],
+    "concepts": ["multi-device web artwork", "inflight entertainment screens", "shared public experience", "physical encounter with digital media", "anonymity in public space"],
+    "mentions": [
+      { "name": "In-flight entertainment", "url": "https://en.wikipedia.org/wiki/In-flight_entertainment" }
+    ],
+    "terms": [],
+    "ko": "최정윤은 비행기에서 옆 승객의 AVOD 화면을 훔쳐보는 것이 왜 더 흥미로운지를 공간적 경험으로 해석하고, 180개의 좌석 스크린을 하나의 공동 사건으로 만드는 멀티 디바이스 웹 아트워크를 상상한다."
+  },
+  {
+    "slug": "abstraction-and-system-creation",
+    "description": "Essay on abstraction as a movement between concrete experience and structure, and why AI pushes human work from refining systems to creating new ones.",
+    "abstract": "This 2025 essay by Jeanyoon Choi starts from photography's challenge to painting and the expansion into abstraction by artists such as Mondrian and Kandinsky. It argues that education in mathematics, research and art often teaches abstraction as formula manipulation or classification rather than as the transformation between concrete experience and abstract structure. With AI able to perform a discipline's established operations, the essay distinguishes vertical work within an existing structure from horizontal movement across domains that constructs new ones.",
+    "questions": [
+      {
+        "q": "What does Jeanyoon Choi mean by vertical and horizontal work in 'Abstraction and System Creation'?",
+        "a": "Vertical work refines operations within an existing structure; horizontal work moves across domains, recognises patterns between them and constructs relationships that were not given in advance. Choi argues that AI makes the latter increasingly important for human work."
+      },
+      {
+        "q": "What can the history of photography and painting teach us about artificial intelligence?",
+        "a": "In 'Abstraction and System Creation', Jeanyoon Choi notes that photography did not end painting; artists such as Picasso, Duchamp and Malevich changed what an image and an artwork could be. He suggests that, similarly, AI calls for questioning procedures rather than performing them more efficiently."
+      }
+    ],
+    "concepts": ["abstraction", "system creation", "artificial intelligence and human work", "art education", "interdisciplinarity", "history of modern painting"],
+    "mentions": [
+      { "name": "Piet Mondrian", "url": "https://en.wikipedia.org/wiki/Piet_Mondrian" },
+      { "name": "Wassily Kandinsky", "url": "https://en.wikipedia.org/wiki/Wassily_Kandinsky" },
+      { "name": "Pablo Picasso", "url": "https://en.wikipedia.org/wiki/Pablo_Picasso" },
+      { "name": "Marcel Duchamp", "url": "https://en.wikipedia.org/wiki/Marcel_Duchamp" },
+      { "name": "Kazimir Malevich", "url": "https://en.wikipedia.org/wiki/Kazimir_Malevich" },
+      { "name": "Abstract art", "url": "https://en.wikipedia.org/wiki/Abstract_art" }
+    ],
+    "terms": [],
+    "ko": "최정윤은 사진의 등장 이후 회화가 추상으로 확장된 역사를 바탕으로, AI 시대의 인간이 기존 구조 안의 수직적 작업보다 영역을 가로지르며 새로운 시스템을 만드는 수평적 작업으로 나아가야 한다고 주장한다."
+  },
+  {
+    "slug": "against-rounded-personality-the-lonely-crowd-by-david-riesman",
+    "description": "Reading notes on David Riesman's The Lonely Crowd: Jeanyoon Choi argues the 'well-rounded personality' ideal makes people substitutable and machine-like.",
+    "abstract": "Written in 2024 as notes on passages from the Korean edition of David Riesman's The Lonely Crowd, this essay examines how peer judgement shapes consumption and emotional life. Jeanyoon Choi reads the institutional ideal of the well-rounded personality as a wish for substitutable people, produced by socialised, converging preferences. Contrasting it with Nietzsche's Übermensch, he argues against regression towards the mean in personality, education and preference, since training people to fit a template also trains them to resemble machines that may perform it more efficiently.",
+    "questions": [
+      {
+        "q": "What is wrong with the 'well-rounded personality' according to Jeanyoon Choi?",
+        "a": "In 'Against Rounded Personality', Choi argues that the ideal sounds generous but can express a wish for readily substitutable people: if two candidates are both acceptably rounded, an institution can exchange one for the other."
+      },
+      {
+        "q": "How does The Lonely Crowd relate to conformity in consumption?",
+        "a": "Reading David Riesman's The Lonely Crowd, Jeanyoon Choi notes how peer judgement organises consumption and emotion: fear of standing apart, possessions as investments in social value and converging ways of consuming. He links this to a treadmill of consumption and regression towards the mean."
+      }
+    ],
+    "concepts": ["conformity", "well-rounded personality", "socialised preference", "consumer culture", "regression towards the mean", "ubermensch"],
+    "mentions": [
+      { "name": "David Riesman", "url": "https://en.wikipedia.org/wiki/David_Riesman" },
+      { "name": "The Lonely Crowd", "url": "https://en.wikipedia.org/wiki/The_Lonely_Crowd" },
+      { "name": "Friedrich Nietzsche", "url": "https://en.wikipedia.org/wiki/Friedrich_Nietzsche" },
+      { "name": "Übermensch", "url": "https://en.wikipedia.org/wiki/%C3%9Cbermensch" }
+    ],
+    "terms": [],
+    "ko": "최정윤은 데이비드 리스먼의 『고독한 군중』을 읽으며, 사회가 요구하는 '원만한 인격'이 사람을 대체 가능한 부품이자 기계와 닮은 존재로 만든다고 비판한다."
+  },
+  {
+    "slug": "also-sprach-zarathustra",
+    "description": "Essay reading Nietzsche's camel, lion and child against Taylorism and AI: Jeanyoon Choi argues people can move from servants to creators of systems.",
+    "abstract": "This 2025 essay by Jeanyoon Choi describes an accelerating technological treadmill and a twentieth-century Taylorist order in which work, education and housing turned people into interchangeable components. It proposes that AI, by taking over repetitive operations, could be disastrous for employment but might also free people from being valued only as parts. Drawing on the camel, lion and child of Nietzsche's Thus Spoke Zarathustra, it frames the hoped-for shift as moving from servant to creator of systems, valuing divergence, uncertainty and play.",
+    "questions": [
+      {
+        "q": "How does Jeanyoon Choi use Nietzsche's camel, lion and child to discuss AI?",
+        "a": "In 'Also Sprach Zarathustra', Choi maps the camel to people carrying the burdens of systems, the lion to a freedom that cannot yet create, and the child to play and affirmation that makes self-turning wheels, or systems. He hopes AI can open a path to that creative position."
+      },
+      {
+        "q": "Can AI free people from Taylorist work?",
+        "a": "Jeanyoon Choi argues that AI replacing repetitive labour can be disastrous for employment, but may also release people from an industrial-engineering ideology that reduces a person's value to their function as a component, prompting a move from servant to creator of systems."
+      }
+    ],
+    "concepts": ["taylorism", "artificial intelligence and labour", "creation of systems", "technological acceleration", "nietzsche's three metamorphoses", "large language models"],
+    "mentions": [
+      { "name": "Thus Spoke Zarathustra", "url": "https://en.wikipedia.org/wiki/Thus_Spoke_Zarathustra" },
+      { "name": "Friedrich Nietzsche", "url": "https://en.wikipedia.org/wiki/Friedrich_Nietzsche" },
+      { "name": "Scientific management (Taylorism)", "url": "https://en.wikipedia.org/wiki/Scientific_management" },
+      { "name": "Le Corbusier", "url": "https://en.wikipedia.org/wiki/Le_Corbusier" },
+      { "name": "The Crystal Palace", "url": "https://en.wikipedia.org/wiki/The_Crystal_Palace" },
+      { "name": "Banpo Xi" },
+      { "name": "Sisyphus", "url": "https://en.wikipedia.org/wiki/Sisyphus" }
+    ],
+    "terms": [
+      { "term": "Hyper-Sisyphus", "definition": "Choi's image for the accelerating, never-ending treadmill of technological innovation in which people enclose themselves." }
+    ],
+    "ko": "최정윤은 니체 『차라투스트라는 이렇게 말했다』의 낙타·사자·아이를 통해, AI가 반복 노동을 대체하는 시대에 인간이 시스템의 부품에서 시스템을 창조하는 존재로 나아갈 가능성을 논한다."
+  },
+  {
+    "slug": "audio-visual-disentanglement",
+    "description": "Essay by Jeanyoon Choi on deliberately separating sound and image in interactive art, so friendly AI voices meet torrents of numbers and order collapses.",
+    "abstract": "This 2024 essay by Jeanyoon Choi contrasts packaged, predictable entertainment with an uncomfortable experience that begins familiar and then fails to line up, for example laughter paired with a composed scream. It sketches an idea for the KAIST opening exhibition in which friendly generated speech accompanies a Matrix-like torrent of numbers, exposing AI's numerical construction. In interactive works, image and sound can start tightly coupled and drift apart; in Choi's Ω, rotational movements that first order the videos later intensify the structure's collapse.",
+    "questions": [
+      {
+        "q": "What is audio-visual disentanglement in Jeanyoon Choi's practice?",
+        "a": "It is the composed separation of sound and image: an experience that seems familiar until audio and visuals stop matching, such as a gentle synthetic voice over a rigid field of numbers. Choi stresses that the mismatch must be designed precisely, and in interactive work can unfold from coupling to rupture."
+      },
+      {
+        "q": "How does the artwork Ω use algorithmic relationships to create collapse?",
+        "a": "In 'Audio-Visual Disentanglement', Jeanyoon Choi describes how videos in Ω first rotate together in an ordered arrangement; as the structure breaks apart, the same rotational movements intensify its disorder, so the connections become the route through which failure spreads."
+      }
+    ],
+    "concepts": ["audio-visual disentanglement", "interactive art", "uncanny experience", "algorithmic relationships", "generative ai", "kitsch"],
+    "mentions": [
+      { "name": "Ω (artwork by Jeanyoon Choi)" },
+      { "name": "KAIST" },
+      { "name": "Marvel" },
+      { "name": "Disney" }
+    ],
+    "terms": [
+      { "term": "Audio-Visual Disentanglement", "definition": "A deliberately composed mismatch between sound and image, beginning from a familiar, pleasurable form, that produces discomfort and can expose the construction beneath a surface, such as the numerical basis of a friendly AI." }
+    ],
+    "ko": "최정윤은 소리와 이미지를 의도적으로 어긋나게 하는 '오디오-비주얼 디스엔탱글먼트'를 통해, 친절한 AI 음성 뒤의 숫자 구조를 드러내고 『Ω』처럼 알고리즘적 관계가 붕괴를 가속하는 경험을 설계하는 방법을 논한다."
+  },
+  {
+    "slug": "auto-generating-auto-generative-systems",
+    "description": "Manifesto-style essay by Jeanyoon Choi: AI lets individuals generate systems that generate, reversing Taylorism so the person comes before the system.",
+    "abstract": "A 2025 manifesto-style text by Jeanyoon Choi that moves from 'a system that generates' to 'the generation of systems that generate'. In a deliberately exaggerated contrast, the twentieth century made the human part of the factory, while AI can put factories, and factory-generating algorithms, in individual hands. It calls for generating alternative housing, interfaces, products and organisations rather than options within fixed terms, while warning that hyper-customisation can conceal a new standardisation: one should ask whether one is customising the system or being customised by it.",
+    "questions": [
+      {
+        "q": "What does 'auto-generating auto-generative systems' mean?",
+        "a": "In Jeanyoon Choi's essay of that title, it means using AI not only to generate outputs but to automatically generate systems that themselves generate, whose contexts and mechanisms can be simulated, replaced and multiplied, so that the person comes first and systems follow."
+      },
+      {
+        "q": "Does hyper-customisation free users from standardisation?",
+        "a": "Jeanyoon Choi warns that hyper-customisation can conceal another form of standardisation, with services fitting people ever more tightly to their categories. He urges asking whether you are customising the system or the system is customising you, and making systems adjustable."
+      }
+    ],
+    "concepts": ["generative systems", "taylorism", "artificial intelligence", "hyper-customisation", "industrial engineering", "system creation"],
+    "mentions": [
+      { "name": "Scientific management (Taylorism)", "url": "https://en.wikipedia.org/wiki/Scientific_management" },
+      { "name": "Campbell's Soup Cans", "url": "https://en.wikipedia.org/wiki/Campbell%27s_Soup_Cans" },
+      { "name": "Le Corbusier", "url": "https://en.wikipedia.org/wiki/Le_Corbusier" }
+    ],
+    "terms": [
+      { "term": "Auto-generating auto-generative systems", "definition": "Choi's phrase for automatically generating systems that themselves generate, recursively, so that individuals produce the machinery of production rather than serving it." }
+    ],
+    "ko": "최정윤은 테일러주의 이후 인간이 시스템의 부품이었다면, AI 시대에는 개인이 '생성하는 시스템을 생성하는' 주체가 될 수 있다고 주장하며, 초개인화가 또 다른 표준화가 될 위험도 경고한다."
+  },
+  {
+    "slug": "behavioural-interface",
+    "description": "Essay on behavioural interfaces: hidden phone functions revealed by unintended movement, as in Jeanyoon Choi's artwork Ω, where a shake breaks the system.",
+    "abstract": "In this 2024 note, Jeanyoon Choi defines a behavioural interface as one that does not announce its functions through buttons or icons but reveals them when an unintended action, such as a hand movement registered by a phone's accelerometer, triggers them. In his work Ω, an incidental movement during an ordinary personality test starts to dismantle the vectorised space, acting as bodily resistance. Choi argues that such interfaces matter less for surprise than for estrangement, which makes participants reconsider their relation to the system.",
+    "questions": [
+      {
+        "q": "What is a behavioural interface?",
+        "a": "In Jeanyoon Choi's sense, a behavioural interface keeps some functions latent rather than displaying them as buttons, and reveals them when a participant's unintended behaviour, such as moving or speaking, triggers them, giving that action unannounced consequences."
+      },
+      {
+        "q": "How does the accelerometer work in Jeanyoon Choi's artwork Ω?",
+        "a": "Participants begin an ordinary personality test on their phones; an incidental hand movement activates an accelerometer-based response that starts to dismantle the vectorised space, turning a movement outside the questionnaire into bodily resistance to its terms."
+      }
+    ],
+    "concepts": ["behavioural interface", "mobile interaction design", "accelerometer", "hidden interaction", "estrangement", "multi-device web artwork"],
+    "mentions": [
+      { "name": "Ω (artwork by Jeanyoon Choi)" },
+      { "name": "KAIST Museum" },
+      { "name": "Accelerometer", "url": "https://en.wikipedia.org/wiki/Accelerometer" }
+    ],
+    "terms": [
+      { "term": "Behavioural Interface", "definition": "An interface whose functions are not announced by buttons or icons but remain latent until a participant's unintended action, such as moving a phone, reveals them, changing the participant's relation to the system." }
+    ],
+    "ko": "최정윤은 버튼 없이 의도치 않은 행동으로 숨은 기능이 드러나는 '행동적 인터페이스'를 정의하고, 휴대폰을 흔들면 벡터 공간이 무너지는 『Ω』를 예로 든다."
+  },
+  {
+    "slug": "broadly-defining-the-term-data-visualisation",
+    "description": "Essay by Jeanyoon Choi broadening 'data visualisation' in computational art to any work whose output is shaped by live data, inputs and algorithms.",
+    "abstract": "This 2025 note proposes a broad definition of data visualisation for computational art: text fields, interactive 3D forms, images, colours and lighting computed from inputs are all visualisations of processed data, as distinct from fixed playback such as a prerecorded film. Jeanyoon Choi argues that as works become modular, their identity lies in inputs, connections and algorithms rather than prepared assets. Generative AI extends this further, since language models can generate not only material but the connections themselves, pointing toward modular, automatically operating platforms.",
+    "questions": [
+      {
+        "q": "Is generative or interactive web art a form of data visualisation?",
+        "a": "Jeanyoon Choi argues yes, in a broad sense: in software art, data is gathered, transformed through relationships and presented, so text, 3D forms, images and lighting computed from inputs are visualisations of data. A prerecorded film, playing a fixed sequence of pixels, falls outside this definition."
+      },
+      {
+        "q": "How does generative AI change data visualisation in art?",
+        "a": "In 'Broadly defining the term Data Visualisation', Choi notes that generative AI lets small inputs produce large outputs and lets language models generate algorithms, so not only assets but the connections between them can be generated."
+      }
+    ],
+    "concepts": ["data visualisation", "computational art", "software art", "generative ai", "modular systems"],
+    "mentions": [],
+    "terms": [],
+    "ko": "최정윤은 계산 예술에서 '데이터 시각화'를 그래프나 대시보드를 넘어, 입력·연결·알고리즘으로 출력이 결정되는 모든 웹·소프트웨어 작업으로 넓게 정의한다."
+  },
+  {
+    "slug": "brutal-interface-naked-interface",
+    "description": "Essay on the 'brutal' or 'naked' interface that exposes its own code, as in Jeanyoon Choi's Ω, and the risk of merely simulating that exposure.",
+    "abstract": "Borrowing an architectural idea of exposed structure, this 2024 note by Jeanyoon Choi describes a brutal or naked interface that makes its algorithmic construction visible. In Ω, readable questions progressively give way to component markup, conditional state expressions, a representation of the API request and finally dense binary text as a counter increases. Choi critiques his own approach: the exposure is an added, authored layer that simulates uncovering, unlike the Centre Pompidou, whose exposed services are part of its actual operation.",
+    "questions": [
+      {
+        "q": "What is a brutal interface or naked interface?",
+        "a": "Jeanyoon Choi uses the term for an interface that exposes its own algorithmic construction, borrowing the architectural idea of a structure that reveals mechanisms normally concealed by its finish."
+      },
+      {
+        "q": "What is the limitation of the brutal interface in Ω?",
+        "a": "Choi notes that in Ω the exposure of code and binary is itself extra, carefully authored interface; he writes additional conditional statements to simulate uncovering, so it risks producing another image of a mechanism rather than revealing the structure by subtraction."
+      }
+    ],
+    "concepts": ["brutal interface", "exposed code", "interface design", "brutalism", "algorithmic transparency"],
+    "mentions": [
+      { "name": "Ω (artwork by Jeanyoon Choi)" },
+      { "name": "Centre Pompidou", "url": "https://en.wikipedia.org/wiki/Centre_Pompidou" }
+    ],
+    "terms": [
+      { "term": "Brutal Interface / Naked Interface", "definition": "An interface that makes its own algorithmic construction visible, revealing layers such as code and data that ordinarily precede the polished surface a participant sees." }
+    ],
+    "ko": "최정윤은 건축의 노출 구조처럼 자신의 코드를 드러내는 '브루털/네이키드 인터페이스'를 『Ω』를 통해 설명하고, 그것이 실제 구조가 아닌 또 하나의 연출된 이미지가 될 위험을 성찰한다."
+  },
+  {
+    "slug": "button-based-interaction-amplified-interaction-and-mobile-jockey",
+    "description": "Essay by Jeanyoon Choi on button holding, amplified interaction and 'Mobile Jockey': conducting distributed screens from a touch surface.",
+    "abstract": "This 2025 note examines how much a simple button can carry: holding adds duration, sequences add relations, and several buttons can each address a screen, subsystem or agent, letting attention govern how surrounding screens develop. Jeanyoon Choi proposes Mobile Jockey or iPad Jockey, an array of touch controls mapped to an array of devices, closer to conducting than selecting. Citing Tone Ladder at Dark Matter, Vincent Morisset's Bell Orchestre: Sound House and Ragnar Kjartansson's The Visitors, he aims for presses that start evolving systems, and links this to amplified interaction.",
+    "questions": [
+      {
+        "q": "What is Mobile Jockey in Jeanyoon Choi's work?",
+        "a": "Mobile Jockey, or iPad Jockey, is Choi's proposal for an array of controls on a touch surface that addresses a corresponding array of devices, so sliding or using several fingers creates an audiovisual sequence distributed through space, closer to conducting than selecting."
+      },
+      {
+        "q": "How can a single button create richer interaction?",
+        "a": "In 'Button-based interaction, amplified interaction, and Mobile Jockey', Jeanyoon Choi notes that holding a button adds duration and a continuous value, sequences add relations, and a press can start an evolving system rather than just trigger an output, as when a video plays while pressed in Passage of Water."
+      }
+    ],
+    "concepts": ["button-based interaction", "amplified interaction", "multi-device web artwork", "conducting", "audiovisual composition", "interaction design"],
+    "mentions": [
+      { "name": "Passage of Water (Yiyun Kang)" },
+      { "name": "Tone Ladder" },
+      { "name": "Dark Matter (Berlin)" },
+      { "name": "Vincent Morisset" },
+      { "name": "Bell Orchestre: Sound House" },
+      { "name": "Ragnar Kjartansson" },
+      { "name": "The Visitors (Ragnar Kjartansson)" }
+    ],
+    "terms": [
+      { "term": "Mobile Jockey", "definition": "An interaction in which an array of controls on a phone or tablet addresses a corresponding array of devices, letting a participant conduct an audiovisual sequence across a space." },
+      { "term": "Amplified interaction", "definition": "The pleasure and sense of agency produced when a small bodily action acquires a larger presence across a space." }
+    ],
+    "ko": "최정윤은 버튼 누르기와 길게 누르기 같은 단순한 상호작용을 확장해, 터치 화면의 컨트롤 배열로 여러 기기를 지휘하는 '모바일 자키' 개념과 증폭된 상호작용을 제안한다."
+  },
+  {
+    "slug": "competition-relativeness-and-absoluteness",
+    "description": "Essay and installation idea by Jeanyoon Choi on relative competition: phone-pressing participants raise scores while a rising surface submerges the rest.",
+    "abstract": "Prompted by Walter De Maria's Time/Timeless/No Time, this 2024 note argues that people judge education, work, wealth and appeal by relative position, so material improvement does not end dissatisfaction. Jeanyoon Choi proposes an installation in which several participants press on their phones before one large projection, raising scores in an abstract visual field, while a rising surface, evoking sea-level rise, submerges lower scores. The work would link relative competition to the resources and ecological conditions it consumes.",
+    "questions": [
+      {
+        "q": "Why doesn't getting richer end dissatisfaction?",
+        "a": "In 'Competition: Relativeness and Absoluteness', Jeanyoon Choi argues that value is often judged by relative position, so the reference point moves with the people around us; competition demands more resources without guaranteeing more contentment."
+      },
+      {
+        "q": "How could an installation make competition and sea-level rise tangible?",
+        "a": "Jeanyoon Choi proposes participants pressing on mobile phones to raise scores on a shared projection while a rising surface submerges the lower scores, so local pursuit of improvement produces an environment in which fewer can remain."
+      }
+    ],
+    "concepts": ["relative competition", "interactive installation", "sea-level rise", "mobile phone participation", "ecological consequences"],
+    "mentions": [
+      { "name": "Walter De Maria", "url": "https://en.wikipedia.org/wiki/Walter_De_Maria" },
+      { "name": "Time/Timeless/No Time" }
+    ],
+    "terms": [],
+    "ko": "최정윤은 월터 드 마리아의 작품에서 출발해 상대적 경쟁이 만족을 주지 못하는 구조를 논하고, 휴대폰으로 점수를 올릴수록 수면이 차올라 낮은 점수가 잠기는 설치 작업을 구상한다."
+  },
+  {
+    "slug": "conducting-screens-a-possible-approach-to-multi-device-web-artwork",
+    "description": "Essay by Jeanyoon Choi on conducting many screens with one phone's motion sensors: a bodily, gestural approach to multi-device web artwork.",
+    "abstract": "In this 2024 note, Jeanyoon Choi proposes using a phone's motion and acceleration sensors so that a participant's whole-hand gesture, rather than finger taps, shapes audiovisual responses across laptops, projections or other phones, like a conductor shaping relations among instruments. He lists directions from rotating 3D scenes and spatial sound to fluid graphics and text wandering between screens, and asks what is being conducted, what mouse-based conducting would offer, and what happens with two or a hundred conductors.",
+    "questions": [
+      {
+        "q": "How can a smartphone conduct multiple screens in an artwork?",
+        "a": "Jeanyoon Choi proposes using device motion and acceleration in JavaScript so that moving the phone changes content across surrounding screens, for example rotating a 3D scene, changing spatial sound volume, switching screens on and off or deforming 2D graphics."
+      },
+      {
+        "q": "Why use motion sensors instead of taps in mobile interaction art?",
+        "a": "In 'Conducting Screens', Choi argues that everyday mobile interaction is dominated by fingers, and motion sensors shift interaction to the whole hand, a more bodily, phenomenological vocabulary resembling a conductor's gesture."
+      }
+    ],
+    "concepts": ["multi-device web artwork", "conducting screens", "device motion sensors", "phenomenological interaction", "spatial audiovisual composition"],
+    "mentions": [
+      { "name": "Accelerometer", "url": "https://en.wikipedia.org/wiki/Accelerometer" },
+      { "name": "JavaScript", "url": "https://en.wikipedia.org/wiki/JavaScript" }
+    ],
+    "terms": [
+      { "term": "Conducting Screens", "definition": "Choi's approach to multi-device web artwork in which a participant moves a phone like a conductor's baton, shaping audiovisual responses distributed across multiple devices." }
+    ],
+    "ko": "최정윤은 휴대폰의 모션 센서로 여러 스크린을 지휘하듯 움직이는 '컨덕팅 스크린'을 멀티 디바이스 웹 아트워크의 접근법으로 제안한다."
+  },
+  {
+    "slug": "creating-monochrome-digital-paintings-out-of-chatgpt",
+    "description": "Essay by Jeanyoon Choi proposing an interactive monochrome built from layers of ChatGPT text, inspired by Dansaekhwa, where meaning dissolves into material.",
+    "abstract": "This 2024 note proposes an interactive monochrome made from accumulated text generated by ChatGPT or another language model. Drawing on Dansaekhwa and on the principle that the sum of parts is not the whole, also central to his work ≠, Jeanyoon Choi imagines a keyword typed on a keyboard producing text across six screens that accelerates and overlaps until words become illegible. The aim is to treat language as material, letting participants move from searching for meaning to affirming the signifier.",
+    "questions": [
+      {
+        "q": "Can AI-generated text become an abstract painting?",
+        "a": "In 'Creating Monochrome Digital Paintings out of ChatGPT', Jeanyoon Choi proposes layering language-model text across screens until individual words become illegible, so ChatGPT becomes a source of material rather than a voice to be understood, producing a monochrome-like surface."
+      },
+      {
+        "q": "How does Dansaekhwa relate to Jeanyoon Choi's work with language models?",
+        "a": "Choi draws on Dansaekhwa's repetition, materiality and abstraction, contrasting it with descriptive language, and asks whether accumulating descriptive AI text on a massive scale can turn meaning into material."
+      }
+    ],
+    "concepts": ["dansaekhwa", "monochrome", "large language models", "text as material", "abstraction", "interactive installation"],
+    "mentions": [
+      { "name": "ChatGPT", "url": "https://en.wikipedia.org/wiki/ChatGPT" },
+      { "name": "Dansaekhwa", "url": "https://en.wikipedia.org/wiki/Dansaekhwa" },
+      { "name": "≠ (artwork by Jeanyoon Choi)" },
+      { "name": "Laboratory Occupied (Jeanyoon Choi)" },
+      { "name": "Glenn Ligon", "url": "https://en.wikipedia.org/wiki/Glenn_Ligon" },
+      { "name": "Jenny Holzer", "url": "https://en.wikipedia.org/wiki/Jenny_Holzer" }
+    ],
+    "terms": [
+      { "term": "ΣPart ≠ Whole", "definition": "Choi's principle that accumulating parts can change their character, so logical, interpretable individual outputs may combine into something chaotic and illegible: a qualitative rather than quantitative change." }
+    ],
+    "ko": "최정윤은 단색화에서 영감을 받아 ChatGPT가 생성한 텍스트를 여러 화면에 겹겹이 쌓아 의미가 사라지고 물질이 되는 인터랙티브 모노크롬을 구상한다."
+  },
+  {
+    "slug": "dadaism-for-the-algorithm-age",
+    "description": "Script of Jeanyoon Choi's lecture-performance Dadaism for the Algorithmic Age: human irrationality and Dada as resistance to vectorised AI.",
+    "abstract": "The script of Jeanyoon Choi's lecture-performance Dadaism for the Algorithmic Age, listed in his CV at G-Artience, DCC, Daejeon, 2024. Choi recounts a STEM path through Gyeonggi Science High School and Industrial Engineering at Seoul National University, and asks what humans can contribute as AI masters field after field. He argues that inconsistency, emotion and irrationality are human strengths, critiques reducing people to MBTI-like vectors, and turns the lecture into Dada performance, inviting the audience to join via phones and QR code amid displays of neural-network architectures.",
+    "questions": [
+      {
+        "q": "What is Jeanyoon Choi's lecture-performance 'Dadaism for the Algorithmic Age' about?",
+        "a": "It argues that in an age of AI, human irrationality, emotion and unpredictability are strengths to cultivate, and uses Dada's dismantling of logical structures to resist reducing people to vectors such as MBTI types. The lecture shifts into performance, with generated text from speech and audience participation through phones."
+      },
+      {
+        "q": "Why did an engineering student become a media artist?",
+        "a": "Jeanyoon Choi explains that after a mathematics-focused path to Industrial Engineering at Seoul National University, he asked what distinctive contribution he could make as AI solved problems once thought human, and found an answer in art: what exceeds numerical description and rational explanation."
+      }
+    ],
+    "concepts": ["dada", "lecture-performance", "artificial intelligence", "human irrationality", "personality vectorisation", "audience participation via smartphones"],
+    "mentions": [
+      { "name": "Dada", "url": "https://en.wikipedia.org/wiki/Dada" },
+      { "name": "Myers–Briggs Type Indicator", "url": "https://en.wikipedia.org/wiki/Myers%E2%80%93Briggs_Type_Indicator" },
+      { "name": "AlphaGo", "url": "https://en.wikipedia.org/wiki/AlphaGo" },
+      { "name": "Boltzmann machine", "url": "https://en.wikipedia.org/wiki/Boltzmann_machine" },
+      { "name": "Variational autoencoder", "url": "https://en.wikipedia.org/wiki/Variational_autoencoder" },
+      { "name": "AlexNet", "url": "https://en.wikipedia.org/wiki/AlexNet" },
+      { "name": "Gyeonggi Science High School" },
+      { "name": "Seoul National University", "url": "https://en.wikipedia.org/wiki/Seoul_National_University" },
+      { "name": "Nobel Prize in Chemistry", "url": "https://en.wikipedia.org/wiki/Nobel_Prize_in_Chemistry" }
+    ],
+    "terms": [],
+    "ko": "최정윤의 렉처 퍼포먼스 「Dadaism for the Algorithmic Age」 대본으로, AI 시대에 비합리성과 감정을 인간의 강점으로 보고 다다이즘을 통해 MBTI 같은 벡터화된 인간상에 저항한다."
+  },
+  {
+    "slug": "dark-matter-berlin-vs-multi-device-web-artwork",
+    "description": "Jeanyoon Choi compares Christopher Bauder's Dark Matter in Berlin with multi-device web artwork: interaction, modular accessibility and semantics.",
+    "abstract": "After visiting Dark Matter in Berlin, seven installations by Christopher Bauder, Jeanyoon Choi found the large-scale kinetic spectacle accomplished but thoroughly explored. This 2025 note sets out three interconnected concerns that motivate his multi-device web artworks (MDWA) instead: approachable interaction that carries specific semantic context, modular web-based forms that can travel and adapt like film rather than costly kinetic builds, and meaning that relates to social life without relying on an overworked narrative.",
+    "questions": [
+      {
+        "q": "How is multi-device web artwork different from large kinetic light installations?",
+        "a": "In 'Dark Matter Berlin vs. Multi-Device Web Artwork', Jeanyoon Choi contrasts costly, hard-to-move kinetic spectacle with modular web-based works that adapt to different places, combined with accessible interaction and a meaningful relation between participant actions and the work's world."
+      },
+      {
+        "q": "What are the three concerns behind Jeanyoon Choi's multi-device web artworks?",
+        "a": "Interaction, modular accessibility and semantics: an approachable action with specific context, a flexible physical form that can circulate easily, and meaning that is not reduced to elaborate storytelling."
+      }
+    ],
+    "concepts": ["multi-device web artwork", "kinetic installation", "modular media art", "interaction design", "semantics in media art"],
+    "mentions": [
+      { "name": "Christopher Bauder" },
+      { "name": "Dark Matter (Berlin)" },
+      { "name": "Tone Ladder" },
+      { "name": "Berlin", "url": "https://en.wikipedia.org/wiki/Berlin" }
+    ],
+    "terms": [],
+    "ko": "최정윤은 베를린 다크 매터에서 크리스토퍼 바우더의 키네틱 설치를 본 뒤, 상호작용·모듈형 접근성·의미라는 세 관심사를 통해 멀티 디바이스 웹 아트워크(MDWA)의 방향을 정리한다."
+  },
+  {
+    "slug": "data-emotionalisation",
+    "description": "Essay by Jeanyoon Choi defining 'data emotionalisation': sensing data through rhythm and sound before interpreting it, with the Rise & Fall idea.",
+    "abstract": "In this 2024 note, Jeanyoon Choi describes data as a compressed by-product of society's complexity and interdependence, partly orderly and partly unpredictable. He argues that conventional data visualisation, by announcing what values mean, can make interpretation crowd out experience. Data emotionalisation lets sensation precede explanation, for instance climate data producing accelerating tension or unstable rhythm. A proposed application, Rise & Fall, streams a participant's face via QR code and WebRTC into TouchDesigner, scaling it with company prices or revenue.",
+    "questions": [
+      {
+        "q": "What is data emotionalisation?",
+        "a": "Jeanyoon Choi defines data emotionalisation as experiencing the audiovisual consequences of data, through rhythm, tension and temporal change, before being asked to interpret its stated subject, so sensation precedes explanation."
+      },
+      {
+        "q": "How can climate data be experienced without a chart?",
+        "a": "In 'Data Emotionalisation', Choi suggests climate data could generate accelerating tension or increasingly unstable rhythm, so that someone senses something changing in the melody before any label explains the context."
+      }
+    ],
+    "concepts": ["data emotionalisation", "data visualisation", "sonification", "climate data", "temporalisation", "interactive installation"],
+    "mentions": [
+      { "name": "TouchDesigner", "url": "https://en.wikipedia.org/wiki/TouchDesigner" },
+      { "name": "WebRTC", "url": "https://en.wikipedia.org/wiki/WebRTC" },
+      { "name": "Black swan theory", "url": "https://en.wikipedia.org/wiki/Black_swan_theory" }
+    ],
+    "terms": [
+      { "term": "Data Emotionalisation", "definition": "Experiencing the audiovisual consequences of data, especially through rhythm and temporal change, before being asked to interpret what the data represents; sensation precedes explanation." }
+    ],
+    "ko": "최정윤은 데이터의 의미를 해석하기 전에 리듬과 긴장으로 먼저 감각하게 하는 '데이터 감정화(Data Emotionalisation)'를 제안하고, 얼굴 영상이 경제 데이터에 따라 커지고 줄어드는 Rise & Fall 아이디어를 소개한다."
+  },
+  {
+    "slug": "data-vis-and-system-parametrisation",
+    "description": "Essay by Jeanyoon Choi on system parameterisation: data reshaping a whole artwork's style, layout and context rather than one chart, and agents at work.",
+    "abstract": "This 2025 essay lists approaches to data visualisation from raw data and dashboards to world-building and system parameterisation, where many parameters compose a software system and one change can alter detail, style, context or layout. Jeanyoon Choi argues that language models make context a variable too, shifting work from objects to systems. Examples include temperature reshaping an ecological artwork and a parameterised collage moving from restrained dashboard to Basquiat-like density. He ends with many agents optimising toward supplied goals, reversing the human position in modern systems.",
+    "questions": [
+      {
+        "q": "What is system parameterisation in data art?",
+        "a": "In Jeanyoon Choi's essay, system parameterisation composes a web or software system through many parameters so that changing one, such as temperature, can alter details, style, composition, descriptions and images at once; the question is what a number changes, not just what it displays."
+      },
+      {
+        "q": "Can data visualisation be something other than a chart?",
+        "a": "Jeanyoon Choi argues it can be a map, an unfamiliar structure, an aesthetic arrangement or a system whose behaviour is parameterised by data, such as a collage whose whole character shifts with the data."
+      }
+    ],
+    "concepts": ["system parameterisation", "data visualisation", "generative systems", "multi-agent systems", "ecological art", "large language models"],
+    "mentions": [
+      { "name": "Jean-Michel Basquiat", "url": "https://en.wikipedia.org/wiki/Jean-Michel_Basquiat" }
+    ],
+    "terms": [
+      { "term": "System parameterisation", "definition": "Composing a web or software system through many parameters, numerical or contextual, so that data or interaction reshapes the conditions producing an outcome rather than a single displayed value." }
+    ],
+    "ko": "최정윤은 데이터가 하나의 그래프가 아니라 작품의 스타일·구성·맥락 전체를 바꾸는 '시스템 파라미터화'를 제안하며, 목표를 향해 일하는 수많은 에이전트를 통해 근대 시스템 속 인간의 위치가 뒤집히는 모습을 그린다."
+  },
+  {
+    "slug": "de-semantising-semantics",
+    "description": "Essay by Jeanyoon Choi proposing a multi-screen work where a serious text, such as Descartes's cogito, keeps escaping into word-by-word associations.",
+    "abstract": "Prompted by the speech in Philippe Parreno's exhibition at Leeum, this 2024 note proposes de-semantising semantics as an escape from incessant demands for meaning, which language models multiply. A serious text, such as Descartes's path from doubt to 'I think, therefore I am', is read aloud while other screens divert individual words into associations: 'accordingly' becomes an accordion, 'senses' disperses across five screens. The result is an audiovisual collage in which a highly semantic text becomes a flood of digressions resembling associative, hypertext thinking.",
+    "questions": [
+      {
+        "q": "What does 'de-semantising semantics' mean in Jeanyoon Choi's work?",
+        "a": "It is Choi's proposal to escape the prison of interpretation by letting the words of a serious text escape into unrelated audiovisual associations across many screens, loosening the original semantic path instead of illustrating it."
+      },
+      {
+        "q": "How would Descartes's 'I think, therefore I am' be used in a multi-screen artwork?",
+        "a": "In 'De-semantising Semantics', Jeanyoon Choi imagines Descartes's passage read seriously while screens divert single words, 'accordingly' into an accordion, 'seeing' into eyes, 'sometimes' into a pop-song sample, so the argument dissolves into an audiovisual collage."
+      }
+    ],
+    "concepts": ["de-semantisation", "multi-screen installation", "audiovisual collage", "hypertext", "free association", "large language models"],
+    "mentions": [
+      { "name": "Philippe Parreno", "url": "https://en.wikipedia.org/wiki/Philippe_Parreno" },
+      { "name": "Leeum Museum of Art" },
+      { "name": "René Descartes", "url": "https://en.wikipedia.org/wiki/Ren%C3%A9_Descartes" },
+      { "name": "Cogito, ergo sum", "url": "https://en.wikipedia.org/wiki/Cogito,_ergo_sum" },
+      { "name": "Hito Steyerl", "url": "https://en.wikipedia.org/wiki/Hito_Steyerl" }
+    ],
+    "terms": [
+      { "term": "De-semantising semantics", "definition": "Choi's strategy of loosening a text's semantic path by diverting its individual words into other audiovisual associations, turning meaning into an exuberant collage of digressions." }
+    ],
+    "ko": "최정윤은 리움에서 본 필립 파레노 전시에서 출발해, 데카르트의 문장 같은 진지한 텍스트의 단어들이 여러 화면에서 엉뚱한 연상으로 흩어지는 '의미의 탈의미화' 작업을 구상한다."
+  },
+  {
+    "slug": "dimensional-transformation-system-parameterisation",
+    "description": "Essay by Jeanyoon Choi on dimensional transformation: mapping gestures many-to-many into system parameters, as in a play garden for planetary boundaries.",
+    "abstract": "This 2025 essay proposes inserting transformations on both sides of an interactive system: input, input dimensional transformation, system, output dimensional transformation, output. Jeanyoon Choi argues that direct parameter control, such as a slider moving a graph, makes cause and effect too obvious; many-to-many mappings, like seven input stations affecting five climate variables, articulate a system's entanglement. The transformation is also where context enters, as in a play garden where children's screaming, tapping or swiping maps into the nine planetary boundaries.",
+    "questions": [
+      {
+        "q": "What is dimensional transformation in interactive art?",
+        "a": "In Jeanyoon Choi's sense, it is a translation step on both the input and output sides of a system: a gesture becomes system parameters, and the system's consequences are translated again into what the audience encounters, often through many-to-many mappings."
+      },
+      {
+        "q": "Why avoid direct parameter control like sliders in interactive installations?",
+        "a": "Jeanyoon Choi argues that moving a slider and watching a graph change makes cause and effect too obvious; transformed mappings, such as a piano changing time on surrounding screens, ask participants to build a different mental model and let context enter the interaction."
+      }
+    ],
+    "concepts": ["dimensional transformation", "system parameterisation", "interface as instrument", "many-to-many mapping", "ecological simulation", "planetary boundaries"],
+    "mentions": [
+      { "name": "Planetary boundaries", "url": "https://en.wikipedia.org/wiki/Planetary_boundaries" },
+      { "name": "Blind men and an elephant", "url": "https://en.wikipedia.org/wiki/Blind_men_and_an_elephant" }
+    ],
+    "terms": [
+      { "term": "Dimensional transformation", "definition": "Translation layers inserted before and after a system, turning bodily input into system parameters and system consequences into audience-facing outputs, with mappings that may be many-to-many." }
+    ],
+    "ko": "최정윤은 입력과 출력 양쪽에 '차원 변환'을 넣어 몸짓이 시스템 변수로, 시스템의 결과가 다시 경험으로 번역되는 구조를 제안하며, 아이들의 행동이 아홉 가지 지구 위험 한계선에 연결되는 놀이 정원을 예로 든다."
+  },
+  {
+    "slug": "disentanglement-and-entanglement",
+    "description": "Essay by Jeanyoon Choi on how optimising separate parts no longer guarantees the whole's good, and a multi-agent, multi-device artwork to model it.",
+    "abstract": "This 2024 essay describes disentanglement, the twentieth-century promise that specialising and optimising each part will benefit the whole, from service encounters to the view that a corporation's role is to maximise profit. Jeanyoon Choi argues that in a complex world no factor is separate; clean separation is a psychological comfort that shifts consequences elsewhere or into the future, reinforced by reward structures and a feedback loop of demands for tighter boundaries. He proposes a multi-agent, multi-device artwork where each device is a system participant.",
+    "questions": [
+      {
+        "q": "Why doesn't optimising each part optimise the whole system?",
+        "a": "In 'Disentanglement and Entanglement', Jeanyoon Choi argues that in a complex world every factor affects others, so local optimisation transfers consequences elsewhere or into the future; the more we pretend to separate a system, the more forcefully its entanglements return."
+      },
+      {
+        "q": "How could a multi-device artwork model social entanglement?",
+        "a": "Jeanyoon Choi proposes a multi-agent, multi-device artwork in which each device is a system participant and their connections carry the consequences of each one's attempt at individual optimisation."
+      }
+    ],
+    "concepts": ["entanglement", "complex systems", "local optimisation", "specialisation", "multi-agent system", "multi-device web artwork"],
+    "mentions": [],
+    "terms": [
+      { "term": "Disentanglement", "definition": "The belief that responsibilities can be cleanly separated and each part optimised without harming others; Choi treats it as a comforting simplification that weakens a system's ability to handle its real interdependence." }
+    ],
+    "ko": "최정윤은 각 부분을 분리해 최적화하면 전체가 좋아진다는 20세기의 '분리' 논리를 비판하고, 복잡한 세계의 얽힘을 다중 에이전트·멀티 디바이스 작품으로 모델링하려 한다."
+  },
+  {
+    "slug": "every-object-is-part-of-the-system",
+    "description": "Essay by Jeanyoon Choi on how a cup of coffee or a railway station connects to entangled systems, and how system art can expose the hidden backend.",
+    "abstract": "This 2025 essay traces how ordering coffee touches cultivation, trade, wages, automation, copyright, land prices and investment, and how Gwangmyeong Station connects KTX and SRT competition, privatisation debates, housing prices and metropolitan expansion. Jeanyoon Choi frames this as a frontend–backend relationship: design smooths the surface, while system art, as in Hans Haacke's investigation of Manhattan real estate, can expose the structure behind it. He links branding's promise of disentanglement to commodity fetishism and aims to make the backend in his work SoTA persistently interactive.",
+    "questions": [
+      {
+        "q": "What is system art according to Jeanyoon Choi?",
+        "a": "In 'Every Object is part of the System', Choi describes system art as exposing the complicated backend reality that a clean, comfortable frontend conceals, citing Hans Haacke's tracing of ownership and power behind Manhattan real estate."
+      },
+      {
+        "q": "How is a cup of coffee connected to global systems?",
+        "a": "Jeanyoon Choi traces a cup of coffee to cultivation, climate, trade and labour, to wage policy and automation, to machine engineering, kiosk interface design, music copyright and land prices, calling the cup a global interface."
+      },
+      {
+        "q": "How does Jeanyoon Choi want to develop the frontend and backend in SoTA?",
+        "a": "He wants to move beyond a moment when the phone stops working and the concealed structure appears, toward a situation in which participants can act on the backend persistently rather than merely discover it."
+      }
+    ],
+    "concepts": ["system art", "entanglement", "frontend and backend", "commodity fetishism", "infrastructure", "institutional critique"],
+    "mentions": [
+      { "name": "Hans Haacke", "url": "https://en.wikipedia.org/wiki/Hans_Haacke" },
+      { "name": "Karl Marx", "url": "https://en.wikipedia.org/wiki/Karl_Marx" },
+      { "name": "Commodity fetishism", "url": "https://en.wikipedia.org/wiki/Commodity_fetishism" },
+      { "name": "Gwangmyeong Station" },
+      { "name": "Korea Train Express (KTX)", "url": "https://en.wikipedia.org/wiki/Korea_Train_Express" },
+      { "name": "SRT (Super Rapid Train)" },
+      { "name": "SoTA (artwork by Jeanyoon Choi and collaborators)" }
+    ],
+    "terms": [
+      { "term": "Frontend–backend relationship", "definition": "Choi's model in which the frontend is the clean, comfortable experience design offers and the backend is the complicated reality of entangled systems that makes it possible and that system art can expose." }
+    ],
+    "ko": "최정윤은 커피 한 잔과 광명역이 얼마나 많은 시스템과 얽혀 있는지 추적하며, 매끈한 프런트엔드 뒤의 복잡한 백엔드를 드러내는 시스템 아트와 『SoTA』의 발전 방향을 논한다."
+  }
+]

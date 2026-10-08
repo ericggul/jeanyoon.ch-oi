@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { ResearchPublication } from "@/content/research";
 import { absoluteUrl, detailTitle } from "./site";
 import { pageMetadata } from "./metadata";
+import { enrichment } from "./enrichment";
 
 const slash = (date: string) => date.replaceAll("-", "/");
 export function citationText(entry: ResearchPublication) {
@@ -11,7 +12,7 @@ export function citationText(entry: ResearchPublication) {
 
 // Page metadata plus Highwire `citation_*` tags read by Google Scholar and reference managers.
 export function publicationMetadata(entry: ResearchPublication, path: string): Metadata {
-  const base = pageMetadata({ title: detailTitle(entry.title), description: entry.abstract ?? entry.title, path });
+  const base = pageMetadata({ title: detailTitle(entry.title), description: enrichment("research", entry.id)?.description ?? entry.abstract ?? entry.title, path });
   const [first, last] = (entry.pages ?? "").split(/[–-]/);
   return {
     ...base,

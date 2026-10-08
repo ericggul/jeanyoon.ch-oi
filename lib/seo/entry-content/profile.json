@@ -1,0 +1,66 @@
+{
+  "questions": [
+    {
+      "q": "Who is Jeanyoon Choi?",
+      "a": "Jeanyoon Choi (최정윤, b. 1999) is a Korean computational artist and researcher who designs and researches multi-device web artworks about contemporary socio-technological systems, including AI, algorithmic culture and economic structures. He is a PhD candidate at KAIST's Experience Design Lab (XD Lab), advised by Dr. Yiyun Kang."
+    },
+    {
+      "q": "최정윤은 누구인가?",
+      "a": "최정윤(Jeanyoon Choi, 1999년생)은 한국의 컴퓨테이셔널 아티스트이자 연구자로, AI, 알고리즘 문화, 경제 구조 등 동시대 사회기술 시스템의 복잡성을 다루는 멀티 디바이스 웹 아트워크를 만들고 연구합니다. 서울대학교 산업공학 학사, 영국 왕립예술학교(RCA) 정보경험디자인 석사를 마치고 현재 KAIST 경험디자인연구실(XD Lab) 박사과정에 있습니다."
+    },
+    {
+      "q": "What is a multi-device web artwork?",
+      "a": "In Jeanyoon Choi's practice, a multi-device web artwork (MDWA) is an artwork built from internet-connected devices, typically audience members' own mobile phones linked to surrounding screens and projections, so that interaction on the phone changes the shared installation in real time. Examples include Banpo-Xism, Ω, SoTA and ≠ (Nonequality)."
+    },
+    {
+      "q": "What does Jeanyoon Choi research at KAIST?",
+      "a": "Jeanyoon Choi is a PhD candidate in Industrial Design at KAIST (Feb 2024 to Feb 2028) and a researcher in the Experience Design Lab directed by Dr. Yiyun Kang. His CV lists his research topics as Multi-Device Web Artwork, Computational Interactive Art, Complex Systems and Systems Art."
+    },
+    {
+      "q": "Where has Jeanyoon Choi exhibited?",
+      "a": "His CV lists selected exhibitions including Ars Electronica 2023 (Who Owns the Truth, Linz), Istanbul Digital Art Festival 2024 (Search Reality), Noli: jeux coréens at the Centre Culturel Coréen in Paris (2024), SoTA at KAIST Art Museum (2024-2025), Platform: Still Human at the KF XR Gallery in Seoul (2025-2026), Design Korea 2025 at COEX, the ACM DIS 2026 Interactivity Demo in Singapore and Living Geometry at YDP Art Square, Seoul (2026)."
+    },
+    {
+      "q": "What has Jeanyoon Choi published?",
+      "a": "He is first author of 'SoTA: An Interactive Art Exhibition for Public AI Engagement' (ACM DIS 2026, Honourable Mention), co-author with Yiyun Kang of 'Passage of Water: Artistic Exploration of Earth's Freshwater with Google and NASA' (Leonardo, MIT Press, 2025, cover article), and co-author of 'Enumerating Multiplex Juggling Patterns' (Journal of Integer Sequences, 2019)."
+    },
+    {
+      "q": "Where did Jeanyoon Choi study?",
+      "a": "He received a BSc in Industrial Engineering from Seoul National University (2018-2022) and an MA in Information Experience Design from the Royal College of Art, London (2022-2023), and is a PhD candidate in Industrial Design at KAIST."
+    },
+    {
+      "q": "What has Jeanyoon Choi taught?",
+      "a": "He was a lecturer at the Korea National University of Arts (K-Arts) Interaction Design Track from September 2024 to February 2026, teaching web-based experimental interaction design with Next.js, WebSocket and Three.js. He was also a teaching assistant for ID 412 Interactive Space and ID 430 Immersive Space at KAIST, and a front-end software engineering lecturer at Elice Coding in 2022."
+    },
+    {
+      "q": "What themes does Jeanyoon Choi's art address?",
+      "a": "His works reflect the complexity of contemporary socio-technological systems, including AI, algorithmic culture and economic structures. Examples include South Korea's apartment hierarchy in Banpo-Xism, MBTI classification in Ω, neural network architectures in SoTA and the illogic of algorithmic outputs in ≠."
+    },
+    {
+      "q": "What performances and talks has Jeanyoon Choi given?",
+      "a": "His CV lists performances including LING at The Place, London (2023), Counterpoint and Flicker at IKLECTIK, London (2023), IRCAM Forum events in Paris (2023) and Seoul (2024), and the lecture-performance 'Dadaism for the Algorithmic Age' at G-Artience, Daejeon (2024). Invited talks include artist talks at KAIST Art Museum (2024) and Living Geometry (2026), and a designer's talk at Design Korea 2025."
+    },
+    {
+      "q": "What are Jeanyoon Choi's best-known artworks?",
+      "a": "His featured artworks are Banpo-Xism (2026) on Korean apartment culture, Ω (2025) on MBTI and algorithmic identity, SoTA (2024) on neural network architectures and explainable AI, and ≠ (Nonequality, 2023) on illogicality within logical systems. All four are multi-device web artworks."
+    }
+  ],
+  "terms": [
+    {
+      "term": "Multi-Device Web Artwork (MDWA)",
+      "definition": "Jeanyoon Choi's term for web-based artworks that interconnect audience mobile devices with surrounding screens and projections, creating interactive environments in which actions on personal phones change a shared installation."
+    },
+    {
+      "term": "Multi-Device Web Symphony",
+      "definition": "A symphonic form of multi-device web artwork, introduced in The Symphony of Civilisation (2024), in which many connected channels and audience phones combine interactivity with collaborative immersion."
+    },
+    {
+      "term": "Medium-Based Approach",
+      "definition": "Jeanyoon Choi's minimalist approach to multi-device web artwork, presented in MBA (2022), that minimises external context and builds a work from consideration of the multi-device medium itself."
+    },
+    {
+      "term": "Banpo-Xism",
+      "definition": "A term coined in the 2026 artwork of the same name for the Korean pursuit of one idealised real-estate coordinate of location and brand, a blind, zero-sum competition toward 'Banpo-Xi'."
+    }
+  ]
+}

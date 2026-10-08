@@ -6,6 +6,7 @@ import JsonLd from "@/components/seo/json-ld";
 import TerminalSession from "@/app/oi/terminal";
 import { collectionCopy, entryList, entryPath } from "./collections";
 import { pageMetadata } from "./metadata";
+import { enrichment } from "./enrichment";
 import { absoluteUrl, detailTitle } from "./site";
 import { collectionSchema, entrySchema } from "./structured-data";
 
@@ -25,12 +26,12 @@ export function entryRoute(collection: Collection) {
     async generateMetadata({ params }: Props) {
       const { summary, detail } = await load(collection, (await params).slug);
       const image = detail.images?.[0];
-      return pageMetadata({ title: detailTitle(detail.title), description: summary.description, path: entryPath(collection, summary.slug), image: image ? { url: absoluteUrl(image.src), alt: image.alt } : undefined });
+      return pageMetadata({ title: detailTitle(detail.title), description: enrichment(collection, summary.slug)?.description ?? summary.description, path: entryPath(collection, summary.slug), markdown: true, image: image ? { url: absoluteUrl(image.src), alt: image.alt } : undefined });
     },
     async Page({ params }: Props) {
       const { summary, detail } = await load(collection, (await params).slug);
       const project = collection === "projects" ? projects.find((entry) => entry.slug === summary.slug) : undefined;
-      const schema = entrySchema(collection, detail, { date: summary.date, description: summary.description, location: project?.location, roles: project?.roles });
+      const schema = entrySchema(collection, detail, { date: summary.date, description: enrichment(collection, summary.slug)?.description ?? summary.description, location: project?.location, roles: project?.roles });
       return <><JsonLd data={schema} /><TerminalSession initialEntry={{ path: entryPath(collection, summary.slug), parent: collection, detail }} /></>;
     },
   };

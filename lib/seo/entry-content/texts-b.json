@@ -1,0 +1,1081 @@
+[
+  {
+    "slug": "everyday-interface-as-systematic-output",
+    "description": "Essay by Jeanyoon Choi on using everyday interfaces such as supermarket flyers and departure boards as system art output, instead of data visualisation.",
+    "abstract": "In this 2025 note, Jeanyoon Choi proposes everyday interfaces as a subtle, metaphorical output for system art. A supermarket flyer or a station departure board already registers economics, climate, politics and weather, and black swan events make those hidden conditions visible. The essay distinguishes data visualisation from parameterising an existing visual system, in which interest rates, climate or trade would alter a flyer's prices and produce. It also considers repeated calendars, apartment plans, detached commercial displays and dashboards that move from calm to breakdown.",
+    "questions": [
+      {
+        "q": "What does Jeanyoon Choi mean by 'everyday interface as systematic output'?",
+        "a": "In 'Everyday Interface as Systematic Output', Jeanyoon Choi argues that ordinary surfaces such as supermarket flyers and departure boards are already outputs of entangled social, economic and ecological systems. System art could parameterise these familiar interfaces so that changing conditions appear through them, rather than through a direct data visualisation."
+      },
+      {
+        "q": "What is the difference between data visualisation and data parameterisation in system art?",
+        "a": "In Jeanyoon Choi's essay, data visualisation depicts system parameters directly as charts or dashboards. Parameterisation takes an existing visual system, such as a neighbourhood supermarket flyer, and lets variables like interest rates, climate or trade conditions change its prices, produce and imports."
+      },
+      {
+        "q": "How can a black swan event make hidden systems visible through ordinary interfaces?",
+        "a": "The essay notes that everyday interfaces look repetitive in the short term, but during a black swan event familiar produce disappears from a flyer or a departure board fills with cancellations. Jeanyoon Choi suggests an artwork could amplify this instability."
+      }
+    ],
+    "concepts": [
+      "system art",
+      "everyday interface",
+      "data parameterisation",
+      "data visualisation",
+      "black swan events",
+      "hyperobject",
+      "dashboard aesthetics"
+    ],
+    "mentions": [
+      {
+        "name": "Gwangmyeong Station"
+      },
+      {
+        "name": "Black swan theory",
+        "url": "https://en.wikipedia.org/wiki/Black_swan_theory"
+      },
+      {
+        "name": "Andy Warhol",
+        "url": "https://en.wikipedia.org/wiki/Andy_Warhol"
+      },
+      {
+        "name": "2001: A Space Odyssey",
+        "url": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey"
+      },
+      {
+        "name": "HAL 9000",
+        "url": "https://en.wikipedia.org/wiki/HAL_9000"
+      },
+      {
+        "name": "Banpo-Xism"
+      },
+      {
+        "name": "Hannam Bridge"
+      }
+    ],
+    "terms": [
+      {
+        "term": "Everyday interface as systematic output",
+        "definition": "Using ordinary interfaces people already encounter, such as flyers, departure boards or calendars, as the audiovisual output of system art, so that the changing parameters of a large system appear through them subtly rather than as explicit data."
+      },
+      {
+        "term": "Data parameterisation",
+        "definition": "Contrasted with data visualisation: an existing visual system operates on parameters, and when those parameters change, the system's familiar output changes accordingly."
+      }
+    ],
+    "ko": "최정윤의 에세이로, 동네 마트 전단지나 광명역 열차 출발 안내판 같은 일상의 인터페이스를 시스템 아트의 출력으로 삼아, 데이터 시각화 대신 기존 시각 체계를 파라미터화하는 방식을 제안한다."
+  },
+  {
+    "slug": "explicit-commercial-interface-implicit-user-behaviour-tracking",
+    "description": "Jeanyoon Choi's essay on layering implicit bodily input, such as finger movement and phone motion, beneath a familiar commercial interface in interactive art.",
+    "abstract": "This 2025 essay by Jeanyoon Choi proposes combining semantic and phenomenological interaction by placing a familiar commercial interface, such as a shopping app, over a hidden layer of bodily input: finger trajectories, phone orientation and acceleration, or facial data. Through dimensional transformation, these signals change system parameters, and the participant gradually discovers and plays with the hidden layer. The essay draws on Ω and SoTA, critiques the narrowing of smartphone interaction to scrolling, and distinguishes parametric, categorical and contextual ways of changing a system.",
+    "questions": [
+      {
+        "q": "What is Jeanyoon Choi's essay 'Explicit Commercial Interface & Implicit User Behaviour Tracking' about?",
+        "a": "It proposes an interactive artwork in which a familiar commercial interface provides an explicit layer of interaction while implicit bodily data, such as finger movement or phone motion, is transformed into system parameters. Participants discover this second layer and begin to play with it deliberately."
+      },
+      {
+        "q": "How did Jeanyoon Choi use phone motion in the artworks Ω and SoTA?",
+        "a": "In Ω, an accidental shake during an MBTI-style questionnaire triggers a resistance signal across the connected channels and later rotates the scene. In SoTA, participants scroll through neural networks and discover that moving the phone also moves the surrounding 3D scene."
+      },
+      {
+        "q": "What are the three ways an interaction can change a system, according to Jeanyoon Choi?",
+        "a": "The essay distinguishes parametric change through continuous numerical values, categorical change through discrete choices such as a personality type or neural-network model, and contextual change through language and generative systems, which can alter the organising context itself."
+      }
+    ],
+    "concepts": [
+      "semantic interaction",
+      "phenomenological interaction",
+      "implicit interaction",
+      "dimensional transformation",
+      "sensor-based input",
+      "commercial interface",
+      "multi-device web artwork"
+    ],
+    "mentions": [
+      {
+        "name": "Ω"
+      },
+      {
+        "name": "SoTA"
+      },
+      {
+        "name": "Myers–Briggs Type Indicator",
+        "url": "https://en.wikipedia.org/wiki/Myers%E2%80%93Briggs_Type_Indicator"
+      },
+      {
+        "name": "Temple Run",
+        "url": "https://en.wikipedia.org/wiki/Temple_Run"
+      },
+      {
+        "name": "Angry Birds",
+        "url": "https://en.wikipedia.org/wiki/Angry_Birds"
+      },
+      {
+        "name": "Hammer.js"
+      }
+    ],
+    "terms": [
+      {
+        "term": "Dimensional transformation",
+        "definition": "Mapping bodily data, such as finger coordinates or phone orientation, into system parameters in a different conceptual domain, so that it changes system behaviour rather than producing a direct visual correspondence."
+      },
+      {
+        "term": "Contextual adjustment",
+        "definition": "A way of changing a system through language and generative AI, which alters the subject or organising context rather than a value within a fixed one; contrasted with parametric and categorical adjustment."
+      }
+    ],
+    "ko": "최정윤의 에세이로, 익숙한 쇼핑 앱 같은 상업 인터페이스 아래에 손가락 움직임, 휴대폰 기울기, 얼굴 데이터 같은 암묵적 신체 입력 층을 두어 시스템 파라미터로 변환하는 인터랙션을 제안하며 『Ω』와 『SoTA』를 예로 든다."
+  },
+  {
+    "slug": "from-euclidean-to-mandelbrotian-making-system-art-natural",
+    "description": "Essay by Jeanyoon Choi on making system art behave like nature: volatile, nonlinear systems that keep moving before, during and after audience interaction.",
+    "abstract": "Drawing on Geoffrey West and Benoit Mandelbrot, Jeanyoon Choi argues in this 2025 essay that interactive art should move from smooth, deterministic Euclidean behaviour toward rough, nonlinear Mandelbrotian behaviour. Instead of a stable state that changes only during input, a system should already fluctuate, have that fluctuation modified by interaction, and continue in a new pattern afterwards, as markets or weather do. The essay distinguishes objects from systems and simple from automatic systems, and compares imitated randomness, agent simulation and mathematical models such as Brownian motion.",
+    "questions": [
+      {
+        "q": "What does 'From Euclidean to Mandelbrotian' argue about interactive art?",
+        "a": "Jeanyoon Choi argues that interactive art often behaves like a polished manufactured object with finite scenarios. He proposes systems that oscillate and evolve without waiting for a visitor, where interaction changes the conditions of ongoing movement rather than switching between fixed states."
+      },
+      {
+        "q": "What is the difference between an interactive object and a system in Jeanyoon Choi's writing?",
+        "a": "An interactive object reliably produces the same result from the same action. A system lets an action change not only its visible state but the mechanisms and relationships that generate later states, and an automatic system keeps evolving even without input."
+      },
+      {
+        "q": "How can system art imitate natural randomness?",
+        "a": "The essay lists three approaches: imitating randomness directly, as with a TouchDesigner noise node; simulating many agents interacting in real time; or using a mathematical model of collective behaviour such as Brownian motion when full simulation is impractical."
+      }
+    ],
+    "concepts": [
+      "system art",
+      "nonlinearity",
+      "volatility",
+      "stochastic systems",
+      "automatic system",
+      "agent-based simulation",
+      "fractal geometry"
+    ],
+    "mentions": [
+      {
+        "name": "Geoffrey West",
+        "url": "https://en.wikipedia.org/wiki/Geoffrey_West"
+      },
+      {
+        "name": "Benoit Mandelbrot",
+        "url": "https://en.wikipedia.org/wiki/Benoit_Mandelbrot"
+      },
+      {
+        "name": "Euclidean geometry",
+        "url": "https://en.wikipedia.org/wiki/Euclidean_geometry"
+      },
+      {
+        "name": "TouchDesigner",
+        "url": "https://en.wikipedia.org/wiki/TouchDesigner"
+      },
+      {
+        "name": "Brownian motion",
+        "url": "https://en.wikipedia.org/wiki/Brownian_motion"
+      }
+    ],
+    "terms": [
+      {
+        "term": "Automatic system",
+        "definition": "A system that evolves and changes continuously even without external interaction, in contrast to a simple system that stays static until it receives input."
+      }
+    ],
+    "ko": "최정윤은 이 글에서 제프리 웨스트와 망델브로를 참조하며, 매끈하고 결정론적인 인터랙티브 아트를 넘어 상호작용 전후에도 계속 요동하고 진화하는 비선형적 시스템 아트를 제안한다."
+  },
+  {
+    "slug": "from-semantic-interaction-to-phenomenological-interaction",
+    "description": "Essay by Jeanyoon Choi on how meaningful button and slider interactions can become bodily, playful gestures in exhibition-based system art, as in Junk Site.",
+    "abstract": "In this 2025 essay, Jeanyoon Choi considers how system art can ask for meaningful input without overwhelming exhibition visitors, who often hesitate before open text or voice prompts. He argues that a limited set of direct controls, such as buttons, lists and sliders, can shift from deliberate semantic choice into fluid bodily play. In Junk Site, participants move from tapping category buttons to sliding across them, continuously changing generated websites. The essay also proposes 'punctum interaction', where an intense bodily disturbance briefly exposes a precarious system before it restores equilibrium.",
+    "questions": [
+      {
+        "q": "What is the shift from semantic to phenomenological interaction described by Jeanyoon Choi?",
+        "a": "A participant first presses a button for what its label means, then later presses or slides for the pleasure of the effect itself. Jeanyoon Choi argues that carefully designed direct controls can become playful, fluid and Dadaist in this way."
+      },
+      {
+        "q": "Why are text and voice inputs difficult in interactive art exhibitions?",
+        "a": "According to the essay, visitors often do not know what to say, hesitate, or enter a dummy word, and asking for a whole sentence at the outset can end an interaction. A limited set of initial choices is more productive."
+      },
+      {
+        "q": "What is 'punctum interaction'?",
+        "a": "In Jeanyoon Choi's notes, punctum interaction is an intense bodily disturbance to a precariously balanced system that reveals what the polished simulation normally conceals, after which the system gradually restores its equilibrium."
+      }
+    ],
+    "concepts": [
+      "semantic interaction",
+      "phenomenological interaction",
+      "system art",
+      "interaction design",
+      "multitouch gestures",
+      "exhibition interaction",
+      "dadaism"
+    ],
+    "mentions": [
+      {
+        "name": "Junk Site"
+      },
+      {
+        "name": "Ω"
+      },
+      {
+        "name": "Hammer.js"
+      }
+    ],
+    "terms": [
+      {
+        "term": "Punctum interaction",
+        "definition": "An intense, bodily external shock to a system that appears balanced, exposing its instability before the system restores equilibrium and tries to erase the disturbance."
+      },
+      {
+        "term": "Finger-skating",
+        "definition": "Gliding a finger continuously over an interface so that its semantic choices, such as category buttons or sliders, become a physical field to move through."
+      }
+    ],
+    "ko": "최정윤의 에세이로, 버튼과 슬라이더 같은 의미 기반 인터랙션이 반복 속에서 신체적·현상학적 놀이로 바뀌는 과정을 『Junk Site』의 예와 함께 다루고, 균형을 깨는 '푼크툼 인터랙션'을 제안한다."
+  },
+  {
+    "slug": "hacking-systems-more-primitive-than-a-game",
+    "description": "Essay by Jeanyoon Choi on hacking interactive systems through repetitive, Dadaist play: tapping, pinching and scrolling until logical use turns illogical.",
+    "abstract": "Prompted by an Ian Cheng exhibition in Seoul, where repeated tapping and pinching proved more engaging than the intended story, Jeanyoon Choi describes a formula from 2024: logical interaction multiplied by rapid repetition becomes illogical interaction. He recognises this in his own work, including a portfolio entrance requiring twenty presses of Enter, the exaggerated MBTI scrolling of Ω, face-distorted conversations in Das Gerede and the temporal fragmentation of Quantum Dream. The essay frames this urge to prod and break a system as more primitive than a game and stresses the role of sound design.",
+    "questions": [
+      {
+        "q": "What does Jeanyoon Choi mean by 'hacking systems'?",
+        "a": "In 'Hacking Systems: More Primitive than a Game', hacking means playing with an established interactive system in a repetitive, Dadaist way, such as tapping, scrolling and pinching rapidly, until its logical use becomes an illogical and enjoyable audiovisual play."
+      },
+      {
+        "q": "Which of Jeanyoon Choi's works use repetitive interaction to turn logical actions illogical?",
+        "a": "The essay cites his portfolio entrance requiring twenty presses of Enter, the exaggerated scrolling MBTI test in Ω, Das Gerede, where facial expression distorts AI-generated conversation, and Quantum Dream's repetition and temporal fragmentation of video."
+      },
+      {
+        "q": "Why is sound design important for playful interactive art?",
+        "a": "Jeanyoon Choi argues that without carefully designed sonic feedback, rapid interaction remains a mechanical action rather than becoming satisfying audiovisual play."
+      }
+    ],
+    "concepts": [
+      "playful interaction",
+      "dadaism",
+      "accelerationism",
+      "repetition",
+      "interaction design",
+      "sound design"
+    ],
+    "mentions": [
+      {
+        "name": "Ian Cheng"
+      },
+      {
+        "name": "Venice Architecture Biennale"
+      },
+      {
+        "name": "Ω"
+      },
+      {
+        "name": "Das Gerede"
+      },
+      {
+        "name": "Quantum Dream"
+      },
+      {
+        "name": "Accelerationism",
+        "url": "https://en.wikipedia.org/wiki/Accelerationism"
+      },
+      {
+        "name": "Dada",
+        "url": "https://en.wikipedia.org/wiki/Dada"
+      }
+    ],
+    "terms": [
+      {
+        "term": "Logical interaction × 100 taps per second = illogical interaction",
+        "definition": "Jeanyoon Choi's formula for how rapid, repetitive use of a system's intended interaction pushes it into an illogical, playful register."
+      }
+    ],
+    "ko": "최정윤은 서울의 이안 쳉 전시 경험에서 출발해, 논리적인 인터랙션도 빠른 반복을 통해 비논리적이고 다다이즘적인 놀이가 된다고 보며 『Ω』, 『Das Gerede』 등 자신의 작업에서 그 사례를 찾는다."
+  },
+  {
+    "slug": "how-everyone-is-obsessed-with-base-interest-rates-and-how-i-am-obsessed-with-making-an-experience-out-of-such-an-obsession",
+    "description": "Jeanyoon Choi's essay and installation sketch on the fixation with base interest rates: one percentage input sends a field of screens into dramatic reactions.",
+    "abstract": "Written in 2024, this essay by Jeanyoon Choi reflects on how much attention and vulnerability gather around a single base interest rate, whose changes can propagate through rents, housing and where people live. It sketches a multi-device installation: one input showing a percentage such as 3.XX, not labelled as an interest rate, and more than ten surrounding screens forming an economic ecosystem. Sharp changes provoke exaggerated, humorous reactions before the screens settle into a new equilibrium after about thirty seconds, a return to calm the essay treats as part of the problem.",
+    "questions": [
+      {
+        "q": "What installation does Jeanyoon Choi propose about base interest rates?",
+        "a": "He sketches a multi-device web artwork with one input showing an adjustable percentage and more than ten surrounding screens. Sharp changes make the screens react dramatically, some crying and some laughing, before they settle into a new equilibrium after about thirty seconds."
+      },
+      {
+        "q": "Why does Jeanyoon Choi find the obsession with base interest rates significant?",
+        "a": "The essay notes that a single percentage can propagate through rents, housing prices and where people are able to live, with each step seeming reasonable while the combined result feels absurd, and asks how fragile a society organised around one number is."
+      }
+    ],
+    "concepts": [
+      "interest rates",
+      "economic systems",
+      "multi-device web artwork",
+      "installation proposal",
+      "equilibrium",
+      "dadaism"
+    ],
+    "mentions": [
+      {
+        "name": "Federal Reserve",
+        "url": "https://en.wikipedia.org/wiki/Federal_Reserve"
+      },
+      {
+        "name": "COVID-19 pandemic",
+        "url": "https://en.wikipedia.org/wiki/COVID-19_pandemic"
+      }
+    ],
+    "terms": [],
+    "ko": "최정윤의 에세이이자 설치 구상으로, 기준금리라는 하나의 숫자에 집착하는 사회를 다루며 금리처럼 보이는 퍼센트 입력 하나에 열 개 이상의 화면이 과장되게 반응했다가 새 평형으로 돌아가는 멀티 디바이스 웹 아트워크를 제안한다."
+  },
+  {
+    "slug": "how-to-build-an-evolving-interactive-system-art",
+    "description": "Essay by Jeanyoon Choi on interactive system art whose rules evolve through participation, using a golden-ratio preference experiment as the design parallel.",
+    "abstract": "In this 2025 essay, Jeanyoon Choi asks how interaction can change an artistic system's nature rather than simply navigate its preset possibilities. He compares this to designing an active scientific experiment, using a hypothetical study of preference for the golden ratio: choosing among images, then adjusting a slider, then a third, freer level that someone would choose to experience for its own sake. He considers hot–cold games, binary search, adaptive psychophysical procedures and other inputs, and imagines two outputs: a research result and an artistic experience, as neural-network visualisation relates to SoTA.",
+    "questions": [
+      {
+        "q": "How can an interactive artwork evolve through audience participation?",
+        "a": "In 'How to build an evolving interactive system art?', Jeanyoon Choi argues that the key question is whether an action changes the system's possibilities and rules, not just its parameters within a fixed axis, as a slider does."
+      },
+      {
+        "q": "How does Jeanyoon Choi relate scientific experiments to interactive art?",
+        "a": "He suggests that designing an active experiment, such as a study of golden-ratio preference, parallels designing active interactive art: both need situations where someone genuinely explores rather than performs a prescribed gesture. Such a project could yield both a research result and an artistic experience."
+      }
+    ],
+    "concepts": [
+      "system art",
+      "interactive art",
+      "experiment design",
+      "golden ratio",
+      "neuroaesthetics",
+      "adaptive psychophysics",
+      "interaction modality"
+    ],
+    "mentions": [
+      {
+        "name": "Golden ratio",
+        "url": "https://en.wikipedia.org/wiki/Golden_ratio"
+      },
+      {
+        "name": "Psychophysics",
+        "url": "https://en.wikipedia.org/wiki/Psychophysics"
+      },
+      {
+        "name": "Binary search",
+        "url": "https://en.wikipedia.org/wiki/Binary_search_algorithm"
+      },
+      {
+        "name": "Generative adversarial network",
+        "url": "https://en.wikipedia.org/wiki/Generative_adversarial_network"
+      },
+      {
+        "name": "Brain–computer interface",
+        "url": "https://en.wikipedia.org/wiki/Brain%E2%80%93computer_interface"
+      },
+      {
+        "name": "SoTA"
+      },
+      {
+        "name": "Apple Vision Pro",
+        "url": "https://en.wikipedia.org/wiki/Apple_Vision_Pro"
+      }
+    ],
+    "terms": [],
+    "ko": "최정윤은 이 글에서 관객의 상호작용이 시스템의 규칙 자체를 바꾸는 진화형 인터랙티브 시스템 아트를 묻고, 황금비 선호 실험 설계를 비유로 삼아 연구 결과와 예술적 경험이라는 두 가지 산출물을 상상한다."
+  },
+  {
+    "slug": "how-to-well-design-semantical-interaction-which-users-actually-care",
+    "description": "Essay by Jeanyoon Choi on designing semantic interaction that exhibition visitors will engage with, using passivity, strong intros and amplified voice input.",
+    "abstract": "This 2025 note by Jeanyoon Choi addresses why semantic interaction, such as typing or speaking within a context, is harder to sustain in exhibitions than bodily gestures: visitors hesitate or enter something arbitrary. It proposes treating hesitation and passivity as part of the exchange, reconsidering onboarding through a sudden estranging event, a gradual invitation or strong narrative context, and amplifying small inputs into rich semantic responses. In the scenario considered, a visitor lies down to rest, a language model addresses them and leads the conversation, and their uncertain murmur becomes part of the work.",
+    "questions": [
+      {
+        "q": "How can interactive art get meaningful input from hesitant exhibition visitors?",
+        "a": "Jeanyoon Choi suggests making hesitation and passivity part of the interaction, designing the introduction carefully, and transforming small, low-information actions such as a murmur into unexpectedly rich responses."
+      },
+      {
+        "q": "How does Jeanyoon Choi propose using a language model in a voice-based artwork?",
+        "a": "Instead of the user supplying context and leading the conversation, the model leads, treating a minimal or passive response as enough to continue. The scenario begins with a visitor lying on a bed, unaware that an interaction will start."
+      }
+    ],
+    "concepts": [
+      "semantic interaction",
+      "voice user interface",
+      "onboarding",
+      "exhibition interaction",
+      "large language models",
+      "dadaism"
+    ],
+    "mentions": [
+      {
+        "name": "Rafael Lozano-Hemmer",
+        "url": "https://en.wikipedia.org/wiki/Rafael_Lozano-Hemmer"
+      },
+      {
+        "name": "Verfremdungseffekt",
+        "url": "https://en.wikipedia.org/wiki/Distancing_effect"
+      }
+    ],
+    "terms": [],
+    "ko": "최정윤의 글로, 전시 관객이 텍스트나 음성 입력을 주저하는 문제를 다루며 수동성 자체를 인터랙션에 포함하고 작은 음성 입력을 풍부한 응답으로 증폭하는 방식을 제안한다."
+  },
+  {
+    "slug": "human-as-interface-human-sliders-human-mouse",
+    "description": "Short essay by Jeanyoon Choi on web controls reinterpreted in space: the body as a toggle, slider or 2D pad, with floor tracking changing surrounding screens.",
+    "abstract": "In this 2024 note, Jeanyoon Choi imagines familiar web controls reinterpreted spatially, with the whole body replacing a cursor or fingertip. A toggle becomes standing on the left or right of a room, a slider becomes movement along a corridor, and a two-dimensional pad becomes movement across a floor, each altering surrounding screens or projections. Floor-based tracking would let participants inhabit the control rather than stand outside it. He frames multi-device web artwork as a conversation between a subject and a space.",
+    "questions": [
+      {
+        "q": "What is 'Human-as-Interface' by Jeanyoon Choi?",
+        "a": "It is a 2024 note proposing that web interface controls such as toggles, sliders and 2D pads be reinterpreted in physical space, with a person's position and movement on the floor acting as the input that changes surrounding screens."
+      },
+      {
+        "q": "How can a person's body act as a slider or toggle in an interactive installation?",
+        "a": "In Jeanyoon Choi's sketch, standing on the left or right side of a space acts as a toggle, moving along a corridor acts as a slider, and moving across a floor acts as a two-dimensional pad, tracked from the floor."
+      }
+    ],
+    "concepts": [
+      "bodily interaction",
+      "spatial interface",
+      "multi-device web artwork",
+      "floor tracking",
+      "interaction design"
+    ],
+    "mentions": [],
+    "terms": [
+      {
+        "term": "Human-as-interface",
+        "definition": "Using the human body, tracked in space, as the pointer, slider or toggle of an installation, so that the participant inhabits the control surface rather than operating it from outside."
+      }
+    ],
+    "ko": "최정윤의 짧은 글로, 토글·슬라이더·2D 패드 같은 웹 인터페이스 요소를 공간 속에 재해석해 사람의 몸 위치와 움직임이 주변 화면을 바꾸는 입력이 되는 설치를 구상한다."
+  },
+  {
+    "slug": "i-multi-user-interaction-scenario-quantum-state-management",
+    "description": "Jeanyoon Choi's note on multi-user interaction in multi-screen installations, where conflicting commands are distributed probabilistically across screens.",
+    "abstract": "This 2025 note by Jeanyoon Choi addresses what happens when many participants send conflicting commands to an installation with many screens. Rather than choosing a single winner or queue, each screen would move probabilistically among the states participants request, an idea framed through the metaphor of superposition and interference rather than as literal quantum computing. A Markov model might organise transitions. Outputs would be state-based rather than narrative, producing something like a busy railway platform where local events coexist without one storyline.",
+    "questions": [
+      {
+        "q": "How can a multi-screen installation handle many users giving conflicting commands at once?",
+        "a": "Jeanyoon Choi proposes that each screen moves probabilistically among the states different participants request, possibly organised by a Markov model, so their inputs overlap and remain distributed across the installation instead of resolving to one winner."
+      },
+      {
+        "q": "Does Jeanyoon Choi's 'quantum state management' use quantum computing?",
+        "a": "No. The note uses superposition and interference as a metaphor for overlapping audience inputs and states it is not a claim that the software behaves as a quantum system."
+      }
+    ],
+    "concepts": [
+      "multi-user interaction",
+      "multi-device web artwork",
+      "state-based design",
+      "probabilistic state transitions",
+      "markov chain",
+      "platform art"
+    ],
+    "mentions": [
+      {
+        "name": "Markov chain",
+        "url": "https://en.wikipedia.org/wiki/Markov_chain"
+      },
+      {
+        "name": "Quantum superposition",
+        "url": "https://en.wikipedia.org/wiki/Quantum_superposition"
+      },
+      {
+        "name": "Nam June Paik",
+        "url": "https://en.wikipedia.org/wiki/Nam_June_Paik"
+      }
+    ],
+    "terms": [
+      {
+        "term": "Quantum state management",
+        "definition": "A metaphorical model for multi-user installations in which each output channel oscillates probabilistically among the states requested by different participants, rather than following a single progressive narrative."
+      }
+    ],
+    "ko": "최정윤의 메모로, 여러 관객이 여러 화면에 서로 다른 상태를 동시에 요청할 때 각 화면이 그 상태들 사이를 확률적으로 오가게 하는 다중 사용자 인터랙션을 중첩의 은유와 마르코프 모델로 구상한다."
+  },
+  {
+    "slug": "i-odm-auto-generating-systems",
+    "description": "Essay by Jeanyoon Choi using ODM, OEM and fabless manufacturing to ask how system art can show people generating systems instead of serving them.",
+    "abstract": "In this 2025 essay, Jeanyoon Choi takes OEM and ODM manufacturing, fabless semiconductor design and the cosmetics industry as examples of production separated from ownership of factories. He is interested in systems that produce other systems: when implementation becomes accessible, the question shifts from surviving inside a structure to choosing what structure to create. System art could expose an apparently inevitable order as a constructed simulacrum. He invokes Nietzsche's camel and child and relates the idea to his own move from industrial engineering toward design.",
+    "questions": [
+      {
+        "q": "What does ODM manufacturing have to do with system art, according to Jeanyoon Choi?",
+        "a": "In 'i': ODM - Auto-generating systems', Jeanyoon Choi uses ODM and OEM manufacturing as examples of systems that let ideas become products without owning a factory, and argues that system art can similarly show people generating and playing with systems instead of remaining components inside them."
+      },
+      {
+        "q": "How does Jeanyoon Choi connect Nietzsche to system art?",
+        "a": "He refers to Nietzsche's movement from the burden-bearing camel to the child who creates through play, describing a reversal in which people stop adapting to systems and make systems respond to their ideas."
+      }
+    ],
+    "concepts": [
+      "system art",
+      "auto-generating systems",
+      "odm manufacturing",
+      "simulacrum",
+      "industrial engineering",
+      "rapid contextual change"
+    ],
+    "mentions": [
+      {
+        "name": "Original design manufacturer",
+        "url": "https://en.wikipedia.org/wiki/Original_design_manufacturer"
+      },
+      {
+        "name": "Original equipment manufacturer",
+        "url": "https://en.wikipedia.org/wiki/Original_equipment_manufacturer"
+      },
+      {
+        "name": "Fabless manufacturing",
+        "url": "https://en.wikipedia.org/wiki/Fabless_manufacturing"
+      },
+      {
+        "name": "Friedrich Nietzsche",
+        "url": "https://en.wikipedia.org/wiki/Friedrich_Nietzsche"
+      },
+      {
+        "name": "Simulacrum",
+        "url": "https://en.wikipedia.org/wiki/Simulacrum"
+      },
+      {
+        "name": "Cosmax"
+      },
+      {
+        "name": "Kolmar Korea"
+      }
+    ],
+    "terms": [
+      {
+        "term": "Auto-generating systems",
+        "definition": "Systems that produce other systems, so that the central question becomes which structures to bring into existence rather than how to survive within an existing one."
+      }
+    ],
+    "ko": "최정윤은 ODM·OEM 생산과 팹리스 구조, 한국 화장품 산업을 예로 들어, 시스템 속 부품으로 사는 대신 아이디어만으로 시스템을 생성하는 전환을 시스템 아트가 보여줄 수 있다고 주장한다."
+  },
+  {
+    "slug": "integration-of-real-world-api-real-world-data-collaged-collective-world",
+    "description": "Essay by Jeanyoon Choi on bringing live real-world data and APIs into multi-device web artwork, imagining a collaged canvas of the contemporary world.",
+    "abstract": "In this 2024 note, Jeanyoon Choi considers the value of live external material in art, citing Nam June Paik's early Wuppertal exhibition and Cildo Meireles's Babel. He distinguishes genuinely live sources, such as broadcasts or transport data, from real-time calls to a language model, and contrasts them with the simulated APIs of the third movement of Civilisation. He imagines a collective, collage-like canvas, after Basquiat or Twombly, whose regions respond to different live systems, but questions whether such a collage is justified and connects it to the idea of a naked interface.",
+    "questions": [
+      {
+        "q": "Why does Jeanyoon Choi want to use live real-world data in multi-device web artworks?",
+        "a": "He notes that live signals, as in Nam June Paik's use of broadcast television, create a relation to events outside the work that differs from generating responses with a language model, and the web makes such external sources unusually accessible."
+      },
+      {
+        "q": "What is the 'collaged collective world' idea?",
+        "a": "It is a proposed canvas in which different regions respond independently to different live systems, such as health, finance, conversation and location, while coexisting in one composition. Jeanyoon Choi leaves open what would justify combining these particular systems."
+      }
+    ],
+    "concepts": [
+      "real-time data",
+      "live apis",
+      "multi-device web artwork",
+      "collage",
+      "naked interface",
+      "data-driven art"
+    ],
+    "mentions": [
+      {
+        "name": "Nam June Paik",
+        "url": "https://en.wikipedia.org/wiki/Nam_June_Paik"
+      },
+      {
+        "name": "Cildo Meireles",
+        "url": "https://en.wikipedia.org/wiki/Cildo_Meireles"
+      },
+      {
+        "name": "Babel (Cildo Meireles)"
+      },
+      {
+        "name": "Jean-Michel Basquiat",
+        "url": "https://en.wikipedia.org/wiki/Jean-Michel_Basquiat"
+      },
+      {
+        "name": "Cy Twombly",
+        "url": "https://en.wikipedia.org/wiki/Cy_Twombly"
+      },
+      {
+        "name": "Broadway Boogie Woogie",
+        "url": "https://en.wikipedia.org/wiki/Broadway_Boogie_Woogie"
+      },
+      {
+        "name": "Times Square",
+        "url": "https://en.wikipedia.org/wiki/Times_Square"
+      },
+      {
+        "name": "Rafael Lozano-Hemmer",
+        "url": "https://en.wikipedia.org/wiki/Rafael_Lozano-Hemmer"
+      },
+      {
+        "name": "The Symphony of Civilisation"
+      }
+    ],
+    "terms": [
+      {
+        "term": "Naked interface",
+        "definition": "An interface that does not simplify the world for convenient use, but exposes its workings without smoothing them away."
+      }
+    ],
+    "ko": "최정윤은 백남준의 부퍼탈 전시와 실도 메이렐레스의 『Babel』을 참조해 실시간 외부 데이터와 API를 멀티 디바이스 웹 아트워크에 통합하는 방안을 고민하며, 현대 세계를 콜라주한 하나의 캔버스를 구상한다."
+  },
+  {
+    "slug": "junk-site-the-digital-echo-chamber-of-ai-generated-web-spaces",
+    "description": "Jeanyoon Choi's proposal for Junk Site, a multi-device artwork generating websites with AI to examine a closed loop of generated content and training data.",
+    "abstract": "Junk Site is Jeanyoon Choi's 2025 proposal for a multi-device environment that continuously generates working websites, one per output channel, driven by a mobile voice interface and blink input. Its subject is a possible closed loop in which language models generate websites that return as training data, increasing quantity without novelty. The title adapts Rem Koolhaas's Junkspace to the web. The proposal pairs a framework for generating site structure, content, design and search metadata with interaction research, and argues for keeping the circuit open to human invention.",
+    "questions": [
+      {
+        "q": "What is Jeanyoon Choi's Junk Site?",
+        "a": "Junk Site is a proposed multi-device artwork that continuously generates functioning websites across several screens, controlled by voice context and eye blinks on a phone. It addresses how AI-generated web content may feed back into language-model training."
+      },
+      {
+        "q": "How does Junk Site relate to Rem Koolhaas's Junkspace?",
+        "a": "Jeanyoon Choi translates Junkspace to the web: as air conditioning and escalators enabled homogeneous commercial spaces to spread, generative technologies enable apparently different but structurally homogeneous websites to proliferate."
+      },
+      {
+        "q": "What is the risk of a closed loop between language models and AI-generated content?",
+        "a": "The proposal argues that if generated outputs become the main source for further generation, data grows in quantity but not novelty, and new discourse and design languages may struggle to enter. It calls for an open loop sustained by human invention."
+      }
+    ],
+    "concepts": [
+      "ai-generated content",
+      "ai training data",
+      "website generation",
+      "multi-device web artwork",
+      "voice user interface",
+      "blink interaction",
+      "search engine optimisation"
+    ],
+    "mentions": [
+      {
+        "name": "Rem Koolhaas",
+        "url": "https://en.wikipedia.org/wiki/Rem_Koolhaas"
+      },
+      {
+        "name": "Junkspace"
+      },
+      {
+        "name": "Nassim Nicholas Taleb",
+        "url": "https://en.wikipedia.org/wiki/Nassim_Nicholas_Taleb"
+      },
+      {
+        "name": "OpenAI",
+        "url": "https://en.wikipedia.org/wiki/OpenAI"
+      }
+    ],
+    "terms": [
+      {
+        "term": "Junk Site",
+        "definition": "A proliferation of chaotic, self-replicating web spaces mass-produced by language models, homogenised by the circulation of data between generated content and model training; a web counterpart to Koolhaas's Junkspace."
+      }
+    ],
+    "ko": "최정윤의 『Junk Site』 제안서로, 음성과 눈 깜빡임 입력에 따라 웹사이트를 끝없이 생성하는 멀티 디바이스 작업을 통해 LLM과 생성 콘텐츠 사이의 폐쇄 루프를 렘 콜하스의 '정크스페이스'에 빗대어 다룬다."
+  },
+  {
+    "slug": "llm-gui-lui",
+    "description": "Short essay by Jeanyoon Choi on how large language models may shift human-computer interaction from graphical user interfaces to language interfaces (LUI).",
+    "abstract": "In this 2024 note, Jeanyoon Choi argues that capable language models could move human–computer interaction from the graphical user interface toward a language user interface. Early computing relied on hard-to-use command language, and graphical interfaces filled that gap; now natural language can again operate computers directly. He compares this to the shift from mouse to touch and to voice assistants such as Alexa and Siri, and suggests that creative tools could reverse from node-based environments like TouchDesigner back to code generated through language.",
+    "questions": [
+      {
+        "q": "What is the difference between GUI and LUI?",
+        "a": "In Jeanyoon Choi's note 'LLM: GUI --> LUI', a GUI operates a computer through graphical controls, while a language user interface (LUI) operates it through natural language, which capable language models make more effective."
+      },
+      {
+        "q": "How might language models change creative coding tools?",
+        "a": "Jeanyoon Choi suggests that node-based tools became popular partly because they reduced the need to write code, but if generating code through a language model becomes easier, the preference could reverse back to code."
+      }
+    ],
+    "concepts": [
+      "language user interface",
+      "graphical user interface",
+      "large language models",
+      "human-computer interaction",
+      "creative coding",
+      "node-based tools"
+    ],
+    "mentions": [
+      {
+        "name": "Graphical user interface",
+        "url": "https://en.wikipedia.org/wiki/Graphical_user_interface"
+      },
+      {
+        "name": "Amazon Alexa",
+        "url": "https://en.wikipedia.org/wiki/Amazon_Alexa"
+      },
+      {
+        "name": "Siri",
+        "url": "https://en.wikipedia.org/wiki/Siri"
+      },
+      {
+        "name": "TouchDesigner",
+        "url": "https://en.wikipedia.org/wiki/TouchDesigner"
+      }
+    ],
+    "terms": [
+      {
+        "term": "LUI (Language User Interface)",
+        "definition": "An interface in which natural language, made effective by large language models, becomes the main means of operating a computer, potentially succeeding the graphical user interface."
+      }
+    ],
+    "ko": "최정윤의 짧은 글로, 대규모 언어 모델의 발전으로 인간-컴퓨터 상호작용이 GUI에서 언어 기반 인터페이스(LUI)로 옮겨갈 수 있으며, 창작 도구도 노드 기반에서 다시 코드 생성으로 돌아갈 수 있다고 본다."
+  },
+  {
+    "slug": "multiple-globes",
+    "description": "Essay by Jeanyoon Choi proposing multiplied globe visualisations: grids of interactive Earths showing alternative environmental scenarios side by side.",
+    "abstract": "In this 2025 note, Jeanyoon Choi observes that environmental and social data are usually shown on a single globe, as in GRACE or SWOT visualisations, and proposes multiplying the globe to add a dimension of alternative scenarios. In one version, each participant has a globe that flourishes or deteriorates through simple inputs; in another, a grid of twelve data-rich globes arranges favourable, intermediate and severe scenarios that participants move through over time. He also considers nested, peeled or colliding arrangements, and insists the data should feel continuously alive.",
+    "questions": [
+      {
+        "q": "What is Jeanyoon Choi's 'Multiple Globes' idea?",
+        "a": "It proposes multiplying globe-based data visualisations so that several Earths, each showing a different speculative or scenario-based outcome, can be compared at once, with participants changing them through simple interactions."
+      },
+      {
+        "q": "How can small multiples be applied to climate data visualisation?",
+        "a": "In 'Multiple Globes', Jeanyoon Choi imagines a grid of twelve globes with more favourable, intermediate and severe scenarios in separate rows, where scrolling or a control moves through time and alters the visualised data."
+      }
+    ],
+    "concepts": [
+      "data visualisation",
+      "small multiples",
+      "environmental data",
+      "speculative scenarios",
+      "interactive visualisation",
+      "system art"
+    ],
+    "mentions": [
+      {
+        "name": "GRACE",
+        "url": "https://en.wikipedia.org/wiki/Gravity_Recovery_and_Climate_Experiment"
+      },
+      {
+        "name": "SWOT",
+        "url": "https://en.wikipedia.org/wiki/Surface_Water_and_Ocean_Topography"
+      },
+      {
+        "name": "IPCC",
+        "url": "https://en.wikipedia.org/wiki/Intergovernmental_Panel_on_Climate_Change"
+      }
+    ],
+    "terms": [],
+    "ko": "최정윤은 이 글에서 하나의 지구본 위에 데이터를 그리는 대신 여러 개의 지구본을 나란히 두어 서로 다른 환경 시나리오를 비교하고 관객이 상호작용으로 바꿀 수 있는 다중 지구 시각화를 제안한다."
+  },
+  {
+    "slug": "my-interpretation-of-hyperobject-accelerating-interactionn",
+    "description": "Essay by Jeanyoon Choi reading the hyperobject through 'accelerating interaction', sketching a phone and screen whose actions speed up until they run alone.",
+    "abstract": "In this 2024 essay, Jeanyoon Choi interprets a hyperobject as something we initiate and believe we control, such as financial markets, climate change or neural networks, until it exceeds us. He calls his formal response accelerating interaction, pursued in W, Nonequality, Bigger Dreams and Factory 4.0. A sketch uses one phone and one screen: verbs from 'To Press' to 'To Scroll', 'To Face ID' and 'To EEG' cycle ever faster until the system triggers itself, describing digital interaction's drift toward passivity. It cites Richard Serra's Verb List and Martha Rosler's Semiotics of the Kitchen.",
+    "questions": [
+      {
+        "q": "How does Jeanyoon Choi interpret the hyperobject?",
+        "a": "He describes a hyperobject as something that starts in our hands and seems controllable, like financial markets, climate change or neural networks, until we realise, often too late, that it has exceeded our control."
+      },
+      {
+        "q": "What is 'accelerating interaction' in Jeanyoon Choi's work?",
+        "a": "It is an interaction design in which a small, understandable action gradually produces chaos. He names W, Nonequality, Bigger Dreams and Factory 4.0 as works that pursue variations of it."
+      },
+      {
+        "q": "How can an artwork show digital interaction becoming more passive?",
+        "a": "Jeanyoon Choi sketches a phone prompting verbs that shift from active ones like To Press and To Send to passive ones like To Scroll, To Face ID and To EEG, while cycles shrink from eight seconds to one until the system runs itself."
+      }
+    ],
+    "concepts": [
+      "hyperobject",
+      "accelerating interaction",
+      "accelerationism",
+      "algorithmic culture",
+      "multi-device web artwork",
+      "passive interaction"
+    ],
+    "mentions": [
+      {
+        "name": "Hyperobject",
+        "url": "https://en.wikipedia.org/wiki/Hyperobject"
+      },
+      {
+        "name": "W"
+      },
+      {
+        "name": "≠ (Nonequality)"
+      },
+      {
+        "name": "Bigger Dreams"
+      },
+      {
+        "name": "Factory 4.0"
+      },
+      {
+        "name": "Richard Serra",
+        "url": "https://en.wikipedia.org/wiki/Richard_Serra"
+      },
+      {
+        "name": "Verb List"
+      },
+      {
+        "name": "Martha Rosler",
+        "url": "https://en.wikipedia.org/wiki/Martha_Rosler"
+      },
+      {
+        "name": "Semiotics of the Kitchen"
+      }
+    ],
+    "terms": [
+      {
+        "term": "Accelerating interaction",
+        "definition": "Jeanyoon Choi's interaction design in which a subtle, simple action gradually accelerates into chaos, giving form to how systems we initiate come to exceed our control."
+      }
+    ],
+    "ko": "최정윤은 하이퍼오브젝트를 우리가 시작하고 통제한다고 믿다가 결국 통제를 벗어나는 것으로 해석하고, 단순한 동작이 점점 빨라져 스스로 작동하게 되는 '가속하는 인터랙션'으로 이를 형상화한다."
+  },
+  {
+    "slug": "perceivable-experience-vs-non-perceivable-experience",
+    "description": "Essay by Jeanyoon Choi on perception limits and hyperobjects: why art might offer a crafted 'perceivable non-perceivability' over fully legible experience.",
+    "abstract": "In this 2024 essay, Jeanyoon Choi notes that perception has upper and lower thresholds, while hyperobjects and the systems he addresses exceed any single viewpoint. He argues that art need not always offer legible, plausible experiences, which can lead to kitsch, and proposes a crafted 'perceivable non-perceivability': enough coherence to invite someone in, then an experience that reveals its limits. User interfaces ordinarily package raw information into readable form, blurring visualising and falsifying; the brutal interface instead exposes underlying construction. The note links this to a proposed KAIST opening work.",
+    "questions": [
+      {
+        "q": "What does Jeanyoon Choi mean by 'perceivable non-perceivability'?",
+        "a": "It is an experience designed with enough coherence to invite participants in, followed by an encounter that makes the limits of that coherence apparent, so that they meet the incomprehensible systems they already live in."
+      },
+      {
+        "q": "Why might an artwork deliberately exceed what viewers can perceive?",
+        "a": "Jeanyoon Choi argues that hyperobjects cannot be fully grasped from a single human viewpoint, and that always offering legible, desirable experiences risks kitsch; an artwork can instead let people encounter that incomprehensibility."
+      }
+    ],
+    "concepts": [
+      "perception thresholds",
+      "hyperobject",
+      "brutal interface",
+      "user interface",
+      "cognitive load",
+      "information overload"
+    ],
+    "mentions": [
+      {
+        "name": "Hyperobject",
+        "url": "https://en.wikipedia.org/wiki/Hyperobject"
+      },
+      {
+        "name": "Psychophysics",
+        "url": "https://en.wikipedia.org/wiki/Psychophysics"
+      },
+      {
+        "name": "KAIST",
+        "url": "https://en.wikipedia.org/wiki/KAIST"
+      }
+    ],
+    "terms": [
+      {
+        "term": "Perceivable non-perceivability",
+        "definition": "A carefully constructed balance in which an experience is coherent enough to invite participation yet ultimately exposes the limits of comprehension."
+      },
+      {
+        "term": "Brutal interface",
+        "definition": "An interface that exposes the raw construction beneath it rather than packaging information into a fully human-readable form."
+      }
+    ],
+    "ko": "최정윤은 인간 지각의 한계와 하이퍼오브젝트를 다루며, 예술이 늘 이해 가능한 경험만 제공할 필요는 없고 '지각 가능한 비지각성'을 섬세하게 설계할 수 있다고 주장한다."
+  },
+  {
+    "slug": "platform-art",
+    "description": "Jeanyoon Choi's essay defining Platform Art: rule-based modules repeated asynchronously, inspired by Tatsuo Miyajima's counters and train departure boards.",
+    "abstract": "In this 2024 essay, Jeanyoon Choi defines platform art as many repeated modules sharing one rule, M(t), but running with different states, speeds and parameters so that they diverge asynchronously. Drawing on Tatsuo Miyajima's counters at Naoshima, departure boards at London Victoria and a grid of identical OPIc test avatars, he links small differences between units to Baudrillard's least marginal difference. Unlike static small multiples or multichannel works governed by one synchronising input, each module keeps some autonomy. Nonequality, Das Gerede and Factory 4.0 explore the idea.",
+    "questions": [
+      {
+        "q": "What is Platform Art according to Jeanyoon Choi?",
+        "a": "Platform art is Jeanyoon Choi's term for artworks built from a repeated rule-based module whose instances run asynchronously with different states and parameters, so that small differences between similar units create a lively whole, like departure boards on a train platform."
+      },
+      {
+        "q": "How can multiple asynchronous displays create a different experience from a single display?",
+        "a": "Jeanyoon Choi notes, after Tatsuo Miyajima's counters, that one display, many synchronised displays and many asynchronous displays feel very different. Asynchronous modules sharing a rule produce tension between resemblance and difference."
+      },
+      {
+        "q": "Which of Jeanyoon Choi's artworks are examples of platform art?",
+        "a": "The essay names Nonequality, Das Gerede and, to an extent, Factory 4.0. Das Gerede is closest to the station departure board, filling a shared layout with generated conversations."
+      }
+    ],
+    "concepts": [
+      "platform art",
+      "modular systems",
+      "asynchrony",
+      "small multiples",
+      "multi-device web artwork",
+      "generative art"
+    ],
+    "mentions": [
+      {
+        "name": "Tatsuo Miyajima",
+        "url": "https://en.wikipedia.org/wiki/Tatsuo_Miyajima"
+      },
+      {
+        "name": "Naoshima",
+        "url": "https://en.wikipedia.org/wiki/Naoshima,_Kagawa"
+      },
+      {
+        "name": "London Victoria station",
+        "url": "https://en.wikipedia.org/wiki/London_Victoria_station"
+      },
+      {
+        "name": "Jean Baudrillard",
+        "url": "https://en.wikipedia.org/wiki/Jean_Baudrillard"
+      },
+      {
+        "name": "Small multiple",
+        "url": "https://en.wikipedia.org/wiki/Small_multiple"
+      },
+      {
+        "name": "OPIc"
+      },
+      {
+        "name": "Rafael Lozano-Hemmer",
+        "url": "https://en.wikipedia.org/wiki/Rafael_Lozano-Hemmer"
+      },
+      {
+        "name": "≠ (Nonequality)"
+      },
+      {
+        "name": "Das Gerede"
+      },
+      {
+        "name": "Factory 4.0"
+      }
+    ],
+    "terms": [
+      {
+        "term": "Platform Art",
+        "definition": "Art made of identical rule-based modules, M(t), repeated and run asynchronously with varied states and parameters, so that each module keeps some autonomy and their aggregate forms a dynamic ecology rather than a synchronised display."
+      }
+    ],
+    "ko": "최정윤이 정의한 '플랫폼 아트'에 관한 글로, 하나의 규칙을 공유하는 모듈들이 서로 다른 속도와 상태로 비동기적으로 반복되며 만드는 미학을 미야지마 타쓰오의 카운터와 기차역 출발 안내판을 통해 설명한다."
+  },
+  {
+    "slug": "platform-art-a-modular-approach",
+    "description": "Short essay by Jeanyoon Choi on platform art as web artwork whose real form is an open platform, exhibited through selected modules, not a fixed install.",
+    "abstract": "In this 2024 note, Jeanyoon Choi distinguishes platform art from an art platform for selling art: platform art is a practice whose form is itself a platform. A web-based work that anyone can enter and interact with is remade by participants in every encounter, so its definitive form is the platform and the connections between devices, while any gallery installation is one temporary manifestation. This suggests a modular approach to exhibiting, in which an artist or curator selects suitable modules for a space, giving leaner installations and more possible forms.",
+    "questions": [
+      {
+        "q": "What is the difference between platform art and an art platform?",
+        "a": "In Jeanyoon Choi's note, an art platform is a place to sell art, while platform art is an artistic practice whose form is itself a platform, such as a web artwork that anyone can enter and interact with."
+      },
+      {
+        "q": "How can a web-based artwork be exhibited modularly?",
+        "a": "Jeanyoon Choi suggests that because the work's definitive form is the platform, an artist or curator can select only some of its input, output and interconnection modules for a given space, producing a leaner installation."
+      }
+    ],
+    "concepts": [
+      "platform art",
+      "web art",
+      "modular exhibition",
+      "participatory art",
+      "multi-device web artwork"
+    ],
+    "mentions": [
+      {
+        "name": "TouchDesigner",
+        "url": "https://en.wikipedia.org/wiki/TouchDesigner"
+      }
+    ],
+    "terms": [
+      {
+        "term": "Platform Art (modular approach)",
+        "definition": "Web-based art whose definitive form is an accessible, participatory platform rather than an installation, so that exhibitions present selected modules of it as temporary physical manifestations."
+      }
+    ],
+    "ko": "최정윤의 짧은 글로, 예술을 파는 '아트 플랫폼'과 달리 작품 자체가 누구나 접속해 참여하는 플랫폼인 '플랫폼 아트'를 정의하고, 전시에서는 그 일부 모듈만 선택해 보여주는 모듈식 접근을 제안한다."
+  },
+  {
+    "slug": "procrustesing-time",
+    "description": "Essay by Jeanyoon Choi on 'Procrustesing time': how schools, projects and work force people into external timetables, and the loss of one's own sense of time.",
+    "abstract": "Using the Procrustean bed as a metaphor, Jeanyoon Choi argues in this 2024 essay that modern institutions cut and stretch people to fit external timetables. Education designs curricula for an average student and rewards all-round performance over singular interests, which he finds troubling in an age when machines excel at general competence. Collaborative projects measure ideas by deadlines, and spare time is filled with assigned tasks. As a result, he writes, people, including himself, lose the ability to inhabit their own time and instead consume it.",
+    "questions": [
+      {
+        "q": "What does 'Procrustesing time' mean?",
+        "a": "In Jeanyoon Choi's essay, it means forcing people to fit external, system-defined timetables, as Procrustes cut and stretched guests to fit his bed, rather than adapting the system to them."
+      },
+      {
+        "q": "What is Jeanyoon Choi's criticism of education systems in 'Procrustesing Time'?",
+        "a": "He argues that schools design curricula for an average student and reward consistently high grades across subjects rather than singular interests, producing general-purpose competence just as machines become better at it."
+      }
+    ],
+    "concepts": [
+      "time",
+      "education",
+      "individuality",
+      "productivity culture",
+      "procrustean bed",
+      "artificial intelligence"
+    ],
+    "mentions": [
+      {
+        "name": "Procrustes",
+        "url": "https://en.wikipedia.org/wiki/Procrustes"
+      },
+      {
+        "name": "Nassim Nicholas Taleb",
+        "url": "https://en.wikipedia.org/wiki/Nassim_Nicholas_Taleb"
+      }
+    ],
+    "terms": [
+      {
+        "term": "Procrustesing time",
+        "definition": "The modern habit of forcing individuals and their time into external, mass-designed timetables, at the cost of their own sense of time and individuality."
+      }
+    ],
+    "ko": "최정윤은 프로크루스테스의 침대를 은유로 삼아, 교육과 프로젝트, 직장이 개인을 외부의 시간표에 억지로 맞추면서 우리가 스스로의 시간을 살아가는 능력을 잃는다고 비판한다."
+  },
+  {
+    "slug": "proposal-the-innovative-interactive-immersive-inspirational-metaverse",
+    "description": "Jeanyoon Choi's residency proposal for a multi-device web artwork that rebuilds VR immersion with phones and four screens to critique metaverse hype.",
+    "abstract": "This 2024 residency proposal by Jeanyoon Choi describes a multi-device web artwork that reconstructs headset-style immersion with four screens surrounding a participant and one phone connected via WebSocket; phone orientation turns the virtual camera and touch navigates. The inflated title critiques extravagant promises attached to unrealised technologies. The virtual world contains about 400 conference rooms on a 20-by-20 grid crossing 'I' adjectives with technologies such as blockchain and Web3, with generated imagery and speech reciting promises. It would be built with Next.js, React and Three.js.",
+    "questions": [
+      {
+        "q": "What is 'The Innovative-Interactive-Immersive-Inspirational Metaverse' by Jeanyoon Choi?",
+        "a": "It is a proposed multi-device web artwork that rebuilds VR-style immersion using four surrounding screens and a phone, while its inflated title and generated conference rooms critique hype around the metaverse and other future technologies."
+      },
+      {
+        "q": "Can VR-style immersion be created without a headset using phones and screens?",
+        "a": "Jeanyoon Choi's proposal surrounds the participant with four screens connected to a phone via WebSocket, with phone orientation controlling the virtual camera and touch controls acting like thumbsticks, though it notes the immersive effect needs to be explored rather than assumed."
+      }
+    ],
+    "concepts": [
+      "multi-device web artwork",
+      "metaverse",
+      "immersion",
+      "virtual reality",
+      "techno-utopianism critique",
+      "websocket"
+    ],
+    "mentions": [
+      {
+        "name": "Metaverse",
+        "url": "https://en.wikipedia.org/wiki/Metaverse"
+      },
+      {
+        "name": "Apple Vision Pro",
+        "url": "https://en.wikipedia.org/wiki/Apple_Vision_Pro"
+      },
+      {
+        "name": "Ian Cheng"
+      },
+      {
+        "name": "Next.js",
+        "url": "https://en.wikipedia.org/wiki/Next.js"
+      },
+      {
+        "name": "React",
+        "url": "https://en.wikipedia.org/wiki/React_(software)"
+      },
+      {
+        "name": "Three.js",
+        "url": "https://en.wikipedia.org/wiki/Three.js"
+      },
+      {
+        "name": "WebSocket",
+        "url": "https://en.wikipedia.org/wiki/WebSocket"
+      },
+      {
+        "name": "Stable Diffusion",
+        "url": "https://en.wikipedia.org/wiki/Stable_Diffusion"
+      },
+      {
+        "name": "ChatGPT",
+        "url": "https://en.wikipedia.org/wiki/ChatGPT"
+      }
+    ],
+    "terms": [],
+    "ko": "최정윤의 레지던시 제안서로, 네 개의 화면과 휴대폰 하나로 VR 헤드셋 같은 몰입을 재구성하는 멀티 디바이스 웹 아트워크를 통해 메타버스 등 미래 기술을 둘러싼 과장된 약속을 비판한다."
+  }
+]
