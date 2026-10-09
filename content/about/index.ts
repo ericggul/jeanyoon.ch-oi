@@ -29,6 +29,20 @@ export const profile = {
   familyName: "Choi",
   // Scholarly identity profiles (ORCID from the v3 SoTA record; Scholar from content/research).
   identifiers: ["https://orcid.org/0009-0002-9846-3865", "https://scholar.google.com/citations?user=dBBmS0oAAAAJ"],
+  // Other pages about the same person (Person.sameAs / llms.txt). Search engines and LLMs
+  // merge an entity only when independent pages agree; list every official one.
+  profiles: [
+    "https://www.youtube.com/@jeanyoonchoi",
+    "https://github.com/ericggul",
+    "https://www.xdlab.net/people/jeanyoon-choi",
+    "https://2023.rca.ac.uk/students/jeanyoon-choi/",
+    "https://www.idkf.org/archive/artists-2024/jeanyoon-choi",
+  ],
+  // The Korean name is shared with a well-known actress; stated for entity disambiguation only.
+  disambiguation: {
+    en: "Media artist and KAIST researcher (b. 1999), not the South Korean actress who shares the Korean name 최정윤.",
+    ko: "미디어아티스트이자 KAIST 연구자(1999년생). 같은 이름의 배우 최정윤과는 다른 인물이다.",
+  },
   en: {
     title: "Jeanyoon Choi — Media Art, Interactive Art & Web Art",
     description: "Jeanyoon Choi is a Korean computational artist and researcher creating multi-device web artworks about the complexity of AI, algorithmic culture, and economic structures.",

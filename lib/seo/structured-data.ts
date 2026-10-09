@@ -25,14 +25,59 @@ export function artworkImages(artwork: Artwork) {
   }));
 }
 
+// Video documentation as a VideoObject; players are referenced by embed URL only.
+export function videoEmbedUrl(url: string) {
+  const youtube = url.match(/(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([\w-]{11})/);
+  if (youtube) return `https://www.youtube.com/embed/${youtube[1]}`;
+  const vimeo = url.match(/vimeo\.com\/(?:video\/)?(\d+)(?:[/?].*?h=([0-9a-f]+))?/);
+  if (vimeo) return `https://player.vimeo.com/video/${vimeo[1]}${vimeo[2] ? `?h=${vimeo[2]}` : ""}`;
+  return url;
+}
+export function artworkVideo(artwork: Artwork) {
+  if (!artwork.video) return;
+  const text = artworkText(artwork, "en");
+  return { "@type": "VideoObject", "@id": absoluteUrl(`/oi/artworks/${artwork.slug}#video`),
+    name: `${text?.title ?? artwork.title} (${artwork.year}) — video documentation`,
+    description: text?.summary ?? `Video documentation of ${artwork.title} by ${profile.name}.`,
+    url: artwork.video.url, embedUrl: videoEmbedUrl(artwork.video.url),
+    ...(artwork.image ? { thumbnailUrl: absoluteUrl(artwork.image) } : {}),
+    ...(artwork.video.uploaded ? { uploadDate: artwork.video.uploaded } : {}),
+    creator: { "@id": absoluteUrl("/oi#person") }, about: { "@id": absoluteUrl(`/oi/artworks/${artwork.slug}#artwork`) }, inLanguage: "en" };
+}
+// Each documented showing as an ExhibitionEvent featuring the work.
+const months: Record<string, string> = { january: "01", february: "02", march: "03", april: "04", may: "05", june: "06", july: "07", august: "08", september: "09", october: "10", november: "11", december: "12" };
+export function exhibitionDates(dates?: string) {
+  if (!dates) return {};
+  const range = dates.match(/^(\d{1,2}) (\w+)(?: (\d{4}))? [–-] (\d{1,2}) (\w+) (\d{4})$/);
+  if (range) {
+    const [, d1, m1, y1, d2, m2, y2] = range;
+    const start = `${y1 ?? y2}-${months[m1.toLowerCase()]}-${d1.padStart(2, "0")}`;
+    const end = `${y2}-${months[m2.toLowerCase()]}-${d2.padStart(2, "0")}`;
+    return months[m1.toLowerCase()] && months[m2.toLowerCase()] ? { startDate: start, endDate: end } : {};
+  }
+  const month = dates.match(/^(\w+) (\d{4})$/);
+  if (month && months[month[1].toLowerCase()]) return { startDate: `${month[2]}-${months[month[1].toLowerCase()]}` };
+  return {};
+}
+export function artworkExhibitions(artwork: Artwork) {
+  return (artwork.exhibitions ?? []).map((entry, index) => ({
+    "@type": "ExhibitionEvent", "@id": absoluteUrl(`/oi/artworks/${artwork.slug}#exhibition-${index + 1}`),
+    name: entry.name, ...(entry.venue ? { location: { "@type": "Place", name: entry.venue } } : {}),
+    ...exhibitionDates(entry.dates), ...(entry.url ? { url: entry.url } : {}),
+    workFeatured: { "@id": absoluteUrl(`/oi/artworks/${artwork.slug}#artwork`) },
+  }));
+}
+
 export function person() {
   return { "@type": "Person", "@id": absoluteUrl("/oi#person"), name: profile.name,
     alternateName: [...profile.alternateNames, profile.koreanName],
+    disambiguatingDescription: profile.disambiguation.en,
     givenName: profile.givenName, familyName: profile.familyName, birthDate: "1999", nationality: { "@type": "Country", name: "South Korea" },
     alumniOf: [{ "@type": "CollegeOrUniversity", name: "Seoul National University" }, { "@type": "CollegeOrUniversity", name: "Royal College of Art" }],
     affiliation: { "@type": "CollegeOrUniversity", name: "KAIST", alternateName: "Korea Advanced Institute of Science and Technology" },
     url: absoluteUrl("/oi"), jobTitle: ["Computational Artist", "Web Art Researcher"],
-    sameAs: [...contactLinks.filter((link) => /linkedin.com|instagram.com/.test(link.href)).map((link) => link.href), ...profile.identifiers, "https://github.com/ericggul"],
+    sameAs: [...new Set([...contactLinks.filter((link) => /linkedin.com|instagram.com/.test(link.href)).map((link) => link.href), ...profile.identifiers, ...profile.profiles])],
+    award: ["ACM DIS 2026 Honourable Mention (SoTA: An Interactive Art Exhibition for Public AI Engagement)"],
     hasOccupation: [{ "@type": "Occupation", name: "Computational artist" }, { "@type": "Occupation", name: "Researcher" }],
     worksFor: { "@type": "ResearchOrganization", name: "KAIST Experience Design Lab (XD Lab)", url: "https://www.xdlab.net/" },
     subjectOf: artworks.map((artwork) => ({ "@type": "WebPage", url: absoluteUrl(artworkPath(artwork, "en")), about: { "@id": absoluteUrl("/oi#person") }, mainEntity: { "@id": absoluteUrl(`/oi/artworks/${artwork.slug}#artwork`) } })),
@@ -79,11 +124,14 @@ export function artworkSchema(artwork: Artwork, locale: Locale) {
         about: artworkDiscovery[artwork.slug].topics.map((name) => ({ "@type": "DefinedTerm", name })),
       } : {}),
       ...(artwork.site ? { sameAs: artwork.site } : {}),
+      ...(artwork.video ? { video: { "@id": absoluteUrl(`/oi/artworks/${artwork.slug}#video`) } } : {}),
       ...(text.medium ? { artMedium: text.medium } : {}),
       ...(text.keywords?.length ? { keywords: text.keywords } : {}),
       ...(artwork.references?.length ? { citation: artwork.references.map((ref) => ref.url) } : {}),
       ...(locale === "en" ? enrichmentSchema(enrichment("artworks", artwork.slug), ["about", "keywords"]) : {}),
     },
+    ...(artworkVideo(artwork) ? [artworkVideo(artwork)] : []),
+    ...artworkExhibitions(artwork),
     { "@type": "BreadcrumbList", itemListElement: [
       { "@type": "ListItem", position: 1, name: SITE_NAME, item: absoluteUrl("/oi") },
       { "@type": "ListItem", position: 2, name: text.title, item: url },

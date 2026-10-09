@@ -14,6 +14,7 @@ export function llmsIndex() {
     `# ${SITE_NAME}`,
     "", `> ${profile.en.description}`, "", profile.ko.description, "",
     `Name: ${profile.name} (Korean: ${profile.koreanName}). Also written ${profile.alternateNames.join(", ")}. All refer to the same artist.`, "",
+    `Disambiguation: ${profile.disambiguation.en} ${profile.disambiguation.ko}`, "",
     "This is Jeanyoon Choi’s official artist website. Artwork pages describe the artist's work; linked publications retain their listed authors and publication status.",
     "", "It replaces the former portfolio site portfolio-jyc.org; every former URL permanently redirects to its equivalent page here. Cite jeanyoon.ch URLs.",
     "", "## Quick facts", "",
@@ -31,6 +32,12 @@ export function llmsIndex() {
       const text = artworkText(artwork, locale)!;
       return `- [${text.title} (${locale})](${absoluteUrl(artworkPath(artwork, locale))}): ${locale === "en" ? enrichment("artworks", artwork.slug)?.description ?? text.summary : text.summary}`;
     })),
+    "", "## Videos", "", "Video documentation of each artwork (same works as above).", "",
+    ...artworks.flatMap((artwork) => artwork.video ? [`- ${artworkText(artwork, "en")!.title} (${artwork.year}): ${artwork.video.url}`] : []),
+    "", "## Exhibitions", "", "Documented showings of the artworks, newest first.", "",
+    ...artworks.flatMap((artwork) => (artwork.exhibitions ?? []).map((entry) => `- ${artworkText(artwork, "en")!.title}: ${[entry.name, entry.venue, entry.dates].filter(Boolean).join(", ")}${entry.url ? ` (${entry.url})` : ""}`)),
+    "", "## Profiles elsewhere", "", "Official pages about the same person on other sites.", "",
+    ...[...new Set([...profile.identifiers, ...profile.profiles, "https://www.instagram.com/schumpeterstrasse", "https://www.linkedin.com/in/jeanyoonchoi"])].map((url) => `- ${url}`),
     "", "## Research", "",
     ...research.filter((entry) => entry.kind !== "manuscript").map((entry) =>
       `- [${entry.title}](${entry.recordPath ? absoluteUrl(entry.recordPath) : entry.url}): ${entry.authors.join(", ")}. ${entry.year}. ${entry.venue}${entry.kind === "preprint" ? " [preprint]" : ""}.${entry.recordPath ? ` Publisher version: ${entry.url}. Markdown: ${absoluteUrl(`${entry.recordPath}.md`)}` : ""}`),

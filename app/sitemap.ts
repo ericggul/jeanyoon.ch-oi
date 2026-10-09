@@ -2,10 +2,11 @@ import type { MetadataRoute } from "next";
 import { artworks } from "@/content/artworks";
 import { absoluteUrl } from "@/lib/seo/site";
 import { profileLanguages } from "@/lib/seo/metadata";
-import { artworkLocales, artworkPath } from "@/lib/seo/artworks";
+import { artworkLocales, artworkPath, artworkText } from "@/lib/seo/artworks";
 import { collections, entryList, entryPath } from "@/lib/seo/collections";
 import { experiments } from "@/content/experiments";
 import { research } from "@/content/research";
+import { profile } from "@/content/about";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -33,6 +34,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         alternates: { languages },
         ...(artwork.updated ? { lastModified: artwork.updated } : {}),
         ...((artwork.images?.length || artwork.image) ? { images: artwork.images?.length ? artwork.images.map((image) => absoluteUrl(image.src)) : [absoluteUrl(artwork.image!)] } : {}),
+        // Video sitemap entry (title/description from the page's own text).
+        ...(artwork.video && artwork.image ? { videos: [{
+          title: `${artworkText(artwork, lang)!.title} (${artwork.year}) — ${profile.name}`,
+          thumbnail_loc: absoluteUrl(artwork.image),
+          description: artworkText(artwork, lang)!.summary.slice(0, 2048),
+        }] } : {}),
       }));
     }),
   ];

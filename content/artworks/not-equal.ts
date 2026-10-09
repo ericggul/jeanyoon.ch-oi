@@ -92,7 +92,7 @@ export const notEqual: Artwork = {
       "caption": "Dense text and images build toward the work’s final chaotic state."
     }
   ],
-  video: { label: "Watch video ↗", url: "https://vimeo.com/904510875?share=copy" },
+  video: { label: "Watch video ↗", url: "https://vimeo.com/904510875?share=copy", uploaded: "2024-01-19" },
   content: { en: {
   "title": "≠ (Nonequality)",
   "summary": "『≠ (Nonequality)』 is an interactive Multi-Device Web Artwork arguing that the world cannot be comprehended solely with equations.",

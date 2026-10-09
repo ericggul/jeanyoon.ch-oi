@@ -9,7 +9,7 @@ import { enrichment } from "./enrichment";
 
 export const siteDescriptions = {
   en: "Jeanyoon Choi (최정윤, Jean-Yoon Choi): computational artist and KAIST PhD candidate creating interactive multi-device web artworks about AI, complex systems and society.",
-  ko: "최정윤(Jeanyoon Choi)의 복잡계 인터랙티브 아트. 휴대전화와 스크린을 연결해 AI와 사회 시스템의 복잡성을 탐구하는 멀티 디바이스 웹 아트워크, 전시 이미지와 연구를 만나보세요.",
+  ko: "미디어아티스트 최정윤(Jeanyoon Choi)의 복잡계 인터랙티브 아트. 휴대전화와 스크린을 연결해 AI와 사회 시스템의 복잡성을 탐구하는 멀티 디바이스 웹 아트워크, 전시 이미지와 연구를 만나보세요.",
 };
 
 export const profileLanguages = {

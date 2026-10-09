@@ -134,6 +134,21 @@ async function main() {
   assert(terminalHtml.includes('aria-label="jeanyoon.ch/oi"'));
   const person = load('@/lib/seo/structured-data').person();
   for (const name of ['Jean-Yoon Choi', 'JeanyoonChoi', 'Jeongyoon Choi', '최정윤']) assert(person.alternateName.includes(name), `Missing alternateName ${name}`);
+  assert(person.disambiguatingDescription && person.disambiguatingDescription.includes('actress'), 'Person needs a disambiguatingDescription');
+  assert.equal(new Set(person.sameAs).size, person.sameAs.length, 'Duplicate sameAs URL');
+  for (const url of ['https://www.youtube.com/@jeanyoonchoi', 'https://github.com/ericggul']) assert(person.sameAs.includes(url), `Missing sameAs ${url}`);
+  for (const artwork of artworks.filter((entry) => entry.video && artworkLocales(entry).length)) {
+    const graph = artworkSchema(artwork, 'en')['@graph'];
+    const video = graph.find((entity) => entity['@type'] === 'VideoObject');
+    assert(video && video.embedUrl && video.thumbnailUrl, `Missing VideoObject for ${artwork.slug}`);
+    assert.equal(graph[1].video['@id'], video['@id']);
+    assert(sitemap().find((entry) => entry.url.endsWith(`/artworks/${artwork.slug}`)).videos.length, `Missing sitemap video for ${artwork.slug}`);
+  }
+  for (const artwork of artworks.filter((entry) => entry.exhibitions?.length && artworkLocales(entry).length)) {
+    const events = artworkSchema(artwork, 'en')['@graph'].filter((entity) => entity['@type'] === 'ExhibitionEvent');
+    assert.equal(events.length, artwork.exhibitions.length, `ExhibitionEvent count for ${artwork.slug}`);
+    for (const event of events) assert.equal(event.workFeatured['@id'], `https://jeanyoon.ch/oi/artworks/${artwork.slug}#artwork`);
+  }
   const icons = load('@/app/layout').metadata.icons;
   assert(icons.apple.some((icon) => icon.url === '/apple-touch-icon.png'));
   for (const icon of [...icons.icon, ...icons.apple]) assert(fs.existsSync(path.join(root, 'public', icon.url)), `Missing icon ${icon.url}`);

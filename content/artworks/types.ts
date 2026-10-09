@@ -19,7 +19,7 @@ export type Artwork = {
   content?: Partial<Record<Locale, ArtworkText>>;
   image?: string;
   images?: readonly ArtworkImage[];
-  video?: { label: string; url: string };
+  video?: { label: string; url: string; uploaded?: string }; // uploaded: YYYY-MM-DD when known (JSON-LD VideoObject.uploadDate)
   exhibitions?: readonly ArtworkExhibition[];
   site?: string;
   relatedResearchId?: string;
